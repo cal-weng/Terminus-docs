@@ -22,7 +22,7 @@ If you enter the incorrect password more than **3** times, your account will be 
 :::tip
 - When you log in for the first time, ensure you enter the login password that you reset on TermiPass during activation [Reset Login Password](./wizard.md#reset-password)
 - You can change your password in [Settings](../settings/home.md#change-password).
-- If you forget your login password, you can ontact your administrator to reset it.
+- If you forget your login password, you can contact your administrator to reset it.
 :::
 
 ## Two-factor Verification

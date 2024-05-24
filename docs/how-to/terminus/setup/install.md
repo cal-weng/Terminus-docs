@@ -51,13 +51,13 @@ During the installation process, the system will ask you to enter your domain na
 - If your Terminus Name is "alice@helloworld.com", type `helloworld.com` for the domain name, then type `alice` for the terminus name.
 
 :::info
-If you want to use a custom domain name, please make sure that the domain configuration has been completed. For details, please check [Create Domain](../../space/domain/host-domain.md).
-:::
+- If you want to use a custom domain name, please make sure that the domain configuration has been completed. For details, please check [Create Domain](../../space/domain/host-domain.md).
 
-:::info
-If an error occurs during installation, please use the following command to uninstall:
-```
-After uninstallation is complete, re-enter the installation command.
+- If an error occurs during installation, please use the following command to uninstall:
+    ```
+    bash uninstall_cmd.sh
+    ```
+    After uninstallation is complete, re-enter the installation command.
 :::
 
 ## Get Initial System Info

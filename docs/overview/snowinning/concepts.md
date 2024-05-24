@@ -6,16 +6,16 @@ outline: [2, 3]
 
 :::info
 
-While adhering to W3C standards, we have expanded Snowinning Protocol for our purposes. For ease of understanding, we suggest you:
+While adhering to W3C standards, we have expanded the Snowinning Protocol for our purposes. For ease of understanding, we suggest you:
 
 1. Read our documentation first.
 2. Read the introduction to the [Web5](https://developer.tbd.website/blog/what-is-web5/) project, as we have referenced its foundational implementation.
-3. Get fimiliar with the W3C standards about [Decentralized Identifiers](https://www.w3.org/TR/did-core/) and [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/).
+3. Get familiar with the W3C standards about [Decentralized Identifiers](https://www.w3.org/TR/did-core/) and [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/).
    :::
 
 ## Decentralized Identifier (DID)
 
-W3C's definition of DID is :
+W3C's definition of DID is:
 
 > Decentralized Identifiers are a new type of identifier that
 > enables verifiable, decentralized digital identity. A DID refers to any
@@ -51,7 +51,7 @@ Snownning Protocol adopted [Smart Contract](./smart-contract.md) to facilitate t
 
 > No centralized providers or trusted authorities
 >
-> Highly resistant to all all forms of interdiction
+> Highly resistant to all forms of interdiction
 >
 > IDs can be made universally discoverable
 
@@ -60,7 +60,7 @@ Issuers have the capability to upload essential metadata into the Registry, incl
 Given that the metadata occupies minimal storage space and requires infrequent updates, the capabilities of existing mainstream blockchain technologies are adequately equipped to handle these demands. This efficiency is primarily due to the low overhead involved in storing and accessing small amounts of data on the blockchain, where changes are rare and thus do not overburden the system.
 
 :::info
-Right now smart contracts are deployed on [OPTIMISTIC ROLLUPS](https://optimism.io/).
+Right now, smart contracts are deployed on [OPTIMISTIC ROLLUPS](https://optimism.io/).
 
 It should be noted that the Web5 development team has reportedly shifted from using ION as their Registry mechanism to adopting a Distributed Hash Table (DHT) network.
 
@@ -69,15 +69,15 @@ DHT networks represent a form of technology that achieves a higher degree of dec
 
 ## Network Topology
 
-Leveraging DID and Blockchain Smart Contracts (constituting a DID Registry), we have established a decentralized peer-to-peer network that eliminates the need for third-party trust and enables direct information exchange between any two entities. We will illustrate this network topology using Alice and Bob, two users who have initially register their DIDs on the blockchain.
+Leveraging DID and Blockchain Smart Contracts (constituting a DID Registry), we have established a decentralized peer-to-peer network that eliminates the need for third-party trust and enables direct information exchange between any two entities. We will illustrate this network topology using Alice and Bob, two users who have initially registered their DIDs on the blockchain.
 
 ![alt text](/images/overview/snowinning/image5.png)
 
-This is how Alice and Bod send messages via the network:
+This is how Alice and Bob send messages via the network:
 
 1. When Alice wishes to send a message to Bob, the process initiates from her terminal device, which forwards the message to her Edge server.
 2. Utilizing the blockchain, Alice's Edge determines the location of Bob's Edge, effectively using the blockchain **as a Domain Name System (DNS)** to route the message accurately.
-3. Alice's Edge sends a message to Bob's Edge
+3. Alice's Edge sends a message to Bob's Edge.
 4. Upon receiving the message, Bob's Edge verifies the authenticity of Alice's message by validating the cryptographic signature against the blockchain, **similar to the role of a Certificate Authority (CA)**.
 5. Finally, once verified, the message is relayed from Bob's Edge to his terminal device.
 
@@ -102,23 +102,23 @@ This process has 3 roles:
 
   > A role an entity can perform by asserting claims about one or more subjects, creating a verifiable credential from these claims, and transmitting the verifiable credential to a holder.
 
-  In the above example, issuer is the university Alice attended.
+  In the above example, the issuer is the university Alice attended.
 
 - Holder
 
   > Holders are entities that have one or more verifiable credentials in their possession. Holders are also the entities that submit proofs to Verifiers to satisfy the requirements described in a Presentation Definition.
 
-  In the above example, holder is Alice. Alice manages her Verifiable Credentials (VCs) using TermiPass.
+  In the above example, the holder is Alice. Alice manages her Verifiable Credentials (VCs) using TermiPass.
 
 - Verifier
 
   > Verifiers are entities that define what proofs they require from a Holder (via a Presentation Definition) in order to proceed with an interaction.
 
-  In the above example, verifier is the company Alice goes for interview.
+  In the above example, the verifier is the company Alice goes for an interview.
 
 The verification process involves a structured sequence of six steps:
 
-1. The Issuer registers their information on the DID Registry
+1. The Issuer registers their information on the DID Registry.
 2. The Holder submits a verification request to the Issuer, indicating the need for credential issuance.
 3. The Issuer issues a VC to the Holder, embedding a claim regarding her educational qualifications.
 4. The Holder securely stores this VC in TermiPass, ensuring its availability for future verification.
@@ -129,10 +129,10 @@ It is crucial to recognize that VCs are not stored on the blockchain.
 
 ## Reputation
 
-We have reputation systems in conventional contexts, such as 
+We have reputation systems in conventional contexts, such as:
 
-- online review platforms like Yelp, IMDB, etc 
-- financial scoring like [FICO Score](https://www.fico.com/en/products/fico-score), gather and aggregate claims to form a comprehensible reputation metric. 
+- Online review platforms like Yelp, IMDB, etc. 
+- Financial scoring like [FICO Score](https://www.fico.com/en/products/fico-score), gather and aggregate claims to form a comprehensible reputation metric. 
 
 Restaurants and movies are entities, user reviews are Claims, and a large number of Claims are collected and processed through algorithms to determine the entity's Reputation. Subsequent consumers can rely on this Reputation to make purchasing decisions and provide continuous feedback.
 
@@ -144,7 +144,7 @@ Snowinning Protocol transforms this model by embedding it in blockchain technolo
 2. Reputation Processing: Developers can access this raw data to generate reputation insights, tailored to specific contexts and needs.
 3. Reputation Distribution: These insights are distributed via a specialized [Market Protocol](../protocol/market.md), enabling users to select appropriate Reputation Providers based on their specific requirements.  
 
-n each scenario, users can choose one or several Reputation Providers to get comprehensive opinions.
+In each scenario, users can choose one or several Reputation Providers to get comprehensive opinions.
 
 ## DID Metadata vs. VC vs. Reputation
 

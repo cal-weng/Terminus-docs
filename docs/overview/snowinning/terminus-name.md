@@ -6,7 +6,6 @@ outline: [2, 3]
 
 DIDs solve the issue of identity but are not easy to remember or recognize. Terminus Name addresses this problem.
 
-
 :::info
 Please refer to [this document](../../how-to/termipass/account/index.md#stage-of-account) for the relationships between DID, Terminus Name, and Account.
 :::
@@ -15,7 +14,7 @@ Please refer to [this document](../../how-to/termipass/account/index.md#stage-of
 
 Terminus Name consists of **Local Name** and **Domain**, for example:
 
-`alice@myterminus.com`is a Terminus Name, **alice** is the Local Name, **myterminus.com** is the Domain.
+`alice@myterminus.com` is a Terminus Name, **alice** is the Local Name, **myterminus.com** is the Domain.
 
 Since the Local Name is unique within each Domain, Terminus Names are also unique.
 
@@ -28,7 +27,6 @@ With Terminus, there are three types of Domains:
 Intended for individual use, similar to email addresses with suffixes like `gmail.com`.
 
 Currently, Terminus uses **myterminus.com** as the suffix for Individual Domains.
-
 
 ### Organization
 
@@ -48,7 +46,7 @@ Let's revisit the definition of DID:
 > subject (e.g., a person, organization, thing, data model, abstract entity, etc.)
 > as determined by the controller of the DID.
 
-Abstract entities, like a movie, cannot be categorized under Individual or Organization. However, they still require a DID to represent them, for which we designed the Entity Domain. 
+Abstract entities, like a movie, cannot be categorized under Individual or Organization. However, they still require a DID to represent them, for which we designed the Entity Domain.
 
 For example, Movie, Application, Otmoic Market Maker are different types of Entity Domains.
 
@@ -59,12 +57,12 @@ Currently, the registration of Entity Domains is approved by the Terminus team, 
 ## DomainName
 
 Replacing the "@" in the Terminus Name with a "." you get the corresponding DomainName.<br>
-Eg,`alice@myterminus.com`'s DomainName is **alice.myterminus.com**.
+Eg, `alice@myterminus.com`'s DomainName is **alice.myterminus.com**.
 
 This rule applies to both Individual and Organization Terminus Names.
 
 You can access the user's activated Terminus by entering the Domain Name in a browser.<br>
-For example, entering `https://alice.myterminus.com` allows you to access alice's [Profile](../../how-to/terminus/profile.md)
+For example, entering `https://alice.myterminus.com` allows you to access alice's [Profile](../../how-to/terminus/profile.md).
 
 ## Individual Terminus Name
 
@@ -73,7 +71,7 @@ Individual Terminus Name's application may have potential fairness issues becaus
 1. Fraud. Like elonmusk@myterminus.com might likely not registered by [Elon Musk](https://twitter.com/elonmusk)
 2. Speculation in registering Terminus Names, even though it could effectively boost network activity during its early stages.
 
-Based on [VC Service](../../developer/contribute/snowinning/vc.md), we designed Issuer and Verifer process and help users to apply for a Terminus Name:
+Based on [VC Service](../../developer/contribute/snowinning/vc.md), we designed the Issuer and Verifier process to help users apply for a Terminus Name:
 
 ![alt text](/images/overview/snowinning/image1.jpeg)
 
@@ -95,7 +93,7 @@ Throughout the process, Alice only reveals basic account data within the scope o
 
 We have open-sourced all the code needed to build the Issuer Service, allowing anyone to set up a Gmail Issuer Service or other Web2 service Issuer Services.
 
-### Terminus Name Verifer Service
+### Terminus Name Verifier Service
 
 This is how the Verifier service works on the Terminus end:
 

@@ -39,8 +39,8 @@ Its positioning is to provide services that only users can access. For example, 
 Traffic accessing Private Entrance needs to go through [authentication](./account.md#mfa). Private Entrance traffic routing depends on whether the user has enabled the [Only VPN](../../how-to/terminus/settings/home.md#forcing-vpn-access-to-private-entrance-only-vpn-mode) mode to force VPN access to private entrance:
 
 - **Disabled the Only VPN mode**. Depending on whether the user [activates VPN connection in TermiPass](../../how-to/termipass/manage-terminus.md#vpn-connection)]
-  - Activated, all traffic is routed through VPN(TailScale).
-  - Not activated, traffic routing is the same as Public Entrance.
+  - If VPN connection is Activated in TermiPass, all traffic is routed through VPN (TailScale).
+  - If not activated, traffic routing is the same as Public Entrance.
 - **Enabled the Only VPN mode**. Only traffic through VPN (TailScale) can access the Private Entrance.
 
 ### Endpoint
@@ -90,7 +90,7 @@ For Terminus users who do not have a public IP, they need to set up a reverse pr
 - Use Cloudflare’s Tunnel
 - Use an FRP node. To speed up the access, it is recommended to choose an FRP node that is close to the physical location of Terminus.
 
-## Access via local
+## Access via Local
 
 Users can access applications on Terminus through `https://[RouteID].local.[DomainName]`, such as `https://vault.local.bob.myterminus.com` in two situations: Intranet and VPN.
 
@@ -98,28 +98,28 @@ Users can access applications on Terminus through `https://[RouteID].local.[Doma
 
 This refers to the environment where the user's device and Terminus are deployed on the same intranet, for example, connected to the same WIFI.
 
-### VPN access
+### VPN Access
 
 Terminus has built-in VPN services using [TailScale](https://tailscale.com/) and [HeadScale](https://headscale.net/).
 
 When VPN access is enabled on TermiPass, all traffic to Terminus from a device with that TermiPass installed goes through the VPN. The advantages of VPN access are:
 
 - Safer
-- Get faster access
+- Faster access
 
-We provide the [Only VPN](../../how-to/terminus/settings/home.md#forcing-vpn-access-to-private-entrance-only-vpn-mode) switch in the settings, turn it on Afterwards, the system will require that all access to Private Entrance must be through VPN.
+We provide the [Only VPN](../../how-to/terminus/settings/home.md#forcing-vpn-access-to-private-entrance-only-vpn-mode) switch in the settings. When turned on, the system will require that all access to Private Entrance must be through VPN.
 
-## TermiPass connection status
+## TermiPass Connection Status
 
 You can check the current connection status of TermiPass and Terminus through [TermiPass Connection Status](../../how-to/termipass/manage-terminus.md#connection-status).
 
-## Terminus internal network
+## Terminus Internal Network
 
 The Terminus system adopts a multi-layer proxy routing design on the gateway architecture. Traffic is distributed layer by layer from `cluster` -> `user` -> `application` -> `service component`.
 
 ![alt text](/images/overview/terminus/image4.jpeg)
 
-Inside the application. Terminus has multiple layers of security.
+Inside the application, Terminus has multiple layers of security.
 
 - Each application has its own namespace, and all resources are placed in a namespace for exclusive use. All applications are not allowed to bind 'ClusterRole' on the 'ServiceAccount'. That is, the application does not have permission to access resources across namespaces.
 
@@ -131,8 +131,8 @@ Inside the application. Terminus has multiple layers of security.
 
 - User
 
-  Using Settings [Management Entrance](../../how-to/terminus/settings/application.md)
+  Learn how to manage Entrance application.md in [Settings](../../how-to/terminus/settings/).
 
 - Developer
 
-  Learn more about Entrance properties via [TerminusManifest.yaml](../../developer/develop/package/manifest.md#entrances)
+  Learn more about Entrance properties via [TerminusManifest.yaml](../../developer/develop/package/manifest.md#entrances).

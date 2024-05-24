@@ -10,7 +10,6 @@ We've incorporated a variety of apps into Terminus OS to cater to your basic nee
 
 This chapter serves as a user manual for the system's pre-installed software in [Terminus OS](../../overview/terminus/overview.md). You can choose the applications you're interested in to learn more.
 
-
 **Install and Login**
 
 - [Install with command line](./setup/install.md)

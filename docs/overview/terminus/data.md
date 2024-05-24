@@ -31,7 +31,7 @@ For both:
 - Scalable and highly available.
 - Capable of performing unified backup and restore at the system level.
 
-## File system type
+## File System Type
 
 ### JuiceFS
 
@@ -39,7 +39,7 @@ Terminus OS uses [JuiceFS](https://juicefs.com) as the underlying multi-physical
 
 As for the back-end object storage solution of JuiceFS, we also provide two solutions: S3 and MinIO.
 
-Terminus OS defaults to MinIO as object storage when installed locally on Selfhosted. Initial installation starts with `SNSD` ([Single Node Single Driver](https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html) ) mode installation. At the same time, we provide the Scale tool in the installation package, which allows you to freely [expand your MinIO storage] (../../developer/develop/advanced/cli.md#Add a new hard disk locally)
+By default, Terminus OS uses MinIO as object storage when installed locally. Initial installation starts with [Single Node Single Driver (SNSD)](https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html) mode. At the same time, we provide the Scale tool in the installation package, which allows you to freely [expand your MinIO storage](../../developer/develop/advanced/cli.md#Add-a-new-hard-disk-locally).
 
 ### Local Disk
 
@@ -47,7 +47,7 @@ In some application systems, intensive file system read and write operations may
 
 The best practice provided by Terminus is to make full use of the node's local hard disk as a file buffer. Although the local hard disk of the node has limited capacity, it has high-speed read and write performance because it basically uses SSD hard disk. If the application reads and writes files, it will be buffered on the local hard disk of the node, and then written asynchronously to the distributed file system in batches. This can turn most of the fragmented random reads and writes into a few sequential reads and writes. This greatly improves system I/O efficiency.
 
-## Application storage path
+## Application Storage Path
 
 For applications, there are 3 different storage paths to deal with different usage scenarios. Accessible via [Files](../../how-to/terminus/files/index.md#introduction)
 
@@ -55,7 +55,7 @@ For applications, there are 3 different storage paths to deal with different usa
 
 The `UserData` storage path stores files that change infrequently but require cross-application access, such as documents, photos, and videos.
 
-Applications can obtain access permissions to a directory under the Home directory by applying for [UserData](../../developer/develop/package/manifest.md#userdata) permissions in `TerminusManifest.yaml`. For example, you can request permissions to the Picture directory for [PhotoPrism](https://market.jointerminus.com/app/photoprism), and permissions to the Downloads directory for [qBittorrent](https://market.jointerminus.com/app/qbittorrent), and [Jefflyn](https://market.jointerminus.com/app/jellyfins).
+Applications can obtain access permissions to a directory under the Home directory by applying for [UserData](../../developer/develop/package/manifest.md#userdata) permissions in `TerminusManifest.yaml`. For example, you can request permissions to the Picture directory for [PhotoPrism](https://market.jointerminus.com/app/photoprism), and permissions to the Downloads directory for [qBittorrent](https://market.jointerminus.com/app/qbittorrent) and [Jefflyn](https://market.jointerminus.com/app/jellyfins).
 
 ### AppData
 
@@ -65,13 +65,13 @@ Applications can apply for [AppData](../../developer/develop/package/manifest.md
 
 ### AppCache
 
-The `AppCache` storage path is allocated for applications that directly operates the disk with good performance. The disadvantage is that it cannot be accessed across nodes. For example, the system database, application log, and cache.
+The `AppCache` storage path is allocated for applications that directly operate the disk with good performance. The disadvantage is that it cannot be accessed across nodes. For example, the system database, application log, and cache.
 
 Applications can apply for [AppCache](../../developer/develop/package/manifest.md#appcache) permissions in `TerminusManifest.yaml`.
 
 ## [PostgreSQL](../../developer/develop/advanced/database.md#rds)
 
-As one of the most popular open source relational databases, PostgreSQL has excellent performance and rich plug-in functions. Terminus OS deploys PostgreSQL on the system along with the popular Citus distributed database plug-in. At the same time, its cluster is managed through the PG Operator in the TAPR component. Users can easily expand the number of PostgreSQL nodes. And can back up and restore data along with the entire Terminus system.
+As one of the most popular open-source relational databases, PostgreSQL has excellent performance and rich plug-in functions. Terminus OS deploys PostgreSQL on the system along with the popular Citus distributed database plug-in. At the same time, its cluster is managed through the PG Operator in the TAPR component. Users can easily expand the number of PostgreSQL nodes. And can back up and restore data along with the entire Terminus system.
 
 If the PostgreSQL database application declared by the developer in the application is Distributed, then Terminus will build its database on Citus, allowing the application to fully utilize the capabilities of the distributed PG database.
 
@@ -91,7 +91,7 @@ There is no doubt that Redis can be regarded as the most popular memory cache so
 
 Terminus also takes over the backup and restore of Redis Cluster. There is no need for users to provide any separate operation and maintenance operations for Redis Cluster.
 
-In addition, since Redis Cluster itself lacks a data isolation mechanism, Terminus OS has also developed a proxy layer tool to implement the `namespace` mechanism of data. This isolation mechanism is completely transparent to developers. Developers do not need to do any special processing of data keys in their code. Data isolation between multiple ‘applications’ and multiple ‘users’ can be achieved with simple configuration in TAC.
+In addition, since Redis Cluster itself lacks a data isolation mechanism, Terminus OS has also developed a proxy layer tool to implement the `namespace` mechanism of data. This isolation mechanism is completely transparent to developers. Developers do not need to do any special processing of data keys in their code. Data isolation between multiple applications and multiple users can be achieved with simple configuration in TAC.
 
 - Version: `6.2.13`
 
@@ -99,7 +99,7 @@ In addition, since Redis Cluster itself lacks a data isolation mechanism, Termin
 The system uses the Redis Cluster version, which is different from the stand-alone version of Redis. Developers need to carefully understand the official Redis documentation.
 :::
 
-## [ES(ZincSearch)](../../developer/develop/advanced/zinc.md)
+## [ES (ZincSearch)](../../developer/develop/advanced/zinc.md)
 
 Terminus also deploys a stand-alone full-text search engine Zinc Search in the system. It has an ES-compatible API and can achieve satisfactory search response speed with less resource consumption. Similar to MacOS, Terminus OS will store various documents and text-type files in the system. Automatically indexed into Zinc Search. Provide users with convenient file search functions.
 
@@ -113,13 +113,13 @@ It helps users backup the entire Terminus to Terminus Space, and also supports u
 
 Backup operations can be performed daily and weekly. The first backup of each backup plan is a full backup and serves as the first snapshot of the backup plan. Subsequent snapshots are incremental backups.
 
-Backup objects includes:
+Backup objects include:
 
 - Kubernetes configuration data, such as user information, application information, etc.
 - Database data, such as Redis, MongoDB, PostgreSQL, etc.
-- File system data, such as videos, pictures and various documents uploaded by users through the Files application
+- File system data, such as videos, pictures, and various documents uploaded by users through the Files application
 
-The Backup component also has data restoration capabilities. You can download a backup snapshot to a local server or Terminus Space to restore a complete Terminus by rebuilding Kubernetes, databases, and user personal information
+The Backup component also has data restoration capabilities. You can download a backup snapshot to a local server or Terminus Space to restore a complete Terminus by rebuilding Kubernetes, databases, and user personal information.
 
 ## Learn More
 
@@ -127,7 +127,7 @@ The Backup component also has data restoration capabilities. You can download a 
 
   [File Management Tool](../../how-to/terminus/files/)<br>
   [Use Settings to back up](../../how-to/terminus/settings/backup.md)<br>
-  How to use the [Backup & Restore](../../how-to/space/backup.md#backup) function of Terminus Space to view backup records, and restore Terminus to the local machine and Terminus Space through backup
+  How to use the [Backup & Restore](../../how-to/space/backup.md#backup) function of Terminus Space to view backup records, and restore Terminus to the local machine and Terminus Space through backup.
 
 - Developer
 
