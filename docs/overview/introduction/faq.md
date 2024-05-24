@@ -133,18 +133,18 @@ Terminus does have various passwords to ensure its security, including:
 
 Don't panic! For daily use, what you need to enter is the two-step verification code when logging in to Terminus.
 
-## How do you validate Proof of Work?
+## What is Proof of Useful Work?
 
-Proof of Work has disadvantages:
+Proof of Useful Work must satisfy the following requirements:
 
 - Production costs are much higher than verification costs.
 - Any third party can verify.
 
 For example, Bitcoin mining is the first and most classic proof of work. But this proof of work is not useful because we cannot solve practical problems with the calculated Hash.
 
-A similar project is Chia, which provides a proof-of-work for storing large numbers of randomly generated numbers on disk.
+A similar project is Chia, which provides a proof of useful work for storing large numbers of randomly generated numbers on disk.
 
-There are many projects claiming to provide such a `Useful Proof of Work`, but we are cautious about this.
+There are many projects claiming to provide such a Proof of Useful Work`, but we are cautious about this. 
 
 ## How to deploy multi-user applications?
 

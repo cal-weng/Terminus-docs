@@ -8,7 +8,7 @@ outline: [2, 3]
 
 As we search for information, share photos, and purchase goods, we have to constantly endure the leakage of private data, ubiquitous advertising, and censorship. Databases of these Internet monopolies store all user information, including everything posted, purchased, watched, where they have been, and what's going on at home. Even biometric features are tracked and stored. This information is utilized to construct detailed personal profiles that enable targeted marketing through sophisticated algorithms.
 
-When utilizing websites or applications, users are required to accept a document commonly referred to as a "user agreement." Through these agreements, the rights holders or distributors progressively restrict consumer rights, subtly transforming the concept of ownership into one of mere licensure.
+When utilizing websites or applications, users are required to accept a document commonly referred to as a "user agreement". Through these agreements, the rights holders or distributors progressively restrict consumer rights, subtly transforming the concept of ownership into one of mere licensure.
 
 Consider why e-books we purchase can be remotely deleted, and how the rights associated with physical books differ from those of their electronic counterparts. If you express dissatisfaction with this disparity on social media, you may find your post swiftly removed, and you might even face threats of account closure.
 
@@ -20,7 +20,7 @@ The rights to privacy, free speech, and digital property of users are under sign
 
 In the prevailing Client/Server architecture of the Internet, data is centralized on the servers owned by monopolistic corporations.
 
-For those of us committed to the goal of "restoring individual data ownership," the critical question arises: where should this data be relocated once it is no longer housed on centralized servers?
+For those of us committed to the goal of "restoring individual data ownership", a critical question arises: where should this data be relocated once it is no longer housed on centralized servers?
 
 ### Blockchain
 
