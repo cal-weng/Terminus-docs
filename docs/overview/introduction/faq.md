@@ -135,16 +135,16 @@ Don't panic! For daily use, what you need to enter is the two-step verification 
 
 ## What is Proof of Useful Work?
 
-Proof of Useful Work must satisfy the following requirements:
+Proof of Useful Work (PoUW) must satisfy the following requirements:
 
 - Production costs are much higher than verification costs.
 - Any third party can verify.
 
-For example, Bitcoin mining is the first and most classic proof of work. But this proof of work is not useful because we cannot solve practical problems with the calculated Hash.
+For example, Bitcoin mining is the first and most classic PoUW. But it is not useful because we cannot solve practical problems with the calculated Hash.
 
-A similar project is Chia, which provides a proof of useful work for storing large numbers of randomly generated numbers on disk.
+A similar project is Chia, which provides a PoUW for storing large numbers of randomly generated numbers on disk.
 
-There are many projects claiming to provide such a Proof of Useful Work`, but we are cautious about this. 
+There are many projects claiming to provide such a PoUW, but we are cautious about this. 
 
 ## How to deploy multi-user applications?
 
