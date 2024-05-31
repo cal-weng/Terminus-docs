@@ -6,19 +6,19 @@ outline: deep
 
 ## Introduction
 
-Otmoic is a trustless automatic value exchanging protocol based on Snowinning Protocol, built for Depin, AI Agent, and Crypto Trading.
+Otmoic is a trustless automatic value exchanging protocol based on the Snowinning Protocol, built for Depin, AI Agents, and Crypto Trading.
 
 The vision of Otmoic is to **give public goods a fair price**.
 
 Otmoic Protocol has the following features:
 
-- Provides on-chain [reputation mechanism](../snowinning/concepts.md#reputation) for trader and liquidity provider, solving the free mint problem
-- Supports [KYC](#kyc) based on [Verifiable Credential](../snowinning/concepts.md#verifiable-credential)
-- RFQ-based price discovery
-- Supports Atomic swap based on-chain transactions
-- Supports automatic market making by liquidity providers through applications installation in Terminus OS
+- Provides an on-chain [reputation mechanism](../snowinning/concepts.md#reputation) for traders and liquidity providers, solving the free mint problem.
+- Supports [KYC](#kyc) based on [Verifiable Credential](../snowinning/concepts.md#verifiable-credential).
+- RFQ-based price discovery.
+- Supports atomic swap-based on-chain transactions.
+- Supports automatic market making by liquidity providers through applications installed in Terminus OS.
 
-With the above design, Otmoic Protocol can be widely used in Depin, AI Bot, Creator Economy, Crypto Trading, Crypto Crossing Chain, Fiat And Crypto Gateway and other scenarios.
+With the above design, Otmoic Protocol can be widely used in Depin, AI Bots, Creator Economy, Crypto Trading, Crypto Cross-Chain, Fiat and Crypto Gateways, and other scenarios.
 
 ## Open-source projects
 
@@ -154,41 +154,41 @@ Below are the details of the protocol.
   | append_information     | String |                       |                           |                         | Additional information                                              |
 
   > [!NOTE]
-  > dst_amount_need and dst_native_amount_need is derived by the relay based on information of this swap
-  > system_fee_dst and system_fee_src is fetched on-chain by the relay
+  > `dst_amount_need` and `dst_native_amount_need` is derived by the relay based on information of this swap.
+  > `system_fee_dst` and `system_fee_src` is fetched on-chain by the relay.
   >
   > The above four variables are not necessary parameters of the exchanging process. They exist only for reducing implementation difficulty of later processes and other modules.
 
-- About the operation duration limit of each step
-  - transferOut: must be called before agreement_reached_time + 1 \* step_time_lock otherwise it will fail
-  - transferIn: must be called before agreement_reached_time + 2 \* step_time_lock otherwise it will fail
-  - confirmTransferOut:
-    - if using the hashlock of transaction initiator, must be called before agreement_reached_time + 3 \* step_time_lock otherwise it will fail
-    - if using the hashlock of the relay, must be called before agreement_reached_time + 6 \* step_time_lock otherwise it will fail
-  - confirmTransferIn: must be called before agreement_reached_time + 5 \* step_time_lock otherwise it will fail
-  - refundTransferOut: must be called after agreement_reached_time + 7 \* step_time_lock otherwise it will fail
-  - refundTransferIn: must be called after agreement_reached_time + 7 \* step_time_lock otherwise it will fail
+- **About the operation duration limit of each step**
+  - TransferOut: Must be called before `agreement_reached_time + 1 * step_time_lock`, otherwise it will fail.
+  - TransferIn: Must be called before `agreement_reached_time + 2 * step_time_lock`, otherwise it will fail.
+  - ConfirmTransferOut:
+    - If using the hashlock of the transaction initiator, must be called before `agreement_reached_time + 3 * step_time_lock`, otherwise it will fail.
+    - If using the hashlock of the relay, must be called before `agreement_reached_time + 6 * step_time_lock`, otherwise it will fail.
+  - ConfirmTransferIn: Must be called before `agreement_reached_time + 5 * step_time_lock`, otherwise it will fail.
+  - RefundTransferOut: Must be called after `agreement_reached_time + 7 * step_time_lock`, otherwise it will fail.
+  - RefundTransferIn: Must be called after `agreement_reached_time + 7 * step_time_lock`, otherwise it will fail.
 
 > [!NOTE]
 > The expected normal operation process and time limit are:
 >
-> - transferOut: 1 \* step_time_lock
-> - transferIn: 2 \* step_time_lock
-> - confirmTransferOut: 3 \* step_time_lock
-> - confirmTransferIn: 4 \* step_time_lock
+> - TransferOut: `1 * step_time_lock`
+> - TransferIn: `2 * step_time_lock`
+> - ConfirmTransferOut: `3 * step_time_lock`
+> - ConfirmTransferIn: `4 * step_time_lock`
 >
-> However, considering possible cheating on both sides, the time limits of confirmTransferOut and confirmTransferIn need to be adjusted.
+> However, considering possible cheating on both sides, the time limits of `ConfirmTransferOut` and `ConfirmTransferIn` need to be adjusted.
 >
-> - If LP have not performed confirmTransferIn until 4 _ step_time_lock, the relay will perform the operation by itself. The duration 4 _ step_time_lock ~ 5 \* step_time_lock is for the relay to prevent cheating.
-> - The hashlock used during transferIn is provided by the transaction initiator so relay will use the hashlock of itslef to perform confirmTransferOut if the transaction initiator perform confirmTransferIn near the time limit of 5 _ step_time_lock. The duration 5 _ step_time_lock ~ 6 \* step_time_lock is for the relay to prevent cheating.
+> - If the LP has not performed `ConfirmTransferIn` until `4 * step_time_lock`, the relay will perform the operation by itself. The duration `4 * step_time_lock ~ 5 * step_time_lock` is for the relay to prevent cheating.
+> - The hashlock used during `TransferIn` is provided by the transaction initiator, so the relay will use the hashlock of itself to perform `ConfirmTransferOut` if the transaction initiator performs `ConfirmTransferIn` near the time limit of `5 * step_time_lock`. The duration `5 * step_time_lock ~ 6 * step_time_lock` is for the relay to prevent cheating.
 
-- About Transaction signatures
+- **About Transaction Signatures**
 
-  The transaction initiator should use the requestor to sign the transaction and the signature is filled in `user_sign` field.
-  LP should use the address that has been verified by the DID contract to sign the transaction and the signature is filled in `lp_sign` field.
+  The transaction initiator should use the `requestor` to sign the transaction and the signature is filled in the `user_sign` field.
+  The LP should use the address that has been verified by the DID contract to sign the transaction and the signature is filled in the `lp_sign` field.
 
 > [!NOTE]
-> The signatures follow EIP-712 standard on EVM-compatible chains.
+> The signatures follow the EIP-712 standard on EVM-compatible chains.
 > The signatures follow supported similar protocols on other chains.
 
 - EIP712 Types

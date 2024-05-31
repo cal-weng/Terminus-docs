@@ -1,21 +1,22 @@
 ---
+
 outline: deep
+
 ---
 
 # Renaissance of the Protocol
 
-About 5 years ago, MIKE MASNICK published the article 
-[Protocols, Not Platforms: A Technological Approach to Free Speech](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech), explaining to us the importance of protocols in the future.
+About five years ago, Mike Masnick published the article [Protocols, Not Platforms: A Technological Approach to Free Speech](https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech), explaining the importance of protocols in the future.
 
 We are delighted to see that enlightened individuals have realized this, and more and more applications based on protocols are being developed, such as:
 
 - Mastodon, developed on ActivityPub
-- Element, developed on Matrix  
+- Element, developed on Matrix
 - BlueSky, developed on [AT Protocol](https://atproto.com/)
 - Nostr
 - Farcaster
 
-However, objectively speaking, these protocols still have a long way to go before they are widely used. 
+However, objectively speaking, these protocols still have a long way to go before they are widely used.
 
 This article attempts to analyze why and what can be done in the future.
 
@@ -23,19 +24,17 @@ This article attempts to analyze why and what can be done in the future.
 
 Typically, the protocol ecosystem comprises four roles:
 
-- Protocol: The initiator of the project, the standard setter, the developer of core services
-- Provider: Provides hardware to run the protocol's core services, ensuring the operation of the protocol network.
-
-  - In the context of blockchain, such roles are known as miners.  
+- **Protocol**: The initiator of the project, the standard setter, the developer of core services.
+- **Provider**: Provides hardware to run the protocol's core services, ensuring the operation of the protocol network.
+  - In the context of blockchain, such roles are known as miners.
   - In federated networks, such as Mastodon, they are called relays.
   - In BitTorrent (BT) networks, trackers assume a similar role.
-
+  
   We refer to them all as service providers.
+- **Application**: Applications developed based on the protocol, which communicate through providers or peer-to-peer communication.
+- **User**: The entities that use the above services and inject funds or resources into the ecosystem.
 
-- Application: Applications developed based on the protocol, which communicate through providers or Peer-to-Peer communication.  
-- User: The entities that use the above services and inject funds or resources into the ecosystem
-
-The protocol ecosystem competes with existing Web2 platforms for users' limited attention, time, and money. 
+The protocol ecosystem competes with existing Web2 platforms for users' limited attention, time, and money.
 
 If a massive number of users choose a certain protocol ecosystem, then the funds that previously circulated in Web2 platforms would flow into the protocol ecosystem in various ways, and everything else would prosper.
 
@@ -53,9 +52,9 @@ The greater the gap between migration costs and the experience difference, the f
 
 The costs of running a server are certain:
 
-- Running a server requires professional knowledge
-- Running a server requires an initial hardware investment
-- Running a server requires ongoing time investment for maintenance and paying maintenance fees
+- Running a server requires professional knowledge.
+- Running a server requires an initial hardware investment.
+- Running a server requires ongoing time investment for maintenance and paying maintenance fees.
 
 For services like Ethereum's archival nodes, even small businesses find it challenging to manage.
 
@@ -69,7 +68,7 @@ To this day, decentralized systems only exist in a few use cases such as CDNs, b
 
 ### Why Users Do Not Migrate
 
-Now let's summarize the two sides of the inequality:  
+Now let's summarize the two sides of the inequality:
 
 - Left side: The migration cost from Web2 platforms to protocol ecosystems is high.
 - Right side: The improvement in experience is negative.
@@ -81,26 +80,25 @@ The inequality is far from being met, so there is no sign of massive user migrat
 With Terminus, the situation begins to shift:
 
 - The migration cost becomes low enough. The emergence of Terminus makes the migration cost as trivial as buying a new smartphone.
-
 - The AI revolution has brought users unprecedented concerns about data privacy and sovereignty, something fundamentally unattainable on Web2 platforms.
 
 In scenarios that involve data privacy, the experience improvement brought by Terminus could easily outweigh the migration costs.
 
-## Terminus + Protocol 
+## Terminus + Protocol
 
 Simply put, Terminus collaborates with protocols to bring better experiences to users in more use cases beyond just privacy protection. There are two typical use cases:
 
-- Use cases where the marginal user cost on Web2 platforms is not zero
+- **Use cases where the marginal user cost on Web2 platforms is not zero**
 
   One of the characteristics of Web2 platforms is the initial investment of a huge fixed cost, after which the marginal cost of serving users is very low. Therefore, users can use the service for free, and service providers profit from advertising.
 
-  But in the AI era, due to GPU costs, users need to pay to receive consistent and stable services. These are typically related to physical resources, such as GPUs, disk space, and bandwidth. 
+  But in the AI era, due to GPU costs, users need to pay to receive consistent and stable services. These are typically related to physical resources, such as GPUs, disk space, and bandwidth.
 
   We collectively refer to these resource providers as Providers.
 
   Previously, Providers were assumed by Web2 platforms, but now we hope to protocolize these resources.
 
-- Use cases where users on Web2 platforms pay for marginal services
+- **Use cases where users on Web2 platforms pay for marginal services**
 
   For example, SaaS, where products charge fees per head.
 
