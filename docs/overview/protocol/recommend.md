@@ -18,7 +18,7 @@ You can try out the demo-level recommendation algorithm provided by the Terminus
 
 ### A New Paradigm for Recommendation
 
-In essence, the protocol divides recommendation process is into two stages:
+The Open Information Distribution Protocol divides the recommendation process into two stages:
 
 1. Content Providers in the cloud collect and vectorize global content, subsequently packaging it for user download.
 2. Terminus downloads the data and uses locally-executed algorithms and local user interaction data for content recommendation.
@@ -35,7 +35,7 @@ The recommendation framework running on Terminus orchestrates the `Recommendatio
 
 ### Proof of Intelligent Contribution
 
-We aim to establish a Proof of Work mechanism that fairly rewards users who actively contribute gradient data for model training, thereby advancing algorithms through federated learning.
+The recommendation framework aims to establish a Proof of Work mechanism that fairly rewards users who actively contribute gradient data for model training, thereby advancing algorithms through federated learning.
 
 ![alt text](/images/overview/protocol/recommend3.jpeg)
 
