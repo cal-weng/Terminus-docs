@@ -1,24 +1,17 @@
 # Terminus Space
 
 ## Introduction
+ 
+[Terminus Space](https://space.jointerminus.com/) is the fully managed offering of Terminus on public clouds. It provides two main features:
 
-[Terminus Space](https://space.jointerminus.com/) has two key features.
+- **Infrastructure Service** for data backup, domain management, reverse proxy, and shared GPU services. 
+- **Host Service** to simplify the deployment of Terminus on public clouds. 
 
-### Infrastructure Service
-
-**Infrastructure Service** includes **data backup**, **domain management**, **reverse proxy**, **shared GPU services**, and more.
-
-In the **BEC architecture**, to give users the freedom of choice, all these services can be provided by either third parties or the users themselves.
-
-**Terminus Space** is our ready-to-use solution for the **Terminus** world. We will also provide open-source, self-hosted solutions for these services. These allow users to create their own ecosystems without relying on any third-party.
-
-### Host Service
-
-Considering the need for resource flexibility, stability, and quick access, some organizations might want to deploy **Terminus** on public clouds.
-
-The **Host Service** aims to simplify the process of setting up **Terminus** on these platforms.  **Terminus Space** follows best practices for cluster resource usage and security control. Compared to self-deployment, our approach can leverage the benefits of public clouds.
-
+:::info
 The **Host Service** is currently in an invite-only beta phase.
+:::
+
+This section will walk you through the key features and functionality of Terminus Space.
 
 ## Features
 

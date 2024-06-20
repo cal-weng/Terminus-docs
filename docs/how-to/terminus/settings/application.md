@@ -2,19 +2,19 @@
 outline: [2, 4]
 ---
 
-# Application
+# Application Management
 
-You can manage installed applications here. In the list, you can see:
+The Application page allows you to manage installed applications, including 
 
 - [User System Application](../../../overview/terminus/application.md#user-system-application)
 - [Community Application](../../../overview/terminus/application.md#community-application)
-- [Cluster Scoped Application](../../../overview/terminus/application.md#cluster-scoped-application) (if you are an admin)
+- [Cluster Scoped Application](../../../overview/terminus/application.md#cluster-scoped-application) (for Admins)
 
 ![alt text](/images/how-to/terminus/application.png)
 
-## App Management
+## View Application Status
 
-You can view common [application status](../../../overview/terminus/application.md#用状态) here.
+View the status of your applications. Refer to [application status section](../../../overview/terminus/application.md#application-status) for more information.
 
 ![alt text](/images/how-to/terminus/application_details.png)
 
@@ -24,69 +24,59 @@ You can view common [application status](../../../overview/terminus/application.
 
 ## Entrance Management
 
-You can learn more about [Entrance](../../../overview/terminus/network.md#entrance) here.
+Entrance controls how users and the public access your applications. You can learn more about [Entrance](../../../overview/terminus/network.md#entrance) here.
 
 ![alt text](/images/how-to/terminus/application_entrance.png)
 
-### Setup Endpoint
+Entrance Management involves configurations of endpoints and access policies. 
 
-You can set the [Entrance Endpoint](../../../overview/terminus/network.md#endpoint) for the application here.
+### Configure Endpoints
+
+Endpoints define how your application can be reached. Refer to[Entrance Endpoint](../../../overview/terminus/network.md#endpoint) for more information.
 
 ![alt text](/images/how-to/terminus/application_domain_setup.png)
 
-#### Setup Custom Route id
+You can define the following for your endpoints:
 
-You can replace the default route id with a custom **Route id**. For example, replace `de463205` with `wordpress`.
+- **Custom Route ID**. Replace the default route ID with a custom one. For example, replace `de463205` with `wordpress`.
 
-![alt text](/images/how-to/terminus/application_third_level_domain.png)
+- **Custom Domain**. Assign a custom domain to the Entrance. 
 
-#### Setup Custom Domain
+  1. Click the **+** button, and enter the custom domain name in the popup window. 
+  
+      ![alt text](/images/how-to/terminus/application_third_party_domain.png)
 
-You can assign a **Custom Domain** to the Entrance.
+  2. Follow the instructions in the pop-up dialog to add a CNAME record on the domain hosting website.
 
-![alt text](/images/how-to/terminus/application_third_party_domain.png)
-
-After entering the domain, follow the instructions in the pop-up dialog to add a CNAME record on the domain hosting website.
-
-![alt text](/images/how-to/terminus/application_activation_third_party_domain.png)
-
-Once the DNS record is activated, the status will change to **'Activated'**, indicating that the setup is complete.
+      ![alt text](/images/how-to/terminus/application_activation_third_party_domain.png)
+  
+  Once the DNS record is activated, the status of the custom domain will change to **Activated**. This indicates the setup is completed.
 
 :::info
-If you want your friends to access this URL without logging in, set its AuthLevel to "Public." (See [AuthLevel](#authlevel))
+If you want your friends to access this URL without logging in, set **AuthLevel** to "Public".
 :::
 
-### Setup Access Policies
+### Configure Access Policies
 
-Each application can have more specific access policies for different paths within it.
+Access Policies control how an application can be accessed. Each application can have more specific access policies for different paths within it.
 
-For instance, sensitive operations might require a [One Time Password](../../../overview/terminus/account.md#multi-factor-authentication) when making a call.
+For instance, sensitive operations might require a [One Time Password](../../../overview/terminus/account.md#multi-factor-authentication).
 
-#### AuthLevel
+- **AuthLevel** (Application-Wide):
+    Specifies whether an application requires authentication.
+  - **Public**: Anyone can access the application.
+  - **Private**: Users need to log in to access the application.
 
-Set the access level for the entire application. There are two options: Public and Private. You can find their meanings [here](../../../overview/terminus/network.md#entrance).
-
-#### Second Factor Model
-
-If the AuthLevel of the application is set to Private, you can configure the following settings:
-
-- **One time**:<br>
-  Set to **True**: A [One Time Password](../../../overview/terminus/account.md#multi-factor-authentication) is required to access the application, even when logged in.
-  <br>
-  Set to **False**: Once logged in through [Login](../setup/login.md), the application can be accessed directly.
-
-- **Valid duration**: <br>
-  When **One Time** is set to **True**, this specifies the validity period of the [One Time Password](../../../overview/terminus/account.md#multi-factor-authentication). Within this period, it does not need to be entered again. A value of 0 means it needs to be entered for each access.
-
-#### Policies
-
-Policies allow you to set different access policies for subpaths within the application.
-
-![alt text](/images/how-to/terminus/application_add_sub_policies.png)
-
-Click the **'+'** icon to add sub policies. In the dialog, you can use a `regular expression` to matching certain subpaths that will be effected by this policie. Then, you can choose the access mode for this subpath rule.
-- **Public** means this subpath can be accessed without authorization, completely open.
-- **One Factor** means this path requires only the login password to be entered during [Login](../setup/login.md).
-- **Two Factor** means this path requires both the login password and a second verification code to be entered during [Login](../setup/login.md).
-
-If you choose the Two Factor option, please refer to the [Second Factor Model](#second-factor-model) for the definitions of **One time** and **Valid duration**.
+- **Second Factor Model**(Available when **AuthLevel** set to "Private")
+  - **One Time**
+    - **True**: A One Time Password is always required, even after logging in.
+    - **False**: Access is granted directly after logging in.
+  - **Valid Duration**: (Available when **One Time** is True) 
+    Specifies how long the One Time Password remains valid. A value is 0 means the One Time Password is required for each access).
+- **Sub-Policies** (Path-Specific) 
+    Define access rules for specific sub-paths within your application matched using regular expressions. Click the **+** icon to add sub-policies. Options include:
+  - **Public**: No authorization required.
+  - **One Factor**: Login password required.
+  - **Two Factor**: Login password and a second verification code required during [Login](../setup/login.md). Refer to the Second Factor Model section above.
+    
+    ![alt text](/images/how-to/terminus/application_add_sub_policies.png)

@@ -1,44 +1,52 @@
 # Password Autofill
 
-You can use the **Vault** in **TermiPass** to store passwords and utilize the autofill feature on the **TermiPass** mobile client.
+Use the **Vault** in **TermiPass** to store passwords and autofills them on the **TermiPass** mobile client.
 
-For other **Vault** features, please refer to the [Vault help documentation](../terminus/vault/index.md).
+For other **Vault** features, please refer to the [Vault documentation](../terminus/vault/index.md).
 
 :::info
 This feature is supported only on Android and iOS versions.
 :::
 
-## Android Password Autofill
+## Password Autofill on Android
 
 ![alt text](/images/how-to/termipass/autofill_android.jpg)
 
-### Enable Service
-
-First, you need to enable the autofill service in the **'Settings'**. Open **TermiPass**, switch to the **Setting** tab, then turn on **'Autofill'** toggle.
+To enable the autofill service on Android, navigate to **TermiPass** > **Setting**, and turn on **Autofill** toggle.
 
 ### Autosave
 
-Once enabled, **TermiPass** will prompt you to save your username and password when you enter them in an app.
+Once the Autofill service is enabled, **TermiPass** will prompt you to save your username and password when you enter them in an app.
 
-- Press **'confirm'** to automatically save the credentials to the **Vault**.
-- Press **'cancel'** to skip this Autosave.
+- Press **Confirm** to automatically save the credentials to **Vault**.
+- Press **Cancel** to skip this Autosave.
 
 ### Autofill
 
-If you have saved the username and password for an app, a **TermiPass** dialog will appear when you click on the username or password box during your next login. Unlock the TermiPass to select the username and password from the Vault list. Then, when you switch back to the app interface, you'll see that the username and password fields have been filled.
+Autofill will be triggered if you have saved the username and password for an app:
 
-## iOS Password Autofill
+1. A **TermiPass** dialog appears when you click on the username or password box during your next login. 
+2. Unlock TermiPass to select the corresponding credentials from the Vault list.
+3. When you switch back to the app interface, the username and password fields have been autofilled.
 
-Due to system restrictions on iOS, TermiPass cannot implement the password autosave and autofill feature like it does on Android. The process is slightly different on iOS.
+## Password Autofill on iOS
+
+Due to system restrictions, iOS autofill works differently than Android.
 
 ![alt text](/images/how-to/termipass/autofill_ios.jpg)
 
-### Launch TermiPass Interface
+### Save Credentials
 
-You can store your username and password in **TermiPass** using the system keyboard. When you need to enter your credentials in any app, a key icon will appear at the top of the keyboard. Click on it, and you will see **TermiPass** in the list. Select **TermiPass** and unlock it to add the username and password into the Vault manually.
+To save credentials for your iOS app:
+
+1. On your iPhone, go to iOS **Settings** > **Passwords**, tap AutoFill Passwords, and enable TermiPass as an autofill option.
+2. When you need to enter your credentials in any app, a key icon will appear on the keyboard. Click on it, and you will see **TermiPass** in the list. 
+3. Select **TermiPass** and unlock it to add the username and password into the Vault manually.
 
 Alternatively, you can open **TermiPass** directly and save your username and password to the Vault at any time.
 
 ### Autofill
 
-You can use **TermiPass** to autofill your username and password in a similar way using the keyboard. Simply select and unlock **TermiPass**, then choose an **Vaults Item** that contains your login credentials. This will automatically fill the related fields in the app.
+To autofill saved credentials on an iOS app:
+1. In the login interface of the app, click on the key icon, and select TermiPass as your autofill option.
+2. Unlock **TermiPass**, then choose the **Vaults Item** that contains your login credentials. This will automatically fill the related fields in the app.

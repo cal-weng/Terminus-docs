@@ -38,7 +38,7 @@ If you enter the incorrect password more than **3** times, your account will be 
 
 ## Select the Language
 
-Select the system language. Currently only English is supported.
+Select the system language. Currently, only English is supported.
 
 ![alt text](/images/how-to/terminus/select_language.png)
 
@@ -48,25 +48,25 @@ If you are using a **self-hosted server**, you may see this step.
 
 ![alt text](/images/how-to/terminus/select_a_reverse_proxy.png)
 
-- If you are using an **internal network Wizard URL**, please select a [FRP node](../../../overview/terminus/network.md#setup-reverse-proxy) closest to your physical location.
+- If you are using an **internal network Wizard URL**, please select an [FRP node](../../../overview/terminus/network.md#setup-reverse-proxy) closest to your physical location.
 
 - If you are using a **public Wizard URL**, you can skip setting up a reverse proxy.
 
 ## Activate Terminus
 
 :::info
-If you are an **Admin** and are using a **self-hosted server** with an **internal network Wizard URL**, both TerminiPass and Terminus must be on the same internal network for TerminiPass to access Terminus.
+If you are an **Admin** and are using a **self-hosted server** with an **internal network Wizard URL**, both TermiPass and Terminus must be on the same internal network for TermiPass to access Terminus.
 :::
 
 1. Open **TermiPass**, which should take you to this page.
 
 ![alt text](/images/how-to/terminus/activate_terminus.jpg)
 
-2. Click the **'Scan the QR code'** button to scan the QR code on the Wizard page and complete the activation.
+2. Click the **Scan the QR code** button to scan the QR code on the Wizard page and complete the activation.
 
-   - If your **Terminus Name** has previously been owned and the mnemonic phrase has been securely stored, you can import the mnemonic phrase, and your TermiPass should jump to the above interface. Click the **'Scan the QR code'** button to complete the activation process.
+   - If your **Terminus Name** has previously been owned and the mnemonic phrase has been securely stored, you can import the mnemonic phrase, and your TermiPass should jump to the above interface. Click the **Scan the QR code** button to complete the activation process.
 
-   - If your **Terminus Name** has been previously activated but Terminus is no longer available, you need to reactivate Terminus. Follow the on-screen guide you through the reactivation process.
+   - If your **Terminus Name** has been previously activated, but Terminus is no longer available, you need to reactivate Terminus. Follow the on-screen guide you through the reactivation process.
 
 ## Initialize Terminus
 

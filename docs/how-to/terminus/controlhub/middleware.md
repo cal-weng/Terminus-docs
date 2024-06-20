@@ -1,18 +1,18 @@
 # Middleware
 
-**Middleware** displays the management interface for middleware deployed in Terminus OS.
+The **Middleware** section allows you to manage middleware in Terminus OS.
 
 :::tip
-Only administrators can see the **'Middleware'** page.
+Only administrators can access the **Middleware** page.
 :::
 
 ## Postgres
 
 ![postgres](/images/how-to/terminus/controlhub/middleware/01.jpg)
 
-The detailed information shows Postgres cluster data, including the **cluster name, deployment namespace, access address, and the administrator password**.
+The **Details** section in the Postgres page shows Postgres cluster data, including **cluster name, deployment namespace, access address, and administrator password**.
 
-The **Databases list** below provides an overview of the PostgreSQL databases utilized by different applications within Terminus OS. It includes details such as **database names, users, and passwords**.
+The **Database** section provides an overview of the PostgreSQL databases utilized by different applications within Terminus OS. It includes details such as **database names, users, and passwords**.
 
 ## MongoDB
 
@@ -26,7 +26,7 @@ The **Databases list** below provides an overview of the MongoDB databases utili
 
 ![redis](/images/how-to/terminus/controlhub/middleware/03.jpg)
 
-The detailed information shows Redis cluster data, including the **cluster name, deployment namespace, access address, administrator password, and the Redis proxy access address.**.
+The detailed information shows Redis cluster data, including the **cluster name, deployment namespace, access address, administrator password, and the Redis proxy access address**.
 
 The **Databases list** below provides an overview of the Redis datab utilized by different applications within Terminus OS. It includes details such as **namespaces and passwords**.
 
@@ -42,49 +42,60 @@ Clicking the **Schema Configuration** button will open a dialogue displaying the
 
 ![schema](/images/how-to/terminus/controlhub/middleware/05.jpg)
 
-Clicking the **Search Testing** button opens the Zinc Search dialog. You can perform full-text searches within the indexes using the Zinc Search syntax.
+Clicking the **Search** button opens the Zinc Search dialog. You can perform full-text searches within the indexes using the Zinc Search syntax.
 
 ![zinc search](/images/how-to/terminus/controlhub/middleware/06.jpg)
 
 ## Bytebase
 
-You can use third-party applications to view data in databases. For example, **Bytebase** is a multipurpose tool for working with databases. In the following section, we will use **Bytebase** to demonstrate how to access database in the middleware.
+You can use third-party applications to view database status in Terminus OS. For example, [Bytebase](https://www.bytebase.com/) is a multipurpose middleware for working with databases. In the following section, we will use **Bytebase** to demonstrate how to access database in the middleware.
 
-### Install from the Market
+### Installing Bytebase from the Market
 
-In the Terminus Market, find **Bytebase**, click **'Get'**, then click **'Install'** to install it.
+In the Terminus Market, locate **Bytebase**, click **Get**, and then click **Install** to install it.
 
 ![bytebase](/images/how-to/terminus/controlhub/middleware/07.jpg)
 
-### Adding a PostgreSQL Database
-After opening **Bytebase**, click **'Add Instance'**, and select **PostgreSQL**.
-- The Instance Name could be `Terminus` or others.
-- Choose either `PROD` or `TEST` for the Environment.
-- `HOST`, `USERNAME`, `PASSWORD` information can be found in [Control Hub's Middleware](#postgres) section.
+### Adding a PostgreSQL Instance
 
-![alt text](/images/how-to/terminus/controlhub/middleware/09.jpg)
+To add a PostgreSQL instance in Bytebase:
 
-Once saved and connected, you can view the data in **PostgreSQL**.
+1. In **Bytebase**, click **Add Instance**, and select **PostgreSQL**.
+2. Configure the instance as suggested below:
+   - Specify the Instance Name to `Terminus` or others.
+   - Choose either `PROD` or `TEST` for the Environment.
+   - Get the `HOST`, `USERNAME`, `PASSWORD` information in the[Control Hub's Middleware](#postgres) section.
+
+    ![alt text](/images/how-to/terminus/controlhub/middleware/09.jpg)
+
+3. Click **Create** to save the changes and connect the instance. 
+
+Now you should be able to view the details of the PostgreSQL instance you just added.
 
 ![alt text](/images/how-to/terminus/controlhub/middleware/10.jpg)
 
-### Adding a MongoDB Database
-After opening **Bytebase**, click **'Add Instance'**, and select **MongoDB**.
-- The Instance Name could be `Terminus` or others.
+### Add a MongoDB Instance
+To add a MongoDB instance in Bytebase:
+
+1. In **Bytebase**, click **Add Instance**, and select **MongoDB**.
+2. Configure the instance as suggested below:
+- Specify the Instance Name to `Terminus` or others.
     :::info NOTE
     Do not use duplicate instance names.
     :::
-- Choose either `PROD` or `TEST` for the Environment.
-- `HOST`, `USERNAME`, `PASSWORD` information can be found in [Control Hub's Middleware](#mongodb) section.
+- Choose either `PROD` or `TEST` for Environment.
+- Get the `HOST`, `USERNAME`, `PASSWORD` information in the [Control Hub's Middleware](#mongodb) section.
 
 ![bytebase1](/images/how-to/terminus/controlhub/middleware/11.jpg)
 
-Once saved and connected, you can view the data in **MongoDB**.
+3. Click **Create** to save and connect the instance.
+
+Now you should be able to view the details of the MongoDB instance you just added.
 
 ![alt text](/images/how-to/terminus/controlhub/middleware/12.jpg)
 
-### Using the Database
+### Edit the Database
 
-Click **'SQL Editor'** in the upper right corner of **Bytebase** to go to the **Editor** page for further operations.
+Click **SQL Editor** in the upper right corner of **Bytebase** to go to the **Editor** page for further operations.
 
 ![bytebase1](/images/how-to/terminus/controlhub/middleware/13.jpg)

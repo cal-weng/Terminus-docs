@@ -57,7 +57,7 @@ During the installation process, the system will ask you to enter your domain na
     ```
     bash uninstall_cmd.sh
     ```
-    After uninstallation is complete, re-enter the installation command.
+    After uninstalling, re-enter the installation command.
 :::
 
 ## Get Initial System Info

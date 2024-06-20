@@ -4,100 +4,117 @@ outline: [2, 3]
 
 # Dify
 
-Terminus OS has integrated [Dify](https://dify.ai/). Building upon the original features of **Dify**, Terminus OS enhances its functionality by:
-- Unifying the account systems of both platforms, eliminating the need for users to create new accounts or log in separately.
-- Created a dedicated Agent, **Ashia**, to each account.
-- Incorporating **Dify** into the model management system, which allows Agents to use local models directly.
-- Linking the Market with **Dify**, enabling users to install Agents directly.
-- Connecting **TermiPass** with the **Dify** Agent interface, allowing users to activate Agents within TermiPass.
-- Merging **Dify**'s **Dataset** and [**Knowledge Base**](../../how-to/terminus/settings/knowledge.md), which lets Agents respond to user queries based on local files.
+Terminus OS has integrated [Dify](https://dify.ai/) for LLM app development. Building upon the original features of Dify, Terminus OS enhances its functionality by:
 
-For more features of **Dify**, please refer to the [official documentation](https://docs.dify.ai/).
+- Unifying the account systems of both platforms, eliminating the need for separate logins.
+- Creating a dedicated agent, Ashia, for each account.
+- Integrating **Dify** into the model management system, allowing Agents to use local models directly.
+- Linking Market to **Dify** for direct installation of agents from Market.
+- Connecting **TermiPass** with the **Dify** Agent interface, allowing agent activation within TermiPass.
+- Merging Dify's datasets with [**Knowledge Base**](../../how-to/terminus/settings/knowledge.md), allowing agents to answer user queries based on local files. 
 
-## Setup Ashia
+This manual walks you through configuring your own LLM agents in Terminus OS. You can also refer to the official manual of Dify to further explore how to [create a Dify application](<https://docs.dify.ai/user-guide/creating-dify-apps/creating-an-application>).
 
-**Ashia** is your personal AI assistant in Terminus. On the **Dify** page, select **'Studio'** and then **Ashia** to access the setup page for Ashia.
+## Configure LLMs 
 
-![alt text](/images/how-to/terminus/dify/01.jpg)
+AI applications or agents depend on Large Language Models (LLM) to work. In Terminus OS, you can either set up a remote model or use a local model.
 
-If you're using this for the first time, you'll notice that the Agent's model isn't configured yet. This prevents further actions. **You need to specify a large language model at this point**. You can use either a [Remote Model](#using-remote-model) or a [Self-hosted Model](#using-self-hosted-model).
-
-
-On the left side, you can set prompts, variables, context, and add tools to the Agent via the UI. Tools are supplementary functions that can be attached to an Agent. **Dify** offers a wide range of available tools.
-
-![alt text](/images/how-to/terminus/dify/02.jpg)
-
-:::tip
-Even without any configuration, a newly created Agent will set OpenAI's GPT-4 as the model name. However, the Agent will not function properly at this stage.
-:::
-
-## Using Remote Model
+### Set Up a Remote Model
 
 Let's use GPT-4 as an example to demonstrate how to set up a **remote model**.
 
-First, click on the username in the upper right corner, then click **'Settings'** to enter the settings page. Click on **'Model Provider'** in the left menu and select the supplier for the remote model.
+1. On the **Dify** interface, click on the username in the upper right corner, then click **Settings** > **Model Provider** to enter the LLM setting page.
 
-![alt text](/images/how-to/terminus/dify/04.jpg)
+    ![alt text](/images/how-to/terminus/dify/04.jpg)
 
-Hover over OpenAI and click the **'Setup'** button to enter the OpenAI configuration page. Here, enter the API Key and other necessary information to configure access to a range of models from OpenAI.
+2. On the Models card, hover over the OpenAI option and click the **Setup** button to enter the OpenAI configuration page. 
+   
+3. Enter the API Key and other necessary information to configure the access to a range of models from OpenAI.
 
-![alt text](/images/how-to/terminus/dify/05.jpg)
+    ![alt text](/images/how-to/terminus/dify/05.jpg)
 
-Afterwards, you can select the model on **Ashia**'s settings page and configure the model parameters. Click the **'Publish'** button in the upper right corner to deploy the update, and **Ashia Agent** with the loaded model is now ready for use.
+Now you can select the model and configure the parameters on your app setting page under the **Studio** tab.
 
-![alt text](/images/how-to/terminus/dify/18.jpg)
+### Use a Self-hosted Model
 
-## Using Self-hosted Model
+Terminus OS supports hosting local LLMs as long as your Terminus instance has an accessible GPU. You can install a local model directly from the Market, and then add it in Dify. 
 
-### Install from Market
+#### Install from Market
 
-You can install an appropriate **Self-hosted Model** in the **Market**. Click the **'Get'** button to install a large language model in Terminus.
+To install a local self-hosted model: 
 
-![alt text](/images/how-to/terminus/dify/08.jpg)
+1. In the Market app, choose a **Self-hosted Model**, and click the **Get** button to install it in Terminus OS.
 
-Once the installation progress is complete, you can go to the **'My Terminus'** page in the lower left corner to **'Load'** a installed model. Once loaded, the model status will change to **'Running'**. you can **Unload** a running model on this page later. You can learn more about installing and managing models in the Market [here](../terminus/market/index.md#models).
+    ![alt text](/images/how-to/terminus/dify/08.jpg)
 
-![alt text](/images/how-to/terminus/dify/09.jpg)
+2. Navigate to the **My Terminus** page in the lower left corner to **Load** an installed model. Once loaded, the model status will change to **Running**. You can **Unload** a running model on this page later. Learn more about installing and managing models in the Market [here](../terminus/market/index.md#models).
 
-:::tip
-You will only see the relevant pages and be able to perform the operations if your Terminus has an accessible GPU.
-:::
+    ![alt text](/images/how-to/terminus/dify/09.jpg)
 
 :::info NOTE
 Only one model can be in the "Running" state at any given time.
 :::
 
-### Add Local Model
+#### Add the Local Model in Dify
 
-After loading the model, return to the **Model Provider** page on the **Dify**, where you can find a system-level **OpenAI-API-compatible model** named **'nitro'** has already been configured.
+To add the loaded model in Dify:
 
-![alt text](/images/how-to/terminus/dify/10.jpg)
+1. In Dify, navigate to **Settings** > **Model Provider**, where you can see a system-level OpenAI-API-compatible model named `nitro`, already configured and available.
 
-Then, on the **Ashia Agent** configuration page, you'll see that the model has been automatically set to **'nitro'**. You can adjust the detailed parameters of nitro here.
+    ![alt text](/images/how-to/terminus/dify/10.jpg)
 
-![alt text](/images/how-to/terminus/dify/13.jpg)
+2. Open your agent (Ashia in our case) configuration page, you'll see that the model has been automatically set to **'nitro'**. You can adjust the detailed parameters of nitro here.
+
+    ![alt text](/images/how-to/terminus/dify/13.jpg)
 
 ::: tip
-The automatically configured nitro will be removed when the model is unloaded.  If you want to switch to another model, you will need to manually configure it on the Agent page
+`nitro` will be removed automatically when the model is unloaded. If you want to switch to another model, you must manually configure it on the **Agent** page.
 :::
+
+## Set Up Ashia
+
+Now that you have already configured your LLM, you can now set up Ashia, your personal AI assistant in Terminus. Follow these steps to set up Ashia:
+
+1. On the **Dify** page, select **Studio** and then **Ashia** to access the setup page for Ashia.
+
+    ![alt text](/images/how-to/terminus/dify/01.jpg)
+
+2. Specify and configure a large language model (LLM) for Ashia. You can either choose from a [Remote Model](#using-remote-model) or a [Self-Hosted Model](#using-self-hosted-model). In our case here, we will continue with `nitro`, the local model we just loaded. You'll see that the model has been automatically set to 'nitro' for Ashia. You can adjust the detailed parameters of nitro here.
+
+    ![alt text](/images/how-to/terminus/dify/18.jpg)
+
+
+3. In the **Orchestrate** window on the left side, configure prompts, variables, context, and add tools to add supplementary capabilities for the agent. 
+
+    ![alt text](/images/how-to/terminus/dify/02.jpg)
+
+4. Click the Publish button in the upper right corner to deploy the configurations.
+
+    ![alt text](/images/how-to/terminus/dify/18.jpg)
+
+Now the Ashia agent with the loaded model is now ready for use.
 
 ## Create Knowledge
 
-You can add **Knowledge** to an Agent to answer questions within a specific context. At the top of the **Dify** page, there's a **'Knowledge'** tab. Upon entering, you'll see a default **Knowledge** named **_YourTerminusName_'s Document** already set up. By default, this **Knowledge** monitors the **Documents** folder in Terminus's **Files**.
+You can add **Knowledge** to an Agent so that the agent can answer questions within a specific context.
 
-![alt text](/images/how-to/terminus/dify/14.jpg)
+1. Navigate to the top of the **Dify** page, and click on the **Knowledge** tab. Upon entering, you'll see a default **Knowledge** document named `_YourTerminusName_'s Document` already set up. By default, this **Knowledge** monitors the **Documents** folder under Terminus's **Files**.
 
-Let's upload some files in the **Documents** folder, and then return to **Knowledge**, you can see the uploaded files have been automatically synchronized and indexed. Once all documents become **Available**, which may take some time, you can proceed to configure the **Context** for the **Agent**.
+    ![alt text](/images/how-to/terminus/dify/14.jpg)
 
-![alt text](/images/how-to/terminus/dify/15.jpg)
-![alt text](/images/how-to/terminus/dify/16.jpg)
+2. Open the **Files** app, and upload some files to the **Documents** folder.  
+   
+    ![alt text](/images/how-to/terminus/dify/15.jpg)
+   
+3. Now return to **Knowledge**, and you can see the uploaded files have been automatically parsed, synchronized, and indexed.  
 
-Return to the configuration page of Ashia Agent, click **'Add'** at the **'Context'** section on the left, you can choose a  **Knowledge** to add customized contexts for the **Agent**.
+    ![alt text](/images/how-to/terminus/dify/16.jpg)
 
-![alt text](/images/how-to/terminus/dify/17.jpg)
+    Once all documents become available, which may take some time, you can proceed to configure the **Context** for the **Agent**.
 
-With the knowledge base data management function, you can build more knowledge bases by yourself. By setting the folders monitored by each knowledge base, you can provide context for different Agents with different knowledge bases.
+4. Navigate to the configuration page of Ashia. Then, click the **Add** button at the **Context** section on the left to add **Knowledge**, or customized contexts, to your Agent.
 
-## Explore Dify
+    ![alt text](/images/how-to/terminus/dify/17.jpg)
 
-You can refer to the official manual of Dify to further explore how to [create a Dify application](<https://docs.dify.ai/user-guide/creating-dify-apps/creating-an-application>)
+With the knowledge base management function, you can build more knowledge bases by yourself. By setting the folders monitored by each knowledge base, you can provide context for different Agents with different knowledge bases.
+

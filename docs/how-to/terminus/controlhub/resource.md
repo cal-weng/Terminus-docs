@@ -4,12 +4,10 @@ outline: [2, 3]
 
 # Resources
 
-This section includes resources related to both software and hardware in Terminus OS. For software, it encompasses cluster descriptions, feature definitions, and declarations of cluster states, etc. For hardware, it contains details about networks, storage, devices, etc.
-
-In the **ControlHub**, these are collectively referred to as `Resources`.
+The **Resources'** section includes resources related to both software and hardware in Terminus OS. For software, it encompasses cluster descriptions, feature definitions, and declarations of cluster states, etc. For hardware, it contains details about networks, storage, devices, etc.
 
 :::tip
-Only administrators can see the **'Resource'** page.
+Only administrators can see the **Resource** page.
 :::
 
 ## Network
@@ -35,15 +33,14 @@ As shown in the image above, the **Network Policies** in the **Control Hub** hav
 
 ![CRDs](/images/how-to/terminus/controlhub/resources/02.jpg)
 
-CRDs list all the Kubernetes-based CRDs (Custom Resource Definitions) in Terminus OS. Many of Terminus OS's cloud-native features depend on these `CRDs`.
-
-Taking `Application` as an example, let's look at the content displayed in the **ControlHub**:
+CRDs list all the Kubernetes-based Custom Resource Definitions (CRDs) in Terminus OS. Many cloud-native features of Terminus OS depend on these CRDs.
 
 ### Details
 
-It shows the name, group, scope level, and creation time of the CRD. There are two types of CRD scopes:
+Shows the name, group, scope level, and creation time of the CRD. There are two types of CRD scopes:
+
 - **Namespace**<br>
-  Indicates that each `custom resource` belongs to a Namespace.
+  Indicates that each `custom resource` belongs to a namespace.
 
 - **Cluster**<br>
   Indicates that each `custom resource` must be globally unique and does not belong to any Namespace. For instance, the Namespace itself is a resource at the cluster level.
@@ -53,9 +50,9 @@ It shows the name, group, scope level, and creation time of the CRD. There are t
 Lists all the `custom resources` under this CRD, including their names and creation times. Each `custom resource` has two action buttons to the right.
 
 - **Delete**<br>
-  To delete this resource.
+Deletes this resource.
 
-- **Edit Yaml**<br>
-  Opens a dialog for manually editing the Yaml format of the `custom resource`. After editing, click `OK` to save the updated content to the system.
+- **Edit YAML**<br>
+Manually edits the YAML file of the `custom resource`. After editing, click **OK** to save the change to the system.
 
   ![Edit yaml](/images/how-to/terminus/controlhub/resources/03.jpg)
