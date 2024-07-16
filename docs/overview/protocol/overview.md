@@ -142,7 +142,7 @@ Here's an illustration of our envisioned protocol network operation:
 
 This model underpins the e-commerce ecosystem and has been proven scalable in real-world applications.
 
-For more information, see [Snowinning Protocol](../snowinning/overview.md) and [Otmoic Protocol](./otmoic.md).
+For more information, see [Snowinning Protocol](../../developer/contribute/snowinning/overview.md) and [Otmoic Protocol](./otmoic.md).
 
 ### Value Distribution
 
@@ -159,7 +159,7 @@ A sustainable and universal protocol economy features:
 
 ## Protocols for Terminus OS
 
-[Snowinning Protocol](../snowinning/overview.md) is a protocol for a decentralized identity and open and transparent reputation system, and is one of the three components of the Terminus BEC architecture.
+[Snowinning Protocol](../../developer/contribute/snowinning/overview.md) is a protocol for a decentralized identity and open and transparent reputation system, and is one of the three components of the Terminus BEC architecture.
 
 [Otmoic Protocol](./otmoic.md) is an automated value exchange network built for Depin, AI Agent, and Crypto Trading that does not require third-party trust.
 

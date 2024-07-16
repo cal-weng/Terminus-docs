@@ -20,7 +20,7 @@ You can follow this process to build Terminus. The process is divided into five 
 
 1. **Apply for a Terminus Name**
 
-   [Terminus Name](../snowinning/terminus-name.md) is your identifier in the world of Terminus. If you don't have one, you need to [apply for a Terminus Name](../../how-to/termipass/account/index.md#create-terminus-name).
+   [Terminus Name](../../developer/contribute/snowinning/terminus-name.md) is your identifier in the world of Terminus. If you don't have one, you need to [apply for a Terminus Name](../../how-to/termipass/account/index.md#create-terminus-name).
 
 2. **Install Terminus**
 

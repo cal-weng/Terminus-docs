@@ -22,7 +22,7 @@ For developers:
 
 - Based on Kubernetes, Terminus OS has good orchestration capabilities for different modules in the AI service chain, including internal and external models, knowledge bases, vector databases, and RUG systems, thereby achieving combinability between different modules
 - Terminus OS has built-in account system, web page crawling, content extraction, secret management and other functions, so components no longer need to implement similar functions themselves.
-- Explore making Agent and hardware resources into services and monetization by combining with [Snowinning Protocol](../snowinning/overview.md) and [Otmoic Protocol](../protocol/otmoic.md)
+- Explore making Agent and hardware resources into services and monetization by combining with [Snowinning Protocol](../../developer/contribute/snowinning/overview.md) and [Otmoic Protocol](../protocol/otmoic.md)
 
 ## GPU Management
 

@@ -62,7 +62,7 @@ The ownership of different nodes is as follows:
 - Entity<br>
   `Application Score` belongs to [Entity Domain](./terminus-name.md#entity), and the owner belongs to the applicant of the entity.
 
-Organization admins and users can refer to [Domain Management](../../developer/contribute/snowinning/contract-manager.md) to manage their own nodes and sub-nodes.
+Organization admins and users can refer to [Domain Management](contract-manager.md) to manage their own nodes and sub-nodes.
 
 :::info
 After the project stabilizes, the ownership will be transferred to the multisig address of the DAO organization by the Terminus team.
@@ -89,7 +89,7 @@ For complex structures or arrays, as well as cases where complex structures and 
 | abiType    | The data type of this tag, following the encoding specifications of **abi**, also supports defining a complex structure |
 | fieldNames | When defining a complex structure, the names of internal substructures or data are flattened in a two-dimensional array    |
 
-You can learn more [here](../../developer/contribute/snowinning/contract-tdid.md)
+You can learn more [here](contract-tdid.md)
 
 #### Scope of Application
 
@@ -143,7 +143,7 @@ Use the declared address and DID owner to sign the following information in comp
 
 ## Reputation
 
-We can create highly flexible [reputation](./concepts.md#reputation) protocols based on Taggers.
+We can create highly flexible [reputation](concepts.md#reputation) protocols based on Taggers.
 
 :::info On-chain Reputation
 In implementing an on-chain Reputation system, the most crucial elements are:
@@ -195,7 +195,7 @@ Otmoic's reputation contract uses DID owner's EIP712 signature for identity veri
 ### Application Reputation
 
 1. Define on `app.myterminus.com` the Tag named ratings 的 Tag and set Tagger as Application Reputation contract
-2. When there is a new version for an app, we create **`<version>.<appname>.app.myterminus.com`** on the blockchain. This Entity type TerminusName
+2. When there is a new version for an app, we create **`<version>.<appname>.app.myterminus.com`** on the blockchain. 
 3. Users sign the comment/ rating info, and submit to the contract Application Reputation
 4. Application Reputation contract saves the rating info into Ratings of `<version>.<appname>.app.myterminus.com`, publish the comment info in the form of event
 

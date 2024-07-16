@@ -46,7 +46,7 @@ The relationships among mnemonic phrases, private keys, and DIDs can be succinct
 
 Once a DID is generated locally, a user may elect to register their ownership at a designated location known as a DID Registry. The W3C standards do not prescribe a specific implementation for the Registry.
 
-Snownning Protocol adopted [Smart Contract](./smart-contract.md) to facilitate this process, which can ensure:
+Snownning Protocol adopted [Smart Contract](smart-contract.md) to facilitate this process, which can ensure:
 
 > No centralized providers or trusted authorities
 >
@@ -54,7 +54,7 @@ Snownning Protocol adopted [Smart Contract](./smart-contract.md) to facilitate t
 >
 > IDs can be made universally discoverable
 
-Issuers have the capability to upload essential metadata into the Registry, including items such as DID, [Terminus Name](./terminus-name.md), RSA public keys, among others.
+Issuers have the capability to upload essential metadata into the Registry, including items such as DID, [Terminus Name](terminus-name.md), RSA public keys, among others.
 
 Given that the metadata occupies minimal storage space and requires infrequent updates, the capabilities of existing mainstream blockchain technologies are adequately equipped to handle these demands. This efficiency is primarily due to the low overhead involved in storing and accessing small amounts of data on the blockchain, where changes are rare and thus do not overburden the system.
 
@@ -140,7 +140,7 @@ Snowinning Protocol transforms this model by embedding it in blockchain technolo
 
 1. Raw Data Collection: User-generated ratings and reviews are recorded directly within smart contracts.
 2. Reputation Processing: Developers can access this raw data to generate reputation insights, tailored to specific contexts and needs.
-3. Reputation Distribution: These insights are distributed via a specialized [Market Protocol](../protocol/market.md), enabling users to select appropriate Reputation Providers based on their specific requirements.
+3. Reputation Distribution: These insights are distributed via a specialized [Market Protocol](../../../overview/protocol/market.md), enabling users to select appropriate Reputation Providers based on their specific requirements.
 
 In each scenario, users can choose one or several Reputation Providers to get comprehensive opinions.
 

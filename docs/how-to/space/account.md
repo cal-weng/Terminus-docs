@@ -9,7 +9,7 @@ This guide walks you through the process of logging in, understanding account ty
 **Terminus Space** uses Decentralized ID (DID) for user authentication, ensuring that users maintain control over their identity and data ownership. 
 
 :::info
-Your **Terminus Name** is your identifier in the world of Terminus. Learn more about [what is Terminus Name](../../overview/snowinning/terminus-name.md).
+Your **Terminus Name** is your identifier in the world of Terminus. Learn more about [what is Terminus Name](../../developer/contribute/snowinning/terminus-name.md).
 :::
 
 To log into Terminus Space, you'll need your **DID** or **Terminus Name**. Obtain your credentials using the TermiPass client and scan the QR code to log in.

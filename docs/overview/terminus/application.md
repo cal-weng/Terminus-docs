@@ -76,7 +76,7 @@ user-space-'Local Name'
 ```
 
 :::info
-You can view the definition of Local Name in [Terminus Name](../snowinning/terminus-name.md).  
+You can view the definition of Local Name in [Terminus Name](../../developer/contribute/snowinning/terminus-name.md).  
 :::
 
 **user-space**
@@ -104,7 +104,7 @@ In this case, the system provides network proxies for these resources under the 
 
 ### Community Application
 
-The namespace of community applications consists of two parts: [Application Name](#application-name) and the user's [Local Name](../snowinning/terminus-name.md), for example:
+The namespace of community applications consists of two parts: [Application Name](#application-name) and the user's [Local Name](../../developer/contribute/snowinning/terminus-name.md), for example:
 
 ```
 n8n-alice

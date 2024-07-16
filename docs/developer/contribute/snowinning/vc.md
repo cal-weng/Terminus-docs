@@ -12,7 +12,7 @@ If you want to engage in lower-level development, read the [protocol standard](#
 
 ## Introduction
 
-In [VC](../../../overview/snowinning/concepts.md#verifiable-credential) we introduced the basic process for applying VCs.
+In [VC](concepts.md#verifiable-credential) we introduced the basic process for applying VCs.
 
 In the real communication process of Wallet, Verifier and Issuer we will see more nouns, which we go through here:
 

@@ -18,7 +18,7 @@ To realize this vision, technologically we need to acheive:
 
 - Decentralized application evaluation system
 
-  Terminus provides [Application Reputation](../snowinning/smart-contract.md#application-reputation) to help users make purchasing decisions and identify reputable developers. 
+  Terminus provides [Application Reputation](../../developer/contribute/snowinning/smart-contract.md#application-reputation) to help users make purchasing decisions and identify reputable developers. 
 
 - Users can freely choose Indexer services for Market. The following figure shows the relationship between Developer, Indexer, and Market.
 

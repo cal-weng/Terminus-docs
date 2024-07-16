@@ -21,7 +21,7 @@ You can customize your personal profile page with the **Profile** feature. Profi
   Your personal homepage is accessible to everyone through a browser. Share your homepage with friends using <br>
   You can also share your homepage with friends by using the [Share](#share) feature.
 
-  The default URL for your personal homepage is [DomainName](../../overview/snowinning/terminus-name.md#domainname). You can also set a [custom domain](./settings/application.md#custom-domain) in **Settings**. 
+  The default URL for your personal homepage is [DomainName](../../developer/contribute/snowinning/terminus-name.md#domainname). You can also set a [custom domain](./settings/application.md#custom-domain) in **Settings**. 
 
 ## Customize Your Personal Homepage
 

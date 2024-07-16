@@ -8,7 +8,7 @@ outline: [2, 3]
 
 TermiPass acts as a bridge between users and their Terminus systems, offering a seamless and secure connection from anywhere. This user-friendly software provides a range of features, including:
 
-- [**DID**](../../overview/snowinning/concepts.md#decentralized-identifier), [**Terminus Name**](../../overview/snowinning/terminus-name.md), and **Terminus devices management**: Easily manage your digital identity, Terminus Name, and connected devices.
+- [**DID**](../../developer/contribute/snowinning/concepts.md#decentralized-identifier), [**Terminus Name**](../../developer/contribute/snowinning/terminus-name.md), and **Terminus devices management**: Easily manage your digital identity, Terminus Name, and connected devices.
 - **Secure Data Storage and Access**: Store and access your documents, photos, and videos securely.
 - **Workflow Management**: Utilize TermiPass as a workflow tool to enhance productivity. Upcoming functions include Chat, Calendar, and Document.
 

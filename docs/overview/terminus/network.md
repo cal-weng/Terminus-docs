@@ -60,14 +60,14 @@ Users have two ways to access the application in the browser, or entrance of the
 - [Set third-party domain name](../../how-to/terminus/settings/application.md#custom-domain) for the traffic entrance. 
 
 :::info
-- DomainName is derived from [Terminus Name](../snowinning/terminus-name.md#domainname)
+- DomainName is derived from [Terminus Name](../../developer/contribute/snowinning/terminus-name.md#domainname)
 
 - Entrance Index refers to the position of Entrance in multiple Entrances defined in [TerminusManifest.yaml](../../developer/develop/package/manifest.md)
 :::
 
 ## Setup Domain
 
-Terminus Space will assist users to complete [DomainName](../snowinning/terminus-name.md#domainname) setup when Terminus is [activated](../../how-to/terminus/setup/wizard.md).
+Terminus Space will assist users to complete [Domain Name](../../developer/contribute/snowinning/terminus-name.md#domainname) setup when Terminus is [activated](../../how-to/terminus/setup/wizard.md).
 
 ### DNS
 
