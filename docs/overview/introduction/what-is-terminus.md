@@ -2,9 +2,13 @@
 outline: [2, 3]
 ---
 
-# What is Terminus OS?
+# What is Terminus?
 
-Terminus OS (used interchangeably with Terminus) is a free, self-hosted operating system built on Kubernetes. It converts your edge device into a powerful home cloud, providing powerful cloud computing capabilities while maintaining ease of use and privacy. By securely storing your data and accessing your self-hosted services from anywhere via Terminus OS, you gain complete control over your digital life. 
+Terminus's mission is to "let people own their data again".
+
+Terminus (used interchangeably with Terminus OS) is a free, self-hosted operating system built on Kubernetes. It converts your edge device into a powerful home cloud, providing powerful cloud computing capabilities while maintaining ease of use and privacy. By securely storing your data and accessing your self-hosted services from anywhere via Terminus OS, you gain complete control over your digital life. 
+
+Terminus is dedicated to advancing technological and AI equality by democratizing capabilities previously accessible only to large companies, making them available to every user.
 
 Terminus consists of three core components and a series of protocols.
 
