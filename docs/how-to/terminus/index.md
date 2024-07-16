@@ -2,9 +2,6 @@
 
 ![alt text](/images/how-to/terminus/terminus.jpg)
 
-Terminus OS comes with a variety of pre-installed apps to meet regular needs and a marketplace where you can install additional applications, recommendation algorithms, and large language models with a single click. You can use Terminus OS as effortlessly as any desktop you are familiar with.
-
-
 Thanks for using Terminus OS! Terminus OS offers a seamless user experience with a variety of pre-installed apps to meet your everyday needs. Our marketplace allows you to easily install additional applications, recommendation algorithms, and large language models with a single click. Use Terminus OS as effortlessly as any desktop you're familiar with.
 
 This guide serves as the user manual for Terminus OS's pre-installed applications. Explore the sections below to get started.

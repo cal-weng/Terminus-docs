@@ -13,27 +13,8 @@ const side = {
           text: "Getting Started",
           link: "/overview/introduction/getting-started",
         },
-        { text: "BEC Architecture", link: "/overview/introduction/bec" },
+        // { text: "BEC Architecture", link: "/overview/introduction/bec" },
         { text: "FAQ", link: "/overview/introduction/faq" },
-      ],
-    },
-    {
-      text: "Snowinning Protocol",
-      items: [
-        {
-          text: "Overview",
-          link: "/overview/snowinning/overview",
-        },
-        { text: "Concepts", link: "/overview/snowinning/concepts" },
-
-        {
-          text: "Terminus Name",
-          link: "/overview/snowinning/terminus-name",
-        },
-        {
-          text: "Smart Contract",
-          link: "/overview/snowinning/smart-contract",
-        },
       ],
     },
     {
@@ -397,6 +378,18 @@ const side = {
           collapsed: true,
 
           items: [
+            {
+              text: "Overview",
+              link: "/developer/contribute/snowinning/overview",
+            },
+            {
+              text: "Concepts",
+              link: "/developer/contribute/snowinning/concepts",
+            },
+            {
+              text: "Terminus Name",
+              link: "/developer/contribute/snowinning/terminus-name",
+            },
             {
               text: "Contract",
               collapsed: true,

@@ -11,7 +11,7 @@ The Snowinning Protocol seeks to establish a decentralized system for identity a
 - Facilitating the discovery and connection between any two entities within the network.
 
 - Allowing for the secure exchange of information between any two entities, leveraging encrypted communication channels and protocols.
-- Enabling transactions and the exchange of value between entities, utilizing technologies such as blockchain and smart contracts to ensure transparency and integrity.
+- Enabling transactions and the exchange of value between entities.
 
 ---
 
