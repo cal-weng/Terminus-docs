@@ -4,77 +4,82 @@ outline: [2, 3]
 
 # Desktop
 
-In Terminus OS, you can use and manage installed applications through the Desktop.
+In Terminus OS, Desktop is your hub for managing and interacting with installed applications. This guide helps you navigate and perform daily tasks efficiently.
 
 ![alt text](/images/how-to/terminus/desktop.jpg)
 
-## Dock & Launchpad
+## Access Applications via Dock & Launchpad
 
-Click on the **'LaunchPad'** icon on the Dock to display all installed applications.
+Click on the **LaunchPad** icon on the Dock to display all installed applications.
 
 ![alt text](/images/how-to/terminus/desktop_lauchpad.jpg)
 
-Interact with them as you would on a computer:
-- Click an icon to open an application.
-- Drag icons to rearrange their order in the Launchpad.
-- Drag icons to the Dock for faster access in the future.
+Interact with the applications them as you would on a computer:
 
-### Edit Mode
+- **Open an Application**: Click on any application icon.
+- **Rearrange Icons**: Drag icons to reorder them.
+- **Quick Access**: Drag icons to the Dock for faster access.
 
-Press and hold an application icon to enter edit mode, where you can uninstall apps.
+
+### Uninstall Applications in Edit Mode
+
+To uninstall an application, press and hold an application icon to enter edit mode, where you can uninstall apps.
 
 ![alt text](/images/how-to/terminus/desktop_application2.jpg)
 
 :::info
-If an application icon does not have an **'X'** in the upper left corner, it indicates that the application is a built-in system app and cannot be uninstalled.
+If an application icon does not have an **X** icon in the upper left corner, it indicates that the application is a built-in system app and cannot be uninstalled.
 :::
 
-### Application Icons
+### Application Status
 
-As shown in the image, applications show different effects depending on their status:
+Applications have distinct visual indicators based on their status
 
 - Dev applications show the app's name along with a dedicated icon.
 - Applications being installed show a dynamic spinning circle on their icon.
 - Installed applications display only the app icon.
-- Uninstallable applications will have an **'X'** icon in the upper left corner in edit mode. You can click to uninstall the app.
+- Uninstallable applications will have an **X** icon in the upper left corner in edit mode. You can click to uninstall the app.
 
 ![alt text](/images/how-to/terminus/desktop_application.jpg)
 
-### Application Windows
+### Manage Application Windows
 
-By default, applications open in `iframe` mode, embedded on the desktop tab as an `iframe window`. You can interact with them just like other GUI OS:
-- Drag the title bar to move the window.
-- Drag the window's edges to resize it.
-- Click the **'minimize'** button in the title bar to minimize the window, and click the **Dock** icon to reopen it.
-- Click the **'maximize'** button in the title bar to maximize the window.
-- Click the **'close'** button in the title bar to close the window.
+By default, applications open in the `iframe` mode, appearing as embedded windows on the desktop. You can interact with them as described below:
 
-Additionally, you can use the **browser** button in the title bar to open the current application in a new browser tab.
+- **Move Windows**: Drag the title bar.
+- **Resize Windows**: Drag the window edges.
+- **Minimize Windows**: Click the minimize button in the title bar and reopen from the Dock.
+- **Maximize Windows**: Click the maximize button.
+- **Close Windows**: Click the close button.
+- **Enter Browser Mode**: Use the browser button in the title bar to open the application in a new browser tab.
 
 ![alt text](/images/how-to/terminus/desktop_window.jpg)
 
 :::info
-In addition to `iframe` mode, we also provide `window` mode to open applications. This opens the app in a new browser tab instead of a embedded `iframe` on the desktop.
-
-Developers can set this through the `openMethod` attribute in [Entrance](../../developer/develop/package/manifest.md#entrances), and for some [Community Applications](../../overview/terminus/application.md#community-application) that restrict front-end `iframe` access, we recommend setting this attribute to `window` mode.
+For applications that don't support the `iframe` mode well, we provide a `window` mode to open these applications in a new tab.
+Developers can set this through the `openMethod` attribute in [Entrance](../../developer/develop/package/manifest.md#entrances). We recommend setting this attribute to the `window` mode for certain [Community Applications](../../overview/terminus/application.md#community-application).
 :::
 
-### Changing Wallpaper
-You can change the wallpaper in the **'Settings'**-[**'Change Wallpaper'**](./settings/wallpaper.md)
+### Change Wallpaper
 
-## Search
+Change your desktop wallpaper in **Settings** > [**Change Wallpaper**](./settings/wallpaper.md).
 
-Our interaction and capabilities were inspired by [Raycast](https://www.raycast.com/). Although currently limited to opening applications, we plan to add file searching, agent communication capabilities, and open up for third-party extensions.
+## Search within Terminus
+
+Our search feature, inspired by [Raycast](https://www.raycast.com/), is currently restrained to open applications. Future updates will include file searching, agent communication, and third-party extensions.
+
 
 ![alt text](/images/how-to/terminus/desktop_search.jpg)
 
-## Next Steps
+## Upcoming Desktop Enhancements
 
-We recognize that compared to user expectations, the desktop is still quite basic. We plan to:
+We aim to enhance the Desktop experience with the following updates:
 
-1. Separate the desktop's front-end and back-end to facilitate developers in creating custom desktops.
-2. Expand the search function.
-3. Integrate a notification system.
-4. Support a mobile version.
-5. Allow developers to create custom Widgets.
-6. Support custom themes.
+- Separated front-end and back-end for custom desktop development
+- Expanded the search functionality
+- Integrate a notification system
+- Mobile version support
+- Custom widget creation for application developers
+- Custom theme support
+
+

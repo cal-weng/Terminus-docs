@@ -1,6 +1,6 @@
 # Wallpaper
 
-You can set a background image for [Desktop](../desktop.md) and [Login](../setup/login.md) here.
+Set a background image for [Desktop](../desktop.md) and [Login](../setup/login.md) here.
 
 ![alt text](/images/how-to/terminus/wallpaper.png)
 

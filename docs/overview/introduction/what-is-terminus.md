@@ -6,44 +6,39 @@ outline: [2, 3]
 
 Terminus's mission is to "let people own their data again".
 
-It provides a next-generation decentralized Internet framework based on the Blockchain-Edge-Client [(BEC)](./bec.md) architecture, consisting of three core components and a series of protocols.
+Terminus (used interchangeably with Terminus OS) is a free, self-hosted operating system built on Kubernetes. It converts your edge device into a powerful home cloud, providing powerful cloud computing capabilities while maintaining ease of use and privacy. By securely storing your data and accessing your self-hosted services from anywhere via Terminus OS, you gain complete control over your digital life. 
+
+Terminus is dedicated to advancing technological and AI equality by democratizing capabilities previously accessible only to large companies, making them available to every user.
+
+Terminus consists of three core components and a series of protocols.
 
 ## Core components
-- [**Snowinning Protocol**](../snowinning/overview.md): An identity and reputation protocol that adheres to W3C standards. It is user-owned and based on blockchain smart contracts.
-- [**Terminus OS**](../terminus/overview.md): A cloud-native, source-available operating system based on Kubernetes enhancements, running on user-owned edge devices.
-- [**TermiPass**](../../how-to/termipass/overview.md): A client software that assists users manage on-chain identities and edge devices.
- 
 
+- [**Snowinning Protocol**](../../developer/contribute/snowinning/overview): A decentralized identity and credit system which provides a framework for secure, trustless exchanges of information and value. 
+- [**Terminus OS**](../terminus/overview.md): A cloud-native, source-available operating system based on Kubernetes, running on user-owned edge devices.
+- [**TermiPass**](../../how-to/termipass/overview.md): A client software that securely bridges users to their Terminus systems across devices.
+ 
 ## Protocols
 
-We believe that in the future decentralized world, platforms may no longer exist but protocols will remain forever. In addition to Snowinning Protocol, we also provide three protocol prototypes:
+In the future decentralized world, platforms may no longer exist, but protocols will remain. In addition to the Snowinning Protocol, we provide three protocol prototypes that back the Terminus ecosystem:
 
 - [**Otmoic Protocol**](../protocol/otmoic.md): A protocol based on Request For Quote (RFQ) and on-chain reputation to provide prices and exchange values for public goods.
 - [**Market Protocol**](../protocol/market.md): A permissionless app distribution protocol that eliminates the need for stringent reviews and commissions by intermediaries like Apple.
 - [**Recommend Protocol**](../protocol/recommend.md): A decentralized and privacy-protecting information distribution protocol designed to free you from the information bubble.
  
-Terminus derives its name from Isaac Asimov's book *Foundation*. In the story, Terminus is a planet at the edge of the galaxy where scientists compile the *Encyclopedia* to record all human knowledge from the past thousand years. This aligns with our vision: **allowing every individual, family, and business to document their unique journey through their own Terminus in the future**.
-
 ## Use Cases
 
-- **Self-Hosted**
+- **Self-Hosted**: Terminus OS serves as a one-stop self-hosted solution where users can host and manage their data, operations, and digital life effectively, with full data ownership.
 
-  We aim to make Terminus a one-stop self-hosted solution.
+- **Local AI**: With the [AI Framework](../terminus/ai.md) provided by Terminus, users can host and run world-class open-source AI models locally, including large language models, image generation, and speech recognition. This allows the capability to create custom AI assistants that integrate seamlessly with  personal data and applications, all while ensuring enhanced privacy and control.
 
-  For the past two years, we have drawn inspiration from the [`/r/SelfHosted/`](https://www.reddit.com/r/selfhosted/) community. Terminus is our gift to you, born from this inspiration.
+- **Personal data repository**: Securely store, sync, and manage your photos, documents, and important files in a unified storage and access anywhere. 
 
-- **Local AI**
+- **Self-hosted workspace**: Create a free, powerful workspace for your team or family with open source selfhosted alternatives. 
 
-  In an era where privacy is increasingly valued, the [AI Framework](../terminus/ai.md) provided by Terminus helps users build local agents without needing to write code.
+- **Private media server**: Host your own streaming services with your personal media collections. 
 
-  By integrating with local data and applications, we hope that Terminus can become users' second brain in the future.
+- **Smart Home Hub**: Create a central control point for your IoT devices and home automation.  
 
-- **Decentralized Social Media**
+- **User-owned decentralized social media**: Easily install decentralized social media apps such as Mastodon, Ghost, and WordPress on Terminus OS, allowing you to build a personal brand without the risk of being banned or paying platform commissions. 
 
-  Users can install applications like Mastodon, Ghost, and WordPress on Terminus with a single click. This allows them to build their personal brand and interact directly with others without the risk of being banned or paying platform commissions.
-
-- **DePin**
-
-  Terminus offers comprehensive management of clusters, from computing and storage to networking. Projects can develop mining programs on Terminus, enabling users to share idle physical resources with the network and earn rewards.
-
-  Although finding an effective proof of work in the physical world is challenging, we firmly believe that through the combination of [Snowinning Protocol](../snowinning/overview.md) and [Otmoic Protocol](../protocol/otmoic.md), Terminus will create a DePin network that users rely on daily.

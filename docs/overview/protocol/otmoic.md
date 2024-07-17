@@ -12,11 +12,11 @@ The vision of Otmoic is to **give public goods a fair price**.
 
 Otmoic Protocol has the following features:
 
-- Provides an on-chain [reputation mechanism](../snowinning/concepts.md#reputation) for traders and liquidity providers, solving the free mint problem.
-- Supports [KYC](#kyc) based on [Verifiable Credential](../snowinning/concepts.md#verifiable-credential).
+- Provides on-chain [reputation mechanism](../../developer/contribute/snowinning/concepts.md#reputation) for trader and liquidity provider, solving the free mint problem.
+- Supports [KYC](#kyc) based on [Verifiable Credential](../../developer/contribute/snowinning/concepts.md#verifiable-credential)
 - RFQ-based price discovery.
-- Supports atomic swap-based on-chain transactions.
-- Supports automatic market making by liquidity providers through applications installed in Terminus OS.
+- Supports Atomic swap based on-chain transactions.
+- Supports automatic market making by liquidity providers through applications installation in Terminus OS.
 
 With the above design, Otmoic Protocol can be widely used in Depin, AI Bots, Creator Economy, Crypto Trading, Crypto Cross-Chain, Fiat and Crypto Gateways, and other scenarios.
 

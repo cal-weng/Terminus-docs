@@ -20,7 +20,7 @@ If you enter the incorrect password more than **3** times, your account will be 
 ![alt text](/images/how-to/terminus/enter_password.jpg)
 
 :::tip
-- When you log in for the first time, ensure you enter the login password that you reset on TermiPass during activation [Reset Login Password](./wizard.md#reset-password)
+- When you log in for the first time, ensure you enter the login password that you [reset on TermiPass during activation](./wizard.md#reset-password).
 - You can change your password in [Settings](../settings/home.md#change-password).
 - If you forget your login password, you can contact your administrator to reset it.
 :::
@@ -31,12 +31,12 @@ After entering your login password correctly, the system will prompt you for the
 
 ### Confirm via TermiPass
 
-A dialogue box will pop up in **TermiPass**. Click **'Confirm'** to complete the Two-factor Verification.
+A dialogue box will pop up in **TermiPass**. Click **Confirm** to complete the Two-factor Verification.
 
 ![alt text](/images/how-to/terminus/second_confirmation.jpg)
 
 ### Manually Enter 6-digit Code
 
-Alternatively, you can open **TermiPass**, go to **'Settings'**, and manually enter the 6-digit **Two-factor Verification Code**.
+Alternatively, you can open **TermiPass**, go to **Settings**, and manually enter the 6-digit **Two-factor Verification Code**.
 
 ![alt text](/images/how-to/terminus/6-digit_one-time_password.jpg)

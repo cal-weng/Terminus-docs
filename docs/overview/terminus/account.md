@@ -63,7 +63,7 @@ Admins have the right to view and modify the resource usage of all accounts, but
 
 ### Account
 
-Each Terminus OS Account corresponds to a [Terminus Name](../snowinning/terminus-name.md) that consists of a local name and a domain name. At the same time, each Terminus OS belongs to one [Domain](../snowinning/terminus-name.md#domain). Therefore, Terminus users such as `alice@myterminus.com` will use the local name, `alice`, in the Terminal OS.
+Each Terminus OS Account corresponds to a [Terminus Name](../../developer/contribute/snowinning/terminus-name.md) that consists of a local name and a domain name. At the same time, each Terminus OS belongs to one [Domain](../../developer/contribute/snowinning/terminus-name.md#domain). Therefore, Terminus users such as `alice@myterminus.com` will use the local name, `alice`, in the Terminal OS.
 
 ## Resource Limit
 

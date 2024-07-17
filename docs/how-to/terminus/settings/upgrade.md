@@ -4,22 +4,20 @@ outline: [2, 3]
 
 # Upgrade
 
-You can upgrades system here.
+This section explains how to upgrade the Terminus OS system.
 
 ![alt text](/images/how-to/terminus/upgrade.png)
 
-## Current Version
+## Check the Versions 
 
-This section displays the current version of the system.
+- **Current Version**: The current version of the system.
 
-## New Version
-
-When a **New Version** appears, it means there is an upgrade available. Click on **'Upgrade'** and wait for a while.
+- **New Version**: When a new version appears, it means there is an upgrade available. Click on **Upgrade** to upgrade the system to the latest version.
 
 ![alt text](/images/how-to/terminus/update_successed.png)
 
-## Development Mode
+## Enable the Development Mode
 
-Enabling this will allow you to upgrade to the latest development version.
+Enabling this allows you to upgrade to the latest development version.
 
-The development version updates more frequently and introduces new features faster. However, due to limited testing, it may not be as stable as the released version.
+A development version updates more frequently and introduces new features faster. However, due to limited testing, it may not be as stable as a released version.

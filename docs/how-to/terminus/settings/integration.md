@@ -4,17 +4,16 @@ outline: [2, 3]
 
 # Integration
 
-Integration allows you to connect your **Terminus Space** account with third-party services on the internet, enabling data retrieval and synchronization between Terminus and other accounts.
+This section explains how to integrate your Terminus Space account with third-party services for data synchronization and expanded functionality.
 
 ![alt text](/images/how-to/terminus/integration.png)
 
-You can use **Terminus Space** and its related features by logging in with Terminus Space using a QR code. In the near future, you will also be able to link third-party accounts, such as **Google Account**, for synchronizing data with **Google Drive** and other services.
 
 ## Terminus Space Account
 
 Each **Terminus Name** is associated with a **Terminus Space account**. You can log into Terminus Space using the **TermiPass** application by scanning the QR code.
 
-Once you have logged in to **Terminus Space**, you will be able to view detailed system data information. However, if you've never logged in before, you won't be able to view this system data.
+Once you have logged in to **Terminus Space**, you will be able to view detailed system data information if you have logged in before.
 
 For more information, please refer to [Management Terminus](../../space/host/management-terminus.md).
 
@@ -26,13 +25,13 @@ To use NFT images as unique avatars in your profile, you need to bind a blockcha
 
 ### Bind Blockchain Wallet
 
-After importing the wallet, the page will refresh to display the imported wallet fields. Now you can click the **'Bound'** button to trigger the **MetaMask** wallet authorization. Once the binding process is completed, a message will be sent to your **TermiPass** mobile app. Click **'Bound'** again to bind the wallet to your Terminus Name.
+After importing the wallet, the page will refresh to display the imported wallet fields. Now you can click the **Bound** button to trigger the **MetaMask** wallet authorization. Once the binding process is completed, a message will be sent to your **TermiPass** mobile app. Click **Bound** again to bind the wallet to your Terminus Name.
 
 ![alt text](/images/how-to/terminus/nft_bound.png)
 
 ### Import NFT Images
 
-After binding the wallet, you can choose to unbind it and bind other wallets. You can also click **'NFT images'** to view the list of NFT images in the wallet.
+After binding the wallet, you can choose to unbind it and bind other wallets. You can also click **NFT images** to view the list of NFT images in the wallet.
 
 ![alt text](/images/how-to/terminus/nft_images.png)
 

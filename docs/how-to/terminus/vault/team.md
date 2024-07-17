@@ -2,78 +2,99 @@
 outline: [2, 3]
 ---
 
-# Team & Shared Vault
+# Managing Shared Vault for Your Team
 
-The **Shared Vault** is a great tool for organizing, managing, and sharing data among users. It's ideal for various organizations, from family accounts to teams, companies, or any group requiring secure storage and information sharing among multiple members. The **Shared Vault** allows precise control over who can access, edit, or share specific information.
+ **Shared Vault** is a powerful tool for organizing, managing, and sharing sensitive data among users. It's ideal for various organizations, from family accounts to teams, companies, or any group requiring secure storage and information sharing among multiple members. A Shared Vault allows precise control over who can access, edit, or share specific information.
 
-To use the **Shared Vault**, you must first join a **Vault Team**.
+## Members & Roles
 
-## Join Team
+There are three different roles in a **Vault Team**:
 
-At Terminus, all administrators and users of a Terminus cluster are automatically included in one **Vault Team**. However, due to security concerns, each new member must go through a multi-step process to establish an encrypted handshake.
+- **Owner** is the user who created the team, usually the administrator who initialized Terminus OS. Owner can add, suspend, or unsuspend members and appoint administrators.
 
-Here’s how it works:
+- **Administrators** can create **Shared Vault** items and assign read/write permissions to members.
 
-1. The system automatically sends an invitation to each new member to join the **Vault Team**. Users can open Vault to check for the invitation.
+- **Regular Members** are members who are invited to a **Shared Vault** by the owner or administrators their read/write permissions.
+
+## Join a Team
+
+To use the Shared Vault, you must join a Vault Team first.
+
+At Terminus, all administrators and users of a Terminus cluster are automatically included in one **Vault Team**. For security reasons, each new member must go through a simple process to confirm their membership and ensure secure access:
+
+1. System automatically sends an invitation to each new member to join the **Vault Team**.
+   
    ![image](/images/how-to/terminus/vault_invite.jpg)
 
-   - As an administrator, you'll see the invitation code sent to new users displayed on the interface.
-   - As a new user, a popup will appear for you to enter the invitation code. Please contact your system administrator to get the code, then enter it and click submit.
+  - **Administrators**: You will see the invitation code sent to new users displayed on the interface.
+   - **New Users**: Check for the invitation code to join the Vault Team, and enter the code in the popup window and submit. This means you have accepted the invitation. Contact your administrator if you haven't got the invitation code.
 
-   :::tip
-   Each new user invitation is valid for 30 days, so be sure to complete the process within this period.
-   :::
+2. After the invitation is accepted:
+   - **New Users**:, inform your system administrator through any available communication channel. 
+   - **Administrators**: Once notified, manually add the new user to the team management page within the Vault.
 
-2. If you are a new user, please inform your system administrator in any way when you have accepted the invitation, and then wait for the administrator's final approval. If you are an administrator, once you are notified that a new user has accepted the invitation, you can add he/she to the team management page.
+3. As a new member, your default role will be a **Regular Member** in the **Vault Team**. It means that you will not be able to create a **Shared Vault**. Please wait for the administrator to add you to a **Shared Vault**.
 
-3. As a new member, your default role will be a **Regular Members** in the **Vault Team**. It means that you will not be able to create a **Shared Vault**. Please wait for the administrator to add you to a **Shared Vault**.
+### Suspend Members
 
-## Member & Role
+:::Info
+You must be an **Owner** to perform this operation.
+:::
 
-Theres are three different roles in a **Vault Team**:
+Suspended members maintain their assigned permissions and group membership but are unable to receive any updates to the vault data or make modifications.
 
-- **Owner** is the user the user who created the team, usually the administrator who initialized Terminus. Only they can add, suspend, or unsuspend members and appoint administrators.
+- To **suspend a member**, select the user from the member list, click the **More Options (...)** button in the top right corner of the member page, and choose **Suspend**.
 
-- **Administrators** can create **Shared Vault** Items and assign read/write permissions for them.
+- To **unsuspend a member**, select **Unsuspend** from the same place. Afterwards, their membership must be reconfirmed in the same manner as when they initially joined the organization.
 
-- **Regular Members** have no special permissions unless the owner or administrators add them to a **Shared Vault** Item and set their read/write permissions.
+### Appoint Admins
 
-### Suspended Members
+:::Info
+You must be an **Owner** to perform this operation.
+:::
 
-Suspended members maintain their assigned permissions and group membership but are unable to exercise their rights. They will not receive any updates to the vault data and cannot make any modifications.
+To appoint a member as an administrator:
 
-To **suspend a member**, select the user from the member list, click the **'...'** in the top right corner of the member page, and choose **'Suspend'**.
-
-To **unsuspend a member**, select **Unsuspend** from the same place. Afterwards, their membership must be reconfirmed in the same manner as when they initially joined the organization.
-
-### Make Admin
-
-To appoint a member as an administrator, select the member from the list. Then, click the **'...'** icon in the top right corner of the member page, and choose **'Make Admin'**.
+1. Select the member from the list. 
+2. Click the **More Options (...)** icon in the top right corner of the member page, and choose **Make Admin**.  
 
 To **remove an administrator**, simply select "Remove Member" from the same place.
 
-## Shared Vault
+## Manage Shared Vault
 
-A **Shared Vault** functions like a secure folder that can save many Vault Items. Unlike your Main Vault, the **Shared Vault** is designed to share data among multiple Terminus users.
+:::Info
+You must be an **Admin** to perform these operations.
+:::
 
 By default, a **Shared Vault** will not be created automatically. It requires the **administrator** to create it manually.
 
-### Create Shared Vault
+### Create a Shared Vault
 
-To create a **Shared Vault**, open the team management page, select **'Vaults'**, then click the **'+'** icon at the top to create a new **Shared Vault**. You can add multiple members to this **Shared Vault** and set their read/write permissions. Once confirmed, click **'save'** to apply the changes.
+To create a **Shared Vault**:
 
-### Edit Shared Vault
+1. Navigate to **My Team** > **Vaults**, then click the **+** icon at the top to create a new **Shared Vault**. 
+2. Add multiple members to this **Shared Vault** and set their read/write permissions as needed.
+3. Click **Save** to apply the changes.
 
-You can select the **Shared Vault** you want to edit on the **'Vaults'** page. You can add or remove members, set members' read/write permissions. Click **'save'** to apply the changes.
+### Edit a Shared Vault
 
-### Delete Shared Vault
+To make edits on the created Vault:
 
-To delete a **Shared Vault**, navigate to the **'Vaults'** page and select the vault you want to remove. Click on the **'...'** icon located in the upper right corner, then choose **'Delete'** in the drop-down menu. You must type the word **'DELETE'** in pop-up dialog to confirm your action.
+1. Navigate to **My Team** > **Vaults**, select the **Shared Vault** you want to edit.
+2. Make edits such as adding or removing members and setting members' read/write permissions. 
+3. Click **Save** to apply the changes.
+
+### Delete a Shared Vault
+
+To delete a **Shared Vault**:
+1. Navigate to the **Vaults** page and select the vault you want to remove. 
+2. Click on the **More Options (...)** button located in the upper right corner, then choose **Delete** in the drop-down menu. 
+3. Type the word **DELETE** in pop-up dialog to confirm your action.
 
 :::warning
 Deleting a vault is irreversible! All data within the vault will be destroyed.
 :::
 
-### Authority
+### Manage Permissions
 
 Vault offers a simple yet powerful permission system that allows you to define who can read, edit, and manage the **Shared Vault**. You can assign read/write permissions to members in the **Vault Team**.

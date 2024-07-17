@@ -7,7 +7,7 @@ outline: [2, 3]
 DIDs solve the issue of identity but are not easy to remember or recognize. Terminus Name addresses this problem.
 
 :::info
-Please refer to [this document](../../how-to/termipass/account/index.md#stage-of-account) for the relationships between DID, Terminus Name, and Account.
+Please refer to [this document](../../../how-to/termipass/account/index.md#stage-of-account) for the relationships between DID, Terminus Name, and Account.
 :::
 
 ## Introduction
@@ -34,9 +34,9 @@ Intended for organizational use, like corporate emails.
 
 When users join an organization, they can apply for a Terminus Name under the organization. When they leave, the administrator can reclaim the Terminus Name.
 
-Organization administrators can apply for the organization's Domain through a Web2 domain, with the specific process detailed in: [Create Organization Domain](../../how-to/space/domain/host-domain.md).
+Organization administrators can apply for the organization's Domain through a Web2 domain, with the specific process detailed in: [Create Organization Domain](../../../how-to/space/domain/host-domain.md).
 
-Once the Domain is registered, [manage users under the organization](../../developer/contribute/snowinning/contract-manager.md).
+Once the Domain is registered, [manage users under the organization](contract-manager.md).
 
 ### Entity
 
@@ -50,7 +50,7 @@ Abstract entities, like a movie, cannot be categorized under Individual or Organ
 
 For example, Movie, Application, Otmoic Market Maker are different types of Entity Domains.
 
-The main use case of the Entity Domain is to help protocols build [reputation](./concepts.md#reputation). We hope to see more protocols utilizing the Entity Domain to build the Web3 versions of IMDb, Yelp, LinkedIn, and more.
+The main use case of the Entity Domain is to help protocols build [reputation](concepts.md#reputation). We hope to see more protocols utilizing the Entity Domain to build the Web3 versions of IMDb, Yelp, LinkedIn, and more.
 
 Currently, the registration of Entity Domains is approved by the Terminus team, with the applicant responsible for subsequent management.
 
@@ -62,7 +62,7 @@ Eg, `alice@myterminus.com`'s DomainName is **alice.myterminus.com**.
 This rule applies to both Individual and Organization Terminus Names.
 
 You can access the user's activated Terminus by entering the Domain Name in a browser.<br>
-For example, entering `https://alice.myterminus.com` allows you to access alice's [Profile](../../how-to/terminus/profile.md).
+For example, entering `https://alice.myterminus.com` allows you to access alice's [Profile](../../../how-to/terminus/profile.md).
 
 ## Individual Terminus Name
 
@@ -71,9 +71,9 @@ Individual Terminus Name's application may have potential fairness issues becaus
 1. Fraud. Like elonmusk@myterminus.com might likely not registered by [Elon Musk](https://twitter.com/elonmusk)
 2. Speculation in registering Terminus Names, even though it could effectively boost network activity during its early stages.
 
-Based on [VC Service](../../developer/contribute/snowinning/vc.md), we designed the Issuer and Verifier process to help users apply for a Terminus Name:
+Based on [VC Service](vc.md), we designed the Issuer and Verifier process to help users apply for a Terminus Name:
 
-![alt text](/images/overview/snowinning/image1.jpeg)
+![alt text](../../../public/images/overview/snowinning/image1.jpeg)
 
 ### Gmail Issuer Service
 
@@ -109,4 +109,4 @@ For example, if you apply with the Gmail address "hello@gmail.com", you will rec
 
 ## Organization Terminus Name
 
-Using the **Organization Terminus Name** is essentially the same as using the **Individual Terminus Name**. The only difference is that the Admin needs to [apply for a Custom Domain](../../how-to/space/domain/host-domain.md) first. For more details, please refer to [Get Started](../introduction/getting-started.md).
+Using the **Organization Terminus Name** is essentially the same as using the **Individual Terminus Name**. The only difference is that the Admin needs to [apply for a Custom Domain](../../../how-to/space/domain/host-domain.md) first. For more details, please refer to [Get Started](../../../overview/introduction/getting-started.md).

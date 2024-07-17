@@ -2,78 +2,66 @@
 outline: [2, 3]
 ---
 
-# User Management
+# Account Management
 
-:::info
-Only Admin can see this page.
-:::
+The **Account** page allows Admins to manage user accounts within the organization. This includes viewing user roles, account status, creating new accounts, and managing existing accounts.
 
-You can check each user’s role, either as Admin or Member, in the list.
+## View User List
 
-If an account has a red **'Not activated'** label, it means that although the account has been created, the [Wizard](../setup/wizard.md) process has not been completed, and the account cannot be used yet.
+The user list displays all existing users in your Terminus.
 
-![alt text](/images/how-to/terminus/settings_users.png)
+- **Role**: Indicates whether a user is an Admin or a Member.
+- **Status**: Shows if an account is active or inactive. Accounts with a **Not activated** label means the account has been created but not yet activated through the Wizard process.
 
 ## Create Account
 
-The process of creating a user account consists of 3 steps:
+Admins can create new user accounts by following these steps:
 
 ![alt text](/images/how-to/terminus/settings_create_account.png)
 
-1. **Confirm Terminus Name**
-    
-   - Confirm the **Terminus Name** for the new user. If they don't have a Terminus Name yet, direct them to the [Getting Started](../../../overview/introduction/getting-started.md#member) guide for application instructions.
+1. Confirm the **Terminus Name** for the new user. If they don't have a Terminus Name yet, direct them to the [Getting Started](../../../overview/introduction/getting-started.md#member) guide for application instructions.
 
    :::info
    Make sure the user's **Terminus Name** domain matches the domain of this Terminus.
    :::
 
-2. **Create Account**
+2. In the **Account** page, click the **Create Account** button to open the Create Account dialog.  
+3. Enter the user's Terminus Name (local part only, e.g., "john" for "john@example.com").
+4. Set the CPU and memory usage quotas for the user. You can also adjust them later in the [User Details](#set-resource-limit) page.
+    :::info
+     Minimum resource allocation recommendations: <br>
+      **CPU**: 1 core<br>
+      **Memory**: 3G
+    :::
 
-   - Click the **'Create User'** button.
-   - Enter the **Terminus Name** for the new user.
-     :::info
-     Enter only the local part of the **Terminus Name**. For example:<br>
-     If the email is 'alice@myterminus.com', enter 'alice'.<br>
-     If the email is 'bob@helloworld.com', enter 'bob'.<br>
-     :::
+5. A dialog will appear with the new user's Terminus Name, initial password, and activation Wizard link. Copy the One Time Password and the Wizard link and send them to the new user.
 
-   - Enter the CPU and memory usage quotas for the user. You can adjust them later in the [User Details](#set-resource-limit).
-     :::info
-     We recommend setting the minimum CPU to 1 and the minimum memory to 3Gi.
-     :::
+  :::info
+  If member users lose the activation link or initial password, you can get them at the bottom of the inactive account details page. You can also reset the initial password there.
+  :::
 
-3. Send **Wizard URL** and **Initial Login One Time Password** to the user
-   - When a user is successfully created, a dialog will appear displaying the new user's Terminus Name, initial password, and Wizard activation link. Copy this information and send it to the new users. So the user use it to activate the account.
-     :::info
-     If the user forgets the activation link or initial password, these can be found at the bottom of the inactive account details page. The initial password can also be reset there.
-     :::
+## Account Info
 
-## Account Details
+The Account Info page shows details of individual accounts and provides options for managing them.
 
 ![alt text](/images/how-to/terminus/settings_user_info.png)
 
-The content of the details page varies slightly depending on the account type.
 
-Here is the differences:
+The account options available for Admin vary depending on the account type.
 
-- For **Admin**,  you can reset your own account password on details page.
+| Account Type | Actions Available |
+|-----------|---------|
+| **Admin** | Change password |
+| **Activated Member** | - Change password<br>- Adjust CPU and memory usage quotas<br>- Delete the user |
+| **Inactive Member** | - Change password <br>- Display the Wizard URL <br>- Adjust the CPU and memory usage quotas <br>- Delete the user |
 
-- For **activated** **Member**, you (as a Admin) can reset their password, adjust and configure their CPU and memory usage quotas, and delete the user.
+### Change Password
 
-- For **inactive** **Member**, you (as a Admin) can reset their password, display the Wizard URL, adjust and configure their CPU and memory usage quotas, and delete the user.
-
-### Reset User Password
-
-If your **Members** forget their passwords, you can **reset** them here. The new password will be a randomly generated string.
-
-- If the **Member** has not yet activated, please immediately visit the activation URL after receiving the password reset and [activate now](../setup/wizard.md).
-
-- If the **Member** has already activated, use the new password to log in to Terminus and [change the password](../settings/home.md#change-password).
+If your **Members** forget their passwords, you can **reset** them here as the Admin and share with the member.
 
 ### Set Resource Limit
 
-You can adjust and configure the CPU and memory usage quotas for a user here.
+You can adjust and configure the CPU and memory usage quotas for a member user here.
 
 :::info NOTE
 The CPU and memory usage quotas for an individual user must not exceed the cluster's CPU and memory limits.
@@ -81,7 +69,7 @@ The CPU and memory usage quotas for an individual user must not exceed the clust
 
 ### Delete User
 
-Click on **'Delete User'** to remove a user. Please be patient after submitting the deletion, as the process may take some time to complete.
+Click on **Delete User** to remove a Member.  
 
 :::info NOTE
 Deleting an activated user will result in the loss of **Terminus** data. However, the **Vault** data stored in **TermiPass** will not be lost.

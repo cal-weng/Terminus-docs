@@ -6,71 +6,53 @@ outline: [2, 3]
 
 ![alt text](/images/how-to/termipass/termipass.jpg)
 
-**TermiPass** is a client that helps you manage [DID](../../overview/snowinning/concepts.md#decentralized-identifier), [Terminus Name](../../overview/snowinning/terminus-name.md), and [Terminus](../../overview/terminus/overview.md) devices. **TermiPass** is the bridge between you and your **Terminus**, enabling a seamless connection to your **Terminus**, anytime and anywhere.
+TermiPass acts as a bridge between users and their Terminus systems, offering a seamless and secure connection from anywhere. This user-friendly software provides a range of features, including:
 
-**TermiPass** is a user-friendly software packed with lots of features. It not only meets the common need for **storing and accessing** documents, photos, and videos, but also serves as a **workflow software**, helping you get things done more efficiently. In contrast to traditional workflow software that runs third-party apps on different servers, TermiPass allows both the system and the associated apps to run on your server.
+- [**DID**](../../developer/contribute/snowinning/concepts.md#decentralized-identifier), [**Terminus Name**](../../developer/contribute/snowinning/terminus-name.md), and **Terminus devices management**: Easily manage your digital identity, Terminus Name, and connected devices.
+- **Secure Data Storage and Access**: Store and access your documents, photos, and videos securely.
+- **Workflow Management**: Utilize TermiPass as a workflow tool to enhance productivity. Upcoming functions include Chat, Calendar, and Document.
 
-We will continue to enhance **Termipass** with new features in this direction. Upcoming functions include **chat**, **calendar**, and **document**.
+## Account Management
 
-## Introduction
+Manage multiple accounts to accommodate your various roles and identities.
 
-TermiPass's main features include:
+- [Create a **Terminus** Name](./account/index.md#create-an-account)
+- [Log In to **Terminus**](../terminus/setup/login.md)
+- [Log In to **Terminus Space**](../space/account.md#log-in)
 
-- **Account Management**
+## Terminus Management
 
-  **TermiPass** supports managing multiple accounts to accommodate your various roles and identities.
+Activate, monitor, and manage your **Terminus** devices, including VPN connections.
 
-  - [Create a **Terminus** Name](./account/index.md#create-an-account)
-  - [Scan to Login to **Terminus** Settings](../terminus/settings/backup.md#login-to-terminus-space)
-  - [Scan to Login to **Terminus** Space](../space/account.md#log-in)
+- [Activate Terminus](../terminus/setup/wizard.md)
+- [Get a Two-Factor Verification Code at Login](../terminus/setup/login.md#two-factor-verification)
+- [View Connection Status](./manage-terminus.md#connection-status)
+- [Manage VPN Connections](./manage-terminus.md#vpn-connection)
 
-- **Terminus Management**
+## File Management
 
-  You can activate and monitor your **Terminus** using **TermiPass**.You will also need Termpass to enable a VPN connection to Terminus.
+Manage and synchronize files across various devices on your **Terminus**.
 
-  - [Activate Terminus](../terminus/setup/wizard.md)
-  - [Get a Two-Factor Verification Code at Login](../terminus/setup/login.md#two-factor-verification)
-  - [View Connection Status](./manage-terminus.md#connection-status)
-  - [Manage VPN Connections](./manage-terminus.md#vpn-connection)
+- [File Management](../terminus/files/index.md)
+- [Local File Sync](./local-file-sync.md)
 
-- **File Management**
+## Password Management
 
-  You can manage files on your **Terminus** with **Termipass**. It helps synchronize files across various devices.
+Store, manage, and autofill passwords securely using Vault in **Terminus**.
 
-  - [File Management](../terminus/files/index.md)
-  - [Local File Sync](./local-file-sync.md)
+- [Vault](../terminus/vault/index.md)
+- [Password Autofill](./password-autofill.md)
 
-- **Password Management**
+## Download TermiPass
 
-  You can use **TermiPass** to manage your passwords in **Vault** and enable auto-fill.
-
-  - [Vault](../terminus/vault/index.md)
-  - [Password Autofill](./password-autofill.md)
-
-## Download
-
-You can download the latest version of **TermiPass** below.
+| Platform         | Download Link                                                                                             |
+| ---------------- | --------------------------------------------------------------------------------------------------------- |
+| Android          | [Install from Google Play](https://play.google.com/store/apps/details?id=com.terminus.termipass)          |
+| iOS              | [Install from AppStore](https://apps.apple.com/app/termipass/id6448082605)                                |
+| Windows          | [Download from GitHub](https://github.com/beclab/TermiPass/releases/download/v1.2.9/TermiPass.exe)        |
+| Mac              | [Download from GitHub](https://github.com/beclab/TermiPass/releases/download/v1.2.9/TermiPass.dmg)        |
+| Chrome Extension | [Download from GitHub](https://github.com/beclab/TermiPass/releases/download/v1.2.9/TermiPass.chrome.zip) |
 
 :::info
-Only the Android and iOS versions of **TermiPass** can register for a Terminus Name.
+Terminus Name registration is only available on the Android and iOS versions of **TermiPass**.
 :::
-
-### Android
-
-[Download from Github](https://github.com/beclab/TermiPass/releases/download/v0.4.63/TermiPass_17_v0.4.63_2024-05-22_21-48.apk)
-
-### iOS
-
-[Install from AppStore](https://apps.apple.com/app/termipass/id6448082605)
-
-### Windows
-
-[Download from Github](https://github.com/beclab/TermiPass/releases/download/v0.4.63/TermiPass.exe)
-
-### Mac
-
-[Download from Github](https://github.com/beclab/TermiPass/releases/download/v0.4.63/TermiPass.dmg)
-
-### Chrome Extension
-
-[Download from Github](https://github.com/beclab/TermiPass/releases/download/v0.4.63/TermiPass.chrome.zip)

@@ -1,45 +1,34 @@
 # Namespace
 
-The **'Namespace'** in **ControlHub** allows you to monitor resource usage and workload conditions on Terminus OS from a user perspective.
+The **Namespace** section in ControlHub provides a user-centric view of resource consumption and workload conditions on your Terminus OS.
 
 ![namespace](/images/how-to/terminus/controlhub/namespace/01.jpg)
 
 ## Usage Ranking
 
-**Usage Ranking** organizes system resource consumption by namespace, enabling you to view statistics based on various metrics.
+**Usage Ranking** organizes system resource consumption by namespace.
 
-### Sorting
-**Usage Ranking** offers several metrics for sorting, each available in ascending or descending order:
-- CPU Usage
-- Memory Usage
-- Pods
-- Outbound Traffic
-- Inbound Traffic
+- **Sorting metrics**: Sort by CPU usage, memory usage, number of pods, outbound traffic, or inbound traffic in ascending or descending order.
 
-### Filter by User
+- **Filtering**: Filter namespaces by user using the dropdown menu in the top-right corner of the interface.
 
-As shown in the image above, you can filter namespaces by user using the dropdown menu in the top-right corner of the interface.
-
-### Search
-
-Additionally, in the same upper-right area, you can enter keywords to search for certain namespaces.
+- **Searching**: Quickly find namespaces using keyword search.
 
 ### Namespace Details
 
-By clicking on a namespace, you can access the **'Namespace Details page'**:
+Clicking on a namespace in the ranking list to reveal detailed information: 
 
 ![namespace list](/images/how-to/terminus/controlhub/namespace/02.jpg)
 
-On the details page, you can view all Pods within the namespace, along with their respective resource usage. You can sort the pods based on four types of resource consumption. Keyword search is also supported
-
-You can click on a Pod to access the **'Pod Details Page'**. This page lists all containers within the pod and displays the resource usage for each one.
+- **Pod List**: View all pods within the namespace, sorted by resource consumption, with the option to search by keyword.
+- **Pod Details**: Access detailed resource usage for each container within a pod.
 
 ![container list](/images/how-to/terminus/controlhub/namespace/03.jpg)
 
 ## Resources
 
-The **'Resources'** section displays a chart of current and historical physical resource consumption from a Namespace perspective.
+The **Resources** section displays a chart of current and historical resource utilization:
 
-You can view the total resource usage by all users. Alternatively, select a specific user from the top-right corner of the page to view individual resource consumption.
+You can view the total resource usage by all users. Alternatively, select a specific user from the dropdown box to view individual resource consumption.
 
 ![resources](/images/how-to/terminus/controlhub/namespace/04.jpg)

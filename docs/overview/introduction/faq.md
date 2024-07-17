@@ -24,7 +24,7 @@ Terminus's choice of license for its major projects is inspired by [fair code](h
 
 You will lose:
 
-- The ownership to [DID](../snowinning/concepts.md#decentralized-identifier) and [Terminus Name](../snowinning/terminus-name.md)
+- The ownership to [DID](../../developer/contribute/snowinning/concepts.md#decentralized-identifier) and [Terminus Name](../../developer/contribute/snowinning/terminus-name.md)
 - The data stored in the [Vault](../../how-to/terminus/vault/index.md)
 
 We strongly suggest that you back up the mnemonic phrase offline.

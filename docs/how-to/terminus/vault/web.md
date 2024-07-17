@@ -1,6 +1,6 @@
 # Running Vault On Terminus For The First Time
 
-To maintain consistency and proper functionality across all platforms, you'll need to set up a lock password for Vault and bind the correct Terminus Name. After that, you should be able to use Vault effectively.
+To maintain consistency and proper functionality across all platforms, you'll need to set up a lock password for Vault and bind the correct Terminus Name.
 
 ## Step 1: Set Up Vault’s Lock Password
 
@@ -21,4 +21,4 @@ If your password does not meet these requirements, you won't be able to complete
 
 At this stage, you can only bind the **Terminus Name** account already linked with this Terminus device. If you've forgotten your mnemonic phrase, you can find it in the **TermiPass** mobile client after logging into Terminus.
 
-For more information, please refer to [What if I lost my mnemonic phrase?](../../../overview/introduction/faq.md#助记词丢了怎么办) and how to [Backup Mnemonic Phrase on TermiPass](../../termipass/account/index.md#backup-mnemonic-phrase.md).
+For more information, please refer to [FAQ](../../../overview/introduction/faq.md#what-happens-if-the-mnemonic-word-goes-missing) an [Backup Mnemonic Phrase on TermiPass](../../termipass/account/index.md#backup-mnemonic-phrase.md).

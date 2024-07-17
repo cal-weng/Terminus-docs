@@ -1,6 +1,6 @@
 # Host
 
-Here, you can manage your Terminus devices that have been bound to Terminus Names and have been activated. there are two types of Terminus devices:
+Here, you can manage your Terminus devices that have been bound to Terminus Names and activated. There are two types of Terminus devices:
 
 - **Self-Hosted Terminus**, which is set up on your own device.
 
