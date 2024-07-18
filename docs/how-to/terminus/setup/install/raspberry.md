@@ -7,8 +7,8 @@ This guide covers the detailed steps to install Terminus on your Raspberry Pie.
 Before you begin, ensure your system meets these requirements:
 - A Raspberry Pie system meeting the following requirements:
   - Hardware: Raspberry Pi 5 with 8GB memory 
-  - Operating System: Raspbian 11 or Raspbian 12  
-  - Storage: 64GB Micro SD Card (Application Class 2 or higher )
+  - Operating System: Raspbian 12  
+  - Storage: 64GB Micro SD Card (Application Class 2)
   - Ethernet cable 
 - [TermiPass](../../../termipass/overview.md#download-termipass) mobile app installed on your smartphone
 - [Terminus Name](../../../termipass/account/index.md#create-a-terminus-name) created
@@ -16,13 +16,10 @@ Before you begin, ensure your system meets these requirements:
 ## Step 1: Install Terminus 
 
 1. Configure the Raspbian environment to enable necessary features: 
-   - For Raspbian 11:
+   
       ```bash
-      echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/cmdline.txt
-      ```
-   - For Raspbian 12:
-      ```bash
-      echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
+      echo "cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
+
       echo "kernel=kernel8.img" | sudo tee -a /boot/firmware/config.txt
       ```
 

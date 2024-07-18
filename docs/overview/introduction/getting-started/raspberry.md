@@ -15,13 +15,10 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
 ## Step 2: Install Terminus
 
 1. Configure the Raspbian environment to enable necessary features: 
-   - For Raspbian 11:
+
    ```bash
-   echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/cmdline.txt
-   ```
-   - For Raspbian 12:
-   ```bash
-   echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
+   echo "cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
+   
    echo "kernel=kernel8.img" | sudo tee -a /boot/firmware/config.txt
    ```
 

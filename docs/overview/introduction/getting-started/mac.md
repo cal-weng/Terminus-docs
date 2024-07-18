@@ -4,8 +4,13 @@
 This guide will walk you through the essential steps to get Terminus up and running on your Mac. Follow these steps to create your account, install Terminus, and start exploring the Terminus ecosystem.
 
 ::: tip NOTE
-Currently, Terminus on Mac has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+Currently, Terminus on Mac has certain limitations including::
+- Lack of distributed storage support 
+- Inability to add local nodes
+
+We recommend using it only for development or testing purposes.
 :::
+
 
 ## Prerequisites
 

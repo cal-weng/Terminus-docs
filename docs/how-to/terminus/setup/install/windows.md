@@ -4,8 +4,13 @@
 This guide covers the detailed steps of installing Terminus on your Windows system. This method leverages the Windows Subsystem for Linux (WSL2) to create a Linux environment within Windows, where Terminus OS is then installed.
 
 ::: tip NOTE
-Currently, Terminus on Windows has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+Currently, Terminus on Windows has certain limitations including:
+- Lack of distributed storage support 
+- Inability to add local nodes
+
+We recommend using it only for development or testing purposes. 
 :::
+
 
 ## Prerequisites
 

@@ -4,8 +4,13 @@
 This guide covers the detailed steps to install Terminus on your Mac. This method uses containerized tools like Docker Desktop and Minikube to create a suitable environment for running Terminus OS on Mac.
 
 ::: tip NOTE
-Currently, Terminus on Mac has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+Currently, Terminus on Mac has certain limitations including:
+- Lack of distributed storage support 
+- Inability to add local nodes. 
+
+We recommend using it only for development or testing purposes.
 :::
+
 
 ## Prerequisites
 
