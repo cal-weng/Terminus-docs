@@ -4,15 +4,16 @@ outline: [2, 3]
 
 # Wizard
 
-:::info
-You can learn about Admin and Member roles in the [Getting Started](../../../overview/introduction/getting-started.md) guide.
-:::
+You can use Terminus in one of two roles:
+
+- Admin: Build your own Terminus to enjoy its full capabilities.
+- Member: Ask your Admin to set up an account for you. As a member, you can access most features and collaborate with other users.
 
 Depending on your role, you may get the initial system setup information as described below:
 
 - As an Admin, the location of the Wizard URL and the One-Time Password for the initial login depends on the method of Terminus installation:
 
-  - For [self-hosted servers](./install.md#one-time-password), please refer to the instructions in the documentation to confirm whether you are using the internal network Wizard URL.
+  - For [self-hosted servers](./install/), please refer to the installation guide for your chosen system to confirm whether you are using the internal network Wizard URL.
   - For hosting on Terminus Space, refer to [Creating Terminus in a Space](../../space/host/create-terminus.md#one-time-password).
 
 - As a Member, please request your Wizard URL and the one-time password for the initial login from the Admin.
@@ -46,9 +47,9 @@ Select the system language. Currently, only English is supported.
 
 If you are using a **self-hosted server**, you may see this step.
 
-![alt text](/images/how-to/terminus/select_a_reverse_proxy.png)
+![alt text](/images/how-to/terminus/select_a_reverse_proxy.jpeg)
 
-- If you are using an **internal network Wizard URL**, please select an [FRP node](../../../overview/terminus/network.md#setup-reverse-proxy) closest to your physical location.
+- If you are using an **internal network Wizard URL**, the [Cloudflare Tunnel](../../../overview/terminus/network.md#setup-reverse-proxy) will be enabled by default.
 
 - If you are using a **public Wizard URL**, you can skip setting up a reverse proxy.
 

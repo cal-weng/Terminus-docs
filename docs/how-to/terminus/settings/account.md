@@ -19,7 +19,7 @@ Admins can create new user accounts by following these steps:
 
 ![alt text](/images/how-to/terminus/settings_create_account.png)
 
-1. Confirm the **Terminus Name** for the new user. If they don't have a Terminus Name yet, direct them to the [Getting Started](../../../overview/introduction/getting-started.md#member) guide for application instructions.
+1. Confirm the **Terminus Name** for the new user. If they don't have a Terminus Name yet, direct them to the [Getting Started](../../../overview/introduction/getting-started/) guide for application instructions.
 
    :::info
    Make sure the user's **Terminus Name** domain matches the domain of this Terminus.
@@ -28,11 +28,12 @@ Admins can create new user accounts by following these steps:
 2. In the **Account** page, click the **Create Account** button to open the Create Account dialog.  
 3. Enter the user's Terminus Name (local part only, e.g., "john" for "john@example.com").
 4. Set the CPU and memory usage quotas for the user. You can also adjust them later in the [User Details](#set-resource-limit) page.
-    :::info
-     Minimum resource allocation recommendations: <br>
-      **CPU**: 1 core<br>
-      **Memory**: 3G
-    :::
+  
+  :::info
+    Minimum resource allocation recommendations: <br>
+    **CPU**: 1 core<br>
+    **Memory**: 3G
+  :::
 
 5. A dialog will appear with the new user's Terminus Name, initial password, and activation Wizard link. Copy the One Time Password and the Wizard link and send them to the new user.
 

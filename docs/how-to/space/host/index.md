@@ -6,4 +6,4 @@ Here, you can manage your Terminus devices that have been bound to Terminus Name
 
 - **Cloud-based Terminus**, deployed using our **Host Service**.
 
-If you do not yet have a Terminus, please refer to [Getting Started](../../../overview/introduction/getting-started.md) to learn how to obtain one.
+If you do not yet have a Terminus, please refer to [Getting Started](../../../overview/introduction/getting-started/) to learn how to obtain one.

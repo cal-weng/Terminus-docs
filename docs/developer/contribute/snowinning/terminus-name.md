@@ -109,4 +109,4 @@ For example, if you apply with the Gmail address "hello@gmail.com", you will rec
 
 ## Organization Terminus Name
 
-Using the **Organization Terminus Name** is essentially the same as using the **Individual Terminus Name**. The only difference is that the Admin needs to [apply for a Custom Domain](../../../how-to/space/domain/host-domain.md) first. For more details, please refer to [Get Started](../../../overview/introduction/getting-started.md).
+Using the **Organization Terminus Name** is essentially the same as using the **Individual Terminus Name**. The only difference is that the Admin needs to [apply for a Custom Domain](../../../how-to/space/domain/host-domain.md) first. For more details, please refer to [Get Started](../../../overview/introduction/getting-started/).

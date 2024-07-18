@@ -76,7 +76,7 @@ If you're using Terminus for personal purposes, you'll need to bind a personal V
 ![alt text](/images/how-to/termipass/individual_terminus_name.png)
 
 
-We currently provide  Verifiable Credential (VC) via Google Gmail. For details, please refer to [Gmail Issuer Service](../../../developer/contribute/snowinning/terminus-name.md#gmail-issuer-service). To create your Terminus Name with Gmail VC:
+We currently provide Verifiable Credential (VC) via Google Gmail. For details, please refer to [Gmail Issuer Service](../../../developer/contribute/snowinning/terminus-name.md#gmail-issuer-service). To create your Terminus Name with Gmail VC:
 
 1. Click the VC card to open the Google account interface.
 2. Select the Google account to bind. 
@@ -86,7 +86,7 @@ We currently provide  Verifiable Credential (VC) via Google Gmail. For details, 
 
 If you encounter errors while binding, check if your account is already bound to a **Terminus Name**. If not, please contact us.
 
-Once at the landing page, wait for [Terminus installation](../../terminus/setup/install.md) to complete, then proceed with [activation](../../terminus/setup/wizard.md).
+Once at the landing page, wait for [Terminus installation](../../terminus/setup/install/) to complete, then proceed with [activation](../../terminus/setup/wizard.md).
 
 
 #### Bind Organization Terminus Name

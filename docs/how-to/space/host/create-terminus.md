@@ -10,7 +10,7 @@ The **Host Service** of Terminus is in an invite-only beta phase. To use the clo
 
 ![alt text](/images/how-to/space/create_terminus.jpg).
 
-To install the self-hosted version of Terminus OS, refer to [installing Terminus](../../terminus/setup/install.md).
+To install the self-hosted version of Terminus OS, refer to [installing Terminus](../../../how-to/terminus/setup/install/).
 
 ## Configure the Environment
 

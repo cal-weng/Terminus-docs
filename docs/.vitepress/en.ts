@@ -11,7 +11,14 @@ const side = {
         },
         {
           text: "Getting Started",
-          link: "/overview/introduction/getting-started",
+          link: "/overview/introduction/getting-started/",
+          collapsed: true,
+          items: [
+            { text: "Linux", link: "/overview/introduction/getting-started/linux" },
+            { text: "Raspberry Pi", link: "/overview/introduction/getting-started/raspberry" },
+            { text: "MacOS", link: "/overview/introduction/getting-started/mac" },
+            { text: "Windows", link: "/overview/introduction/getting-started/windows" },
+          ]
         },
         // { text: "BEC Architecture", link: "/overview/introduction/bec" },
         { text: "FAQ", link: "/overview/introduction/faq" },
@@ -48,7 +55,17 @@ const side = {
           text: "Setup",
           collapsed: true,
           items: [
-            { text: "Install", link: "/how-to/terminus/setup/install" },
+            { 
+              text: "Install",
+              link: "/how-to/terminus/setup/install/", 
+              collapsed: true, 
+              items: [
+                { text: "Linux", link: "/how-to/terminus/setup/install/linux" },
+                { text: "Raspberry Pi", link: "/how-to/terminus/setup/install/raspberry" },
+                { text: "MacOS", link: "/how-to/terminus/setup/install/mac" },
+                { text: "Windows", link: "/how-to/terminus/setup/install/windows" },
+              ]
+            }, 
             { text: "Wizard", link: "/how-to/terminus/setup/wizard" },
             { text: "Login", link: "/how-to/terminus/setup/login" },
           ],

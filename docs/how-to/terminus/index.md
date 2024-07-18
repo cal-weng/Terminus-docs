@@ -8,7 +8,7 @@ This guide serves as the user manual for Terminus OS's pre-installed application
 
 **Install and Login**
 
-- [Install with command line](./setup/install.md)
+- [Install Terminus](./setup/install/)
 - [Wizard](./setup/wizard.md)
 - [Login](./setup/login.md)
 
