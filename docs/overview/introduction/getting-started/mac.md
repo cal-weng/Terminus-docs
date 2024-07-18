@@ -3,6 +3,10 @@
 
 This guide will walk you through the essential steps to get Terminus up and running on your Mac. Follow these steps to create your account, install Terminus, and start exploring the Terminus ecosystem.
 
+::: tip NOTE
+Currently, Terminus on Mac has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+:::
+
 ## Prerequisites
 
 Before you begin, ensure your system meets these requirements:
@@ -25,7 +29,7 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
     
 3. In terminal, navigate to the directory where you want to install Terminus OS, run the following command to start installing:
 
-   ```sh
+   ```bash
    curl -fsSL https://terminus.sh |  bash - 
    ```
 
@@ -46,23 +50,13 @@ For complete activation guidance, see the [Wizard documentation](../../../how-to
 On your Wizard page, log in to Terminus with the password you just reset and complete two-step verification on TermiPass. For more information, see the [Login documentation](../../../how-to/terminus/setup/login.md).
 
 
-:::important
+:::warning
 Always [Back up your mnemonic phrase](../../../how-to/termipass/account/index.md#backup-mnemonic-phrase.md) to ensure account and data security.
 :::
 
-## Other Operations
-
-Here are some additional operations:
-
-- **Uninstall Terminus**. Run this command when you need to reinstall Terminus, or simply want to uninstall it:
-
-   ```sh
-   bash uninstall_macos.sh
-   ```
-
 
 ## Next Steps
-
 - [Explore Terminus Tasks](../../../how-to/terminus/)
 - [Install Applications](../../../how-to/terminus/market/index.md#install-applications)
 - [Build Your Profile](../../../how-to/terminus/profile.md)
+- [Uninstall Terminus](../../../developer/develop/advanced/cli.md#terminus-uninstallation-script)

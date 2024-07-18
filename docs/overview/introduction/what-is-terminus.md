@@ -6,7 +6,7 @@ outline: [2, 3]
 
 Terminus's mission is to "let people own their data again".
 
-Terminus (used interchangeably with Terminus OS) is a free, self-hosted operating system built on Kubernetes. It converts your edge device into a powerful home cloud, providing powerful cloud computing capabilities while maintaining ease of use and privacy. By securely storing your data and accessing your self-hosted services from anywhere via Terminus OS, you gain complete control over your digital life. 
+Terminus is a free, self-hosted operating system built on Kubernetes. It converts your edge device into a powerful home cloud, providing powerful cloud computing capabilities while maintaining ease of use and privacy. By securely storing your data and accessing your self-hosted services from anywhere via Terminus, you gain complete control over your digital life. 
 
 Terminus is dedicated to advancing technological and AI equality by democratizing capabilities previously accessible only to large companies, making them available to every user.
 
@@ -28,7 +28,7 @@ In the future decentralized world, platforms may no longer exist, but protocols 
  
 ## Use Cases
 
-- **Self-Hosted**: Terminus OS serves as a one-stop self-hosted solution where users can host and manage their data, operations, and digital life effectively, with full data ownership.
+- **Self-Hosted**: Terminus serves as a one-stop self-hosted solution where users can host and manage their data, operations, and digital life effectively, with full data ownership.
 
 - **Local AI**: With the [AI Framework](../terminus/ai.md) provided by Terminus, users can host and run world-class open-source AI models locally, including large language models, image generation, and speech recognition. This allows the capability to create custom AI assistants that integrate seamlessly with  personal data and applications, all while ensuring enhanced privacy and control.
 

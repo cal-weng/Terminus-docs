@@ -23,7 +23,7 @@ In your terminal, execute the following command to install Terminus:
 
 - **To install the latest version of Terminus OS**:
 
-    ```sh
+    ```bash
     curl -fsSL https://terminus.sh |  bash -
     ```
 
@@ -38,7 +38,13 @@ In your terminal, execute the following command to install Terminus:
     ```
 
    :::info
-   Replace `{version}` with the current daily build version number. Check the [Terminus OS repository](https://github.com/beclab/terminus) for the latest version.
+   - Replace `{version}` with the current daily build version number. Check the [Terminus OS repository](https://github.com/beclab/terminus) for the latest version.
+   - If an error occurs during installation, use the following command to uninstall first:
+
+        ```bash
+        bash uninstall_cmd.sh
+        ```
+        After uninstalling, retry the installation by running the original installation command.
    :::
  
 ## Step 2: Enter Terminus Name
@@ -80,15 +86,6 @@ When using the internal network URL, please note:
 
 Please take note of the initial one-time password in the lower red square. You will need it in the Wizard page. 
 
-## Troubleshooting Installation 
-
-If an error occurs during installation, use the following command to uninstall first:
-
-```sh
-bash uninstall_cmd.sh
-```
-
-After uninstalling, retry the installation by running the original installation command.
 
 ## Next Steps
 

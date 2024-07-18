@@ -18,10 +18,10 @@ Before you begin, ensure your system meets these requirements. For optimal perfo
 
 | | Linux | Raspberry Pi | macOS | Windows |
 |---|---|---|---|---|
-| Operating System | Ubuntu 20.04+, Debian 11+ | Raspbian 11<br>Raspbian 12 | macOS Monterey (12) or later | Windows 10 (Build 19041+) or Windows 11 <br>Ubuntu 20.04+, Debian 11+ |
-| CPU | 4 cores+ (x86-64, amd64) | Raspberry Pi 5 | Apple Silicon (ARM64) | Multi-core processor |
-| RAM | 8GB+ | 8GB | 8 GB+ | 8GB+ |
-| Disk Space | 64GB+ | 64GB MicroSD (Class 2 or higher) | 64GB+ | - |
+| Operating System | Ubuntu 20.04 or later, Debian 11 or later | Raspbian 11<br>Raspbian 12 | macOS Monterey (12) or later | Windows 10 (Build 19041 or later) or Windows 11 <br>Ubuntu 20.04 or later, Debian 11 or later |
+| CPU | 4 cores or above (x86-64, amd64) | Raspberry Pi 5 | Apple Silicon (ARM64) | Multi-core processor |
+| RAM | 8GB | 8GB | 8 GB | 8GB |
+| Disk Space | 64GB | 64GB MicroSD (Class 2) | 64GB | - |
 | Additional | - | Ethernet cable (recommended) | Docker Desktop, Minikube | WSL2 enabled |
 
 :::info

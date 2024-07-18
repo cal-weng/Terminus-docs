@@ -19,7 +19,7 @@ To achieve this mission, Terminus OS incorporates several key technical implemen
 
 - Decentralized Application Evaluation System
 
-  Terminus OS supports [Application Reputation](../snowinning/smart-contract.md#application-reputation) to assist users in making informed purchase decisions and identifying reputable developers. 
+  Terminus OS supports [Application Reputation](../../developer/contribute/snowinning/smart-contract.md#application-reputation) to assist users in making informed purchase decisions and identifying reputable developers. 
 
 - Flexible Indexer Services for Market
   

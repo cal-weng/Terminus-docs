@@ -2,6 +2,10 @@
 
 This guide will walk you through the essential steps to get Terminus up and running on your Windows. Follow these steps to create your account, install Terminus, and start exploring the Terminus ecosystem.
 
+::: tip NOTE
+Currently, Terminus on Windows has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+:::
+
 ## Prerequisites
 
 -  A Windows machine meeting the [requirements](../getting-started/index.md#hardware-and-system-requirements).
@@ -15,7 +19,7 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
 
 1. Open PowerShell as Administrator and run the following commands:
    
-   ```sh
+   ```bash
    wsl --update
    wsl --install -d Ubuntu-22.04
    # Update WSL and install Ubuntu 
@@ -23,7 +27,7 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
    
 2. Create a `.wslconfig` file in your Windows user directory (typically `C:\Users\YourUsername\`) with the following content:
    
-   ```sh
+   ```bash
    [wsl2]
    networkingMode=mirrored
    memory=8GB 
@@ -36,7 +40,7 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
 
    a. Modify the `/etc/wsl.conf` file:
 
-   ```sh
+   ```bash
    echo "[network]
    generateHosts = false
    generateResolvConf = false" | sudo tee -a /etc/wsl.conf
@@ -47,13 +51,13 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
 
    b. Configure Mount:
 
-   ```sh
+   ```bash
    sudo mount --make-rshared /
    ```
 
    c. Configure the hosts file:
 
-   ```sh
+   ```bash
    sudo nano /etc/hosts
    # Add the following line
    192.168.50.11  ubuntu  # Adjust to your actual local IP address
@@ -61,7 +65,7 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
     
 4. In Ubuntu, run the following command to install the latest build of Terminus:
 
-   ```sh
+   ```bash
    curl -fsSL https://terminus.sh |  bash -
    ```
    Depending on your network and hardware configuration, the installation time may vary.
@@ -83,28 +87,12 @@ For complete activation guidance, see the [Wizard documentation](../../../how-to
 On your Wizard page, log in to Terminus with the password you just reset and complete two-step verification on TermiPass. For more information, see the [Login documentation](../../../how-to/terminus/setup/login.md).
 
 
-:::important
+:::warning
 Always [Back up your mnemonic phrase](../../../how-to/termipass/account/index.md#backup-mnemonic-phrase.md) to ensure account and data security.
 :::
 
-## Other Operations
-
-Here are some additional operations:
-
-- **Uninstall Terminus**. Run this command in Ubuntu when you need to reinstall Terminus, or simply want to uninstall it:
-
-   ```sh
-   cd install-wizard && bash uninstall_cmd.sh
-   ```
-
-- **Resolve IP change issues**. Services within the Kubernetes cluster rely on stable IPs and DNS resolution provided by the cluster's internal DNS. IP Address change can disrupt this and make Terminus inaccessible. To resolve this issue, run the following command in Ubuntu in your new network environment:
-
-```sh
-cd install-wizard && bash change_ip.sh
-```
-
 ## Next Steps 
-
-- [Explore Terminus Tasks](../../../how-to/terminus/index.md)
+- [Explore Terminus Tasks](../../../how-to/terminus/)
 - [Install Applications](../../../how-to/terminus/market/index.md#install-applications)
-- [Build Your Profile](../../../how-to/terminus/profile.md)
+- [Uninstall Terminus](../../../developer/develop/advanced/cli.md#terminus-uninstallation-script)
+- [Resolve IP Change Issues](../../../developer/develop/advanced/cli.md#resolve-ip-change-issue)

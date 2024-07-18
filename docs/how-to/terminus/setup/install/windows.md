@@ -3,6 +3,10 @@
 
 This guide covers the detailed steps of installing Terminus on your Windows system. This method leverages the Windows Subsystem for Linux (WSL2) to create a Linux environment within Windows, where Terminus OS is then installed.
 
+::: tip NOTE
+Currently, Terminus on Windows has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+:::
+
 ## Prerequisites
 
 Before you begin, ensure your system meets these requirements:
@@ -21,14 +25,14 @@ Before you begin, ensure your system meets these requirements:
 
 1. Open PowerShell as Administrator and run the following to update WSL2 and install Ubuntu:
    
-   ```sh
+   ```bash
    wsl --update
    wsl --install -d Ubuntu-22.04
    ```
    
 2. Create a `.wslconfig` file in your Windows user directory (typically `C:\Users\YourUsername\`) with the following content:
    
-   ```sh
+   ```bash
    [wsl2]
    networkingMode=mirrored
    memory=8GB 
@@ -41,7 +45,7 @@ Before you begin, ensure your system meets these requirements:
 
    a. Modify the `/etc/wsl.conf` file:
 
-   ```sh
+   ```bash
    echo "[network]
    generateHosts = false
    generateResolvConf = false" | sudo tee -a /etc/wsl.conf
@@ -52,13 +56,13 @@ Before you begin, ensure your system meets these requirements:
 
    b. Configure Mount:
 
-   ```sh
+   ```bash
    sudo mount --make-rshared /
    ```
 
    c. Configure the hosts file to ensure stable host resolution within WSL:
 
-   ```sh
+   ```bash
    sudo nano /etc/hosts
    # Add the following line
    192.168.50.11  ubuntu  # Adjust to your actual local IP address
@@ -66,10 +70,17 @@ Before you begin, ensure your system meets these requirements:
     
 4. In Ubuntu, run the following command to install the latest build of Terminus:
 
-  ```sh
+  ```bash
    curl -fsSL https://terminus.sh |  bash -
    ```
-   Depending on your network and hardware configuration, the installation time may vary.
+
+   :::info
+   If an error occurs during installation, use the following command to uninstall first:
+   ```bash
+   bash uninstall_cmd.sh
+   ```
+   After uninstalling, retry the installation by running the original installation command.
+   :::
 
  
 ## Step 2: Enter Terminus Name
@@ -110,16 +121,6 @@ When using the internal network URL, please note:
 ### Initial Login Password
 
 Please take note of the initial one-time password in the lower red square. You will need it in the Wizard page. 
-
-## Troubleshooting Installation 
-
-If an error occurs during installation, use the following command to uninstall first:
-
-```sh
-bash uninstall_cmd.sh
-```
-
-After uninstalling, retry the installation by running the original installation command.
 
 ## Next Steps
 

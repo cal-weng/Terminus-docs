@@ -14,6 +14,34 @@ export LOCAL_GPU_SHARE=1                        # Enable GPU sharing
 curl -fsSL https://terminus.sh | bash -
 ```
 
+## Terminus Uninstallation Script
+
+- For Terminus installed on Linux, Raspberry Pie, and Windows (Windows Subsystem for Linux):
+
+  ```sh
+  cd install-wizard && bash uninstall_cmd.sh
+  ```
+
+- For Terminus Installed on Mac:
+
+  ```sh
+  bash uninstall_macos.sh
+  ```
+
+## Resolve IP Change Issue
+
+Services within the Kubernetes cluster rely on stable IPs and DNS resolution provided by the cluster's internal DNS. When you change the location of your Terminus, its IP address changes. This can disrupt proper DNS resolution for your cluster and make Terminus inaccessible.
+
+To resolve this issue, run the following command in Ubuntu in your new network environment:
+
+```sh
+cd install-wizard && bash change_ip.sh
+```
+
+:::info
+This command is not applicable to Terminus on macOS yet.
+:::
+
 ## Add a Terminus Node Locally
 
 **Before Install**

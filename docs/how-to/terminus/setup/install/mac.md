@@ -3,6 +3,10 @@
 
 This guide covers the detailed steps to install Terminus on your Mac. This method uses containerized tools like Docker Desktop and Minikube to create a suitable environment for running Terminus OS on Mac.
 
+::: tip NOTE
+Currently, Terminus on Mac has certain limitations such as distributed database support and adding local nodes. We recommend using it only for development or testing purposes.
+:::
+
 ## Prerequisites
 
 - A Mac meeting the following requirements:
@@ -25,11 +29,20 @@ This guide covers the detailed steps to install Terminus on your Mac. This metho
     
 3. In terminal, run the following command to install the latest build of Terminus:
 
-   ```sh
+   ```bash
    curl -fsSL https://terminus.sh |  bash - 
    ```
    
    This script sets up the necessary components for Terminus OS, including configuring MiniKube, setting up Kubernetes and networking, and installing required plugins. Depending on your network and system, the installation time may vary. 
+
+   :::info
+   If an error occurs during installation, use the following command to uninstall first:
+
+   ```bash
+   bash uninstall_macos.sh
+   ```
+   After uninstalling, retry the installation by running the original installation command.
+   :::
  
 ## Step 2: Enter Terminus Name
 
@@ -69,16 +82,6 @@ When using the internal network URL, please note:
 ### Initial Login Password
 
 Please take note of the initial one-time password in the lower red square. You will need it in the Wizard page. 
-
-## Troubleshooting Installation 
-
-If an error occurs during installation, use the following command to uninstall first:
-
-```sh
-bash uninstall_macos.sh
-```
-
-After uninstalling, retry the installation by running the original installation command.
 
 ## Next Steps
 

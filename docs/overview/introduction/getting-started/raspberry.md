@@ -16,28 +16,28 @@ Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/
 
 1. Configure the Raspbian environment to enable necessary features: 
    - For Raspbian 11:
-   ```sh
+   ```bash
    echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/cmdline.txt
    ```
    - For Raspbian 12:
-   ```sh
+   ```bash
    echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
    echo "kernel=kernel8.img" | sudo tee -a /boot/firmware/config.txt
    ```
 
 2. Reboot your Raspberry Pi to apply the changes.
-   ```sh
+   ```bash
    sudo reboot
    ```
 
 3. Configure the hosts file to ensure stable host resolution. 
-   ```sh
+   ```bash
    sudo nano /etc/hosts
    192.168.50.11  raspberrypi  # Adjust to your actual local IP address
   
 4. Install the latest build of Terminus:
 
-   ```sh
+   ```bash
    curl -sSfL https://github.com/beclab/Terminus/releases/download/${version}/install.sh | bash -
    ```
    :::info
@@ -59,27 +59,13 @@ For complete activation guidance, see the [Wizard documentation](../../../how-to
 
 On your Wizard page, log in to Terminus with the password you just reset and complete two-step verification on TermiPass. For more information, see the [Login documentation](../../../how-to/terminus/setup/login.md).
 
-:::important
+:::warning
 Always [Back up your mnemonic phrase](../../../how-to/termipass/account/index.md#backup-mnemonic-phrase.md) to ensure account and data security.
 :::
 
-## Other Operations
-
-Here are some additional operations:
-
-- **Uninstall Terminus**. Run this command when you need to reinstall Terminus, or simply want to uninstall it:
-
-   ```sh
-   cd install-wizard && bash uninstall_cmd.sh
-   ```
-
-- **Resolve IP change issues**. Services within the Kubernetes cluster rely on stable IPs and DNS resolution provided by the cluster's internal DNS. IP Address change can disrupt this and make Terminus inaccessible. To resolve this issue, run the following command in your new network environment:
-
-```sh
-cd install-wizard && bash change_ip.sh
-
 ## Next Steps 
-
-- [Explore Terminus Tasks](../../../how-to/terminus/index.md)
+- [Explore Terminus Tasks](../../../how-to/terminus/)
 - [Install Applications](../../../how-to/terminus/market/index.md#install-applications)
-- [Build Your Profile](../../../how-to/terminus/profile.md)
+- [Uninstall Terminus](../../../developer/develop/advanced/cli.md#terminus-uninstallation-script)
+- [Resolve IP Change Issues](../../../developer/develop/advanced/cli.md#resolve-ip-change-issue)
+

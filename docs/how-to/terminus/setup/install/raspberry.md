@@ -17,32 +17,39 @@ Before you begin, ensure your system meets these requirements:
 
 1. Configure the Raspbian environment to enable necessary features: 
    - For Raspbian 11:
-      ```sh
+      ```bash
       echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/cmdline.txt
       ```
    - For Raspbian 12:
-      ```sh
+      ```bash
       echo " cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1" | sudo tee -a /boot/firmware/cmdline.txt
       echo "kernel=kernel8.img" | sudo tee -a /boot/firmware/config.txt
       ```
 
 2. Reboot your Raspberry Pi to apply the changes.
-   ```sh
+   ```bash
    sudo reboot
    ```
 
 3. Configure the hosts file. This ensures that the Raspberry Pi can resolve its own hostname to a stable IP address, which is important for internal networking within Terminus OS. 
-   ```sh
+   ```bash
    sudo nano /etc/hosts
    192.168.50.11  raspberrypi  # Adjust to your actual local IP address.
   
 4. Install the latest build of Terminus:
 
-   ```sh
+   ```bash
    curl -sSfL https://github.com/beclab/Terminus/releases/download/${version}/install.sh | bash -
    ```
    :::info
-   Replace `{version}` with the current daily build version number. Check the [Terminus OS repository](https://github.com/beclab/terminus) for the latest version.
+   - Replace `{version}` with the current daily build version number. Check the [Terminus OS repository](https://github.com/beclab/terminus) for the latest version.
+
+   - If an error occurs during installation, use the following command to uninstall first:
+      ```bash
+      bash uninstall_cmd.sh
+      ```
+      After uninstalling, retry the installation by running the original installation command.
+   :::
  
 ## Step 2: Enter Terminus Name
 
@@ -82,16 +89,6 @@ When using the internal network URL, please note:
 ### Initial Login Password
 
 Please take note of the initial one-time password in the lower red square. You will need it in the Wizard page. 
-
-## Troubleshooting Installation 
-
-If an error occurs during installation, use the following command to uninstall first:
-
-```sh
-bash uninstall_cmd.sh
-```
-
-After uninstalling, retry the installation by running the original installation command.
 
 ## Next Steps
 
