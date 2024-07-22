@@ -12,6 +12,11 @@ This guide will walk you through the essential steps to get Terminus up and runn
 
 Open TermiPass on your mobile, and [create a new Terminus Name](../../../how-to/termipass/account/#create-terminus-name) as instructed on the screen.
 
+:::info
+Terminus Name is your unique identifier within Terminus.
+Learn more in [why do you need a Terminus Name](../../terminus/terminus-name.md#why-do-you-need-a-terminus-name).
+:::
+
 ## Step 2: Install Terminus
 
 1. Configure the Raspbian environment to enable necessary features: 

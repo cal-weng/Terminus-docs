@@ -23,6 +23,10 @@ We recommend using it only for development or testing purposes.
 - [TermiPass](../../../termipass/overview.md#download-termipass) mobile app installed on your smartphone.
 - [Terminus Name](../../../termipass/account/index.md#create-a-terminus-name) created.
 
+:::info
+Learn why you need a Terminus Name [here](../../../../overview/terminus/terminus-name.md#why-do-you-need-a-terminus-name).
+:::
+
 ## Step 1: Install Terminus 
 
 1. Configure Docker. 

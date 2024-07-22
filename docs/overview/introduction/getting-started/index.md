@@ -37,3 +37,12 @@ Select your platform to get started:
 - [Get started on MacOS](mac.md)
 - [Get started on Windows](windows.md)
 - [Get started on Raspberry Pi](raspberry.md)
+
+:::tip
+Before you get started, it is advised you get familiar with the following concepts:
+
+- [Terminus](../../introduction/what-is-terminus.md)
+- [Terminus Name](../../terminus/terminus-name.md)
+- [TermiPass](../../../how-to/termipass/overview.md)
+:::
+

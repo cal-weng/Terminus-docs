@@ -25,6 +25,10 @@ Before you begin, ensure your system meets these requirements:
      - Linux (on WSL2): Ubuntu 20.04 LTS or later; Debian 11 or later
 - [TermiPass](../../../termipass/overview.md#download-termipass) mobile app installed on your smartphone
 - [Terminus Name](../../../termipass/account/index.md#create-a-terminus-name) created
+  
+:::info
+Learn why you need a Terminus Name [here](../../../../overview/terminus/terminus-name.md#why-do-you-need-a-terminus-name).
+:::
 
 ## Step 1: Install Terminus 
 

@@ -29,6 +29,7 @@ const side = {
       items: [
         { text: "Overview", link: "/overview/terminus/overview" },
         { text: "Account", link: "/overview/terminus/account" },
+        { text: "Terminus Name", link: "/overview/terminus/terminus-name" },
         { text: "Application", link: "/overview/terminus/application" },
         { text: "Network", link: "/overview/terminus/network" },
         { text: "Data", link: "/overview/terminus/data" },
