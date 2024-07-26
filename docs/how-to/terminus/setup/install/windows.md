@@ -128,7 +128,7 @@ Learn why you need a Terminus Name [here](../../../../overview/terminus/terminus
       curl -fsSL https://terminus.sh |  bash -
       ```
 
-   b. During installation, enter the Windows host IP (192.xxx) you obtained earlier in step 3 when prompted. Then, press **Enter** to proceed.
+   b. During installation, enter the Windows host IP (`192.168.xxx.xxx`) you obtained earlier in step 3 when prompted. Then, press **Enter** to proceed.
 
       ![Install Windows IP](/images/overview/terminus/install-windows-ip.jpeg)
 

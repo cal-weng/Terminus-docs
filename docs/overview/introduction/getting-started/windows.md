@@ -42,7 +42,7 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
    ```
 
    :::info
-   You may need to restart your system if it's the first time installing WSL2.
+   You may need to restart your system after Ubuntu is installed if it's the first time installing WSL2.
    ::: 
 
 3. In PowerShell, run the following command to obtain Windows host IP:
@@ -121,7 +121,7 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
       curl -fsSL https://terminus.sh |  bash -
       ```
 
-   b. During installation, enter the Windows host IP (192.xxx) you obtained earlier in step 3 when prompted. Then, press **Enter** to proceed.
+   b. During installation, enter the Windows host IP (`192.168.xxx.xxx`) you obtained earlier in step 3 when prompted. Then, press **Enter** to proceed.
 
     ![Install Windows IP](/images/overview/terminus/install-windows-ip.jpeg)
 
