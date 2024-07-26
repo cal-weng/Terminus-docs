@@ -19,7 +19,10 @@ We recommend using it only for development or testing purposes.
    - RAM: 8GB or above (available memory)
    - Storage: 64GB or above (available disk space)
    - MacOS: Monterey (12) or later
-- [Docker](https://www.docker.com/products/docker-desktop/) and [Minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download) installed on Mac.
+- [Docker](https://www.docker.com/products/docker-desktop/) and [MiniKube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fhomebrew) intalled on your Mac. 
+::: tip
+For MiniKube, it's recommended to install via `homebrew`.
+:::
 - [TermiPass](../../../termipass/overview.md#download-termipass) mobile app installed on your smartphone.
 - [Terminus Name](../../../termipass/account/index.md#create-a-terminus-name) created.
 

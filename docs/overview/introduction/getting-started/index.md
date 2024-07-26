@@ -13,14 +13,14 @@ Welcome to Terminus! This guide will help you quickly get Terminus up and runnin
 
 ## Hardware and System Requirements 
 
-Before you begin, ensure your system meets these requirements. For optimal performance, we recommend exceeding these specifications:
+Before you begin, ensure your system meets these minimum requirements. For optimal performance, we recommend exceeding these specifications:
 
 
 | | Linux | Raspberry Pi | macOS | Windows |
 |---|---|---|---|---|
-| Operating System | Ubuntu 20.04 or later, Debian 11 or later | Raspbian 12 | macOS Monterey (12) or later |  Windows 11  |
+| Operating System | Ubuntu 20.04 or later, Debian 11 or later | Raspbian 12 | macOS Monterey (12) or later |  Windows 10, 11  |
 | Arch/Model | x86-64, amd64 | Raspberry Pi 5  | Apple Silicon (ARM64) | x86-64, amd64 |
-| RAM | 8GB | 8GB | 8 GB | 8GB |
+| RAM | 8GB  | 8GB | 8GB | 8GB minimum, 16GB or more recommended |
 | Disk Space | 64GB | 64GB MicroSD (Class 2) | 64GB | - |
 | Additional | - | Ethernet cable (recommended) | Docker Desktop, Minikube | WSL2 enabled with Ubuntu 20.04 or later; Debian 11 or later |
 

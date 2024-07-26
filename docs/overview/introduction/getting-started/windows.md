@@ -30,67 +30,102 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
    
    ```bash
    [wsl2]
-   networkingMode=mirrored
-   memory=8GB 
+   memory=16GB 
    swap=0GB
+   ```
 
-   [experimental]
-   hostAddressLoopback=true
-
-2. Open PowerShell as Administrator and run the following commands:
+2. Open PowerShell as Administrator and run the following commands to install Ubuntu in your WSL2:
    
    ```bash
-   wsl --update
    wsl --install -d Ubuntu-22.04
-   # Update WSL2 and install Ubuntu 
+   wsl --update
    ```
 
-3. Launch Ubuntu from the Start menu, and configure the Ubuntu environment as below:
+   :::info
+   You may need to restart your system if it's the first time installing WSL2.
+   ::: 
 
-   a. Modify the `/etc/wsl.conf` file by executing the following command:
-
-      ```bash
-      echo "[network]
-      generateHosts = false
-      generateResolvConf = false" | sudo tee -a /etc/wsl.conf
-      # Prevent WSL2 from overwriting your Windows host's DNS settings.
-      ```
-
-   b. Configure Mount:
-
-      ```bash
-      sudo mount --make-rshared /
-      ```
-
-   c. Bind your local IP to your Ubuntu hostname for stable DNS resolution:
-  
-      ```bash
-      sudo apt install net-tools
-      ifconfig
-      # Get your local IP. Make sure it starts with `192.168`.
-      ```
-      
-      ```bash
-      sudo nano /etc/hosts
-      # Add the following line
-      192.168.xx.xx  ubuntu
-      # Replace with your actual local IP and your host name.
-      ```
-
-   d. Reboot your Ubuntu to ensure the changes take effect.
-
-      ```bash
-      sudo reboot
-      ``` 
-    
-4. In Ubuntu, run the following command to install the latest build of Terminus:
-
+3. In PowerShell, run the following command to obtain Windows host IP:
+   
    ```bash
-   curl -fsSL https://terminus.sh |  bash -
+   netsh interface ipv4 show addresses
    ```
-   Depending on your network and hardware configuration, the installation time may vary.
+   
+   Note the IP Address of your WLAN or Ethernet interface. It should start with `192.xxx`. You will need it when installing Terminus.
 
-5. At the end of the installation, take note of the URL for Terminus Activation wizard and your initial login password.
+4. Set up port forwarding for your WSL2 server.
+   
+   a. Get the IP address of the WSL2 server.
+
+      ```bash
+      wsl hostname -i
+      # This typically returns an IP address in format of "172.xx.xx.xx"
+      ```
+   b. Set up port forwarding rules:
+   
+      ```bash
+      netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=<addr for hostname>
+      netsh interface portproxy add v4tov4 listenport=443 listenaddress=0.0.0.0 connectport=443 connectaddress=<addr for hostname>
+      netsh interface portproxy add v4tov4 listenport=30180 listenaddress=0.0.0.0 connectport=30180 connectaddress=<addr for hostname>
+      
+      # Replace <addr for hostname> with the IP address you get from step a.
+      ```
+
+5. Configure the Ubuntu environment.
+
+   a. Start Ubuntu in WSL2 and log in as root.
+
+      ```bash
+      wsl -d Ubuntu-22.04
+      sudo su
+      ```
+   
+   b. Modify the `/etc/wsl.conf` file:
+
+      ```ini
+      sudo vi /etc/wsl.conf
+
+      [boot] 
+      command="mount --make-rshared /"  # add this line below [boot]  
+
+      [network]
+      generateHosts = false
+      generateResolvConf = false 
+      # Allow you to manually manage hosts file and DNS settings
+      hostname=terminus # Set your hostname of the WSL instance
+      ```
+      Save and exit the editing mode (Ctrl+X, Y, and Enter). 
+
+   
+   c. Exit Ubuntu and restart it in WSL2 to apply the changes:
+
+      ```bash
+      exit
+
+      wsl --shutdown Ubuntu-22.04
+      wsl -d Ubuntu-22.04
+      ```
+
+   d. Modify the hosts file and the `resolv.conf` file:
+   
+      ```bash
+      cd && sudo sh -c "echo \"127.0.0.1 localhost\n$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}') $(hostname)\" > /etc/hosts && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /e    tc/resolv.conf"
+      # Bind Ubuntu's local IP with the host name, and configure DNS resolution to use Cloudfare's public DNS servers.
+      ```
+    
+6. Install Terminus.
+   
+   a. In Ubuntu, run the following command to install the latest build of Terminus:
+
+      ```sh
+      curl -fsSL https://terminus.sh |  bash -
+      ```
+
+   b. During installation, enter the Windows host IP (192.xxx) you obtained earlier in step 3 when prompted. Then, press **Enter** to proceed.
+
+    ![Install Windows IP](/images/overview/terminus/install-windows-ip.jpeg)
+
+At the end of the installation, take note of the wizard URL for Terminus Activation wizard and your initial login password.
 
 For more detailed instructions, see [Install Terminus on Windows](../../../how-to/terminus/setup/install/windows.md).
 

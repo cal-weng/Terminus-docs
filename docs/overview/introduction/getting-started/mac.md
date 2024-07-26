@@ -17,7 +17,10 @@ We recommend using it only for development or testing purposes.
 Before you begin, ensure your system meets these requirements:
 
 - A Mac meeting the [requirements](../getting-started/index.md#hardware-and-system-requirements).
-- [Docker](https://www.docker.com/products/docker-desktop/) and [MiniKube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download) intalled on your Mac. 
+- [Docker](https://www.docker.com/products/docker-desktop/) and [MiniKube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fhomebrew) intalled on your Mac. 
+::: tip
+For MiniKube, it's recommended to install via `homebrew`.
+:::
 - [TermiPass](../../../how-to/termipass/overview.md#download-termipass) mobile app installed on your smartphone.
 
 ## Step 1: Create a Terminus Name
@@ -68,5 +71,4 @@ Always [Back up your mnemonic phrase](../../../how-to/termipass/account/index.md
 ## Next Steps
 - [Explore Terminus Tasks](../../../how-to/terminus/)
 - [Install Applications](../../../how-to/terminus/market/index.md#install-applications)
-- [Build Your Profile](../../../how-to/terminus/profile.md)
 - [Uninstall Terminus](../../../developer/develop/advanced/cli.md#terminus-uninstallation-script)
