@@ -34,36 +34,36 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
    swap=0GB
    ```
 
-2. Open PowerShell as Administrator and run the following commands to install Ubuntu in your WSL2:
+2. Open PowerShell as Administrator and run the following commands to install Ubuntu in your Windows Subsystem for Linux (WSL) environment:
    
-   ```bash
+   ```PowerShell
    wsl --install -d Ubuntu-22.04
    wsl --update
    ```
 
    :::info
-   You may need to restart your system after Ubuntu is installed if it's the first time installing WSL2.
+   You may need to restart your system after Ubuntu is installed if it's the first time installing WSL.
    ::: 
 
 3. In PowerShell, run the following command to obtain Windows host IP:
    
-   ```bash
+   ```PowerShell
    netsh interface ipv4 show addresses
    ```
    
    Note the IP Address of your WLAN or Ethernet interface. It should start with `192.xxx`. You will need it when installing Terminus.
 
-4. Set up port forwarding for your WSL2 server.
+4. Set up port forwarding for your WSL server.
    
-   a. Get the IP address of the WSL2 server.
+   a. Get the IP address of the WSL server.
 
-      ```bash
-      wsl hostname -i
+      ```PowerShell
+      wsl ip address show eth0 `| grep inet `| grep -v inet6 `| cut -d ' ' -f 6 `| cut -d '/' -f 1
       # This typically returns an IP address in format of "172.xx.xx.xx"
       ```
    b. Set up port forwarding rules:
    
-      ```bash
+      ```PowerShell
       netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=<addr for hostname>
       netsh interface portproxy add v4tov4 listenport=443 listenaddress=0.0.0.0 connectport=443 connectaddress=<addr for hostname>
       netsh interface portproxy add v4tov4 listenport=30180 listenaddress=0.0.0.0 connectport=30180 connectaddress=<addr for hostname>
@@ -73,51 +73,47 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
 
 5. Configure the Ubuntu environment.
 
-   a. Start Ubuntu in WSL2 and log in as root.
+   a. Open the Start menu and search for `Ubuntu-22.04`, and click on the Ubuntu icon to launch your Linux environment. 
 
-      ```bash
+      ```PowerShell
       wsl -d Ubuntu-22.04
-      sudo su
       ```
    
-   b. Modify the `/etc/wsl.conf` file:
+   b. In Ubuntu, modify the `/etc/wsl.conf` file as specified below. 
 
-      ```ini
-      sudo vi /etc/wsl.conf
+      :::NOTE
+      Make sure you open the file with sudo privileges. 
+      :::
 
+      ```bash
       [boot] 
-      command="mount --make-rshared /"  # add this line below [boot]  
-
+      systemd=true  
+      command="mount --make-rshared /"   # Add this line
       [network]
       generateHosts = false
-      generateResolvConf = false 
-      # Allow you to manually manage hosts file and DNS settings
-      hostname=terminus # Set your hostname of the WSL instance
+      generateResolvConf = false # Allow manually managing hosts file and DNS settings
+      hostname=terminus # Set the hostname for the WSL instance
       ```
-      Save and exit the editing mode (Ctrl+X, Y, and Enter). 
 
-   
-   c. Exit Ubuntu and restart it in WSL2 to apply the changes:
+   c. Shut down Ubuntu in PowerShell and restart it.
 
-      ```bash
-      exit
-
+      ```PowerShell
       wsl --shutdown Ubuntu-22.04
-      wsl -d Ubuntu-22.04
       ```
 
-   d. Modify the hosts file and the `resolv.conf` file:
+   d. In Ubuntu, modify the hosts file and the `resolv.conf` file:
    
       ```bash
-      cd && sudo sh -c "echo \"127.0.0.1 localhost\n$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}') $(hostname)\" > /etc/hosts && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /e    tc/resolv.conf"
-      # Bind Ubuntu's local IP with the host name, and configure DNS resolution to use Cloudfare's public DNS servers.
+      sudo sh -c "echo \"127.0.0.1 localhost\n$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}') $(hostname)\" > /etc/hosts && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /etc/resolv.conf"
+      ```
+      :::info This command binds Ubuntu's local IP with the host name, and configures DNS resolution to use Cloudflare's public DNS servers.
       ```
     
 6. Install Terminus.
    
    a. In Ubuntu, run the following command to install the latest build of Terminus:
 
-      ```sh
+      ```bash
       curl -fsSL https://terminus.sh |  bash -
       ```
 

@@ -6,7 +6,7 @@ This guide covers the detailed steps to install Terminus on your Raspberry Pie.
 
 Before you begin, ensure your system meets these requirements:
 - A Raspberry Pie system meeting the following requirements:
-  - Hardware: Raspberry Pi 5 with 8GB memory 
+  - Hardware: Raspberry Pi 4B or Raspberry Pi 5 with 8GB memory 
   - Operating System: Raspbian 12  
   - Storage: 64GB Micro SD Card (Application Class 2)
   - Ethernet cable 
