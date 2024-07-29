@@ -115,6 +115,7 @@ Learn why you need a Terminus Name [here](../../../../overview/terminus/terminus
       && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /etc/resolv.conf"
       ```
       :::info This command binds Ubuntu's local IP with the host name, and configures DNS resolution to use Cloudflare's public DNS servers.
+      :::
     
 6. Install Terminus.
    

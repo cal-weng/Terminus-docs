@@ -104,10 +104,13 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
    d. In Ubuntu, modify the hosts file and the `resolv.conf` file:
    
       ```bash
-      sudo sh -c "echo \"127.0.0.1 localhost\n$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}') $(hostname)\" > /etc/hosts && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /etc/resolv.conf"
+      sudo sh -c "echo \"127.0.0.1 localhost\n
+      $(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')$(hostname)\" > /etc/hosts 
+      && echo \"nameserver 1.1.1.1\nnameserver 1.0.0.1\" > /etc/resolv.conf"
       ```
-      :::info This command binds Ubuntu's local IP with the host name, and configures DNS resolution to use Cloudflare's public DNS servers.
-      ```
+      :::info 
+      This command binds Ubuntu's local IP with the host name, and configures DNS resolution to use Cloudflare's public DNS servers.
+      :::
     
 6. Install Terminus.
    
