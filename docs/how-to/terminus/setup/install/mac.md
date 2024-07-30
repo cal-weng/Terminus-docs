@@ -15,7 +15,7 @@ We recommend using it only for development or testing purposes.
 ## Prerequisites
 
 - A Mac meeting the following requirements:
-   - Architecture: Apple Silicon (ARM64)
+   - Architecture: X86-64 or ARM64
    - RAM: 8GB or above (available memory)
    - Storage: 64GB or above (available disk space)
    - MacOS: Monterey (12) or later
