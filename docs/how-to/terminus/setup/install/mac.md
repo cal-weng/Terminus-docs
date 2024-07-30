@@ -34,7 +34,7 @@ Learn why you need a Terminus Name [here](../../../../overview/terminus/terminus
 
 1. Configure Docker. 
    In Docker Desktop, navigate to **Settings** > **Resources**, and configure as below:
-    - CPU limit: Set to 11 CPUs
+    - CPU limit: Set to at least 4 CPUs
     - Memory limit: Set to at least 9 GB
   
 2. Click **Apply & Restart** to implement the changes.

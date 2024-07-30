@@ -81,7 +81,7 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
    
    b. In Ubuntu, modify the `/etc/wsl.conf` file as specified below. 
 
-      :::NOTE
+      ::: tip NOTE
       Make sure you open the file with sudo privileges. 
       :::
 
