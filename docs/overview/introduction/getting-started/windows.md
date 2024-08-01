@@ -74,10 +74,6 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
 5. Configure the Ubuntu environment.
 
    a. Open the Start menu and search for `Ubuntu-22.04`, and click on the Ubuntu icon to launch your Linux environment. 
-
-      ```PowerShell
-      wsl -d Ubuntu-22.04
-      ```
    
    b. In Ubuntu, modify the `/etc/wsl.conf` file as specified below. 
 
@@ -95,11 +91,13 @@ Learn more about [why you need a Terminus Name](../../terminus/terminus-name.md#
       hostname=terminus # Set the hostname for the WSL instance
       ```
 
-   c. Shut down Ubuntu in PowerShell and restart it.
+   c. Shut down Ubuntu in PowerShell:
 
       ```PowerShell
       wsl --shutdown Ubuntu-22.04
       ```
+      
+      Then, searching for `Ubuntu-22.04` in the **Start** menu, and launch it by clicking on the Ubuntu icon.
 
    d. In Ubuntu, modify the hosts file and the `resolv.conf` file:
    
