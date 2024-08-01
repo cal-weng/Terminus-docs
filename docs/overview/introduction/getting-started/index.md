@@ -21,7 +21,7 @@ Before you begin, ensure your system meets these minimum requirements. For optim
 | Operating System | Ubuntu 20.04 or later, Debian 11 or later | Raspbian 12 | macOS Monterey (12) or later |  Windows 10, 11  |
 | Arch/Model | x86-64, amd64 | Raspberry Pi 4B，Raspberry Pi 5 | x86-64, ARM64 | x86-64, amd64 |
 | RAM | 8GB  | 8GB | 8GB | 8GB |
-| Disk Space | 64GB | 64GB MicroSD (Class 2) | 64GB | - |
+| Disk Space | 64GB | 64GB SSD | 64GB | - |
 | Additional | - | Ethernet cable (recommended) | Docker Desktop, Minikube | WSL2 enabled with Ubuntu 20.04 or later; Debian 11 or later |
 
 :::info

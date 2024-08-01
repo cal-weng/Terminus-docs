@@ -8,7 +8,7 @@ Before you begin, ensure your system meets these requirements:
 - A Raspberry Pie system meeting the following requirements:
   - Hardware: Raspberry Pi 4B or Raspberry Pi 5 with 8GB memory 
   - Operating System: Raspbian 12  
-  - Storage: 64GB Micro SD Card (Application Class 2)
+  - Storage: 64GB (SSD Recommended)
   - Ethernet cable 
 - [TermiPass](../../../termipass/overview.md#download-termipass) mobile app installed on your smartphone
 - [Terminus Name](../../../termipass/account/index.md#create-a-terminus-name) created
