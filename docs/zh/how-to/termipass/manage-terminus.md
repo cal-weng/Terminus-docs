@@ -1,104 +1,119 @@
-# 管理 Terminus
+# 使用 TermiPass 管理 Terminus
 
-## Resource Consumption of the Terminus
+本指南将向您说明如何通过 TermiPass 简单管理 Terminus 设备，包括检查系统状态、管理网络连接和执行远程操作。
 
-:::info
-只有 Android 和 iOS 版本支持该功能
+## 前提条件
+
+确保满足以下条件：
+
+- 已安装 TermiPass 应用程序。
+- 您有有效的 Terminus Name 并已激活 Terminus 设备。
+- Terminus 设备已开机并连接到网络。
+
+## 访问 Terminus 管理页面
+
+TermiPass 应用程序中的 Terminus 管理页面是管理 Terminus 的主要界面。您可以查看系统状态、配置 Wi-Fi 网络、重启或关闭设备。
+
+访问页面步骤：
+
+1. 打开 TermiPass 应用程序，进入 **设置** 页面。
+2. 点击 **Terminus Name** 以访问管理页面。
+
+::: tip 注意
+请确保满足以下条件：
+- 当前账户具有管理员权限。
+- 您的手机和 Terminus 设备位于同一网络中。
 :::
 
-在这里你可以查看到 Terminus 的资源消耗信息。
+## 配置 Wi-Fi 网络
 
-![alt text](/images/how-to/termipass/resource.jpg)
+在 Wi-Fi 配置部分，您可以在有线和无线连接之间切换，或更改到其他网络。
 
-## VPN connection
+### 切换有线和无线连接
 
-你可以在 TermiPass 客户端开启 VPN 连接。
+如果 Terminus 是通过有线连接激活的，您可以切换到 Wi-Fi 连接：
 
-![alt text](/images/how-to/termipass/vpn.jpg)
+![切换至 Wi-Fi](/images/how-to/termipass/switch_to_wifi.png)
 
-- 在 Terminus 桌面客户端开启 VPN。请点击主界面的左上角头像区域，在新的面板中选择开启 VPN connection。
+1. 在 **Wi-Fi 配置** 页面，点击 **手机当前网络** 下列出的 Wi-Fi 连接。
+2. 如果提示，输入 Wi-Fi 密码并确认连接。
+3. 连接成功后，Wi-Fi 网络将显示在 **可选连接方式** 列表中。点击该 Wi-Fi 连接，Terminus 将切换至无线网络。Terminus 状态会显示为 “IP地址变更中”。
+4. 当状态恢复为 **Terminus 运行中** 时，切换完成。此过程大约需要 5 分钟。
 
-- 在 Terminus 移动客户端开启 VPN。请切到 Setting 界面，进入 Account，在 Account 页面中开启 VPN。
+::: tip 注意
+如果您的 Terminus 是通过无线连接激活的，您可以在 **可选连接方式** 列表中直接切换到有线连接。
+:::
 
-请注意，如果你在 TermiPass 客户端开启了 VPN，那么无论你是通过 TermiPass 客户端连接到 Terminus，还是通过浏览器访问 Terminus，都将使用 VPN 连接。
+### 切换至其他网络
 
-## Connection Status
+如果 Terminus 设备已连接至新的网络环境，您需要在 TermiPass 应用中配置 IP 地址：
 
-TermiPass 将显示账号和 Terminus 的连接状态.
+1. 将手机连接至新网络，并启动 Terminus。
+2. 打开 TermiPass 应用，进入 **Terminus 管理** 页面。TermiPass 会扫描本地网络并检测 Terminus 设备。此时，设备状态为 **IP 正在更改**。
+3. IP 地址更改完成后，系统状态会恢复为 **Terminus 运行中**。此过程大约需要 10-15 分钟。
 
-正常情况下，将有以下几种状态：
+## 远程控制 Terminus
 
-![alt text](/images/how-to/termipass/connection_status.jpg)
+在 **Terminus 管理** 页面右上角有一个电源图标，点击它可以执行以下远程操作：
 
-| 状态                | 状态图标 | 描述                             |
-| ------------------- | -------- | -------------------------------- |
-| 公网连接 - Internet | Internet | 通过公网连接 到 Terminus         |
-| 内网连接 - Intranet | Intranet | 通过内网连接 到 Terminus         |
-| FRP                 | FRP      | 通过 FRP 连接 到 Terminus        |
-| VPN 连接 - DERP     | DERP     | 通过 VPN - DERP 连接 到 Terminus |
-| VPN 连接 - P2P      | P2P      | 通过 VPN - P2P 连接 到 Terminus  |
+![远程控制](/images/how-to/termipass/remote_control.png)
 
-### Public Network Connection - Internet
+- **重启 Terminus**：点击后将重启 Terminus 设备。系统状态将显示 **正在重启**，然后恢复为运行状态。此过程需要 5-10 分钟。
+- **关闭 Terminus**：点击后将关闭设备。系统状态将显示 **Terminus 已关闭**，您需要手动重新开机。
 
-显示 “Internet” 状态，则表示，你是通过公网连接到 Terminus。
+::: tip 注意
+- 在关闭或重启过程中，连接可能会暂时中断，系统将显示“找不到 Terminus”，然后切换到相应状态。
+- 手动关闭设备后，只会显示 **找不到 Terminus** 页面。
+  :::
 
-### Internal Network Connection - Intranet
+## 恢复出厂设置
 
-显示 Intranet 状态，则表示，你是通过内网连接到 Terminus。
+::: warning 重要
+此操作将卸载系统并永久删除所有用户账户及相关数据！
+:::
 
-### FRP
+![恢复出厂设置](/images/how-to/termipass/restore_to_factory.png)
 
-显示 FRP 状态，则表示，你是通过 FRP 连接到 Terminus。
+要卸载 Terminus：
 
-### VPN Connection - DERP
+1. 在 **Terminus 管理** 页面，点击 **恢复出厂设置**。
+2. 确认风险提示并输入 Terminus 密码。
+3. 等待卸载完成后，系统将返回到 Terminus Name 登录页面。
 
-显示 DERP 状态，则表示，你是通过 VPN - DERP 连接连接到 Terminus。
+## 查看资源消耗
 
-### VPN Connection - P2P
+您可以在 **TermiPass > 设置** 中查看 Terminus 的资源消耗。
 
-显示 P2P 状态，则表示，你是通过 VPN - P2P 连接连接到 Terminus。
+![资源消耗](/images/how-to/termipass/resource.jpg)
 
-### Offline Mode
+## VPN 连接
 
-显示 Offline Mode 状态，则表示，你现在处于离线模式下，无法连接到 Terminus。
+为增强远程访问 Terminus 的安全性，您可以通过 TermiPass 启用私有网络。
 
-## Abnormal Status
+![VPN 连接](/images/how-to/termipass/vpn.jpg)
 
-![alt text](/images/how-to/termipass/abnormal_status.jpg)
+- **在 TermiPass 移动端启用私有网络**：
+    1. 打开 TermiPass 应用程序，进入 **设置 > 账户**。
+    2. 在账户管理页面中切换开关，启用私有网络。
 
-### Network Connection Abnormality
+- **在 TermiPass 桌面端启用私有网络**：
+    1. 打开 TermiPass 应用程序，点击左上角的个人资料图标。
+    2. 在弹出的面板中选择 **启用私有网络连接**。
 
-处于这种状态下，则提醒你 Network abnormality, please check local network settings，我们自动检测本地网络，网络恢复后会自动连接，自动同步数据。
+启用后，所有通过 TermiPass 应用或网络浏览器的 Terminus 访问将通过私有网络进行。
 
-### VPN Connection Not Enabled
+## 了解连接状态
 
-处于这种状态下，则提醒你 Need VPN to connect to Terminus. Connect，点击状态图标和状态条都会弹窗要求立即开启 VPN 连接。
+TermiPass 会显示您账户与 **Terminus** 的连接状态。
 
-### SSO Invalid
+![连接状态](/images/how-to/termipass/connection_status.jpg)
 
-处于这种状态下，则提醒你 Need to log in to Terminus again. Log in，点击状态图标和状态条都会弹窗提示。确认后，将进入输入密码页面，输入密码后完成重新登录。
+| 状态                      | 图标      | 描述                                     |
+| --------------------------- | --------- | ---------------------------------------- |
+| 公网 - 互联网               | Internet  | 通过公网连接到 Terminus                  |
+| 局域网 - 内网                | Intranet  | 通过局域网连接到 Terminus               |
+| FRP                        | FRP       | 通过 FRP 连接到 Terminus                 |
+| VPN 连接 - DERP             | DERP      | 通过 VPN - DERP 连接到 Terminus          |
+| VPN 连接 - P2P              | P2P       | 通过 VPN - P2P 连接到 Terminus           |
+| 离线模式                    | Offline   | 无法连接到 Terminus                      |
 
-### SRP Invalid
-
-处于这种状态下，则提醒你 Need to reconnect to Terminus. Reconnect，点击状态图标和状态条都会弹窗提示。确认后，将进入输入密码页面，输入密码后完成重新登录。登录之后，你的 Vault 数据将和服务端 Vault 进行同步并合并，请放心这些数据都不会丢失。
-
-### Device Is Inactive or Expired
-
-出现这种情况，你则提醒你 Need to reactivate Terminus. Learn more。可能的原因，我们都大致罗列了一下，最终的处理方式，由用户自行决定。
-
-- 由于 Terminus 短暂性的网络连通问题引起的，Terminus 恢复正常后，此问题会自动消失。
-
-- 因为你的 Terminus 已经销毁，需要重新激活。如果你确认需要重新激活，请选择重新激活。
-
-- 如果你无法确认情况，请忽略此信息，或寻求管理员帮助。
-
-- 如果你觉得受到了状态提示条的干扰，可以启用离线模式。
-
-| 异常状态           | 描述                                                                                                      | 状态提醒     |
-| ------------------ | --------------------------------------------------------------------------------------------------------- | ------------ |
-| 离线模式           | 可以手动切换到离线模式，在离线状态继续编辑，内容将在联网后和服务端同步。                                  | Offline 状态 |
-| 网络连接异常       | 当前的网络连接不畅，请检查本地网络                                                                        | banner tip   |
-| 未开启 VPN 连接    | Need VPN to connect to Terminus.                                                                          | banner tip   |
-| SSO 失效           | Need to log in to Terminus again.                                                                         | banner tip   |
-| SRP 失效           | Need to reconnect to Terminus.                                                                            | banner tip   |
-| 设备未激活或已失效 | 设备未激活，或者设备被销毁等各种情况。用户可以根据自己的实际情况选择：1 重新激活，2 开启离线模式，3，忽略 | banner tip   |
