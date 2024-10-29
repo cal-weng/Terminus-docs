@@ -1,11 +1,11 @@
 # Websocket
 
-WebSocket 作为现代前端应用最广泛使用的技术，`TAPR（Terminus Application Runtime）`提供了一个通用的 websocket 组件，简化 APP 对 websocket 的使用和开发。
+WebSocket 作为现代前端应用最广泛使用的技术，`TAPR（Olares Application Runtime）`提供了一个通用的 websocket 组件，简化 APP 对 websocket 的使用和开发。
 
 ## 一、客户端
 
 基于 JavaScript/TypeScript 的方式开发的客户端，采用“ws”库。
-应用服务提供 WebSocket 的路径格式：`wss://<appid>.<username>.myterminus.com/ws`
+应用服务提供 WebSocket 的路径格式：`wss://<appid>.<username>.olares.com/ws`
 
 ### 1、发送消息
 
@@ -154,7 +154,7 @@ c）客户端连接断开（WebSocket 服务响应到 close 事件后回调 App�
 
 ## 三、应用 App 部署 WebSocket 服务
 
-APP 要使用这个功能只需要在 TAC 的 [TerminusManifest.yaml](../package/manifest.md#websocket) 中申明
+APP 要使用这个功能只需要在 TAC 的 [OlaresManifest.yaml](../package/manifest.md#websocket) 中申明
 
 ```yaml
 options:

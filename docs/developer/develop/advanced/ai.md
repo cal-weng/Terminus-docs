@@ -6,7 +6,7 @@ outline: [2, 3]
 
 ## API Prefix
 
-`agent.{username}.myterminus.com/api/controllers/console/api`
+`agent.{username}.olares.com/api/controllers/console/api`
 
 ## Basic Application Management API
 ### Get App List

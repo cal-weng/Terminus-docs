@@ -75,18 +75,18 @@ Now let's summarize the two sides of the inequality:
 
 The inequality is far from being met, so there is no sign of massive user migration currently.
 
-## Changes Brought by Terminus
+## Changes Brought by Olares
 
-With Terminus, the situation begins to shift:
+With Olares, the situation begins to shift:
 
-- The migration cost becomes low enough. The emergence of Terminus makes the migration cost as trivial as buying a new smartphone.
+- The migration cost becomes low enough. The emergence of Olares makes the migration cost as trivial as buying a new smartphone.
 - The AI revolution has brought users unprecedented concerns about data privacy and sovereignty, something fundamentally unattainable on Web2 platforms.
 
-In scenarios that involve data privacy, the experience improvement brought by Terminus could easily outweigh the migration costs.
+In scenarios that involve data privacy, the experience improvement brought by Olares could easily outweigh the migration costs.
 
-## Terminus + Protocol
+## Olares + Protocol
 
-Simply put, Terminus collaborates with protocols to bring better experiences to users in more use cases beyond just privacy protection. There are two typical use cases:
+Simply put, Olares collaborates with protocols to bring better experiences to users in more use cases beyond just privacy protection. There are two typical use cases:
 
 - **Use cases where the marginal user cost on Web2 platforms is not zero**
 
@@ -104,7 +104,7 @@ Simply put, Terminus collaborates with protocols to bring better experiences to 
 
   Although SaaS companies need to pay hardware costs for incremental users, considering that the average gross margin of SaaS companies is 80%, and that of IaaS companies is 50%, only 10% of the user fees paid go to marginal costs.
 
-  Since hardware costs are borne by the users after adopting Terminus, we hope that through protocols, while allowing Application developers to receive fair compensation, users can reduce their costs.
+  Since hardware costs are borne by the users after adopting Olares, we hope that through protocols, while allowing Application developers to receive fair compensation, users can reduce their costs.
 
   Please note, we support [fair code](https://faircode.io/). We oppose the overly simplistic and destructive impact on the application developer ecosystem by open sourcing.
 
@@ -155,12 +155,12 @@ A sustainable and universal protocol economy features:
 - Deflationary measures, where the relay or protocol deducts or burns a portion of each payment to deter transaction record falsification for reputation enhancement, and to tackle the "protocol value capture" challenge.
 - Minimal introduction of new tokens, with legal stable coins generally serving as the medium of exchange. Protocols managed by a DAO require careful regulation of token issuance and value capture.
 
-## Protocols for Terminus OS
+## Protocols for Olares OS
 
-[Snowinning Protocol](../../developer/contribute/snowinning/overview.md) is a protocol for a decentralized identity and open and transparent reputation system, and is one of the three components of the Terminus BEC architecture.
+[Snowinning Protocol](../../developer/contribute/snowinning/overview.md) is a protocol for a decentralized identity and open and transparent reputation system, and is one of the three components of the Olares BEC architecture.
 
 [Otmoic Protocol](./otmoic.md) is an automated value exchange network built for Depin, AI Agent, and Crypto Trading that does not require third-party trust.
 
-[Market Protocol](./market.md) is a protocol created to facilitate permissionless applications distribution. Its core is to specify the Terminus Application Chart (TAC) structure.
+[Market Protocol](./market.md) is a protocol created to facilitate permissionless applications distribution. Its core is to specify the Olares Application Chart (TAC) structure.
 
 [Recommend Protocol](./recommend.md) is an experimental protocol that helps users break out of the information cocoon. We will experiment with many new ideas with this protocol, such as trying to build an economic system through this protocol to incentivize diverse algorithms and content providers.

@@ -9,21 +9,21 @@ outline: [2, 3]
 
 :::info **Brief Overview**
 
-1. Test your application on Terminus, create the Terminus Application Chart(TAC) according to [guideline](../package/chart.md).
-2. Fork the official [application repository of Terminus Market](https://github.com/beclab/apps). Add your application's **TAC**. Create a **PR** to `beclab/apps:main`.
+1. Test your application on Olares, create the Olares Application Chart(TAC) according to [guideline](../package/chart.md).
+2. Fork the official [application repository of Olares Market](https://github.com/beclab/apps). Add your application's **TAC**. Create a **PR** to `beclab/apps:main`.
 3. Wait for **GitBot** to check your PR. If needed, modify PR until it passes.
 4. Once the PR is merged, your application is ready to launch.
 :::
 
 ### 1. Develop and test your application
 
-Before submitting an application, please ensure that it has been thoroughly tested on your Terminus OS.
+Before submitting an application, please ensure that it has been thoroughly tested on your Olares OS.
 - Use DevBox's dev-container to test and debug your applciation in a real online environment. [Learn more about DevBox](../tutorial/devbox.md).
-- Use the [custom installation](../../../how-to/terminus/market/index.md#custom-application) in the Market app for user testing.
+- Use the [custom installation](../../../how-to/olares/market/index.md#custom-application) in the Market app for user testing.
 
 ### 2. Submit an application
 The submission of the application needs to be completed through a **Pull Request**. Here's how:
-- Fork the official [application repository of Terminus Market](https://github.com/beclab/apps) and add your application's **TAC** in your forked repository.
+- Fork the official [application repository of Olares Market](https://github.com/beclab/apps) and add your application's **TAC** in your forked repository.
 - Create a `Draft PR` pointing to `beclab/apps:main`.
 - Please edit your PR title and text according to the template.
     - **PR Title** must in this format: [PR Type][FolderName][version]Title Content
@@ -32,8 +32,8 @@ The submission of the application needs to be completed through a **Pull Request
         - UPDATE: Update an already successfully merged application
         - REMOVE: Remove an already successfully merged application
         - SUSPEND: Suspend an already successfully merged application from distribution through the application store
-    - `FolderName` is your Terminus Application Chart name. It must adhere to the naming requirements in [TAC specification](../package/chart.md).
-    - `version` refers to your **TAC**'s `Chart Version`, which needs to be consistent with the `version` field in `Chart.yaml` and metadata section of `TerminusManifest.yaml`
+    - `FolderName` is your Olares Application Chart name. It must adhere to the naming requirements in [TAC specification](../package/chart.md).
+    - `version` refers to your **TAC**'s `Chart Version`, which needs to be consistent with the `version` field in `Chart.yaml` and metadata section of `OlaresManifest.yaml`
 - To prevent your PR from being incorrectly parsed or closed, please adhere to the following rules:
     - Your PR title must contain only one `PR Type`, `FolderName`, and `version`.
     - Your `PR Type` must be one of the predefined types.
@@ -62,15 +62,15 @@ The title and content of the PR are crucial for **GitBot**. Please adhere to the
 
 - During the `waiting to submit` state, you can continue to submit commits to modify your **TAC**. **GitBot** will recheck the **TAC** file and update the PR status upon receiving a new commit.
 
-- Once your PR passes all checks, it will be automatically merged into the `beclab/apps:main`. The application will be listed on **Terminus Market** after a while.
+- Once your PR passes all checks, it will be automatically merged into the `beclab/apps:main`. The application will be listed on **Olares Market** after a while.
 
-- If you encounter any issues during the submission process, feel free to reach out to the Terminus team or seek assistance from the community.
+- If you encounter any issues during the submission process, feel free to reach out to the Olares team or seek assistance from the community.
 
 ## Managing Your Application
 
-You can continue managing and maintaining your application by creating a Pull Request to `beclab/apps:main`. You can upgrade your application, modify its availability, or completely remove it from the **Terminus Market**.
+You can continue managing and maintaining your application by creating a Pull Request to `beclab/apps:main`. You can upgrade your application, modify its availability, or completely remove it from the **Olares Market**.
 
-The process of managing applications is similar to submission.You create a specific type of Pull Request, and GitBot takes care of the rest. Terminus uses **special control files** in the root directory of TAC to manage the application's status. These **special control files** are empty files wiht specific suffix, such as `.suspend` and `.remove`
+The process of managing applications is similar to submission.You create a specific type of Pull Request, and GitBot takes care of the rest. Olares uses **special control files** in the root directory of TAC to manage the application's status. These **special control files** are empty files wiht specific suffix, such as `.suspend` and `.remove`
 
 :::info NOTE
 No ".suspend" or ".remove" files should be included in the initial submission.
@@ -84,12 +84,12 @@ When you need to update a published application, you need to create an `UPDATE` 
 - Whenever you make changes to your **TAC**, such as upgrade the program, update metadata, or change owner list, be sure to upgrade your chart version.
 - The chart version in the updated **TAC** must be ***greater than*** the current version in the repository.
 - No `.suspend` or `.remove` files included in the root directory of updated **TAC**.
-- The **Terminus Market** does not offer version rollback. If there are any issues with your application, you need to submit a new version to fix it.
+- The **Olares Market** does not offer version rollback. If there are any issues with your application, you need to submit a new version to fix it.
 - To avoid potential conflicts, we recommend syncing your fork and rebase the commits of PR to the latest main branch.
 
 
 ### Suspend
-If for any reason you want to temporarily disable your application's download and installation from the **Terminus Market**, submit a `SUSPEND` PR.
+If for any reason you want to temporarily disable your application's download and installation from the **Olares Market**, submit a `SUSPEND` PR.
 
 **Please note:**
 - The chart version in the submitted **TAC** must ***match*** the current version in the repository.
@@ -98,7 +98,7 @@ If for any reason you want to temporarily disable your application's download an
 - Users who have already downloaded and installed the application can continue to use it after suspension.
 
 ### Remove
-If for any reason you want to remove your application from the **Terminus Market**, submit a `REMOVE` PR.
+If for any reason you want to remove your application from the **Olares Market**, submit a `REMOVE` PR.
 
 **Please note:**
 - Completely empty the files in the current application directory and add a `.remove` file to the root directory.
@@ -110,19 +110,19 @@ If for any reason you want to remove your application from the **Terminus Market
 
 Utilizing well-organized application descriptions, screenshots, and promotional images to highlight the features and functions of your application can help attract new users in the Market. Screenshots and previews can intuitively demonstrate the user experience, helping your application stand out. 
 
-To add promotional images on the application detail page, include links to these assets in the `promoteImage` fields within the `spec` section of the `TerminusManifest.yaml` file.
+To add promotional images on the application detail page, include links to these assets in the `promoteImage` fields within the `spec` section of the `OlaresManifest.yaml` file.
 
-:::info **Assets Specifications for the Terminus Market**
+:::info **Assets Specifications for the Olares Market**
 
 - The application's **icon** must be in PNG or WEBP format, up to 512 KB, with a size of 256x256 px.
 
 - It is highly recommended to upload at least 2 **screenshots** for promotion. **Screenshots** must be in JPEG, PNG, or WEBP format, up to 8MB each, with a size of 1440x900 px. You can upload up to 8 **screenshots**.
 
-- If you wish to have your application featured in the store, a **featured image** is required. Add a link to this image in the `featuredImage` field within the `spec` section of the `TerminusManifest.yaml` file. The image must be in JPEG, PNG, or WEBP format, up to 8MB, with a size of 1440x900 px
+- If you wish to have your application featured in the store, a **featured image** is required. Add a link to this image in the `featuredImage` field within the `spec` section of the `OlaresManifest.yaml` file. The image must be in JPEG, PNG, or WEBP format, up to 8MB, with a size of 1440x900 px
 :::
 
 ## Inviting Others to Collaborate
 
-There are two ways to invite others to develop Terminus applications together:
+There are two ways to invite others to develop Olares applications together:
 1. Add others developer's GitHub usernames to the `owners` file. Each developer listed in `owners` can then fork the repository and submit their changes independently.
 2. Add others as collaborators to your forked repository. In this case, you create the Pull Request as a representative, and all others can jointly commit to the branch that is planned to merge.

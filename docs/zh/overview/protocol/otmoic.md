@@ -16,7 +16,7 @@ Otmoic Protocol 在设计时有以下的特色：
 - 支持基于 [Verifiable Credential](../../developer/contribute/snowinning/concepts.md#可验证凭证) 的 [KYC](#kyc)。
 - 价格发现基于 RFQ。
 - 链上的交易基于原子交换。
-- 通过在 Terminus OS 里安装应用，支持 Liquidity Provider 自动做市。
+- 通过在 Olares OS 里安装应用，支持 Liquidity Provider 自动做市。
 
 通过上述设计，可以让 Otmoic Protocol 广泛应用于 DePin，AI Bot，Creator Economy，Crypto Trading，Crypto Cross-Chain，Fiat and Crypto Gateway 等场景。
 
@@ -101,7 +101,7 @@ Otmoic Protocol 在设计时有以下的特色：
 
 | name         | type   | required | description                  |
 |--------------|--------|----------|------------------------------|
-| name         | String | ✔        | lp 的名字, 此名字必须使用 TerminusName |
+| name         | String | ✔        | lp 的名字, 此名字必须使用 OlaresName |
 | profile      | String | ✔        | lp 的对外介绍信息, 内容无限制            |
 | credit_score | uint   | ✔        | lp 在当前 relay 中的信用分           |
 
@@ -733,7 +733,7 @@ Data
 
 ### KYC
 
-使用 TermiPass 浏览器插件对 "Otmoic KYC Verifiable Credential Request Schema" 进行签名, 并提交至 relay, relay 的管理人员人工审核过后, 系统将签发“Otmoic KYC Verifiable Credential Schema”, 然后在前端中同步签发的 VC 至 TermiPass, 并向 relay 提交 “Otmoic KYC Presentation Definition” 完成 kyc 操作
+使用 LarePass 浏览器插件对 "Otmoic KYC Verifiable Credential Request Schema" 进行签名, 并提交至 relay, relay 的管理人员人工审核过后, 系统将签发“Otmoic KYC Verifiable Credential Schema”, 然后在前端中同步签发的 VC 至 LarePass, 并向 relay 提交 “Otmoic KYC Presentation Definition” 完成 kyc 操作
 
 :::info KYC 中的主要信息
 

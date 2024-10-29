@@ -32,7 +32,7 @@ For the objects to be reviewed, the following two situations may occur:
 
 There are two solutions for authentication:
 
-- Use the owner of the DID to submit tx and let the tagger call interfaces of the Terminus DID contract for authentication.
+- Use the owner of the DID to submit tx and let the tagger call interfaces of the Olares DID contract for authentication.
 - Use the owner of the DID to sign a customized EIP-712 message and use a forwarder to send tx on-chain. The tagger will use the message signer for authentication.
 
 > [!NOTE] Tips
@@ -54,7 +54,7 @@ We can follow the advice in the above section and store data in tags of Entity. 
   flowchart LR
 
 	otmoic{{OtmoicReputation}}
-	did{{TerminusDID}}
+	did{{OlaresDID}}
 	complaints[/tag-complaints/]
 	otmoicdid((otmoic.reputation))
 
@@ -67,18 +67,18 @@ We can follow the advice in the above section and store data in tags of Entity. 
 The Otmoic Reputation contract uses EIP-712 signature of DID owners for authentication and stores the `bidid` of the complained bid in the `complaints` tag of Entity `otmoic.reputation`.
 :::
 
-## Example - TerminusAppMarketReputation
+## Example - OlaresAppMarketReputation
 
 :::info
 
 ```mermaid
   flowchart TD
 
-	app((app.myterminus.com))
-	appname((appname.app.myterminus.com))
-	version1((version1.appname.app.myterminus.com))
-	version2((version2.appname.app.myterminus.com))
-	reputation{{TerminusAppMarketReputation}}
+	app((app.olares.com))
+	appname((appname.app.olares.com))
+	version1((version1.appname.app.olares.com))
+	version2((version2.appname.app.olares.com))
+	reputation{{OlaresAppMarketReputation}}
 	ratings[/tag-ratings/]
 	version1ratings[/version1-tag-ratings/]
 	event[[event]]
@@ -94,5 +94,5 @@ The Otmoic Reputation contract uses EIP-712 signature of DID owners for authenti
 
 ```
 
-The Terminus App Market Reputation contract also uses EIP-712 signature of DID owners for authentication. Rating data of the contract is stored in the `ratings` tag of Entity `<version>.<appname>.app.myterminus.com`, and comment data is published in the form of Ethereum events instead of storing on-chain.
+The Olares App Market Reputation contract also uses EIP-712 signature of DID owners for authentication. Rating data of the contract is stored in the `ratings` tag of Entity `<version>.<appname>.app.olares.com`, and comment data is published in the form of Ethereum events instead of storing on-chain.
 :::

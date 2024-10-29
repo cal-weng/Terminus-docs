@@ -62,7 +62,7 @@ You can configure a bridge in two places:
 
 3. **Configure Account**
 
-   You only need to provide the introduction of LP to configure an `account`. Your **Terminus Name** will be used as your **lp_id**, and all identity verification during the exchange process will also be based on your **Terminus Name**.
+   You only need to provide the introduction of LP to configure an `account`. Your **Olares ID** will be used as your **lp_id**, and all identity verification during the exchange process will also be based on your **Olares ID**.
   
    ![alt text](/images/how-to/otmoic/config-account.png)
 
@@ -184,13 +184,13 @@ For users, there are two core functions, **Swap** and **KYC**. The status of **K
 
 Here are the steps for the **KYC** process:
 
-1. Install the **TermiPass** browser extension and create or import your mnemonic.
-2. The web page obtains your `DID` through the **TermiPass**.
+1. Install the **LarePass** browser extension and create or import your mnemonic.
+2. The web page obtains your `DID` through the **LarePass**.
 3. Upload your ID information.
 4. Fill out the **KYC** form correctly
-5. Use **TermiPass** to sign your **KYC** information and submit it to the **relay server**.
+5. Use **LarePass** to sign your **KYC** information and submit it to the **relay server**.
 6. Contact the reviewer to examine your **KYC application**. You may have to wait for some time.
-7. Once your application is approved, you can obtain your `VC certificate` through the webpage. Save this in **TermiPass**, then use **TermiPass** to sign and submit your `VP certificate`.
+7. Once your application is approved, you can obtain your `VC certificate` through the webpage. Save this in **LarePass**, then use **LarePass** to sign and submit your `VP certificate`.
 
 <video controls width="100%">
   <source src="/images/how-to/otmoic/kyc-x2.mp4" type="video/mp4">

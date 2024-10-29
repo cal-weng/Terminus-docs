@@ -8,7 +8,7 @@
   gh auth login
 
   cd /Code
-  git clone https://github.com/beclab/terminus-app-demo.git
+  git clone https://github.com/beclab/olares-app-demo.git
   ```
   
   You can then open the backend code in the IDE for development

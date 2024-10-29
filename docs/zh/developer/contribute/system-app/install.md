@@ -237,6 +237,6 @@ nginx 代理生效后，即可在 vscode 的 Terminal 中启动前后端服务�
 
 ## 结束
 
-启动 debug 程序后，就可以在 Terminus 前端，点击 app 图标预览效果
+启动 debug 程序后，就可以在 Olares 前端，点击 app 图标预览效果
 
 ![preview](/images/developer/develop/contribute/system-app/install/end.jpg)

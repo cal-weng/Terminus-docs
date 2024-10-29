@@ -1,10 +1,10 @@
-# Terminus OS
+# Olares OS
 
 ## Directory structure
 
 ```
-terminus
-|-- apps                  # terminus built-in apps
+olares
+|-- apps                  # olares built-in apps
 |   |-- agent
 |   |-- analytic
 |   |-- market
@@ -24,7 +24,7 @@ terminus
 |   |-- system-apps
 |   |-- wise
 |   |-- wizard
-|-- build                 # terminus installer
+|-- build                 # olares installer
 |   |-- installer
 |   |-- manifest
 |-- frameworks            # system runtime frameworks
@@ -38,8 +38,8 @@ terminus
 |   |-- tapr
 |-- libs                  # toolkit libs
 |   |-- fs-lib
-|-- scripts               # scripts for build or package the terminus installer
-|-- third-party           # third party libs or apps integrated in terminus
+|-- scripts               # scripts for build or package the olares installer
+|-- third-party           # third party libs or apps integrated in olares
 |   |-- authelia
 |   |-- headscale
 |   |-- infisical
@@ -58,15 +58,15 @@ terminus
 ## How to install
 
 ```
-curl -fsSL https://terminus.sh |  bash -
+curl -fsSL https://olares.sh |  bash -
 ```
 
 ## How to build
 
 ```
-git clone https://github.com/beclab/terminus
+git clone https://github.com/beclab/olares
 
-cd terminus
+cd olares
 
 bash scripts/build.sh
 
@@ -79,7 +79,7 @@ Run the above scripts, you will get the debug version installer package `install
 ```
 mkdir -p /path/to/unpack && cd /path/to/unpack
 
-tar zxvf /path/to/terminus/install-wizard-debug.tar.gz
+tar zxvf /path/to/olares/install-wizard-debug.tar.gz
 
 make install VERSION=0.0.0-DEBUG
 
@@ -88,6 +88,6 @@ make install VERSION=0.0.0-DEBUG
 ## How to uninstall
 
 ```
-cd /path/to/terminus && make uninstall
+cd /path/to/olares && make uninstall
 
 ```

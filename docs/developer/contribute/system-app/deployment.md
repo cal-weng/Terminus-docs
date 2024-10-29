@@ -6,7 +6,7 @@ outline: [2, 3]
 
 The system application need to be installed under the `user-space` namespace. Therefore, certain modifications are required:
 
-1. Modify the `deployment.yaml` file in the Terminus Application Chart.
+1. Modify the `deployment.yaml` file in the Olares Application Chart.
 2. Change the original namespace of `deployment` and `service`  to `user-space-{\\{ .Values.bfl.username }}`
    ```Yaml
    apiVersion: apps/v1
@@ -16,7 +16,7 @@ The system application need to be installed under the `user-space` namespace. Th
      namespace: user-space-{{ .Values.bfl.username }}
    ```
 
-3. Add `annotations` and `labels` according to the configuration in the `deployment.yaml` file of the app in **Terminus**.
+3. Add `annotations` and `labels` according to the configuration in the `deployment.yaml` file of the app in **Olares**.
 
    ```Yaml
    metadata:
@@ -28,11 +28,11 @@ The system application need to be installed under the `user-space` namespace. Th
      applications.app.bytetrade.io/owner: {{ .Values.bfl.username }}
      applications.app.bytetrade.io/author: bytetrade.io
    annotations:
-     applications.app.bytetrade.io/icon: https://docs-dev.jointerminus.com/icon. png
+     applications.app.bytetrade.io/icon: https://docs-dev.olares.com/icon. png
      applications.app.bytetrade.io/title: Desktop-dev
      applications.app.bytetrade.io/version: '0.0.1'
 
-     # Configuration of entrances here should be consistent with the configuration in TerminusManifest.yaml.
+     # Configuration of entrances here should be consistent with the configuration in OlaresManifest.yaml.
      applications.app.bytetrade.io/entrances: '[{"name":"desktop-frontend-dev", "host":"desktop-svc-dev", "port":80,"title":"Desktop-dev"}]'
    ```
 
@@ -54,7 +54,7 @@ The system application need to be installed under the `user-space` namespace. Th
          targetPort: 8080  # Please note, the port of the Node.js dev container is 8080. please switch to this port.
    ```
 
-5. Modify the section of entrances in `TerminusManifest.yaml`
+5. Modify the section of entrances in `OlaresManifest.yaml`
 
    ```Yaml
    entrances:
@@ -123,7 +123,7 @@ metadata:
     applications.app.bytetrade.io/owner: {{ .Values.bfl.username }}
     applications.app.bytetrade.io/author: bytetrade.io
   annotations:
-    applications.app.bytetrade.io/icon: https://docs-dev.jointerminus.com/icon.png
+    applications.app.bytetrade.io/icon: https://docs-dev.olares.com/icon.png
     applications.app.bytetrade.io/title: Desktop-dev
     applications.app.bytetrade.io/version: '0.0.1'
     applications.app.bytetrade.io/entrances: '[{"name":"desktop-frontend-dev", "host":"desktop-svc-dev", "port":80,"title":"Desktop-dev"}]'
@@ -138,7 +138,7 @@ spec:
         app: desktop-dev
     spec:
       volumes:
-      - name: terminus-sidecar-config
+      - name: olares-sidecar-config
         configMap:
           name: sidecar-configs
           items:
@@ -160,7 +160,7 @@ spec:
           path: {{ .Values.userspace.appCache }}/desktop-dev
 
       initContainers:
-        - name: terminus-sidecar-init
+        - name: olares-sidecar-init
           image: openservicemesh/init:v1.2.3
           imagePullPolicy: IfNotPresent
           securityContext:
@@ -212,7 +212,7 @@ spec:
             mountPath: /opt/code
           - name: appcache
             mountPath: /root/.config
-        - name: terminus-envoy-sidecar
+        - name: olares-envoy-sidecar
           image: envoyproxy/envoy-distroless:v1.25.2
           imagePullPolicy: IfNotPresent
           securityContext:
@@ -224,7 +224,7 @@ spec:
           - name: proxy-inbound
             containerPort: 15003
           volumeMounts:
-          - name: terminus-sidecar-config
+          - name: olares-sidecar-config
             readOnly: true
             mountPath: /etc/envoy/envoy.yaml
             subPath: envoy.yaml

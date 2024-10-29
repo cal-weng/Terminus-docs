@@ -61,7 +61,7 @@ bridge 的配置有两种情况
 
 3. Configure account
    :::info account
-   配置账户时你仅需要输入此 LP 的介绍信息即可, **lp_id** 将使用你的 TerminusName, 并且交换流程中的身份验证也将基于你的 TerminusName
+   配置账户时你仅需要输入此 LP 的介绍信息即可, **lp_id** 将使用你的 OlaresName, 并且交换流程中的身份验证也将基于你的 OlaresName
    ![alt text](/images/how-to/otmoic/config-account.png)
    :::
 
@@ -186,13 +186,13 @@ Amm, exchange_adapter 都使用这一份配置文件，方便加载一致的账�
 
 :::info KYC 操作的的步骤如下
 
-1. 安装 TermiPass 浏览器插件并 创建/导入 你的助记词
-2. 网页通过 TermiPass 插件获取你的 did
+1. 安装 LarePass 浏览器插件并 创建/导入 你的助记词
+2. 网页通过 LarePass 插件获取你的 did
 3. 上传你的身份认证资料
 4. 如实填写 KYC 信息
-5. 使用 TermiPass 对你的 KYC 信息进行签名, 并提交到 relay 服务器
+5. 使用 LarePass 对你的 KYC 信息进行签名, 并提交到 relay 服务器
 6. 联系或等待审核人员对你的 KYC 申请进行审核
-7. 审核过后, 通过网页获取你的 VC 凭证并存入 TermiPass, 然后使用 TermiPass 签名提交你的 VP 凭证
+7. 审核过后, 通过网页获取你的 VC 凭证并存入 LarePass, 然后使用 LarePass 签名提交你的 VP 凭证
 
 <video controls width="100%">
   <source src="/images/how-to/otmoic/kyc-x2.mp4" type="video/mp4">

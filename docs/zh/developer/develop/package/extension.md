@@ -1,6 +1,6 @@
-# Terminus 对 Helm 进行的字段扩展
+# Olares 对 Helm 进行的字段扩展
 
-Terminus 在每个 [TAC](chart.md) 安装时，会根据 TAC 中 [TerminusManifest.yaml](manifest.md) 的 metadata 信息，为 APP 注入一些扩展字段信息。
+Olares 在每个 [TAC](chart.md) 安装时，会根据 TAC 中 [OlaresManifest.yaml](manifest.md) 的 metadata 信息，为 APP 注入一些扩展字段信息。
 
 这些扩展字段信息，可以在模版中直接引用，而无需再 values.yaml 中事先定义 （如果 values.yaml 中有相同的定义，会被系统覆盖）。
 

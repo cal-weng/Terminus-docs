@@ -4,7 +4,7 @@ outline: [2, 4]
 
 # VC Service
 
-本文的目的是希望在帮助你了解如何配置各类 Schema 后, 通过 Terminus 提供的 [verifiable-credential-gate](https://github.com/Above-Os/verifiable-credential-gate)，[did-gate](https://github.com/Above-Os/did-gate) 和 tbd 团队提供的 [SSI Service](https://github.com/TBD54566975/ssi-service) ，打造自己场景的 Issuer 和 Verifier。
+本文的目的是希望在帮助你了解如何配置各类 Schema 后, 通过 Olares 提供的 [verifiable-credential-gate](https://github.com/Above-Os/verifiable-credential-gate)，[did-gate](https://github.com/Above-Os/did-gate) 和 tbd 团队提供的 [SSI Service](https://github.com/TBD54566975/ssi-service) ，打造自己场景的 Issuer 和 Verifier。
 
 :::tip
 如果你想从事更底层的开发，可以结合 [SSI SDK](https://github.com/TBD54566975/ssi-sdk) 的源代码阅读 [协议标准](#reference)

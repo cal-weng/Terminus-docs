@@ -77,17 +77,17 @@ Protocol 生态是在和 已有的 Web2 Platform，对用户有限的注意力�
 
 不等式离成立差的很远，所以当下并没有用户产生大规模迁移的迹象。
 
-## Terminus 带来的改变
+## Olares 带来的改变
 
-- 迁移成本变得足够低，Terminus 的出现让迁移成本变成和购买一台新手机一样，不再无法逾越。
+- 迁移成本变得足够低，Olares 的出现让迁移成本变成和购买一台新手机一样，不再无法逾越。
 
 - AI 变革带来了个人和企业对数据隐私和主权的空前关注，这是 Web2 Platform 在根本上无法满足的。
 
-所以在未来涉及到数据隐私的场景，Terminus 带来的体验的提升是可以超过迁移成本的。
+所以在未来涉及到数据隐私的场景，Olares 带来的体验的提升是可以超过迁移成本的。
 
-## Terminus + Protocol
+## Olares + Protocol
 
-简单的说，Terminus 需要通过和 Protocol 协作，在除隐私保护外的更多场景为用户带来体验的提升。我认为有两类场景：
+简单的说，Olares 需要通过和 Protocol 协作，在除隐私保护外的更多场景为用户带来体验的提升。我认为有两类场景：
 
 - **在 Web2 Platform 服务边际用户成本不为 0 的场景**
 
@@ -105,7 +105,7 @@ Protocol 生态是在和 已有的 Web2 Platform，对用户有限的注意力�
 
   虽然 SAAS 公司需要为增量的用户支付硬件成本，但考虑到 SAAS 公司的平均毛利是 80%，而 IAAS 公司的毛利有 50%，所以用户支付费用中只有 10% 是支付给边际成本的。
 
-  由于采用 Terminus 后，硬件由用户自己支付，我们希望通过协议，让 Application 的开发者获得公平报酬的同时，用户可以减少支付费用。
+  由于采用 Olares 后，硬件由用户自己支付，我们希望通过协议，让 Application 的开发者获得公平报酬的同时，用户可以减少支付费用。
 
   请注意，我们支持 [fair code](https://faircode.io/)，反对通过 Open Source 简单粗暴的摧毁应用开发者生态。
 
@@ -160,9 +160,9 @@ Protocol 生态是在和 已有的 Web2 Platform，对用户有限的注意力�
 3. 通缩。Relay 或 Protocol 对每笔付费进行抽成或燃烧，这样做可以一定程度遏制住为了提高信誉而伪造交易记录，同时解决“协议的价值捕捉”问题。
 4. 非必要不引入新的代币。大部分场景，都可以直接使用法定稳定币作为价值交换的媒介。通过 DAO 管理的协议，对于管理币的发型和价值捕捉需要慎重。
 
-## Terminus 准备的协议
+## Olares 准备的协议
 
-[Snowinning Protocol](../../developer/contribute/snowinning/overview.md) 是一个为去中心化身份和公开透明信誉体系准备的协议，也是 Terminus BEC 架构的三个组件之一。
+[Snowinning Protocol](../../developer/contribute/snowinning/overview.md) 是一个为去中心化身份和公开透明信誉体系准备的协议，也是 Olares BEC 架构的三个组件之一。
 
 [Otmoic Protocol](./otmoic.md) 是一个无需第三方信任的，为 Depin，AI Agent，Crypto Trading 打造的自动化价值交换网络。
 

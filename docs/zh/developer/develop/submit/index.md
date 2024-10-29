@@ -16,15 +16,15 @@ outline: [2, 3]
 
 ## 详细步骤
 
-### 1. 创建一个 Terminus 应用，并制作安装目录文件
+### 1. 创建一个 Olares 应用，并制作安装目录文件
 
-- 你可以按照以下方法（TODO）来创建一个 Terminus 应用，并按照格式规范制作应用的安装目录
-- 你可以下载 Chart 包模版文件，根据需要修改文件内容(TerminusManifest.yaml 说明，资产的要求)
+- 你可以按照以下方法（TODO）来创建一个 Olares 应用，并按照格式规范制作应用的安装目录
+- 你可以下载 Chart 包模版文件，根据需要修改文件内容(OlaresManifest.yaml 说明，资产的要求)
 
 ### 2. 向应用商店提交你的应用
 
-- 你需要注册 GitHub 账户来提交 Terminus 应用。
-- 登录你的 GitHub 账户，并 Fork Terminus 应用商店仓库
+- 你需要注册 GitHub 账户来提交 Olares 应用。
+- 登录你的 GitHub 账户，并 Fork Olares 应用商店仓库
 - 在你 fork 的仓库中添加你应用的目录，并创建一个指向 Above-Os:main 的 Draft PR
   - 你将会看到一个通用的 PR 模版，请参照模版提示编辑你的 PR Title 和正文。
     ![图片占位]()
@@ -136,12 +136,12 @@ outline: [2, 3]
 
 ## 应用目录格式规范
 
-App Chart 是用于描述一个 Terminus 应用各项配置的文件集合。一个 App Chart 需包含以下文件
+App Chart 是用于描述一个 Olares 应用各项配置的文件集合。一个 App Chart 需包含以下文件
 
 ```
 FolderName/
   Chart.yaml                # 必选: 包含了chart信息的YAML文件``
-  TerminusManifest.yaml     # 必选: App的配置文档
+  OlaresManifest.yaml     # 必选: App的配置文档
   values.yaml               # 必选: chart 默认的配置值
   templates/                # 必选: 模板目录， 当和values 结合时，可生成有效的Kubernetes manifest文件
   templates/NOTES.txt       # 可选: 包含简要使用说明的纯文本文件
@@ -190,15 +190,15 @@ spec:
         ephemeral-storage: "4Gi"  #可选
 ```
 
-#### TerminusManifest.yaml
+#### OlaresManifest.yaml
 
-TerminusManifest.yaml 是一个自定义文件(用于扩展应用的配置信息,在通过 Terminus 进行应用安装时会读取该文件信息)，位于 chart 文件的根目录下。需使用英文填写所有信息。
+OlaresManifest.yaml 是一个自定义文件(用于扩展应用的配置信息,在通过 Olares 进行应用安装时会读取该文件信息)，位于 chart 文件的根目录下。需使用英文填写所有信息。
 
-- TerminusManifest spercification: 用于表明 app 的类型和配置文件版本
+- OlaresManifest spercification: 用于表明 app 的类型和配置文件版本
 - metadata: 记录应用的元信息
 - permission: 记录应用所需的权限信息
 - spec: 记录额外的应用信息，主要用于应用商店的展示。
 - middleware: 系统提供了高可用的中间件服务，开发者无需重复安装中间件，只需在此填写对应的中间件信息即可。
 - option: 可以在此部分配置系统相关的选项，例如验证 policy, 访问数据分析等
 
-TerminusManifest.yaml 格式详见[Chart 格式](../package/chart.md)
+OlaresManifest.yaml 格式详见[Chart 格式](../package/chart.md)

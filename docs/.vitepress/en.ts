@@ -6,8 +6,8 @@ const side = {
       text: "Introduction",
       items: [
         {
-          text: "What is Terminus?",
-          link: "/overview/introduction/what-is-terminus",
+          text: "What is Olares?",
+          link: "/overview/introduction/what-is-olares",
         },
         {
           text: "Getting Started",
@@ -25,16 +25,16 @@ const side = {
       ],
     },
     {
-      text: "Terminus OS",
+      text: "Olares OS",
       items: [
-        { text: "Overview", link: "/overview/terminus/overview" },
-        { text: "Account", link: "/overview/terminus/account" },
-        { text: "Terminus Name", link: "/overview/terminus/terminus-name" },
-        { text: "Application", link: "/overview/terminus/application" },
-        { text: "Network", link: "/overview/terminus/network" },
-        { text: "Data", link: "/overview/terminus/data" },
-        { text: "Secret", link: "/overview/terminus/secret" },
-        { text: "AI Framework", link: "/overview/terminus/ai" },
+        { text: "Overview", link: "/overview/olares/overview" },
+        { text: "Account", link: "/overview/olares/account" },
+        { text: "Olares ID", link: "/overview/olares/olares-id" },
+        { text: "Application", link: "/overview/olares/application" },
+        { text: "Network", link: "/overview/olares/network" },
+        { text: "Data", link: "/overview/olares/data" },
+        { text: "Secret", link: "/overview/olares/secret" },
+        { text: "AI Framework", link: "/overview/olares/ai" },
       ],
     },
     {
@@ -49,164 +49,164 @@ const side = {
   ],
   "/how-to/": [
     {
-      text: "Terminus OS",
+      text: "Olares OS",
       items: [
-        { text: "Overview", link: "/how-to/terminus/" },
+        { text: "Overview", link: "/how-to/olares/" },
         {
           text: "Setup",
           collapsed: true,
           items: [
             { 
               text: "Install",
-              link: "/how-to/terminus/setup/install/", 
+              link: "/how-to/olares/setup/install/",
               collapsed: true, 
               items: [
-                { text: "Linux", link: "/how-to/terminus/setup/install/linux" },
-                { text: "Raspberry Pi", link: "/how-to/terminus/setup/install/raspberry" },
-                { text: "MacOS", link: "/how-to/terminus/setup/install/mac" },
-                { text: "Windows", link: "/how-to/terminus/setup/install/windows" },
+                { text: "Linux", link: "/how-to/olares/setup/install/linux" },
+                { text: "Raspberry Pi", link: "/how-to/olares/setup/install/raspberry" },
+                { text: "MacOS", link: "/how-to/olares/setup/install/mac" },
+                { text: "Windows", link: "/how-to/olares/setup/install/windows" },
               ]
             }, 
-            { text: "Wizard", link: "/how-to/terminus/setup/wizard" },
-            { text: "Login", link: "/how-to/terminus/setup/login" },
+            { text: "Wizard", link: "/how-to/olares/setup/wizard" },
+            { text: "Login", link: "/how-to/olares/setup/login" },
           ],
         },
-        { text: "Desktop", link: "/how-to/terminus/desktop" },
+        { text: "Desktop", link: "/how-to/olares/desktop" },
         {
           text: "Vault",
-          link: "/how-to/terminus/vault/",
+          link: "/how-to/olares/vault/",
           collapsed: true,
           items: [
-            { text: "Web", link: "/how-to/terminus/vault/web" },
-            { text: "Vault & Item", link: "/how-to/terminus/vault/vault" },
-            { text: "Team", link: "/how-to/terminus/vault/team" },
+            { text: "Web", link: "/how-to/olares/vault/web" },
+            { text: "Vault & Item", link: "/how-to/olares/vault/vault" },
+            { text: "Team", link: "/how-to/olares/vault/team" },
           ],
         },
         {
           text: "Files",
-          link: "/how-to/terminus/files/",
+          link: "/how-to/olares/files/",
         },
         {
           text: "Market",
-          link: "/how-to/terminus/market/",
+          link: "/how-to/olares/market/",
         },
         {
           text: "Wise",
-          link: "/how-to/terminus/wise/",
+          link: "/how-to/olares/wise/",
         },
         {
           text: "Settings",
           collapsed: true,
-          link: "/how-to/terminus/settings/",
+          link: "/how-to/olares/settings/",
           items: [
             {
               text: "Home",
-              link: "/how-to/terminus/settings/home",
+              link: "/how-to/olares/settings/home",
             },
             {
               text: "Account",
-              link: "/how-to/terminus/settings/account",
+              link: "/how-to/olares/settings/account",
             },
             {
               text: "Application",
-              link: "/how-to/terminus/settings/application",
+              link: "/how-to/olares/settings/application",
             },
             {
               text: "Integration",
-              link: "/how-to/terminus/settings/integration",
+              link: "/how-to/olares/settings/integration",
             },
             {
               text: "Wallpaper",
-              link: "/how-to/terminus/settings/wallpaper",
+              link: "/how-to/olares/settings/wallpaper",
             },
             {
               text: "Knowledge Base",
-              link: "/how-to/terminus/settings/knowledge",
+              link: "/how-to/olares/settings/knowledge",
             },
             {
               text: "Backup",
-              link: "/how-to/terminus/settings/backup",
+              link: "/how-to/olares/settings/backup",
             },
             {
               text: "Upgrade",
-              link: "/how-to/terminus/settings/upgrade",
+              link: "/how-to/olares/settings/upgrade",
             },
           ],
         },
-        { text: "Profile", link: "/how-to/terminus/profile" },
+        { text: "Profile", link: "/how-to/olares/profile" },
         {
           text: "Dashboard",
-          link: "/how-to/terminus/dashboard/",
+          link: "/how-to/olares/dashboard/",
         },
         {
           text: "ControlHub",
           collapsed: true,
-          link: "/how-to/terminus/controlhub/",
+          link: "/how-to/olares/controlhub/",
           items: [
             {
               text: "Browse",
-              link: "/how-to/terminus/controlhub/browse",
+              link: "/how-to/olares/controlhub/browse",
             },
             {
               text: "Namespace",
-              link: "/how-to/terminus/controlhub/namespace",
+              link: "/how-to/olares/controlhub/namespace",
             },
             {
               text: "Pods",
-              link: "/how-to/terminus/controlhub/pods",
+              link: "/how-to/olares/controlhub/pods",
             },
             {
               text: "Resource",
-              link: "/how-to/terminus/controlhub/resource",
+              link: "/how-to/olares/controlhub/resource",
             },
             {
               text: "Middleware",
-              link: "/how-to/terminus/controlhub/middleware",
+              link: "/how-to/olares/controlhub/middleware",
             },
           ],
         },
-        { text: "Dify.ai", link: "/how-to/terminus/dify" },
+        { text: "Dify.ai", link: "/how-to/olares/dify" },
       ],
     },
     {
-      text: "TerimPass",
+      text: "LarePass",
       items: [
-        { text: "Overview", link: "/how-to/termipass/overview" },
+        { text: "Overview", link: "/how-to/larepass/overview" },
         {
           text: "Account",
-          link: "/how-to/termipass/account/",
+          link: "/how-to/larepass/account/",
         },
         {
-          text: "Manage Terminus",
-          link: "/how-to/termipass/manage-terminus",
+          text: "Manage Olares",
+          link: "/how-to/larepass/manage-olares",
         },
         {
           text: "Password Autofill",
-          link: "/how-to/termipass/password-autofill",
+          link: "/how-to/larepass/password-autofill",
         },
         {
           text: "Local File Sync",
-          link: "/how-to/termipass/local-file-sync",
+          link: "/how-to/larepass/local-file-sync",
         },
       ],
     },
     {
-      text: "Terminus Space",
+      text: "Olares Space",
       items: [
         { text: "Quick Start", link: "/how-to/space/" },
         { text: "Account", link: "/how-to/space/account" },
         {
-          text: "Host Terminus",
+          text: "Host Olares",
           collapsed: true,
           link: "/how-to/space/host/",
           items: [
             {
-              text: "Create Terminus",
-              link: "/how-to/space/host/create-terminus",
+              text: "Create Olares",
+              link: "/how-to/space/host/create-olares",
             },
             {
-              text: "Management Terminus",
-              link: "/how-to/space/host/management-terminus",
+              text: "Management Olares",
+              link: "/how-to/space/host/management-olares",
             },
           ],
         },
@@ -241,7 +241,7 @@ const side = {
   ],
   "/developer/": [
     {
-      text: "Developing Terminus App",
+      text: "Developing Olares App",
       items: [
         {
           text: "Overview",
@@ -286,7 +286,7 @@ const side = {
               link: "/developer/develop/package/chart",
             },
             {
-              text: "TerminusManifest",
+              text: "OlaresManifest",
               link: "/developer/develop/package/manifest",
             },
             {
@@ -312,8 +312,8 @@ const side = {
               link: "/developer/develop/advanced/cli",
             },
             {
-              text: "Terminus Info",
-              link: "/developer/develop/advanced/terminus-info",
+              text: "Olares Info",
+              link: "/developer/develop/advanced/olares-info",
             },
             {
               text: "Service Provider",
@@ -377,15 +377,15 @@ const side = {
     },
 
     {
-      text: "Contributing To Terminus",
+      text: "Contributing To Olares",
       items: [
         {
-          text: "Terminus OS",
-          link: "/developer/contribute/terminus-os",
+          text: "Olares OS",
+          link: "/developer/contribute/olares-os",
         },
         // {
-        //   text: "TermiPass",
-        //   link: "/developer/contribute/termipass",
+        //   text: "LarePass",
+        //   link: "/developer/contribute/larepass",
         // },
         {
           text: "Snowinning Protocol",
@@ -401,8 +401,8 @@ const side = {
               link: "/developer/contribute/snowinning/concepts",
             },
             {
-              text: "Terminus Name",
-              link: "/developer/contribute/snowinning/terminus-name",
+              text: "Olares ID",
+              link: "/developer/contribute/snowinning/olares-id",
             },
             {
               text: "Contract",
@@ -410,7 +410,7 @@ const side = {
               link: "/developer/contribute/snowinning/contract-overview",
               items: [
                 {
-                  text: "TerminusDID",
+                  text: "OlaresDID",
                   link: "/developer/contribute/snowinning/contract-tdid",
                 },
                 {
@@ -443,8 +443,8 @@ const side = {
               link: "/developer/contribute/system-app/deployment",
             },
             {
-              text: "TerminusManifest.yaml",
-              link: "/developer/contribute/system-app/terminus-manifest",
+              text: "OlaresManifest.yaml",
+              link: "/developer/contribute/system-app/olares-manifest",
             },
             {
               text: "Install",
@@ -469,8 +469,8 @@ export const en = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/beclab" }],
 
     nav: [
-      { text: "Overview", link: "/overview/introduction/what-is-terminus" },
-      { text: "How To Use", link: "/how-to/terminus/" },
+      { text: "Overview", link: "/overview/introduction/what-is-olares" },
+      { text: "How To Use", link: "/how-to/olares/" },
       { text: "Developer", link: "/developer/develop/" },
     ],
 

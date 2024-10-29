@@ -54,7 +54,7 @@
   flowchart LR
 
 	otmoic{{OtmoicReputation}}
-	did{{TerminusDID}}
+	did{{OlaresDID}}
 	complaints[/tag-complaints/]
 	otmoicdid((otmoic.reputation))
 
@@ -67,18 +67,18 @@
 Otmoic 的 Reputation 合约使用了 DID owner 进行 EIP712 签名的方式进行身份验证, 然后将被投诉的 bidid 存储在 otmoic.reputation 这个 Entity 的 complaints 中
 :::
 
-## 案例 - TerminusAppMarketReputation
+## 案例 - OlaresAppMarketReputation
 
 :::info
 
 ```mermaid
   flowchart TD
 
-	app((app.myterminus.com))
-	appname((appname.app.myterminus.com))
-	version1((version1.appname.app.myterminus.com))
-	version2((version2.appname.app.myterminus.com))
-	reputation{{TerminusAppMarketReputation}}
+	app((app.olares.com))
+	appname((appname.app.olares.com))
+	version1((version1.appname.app.olares.com))
+	version2((version2.appname.app.olares.com))
+	reputation{{OlaresAppMarketReputation}}
 	ratings[/tag-ratings/]
 	version1ratings[/version1-tag-ratings/]
 	event[[event]]
@@ -94,5 +94,5 @@ Otmoic 的 Reputation 合约使用了 DID owner 进行 EIP712 签名的方式进
 
 ```
 
-TerminusAppMarketReputation 合约同样使用了 DID owner 进行 EIP712 签名的方式进行身份验证, 合约中关于评分的数据会被存储在 `<version>.<appname>.app.myterminus.com` 这个对应 Entity 的 ratings 这个 Tag 中, 而评论的部分完全由合约自行处理不做存储, 全部以 event 形式公布在链上
+OlaresAppMarketReputation 合约同样使用了 DID owner 进行 EIP712 签名的方式进行身份验证, 合约中关于评分的数据会被存储在 `<version>.<appname>.app.olares.com` 这个对应 Entity 的 ratings 这个 Tag 中, 而评论的部分完全由合约自行处理不做存储, 全部以 event 形式公布在链上
 :::

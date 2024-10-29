@@ -4,9 +4,9 @@ outline: [2, 3]
 
 # Secret
 
-In an app, it's often necessary to save some important user information, such as `passwords` and `Access Tokens` for external systems. **Terminus** provides a unified **Vault**, based on **Infisical**, to securely store various keys.
+In an app, it's often necessary to save some important user information, such as `passwords` and `Access Tokens` for external systems. **Olares** provides a unified **Vault**, based on **Infisical**, to securely store various keys.
 
-To retrieve this information, the app only needs a simple application for API access permission. This can be done by adding a `sysData` permission to the [TerminusManifest.yaml](../package/manifest.md#sysdata) in **TAC**.
+To retrieve this information, the app only needs a simple application for API access permission. This can be done by adding a `sysData` permission to the [OlaresManifest.yaml](../package/manifest.md#sysdata) in **TAC**.
 
 ```yaml
 permission:

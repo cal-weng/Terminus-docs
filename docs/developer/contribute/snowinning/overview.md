@@ -18,5 +18,5 @@ The Snowinning Protocol seeks to establish a decentralized system for identity a
 Learn about the Snowinning Protocol:
 
 1. [Core Concepts](./concepts.md)
-2. [Terminus Name](./terminus-name.md)
+2. [Olares ID](./olares-id.md)
 3. [Smart Contract](./smart-contract.md)

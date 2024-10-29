@@ -16,7 +16,7 @@ Otmoic Protocol has the following features:
 - Supports [KYC](#kyc) based on [Verifiable Credential](../../developer/contribute/snowinning/concepts.md#verifiable-credential)
 - RFQ-based price discovery.
 - Supports Atomic swap based on-chain transactions.
-- Supports automatic market making by liquidity providers through applications installation in Terminus OS.
+- Supports automatic market making by liquidity providers through applications installation in Olares OS.
 
 With the above design, Otmoic Protocol can be widely used in Depin, AI Bots, Creator Economy, Crypto Trading, Crypto Cross-Chain, Fiat and Crypto Gateways, and other scenarios.
 
@@ -104,7 +104,7 @@ Below are the details of the protocol.
 
   | name         | type   | required | description                             |
   | ------------ | ------ | -------- | --------------------------------------- |
-  | name         | String | ✔        | The name of LP - must use Terminus Name |
+  | name         | String | ✔        | The name of LP - must use Olares ID |
   | profile      | String | ✔        | Introduction of LP - arbitrary content  |
   | credit_score | uint   | ✔        | Credit score of LP in the current relay |
 
@@ -734,7 +734,7 @@ Below are the details of the protocol.
 
 ### KYC
 
-Use the TermiPass browser plugin to sign "Otmoic KYC Verifiable Credential Request Schema" and submit it to the relay. After manual review by managers of the relay, the system will issue "Otmoic KYC Verifiable Credential Schema" and synchronize the issued VC to TermiPass in the frontend, then submit "Otmoic KYC Presentation Definition" to the relay to finish KYC.
+Use the LarePass browser plugin to sign "Otmoic KYC Verifiable Credential Request Schema" and submit it to the relay. After manual review by managers of the relay, the system will issue "Otmoic KYC Verifiable Credential Schema" and synchronize the issued VC to LarePass in the frontend, then submit "Otmoic KYC Presentation Definition" to the relay to finish KYC.
 
 :::info Main Information in KYC
 

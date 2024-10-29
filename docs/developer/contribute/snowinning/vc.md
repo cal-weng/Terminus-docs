@@ -4,7 +4,7 @@ outline: [2, 4]
 
 # VC Service
 
-The purpose of this documentation is to help you understand how to configure various schema and use [verifiable-credential-gate](https://github.com/Above-Os/verifiable-credential-gate) and [did-gate](https://github.com/Above-Os/did-gate) by Terminus and [SSI Service](https://github.com/TBD54566975/ssi-service) by tbd team to create Issuers and Verifiers for your own scenarios.
+The purpose of this documentation is to help you understand how to configure various schema and use [verifiable-credential-gate](https://github.com/Above-Os/verifiable-credential-gate) and [did-gate](https://github.com/Above-Os/did-gate) by Olares and [SSI Service](https://github.com/TBD54566975/ssi-service) by tbd team to create Issuers and Verifiers for your own scenarios.
 
 :::tip
 If you want to engage in lower-level development, read the [protocol standard](#reference) together with the source code in [SSI SDK](https://github.com/TBD54566975/ssi-sdk).

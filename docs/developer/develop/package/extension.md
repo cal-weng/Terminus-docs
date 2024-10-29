@@ -1,6 +1,6 @@
-# Extensions field to Helm in Terminus
+# Extensions field to Helm in Olares
 
-During installation, **Terminus** injects extended field into the APP, using the configuration from [TerminusManifest.yaml](manifest.md).
+During installation, **Olares** injects extended field into the APP, using the configuration from [OlaresManifest.yaml](manifest.md).
 
 The information from these extended fields can be directly referenced in the template without being defined in values.yaml. If there are definitions in values.yaml with the same name, the system value will overwrite them.
 

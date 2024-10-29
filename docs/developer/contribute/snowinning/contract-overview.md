@@ -2,7 +2,7 @@
 outline: [2, 4]
 ---
 
-# TerminusDID Contract System
+# OlaresDID Contract System
 
 ## Architecture
 
@@ -19,7 +19,7 @@ graph TB
 
     
 
-    TerminusDID{TerminusDID}
+    OlaresDID{OlaresDID}
     Reputations[/Reputations\]
     XXXReputation{...}
     AppMarketReputation{AppMarketReputation}
@@ -33,8 +33,8 @@ graph TB
     net((net))
     io((io))
 
-    TerminusDID--->DID
-    TerminusDID--->Tag
+    OlaresDID--->DID
+    OlaresDID--->Tag
     Tag--->Tagger
     
     Tagger-.-RootTagger
@@ -70,7 +70,7 @@ graph TB
     
 ```
 The system is divided into two parts: DID Management and Tag Management. In addition to the core functions for Tag Management, we also implemented an official tagger and reputation system.
-Refer [here](./contract-manager.md) for the usage of DID/Tag Management, [here](./contract-tdid.md) for design details of the Terminus DID contract, [here](./contract-reputation.md) for recommended implementations and examples of the reputation system.
+Refer [here](./contract-manager.md) for the usage of DID/Tag Management, [here](./contract-tdid.md) for design details of the Olares DID contract, [here](./contract-reputation.md) for recommended implementations and examples of the reputation system.
 
 ## Design Details
 
@@ -80,14 +80,14 @@ Considering the complexity and the uncertainty of usage scenarios of our contrac
 ### EIP-7201
 We follow EIP-7201 for contract data storage, which makes it easier and safer for contract upgrade and also facilitates granular control of data.
 
-### Validation of Terminus Name
-Terminus Name is submitted as `string` type during registration. Although it is splitted by `.` for level separation, this cannot gaurantee its correctness and readibility. We implement additional validation in contract code to ensure the submitted names are UTF-8-encoded readable strings.
+### Validation of Olares ID
+Olares ID is submitted as `string` type during registration. Although it is splitted by `.` for level separation, this cannot gaurantee its correctness and readibility. We implement additional validation in contract code to ensure the submitted names are UTF-8-encoded readable strings.
 
 ### Field Names of Structs in Tags
 For gas efficiency, if there are structs in a tag type, their field names are published on-chain using Ethereum events without contract storage. The events will record the block height at which the tag type is defined. Use the block height, contract address, event signature and Bloom filters to get the desired event precisely.
 
 ### Inline Assembly
-We use slice types based on inline assembly to parse and traverse Terminus Name levels, which can prevent copying substrings and reduce gas.
+We use slice types based on inline assembly to parse and traverse Olares ID levels, which can prevent copying substrings and reduce gas.
 
 ## Appendix - Requirements
 
@@ -97,9 +97,9 @@ We use slice types based on inline assembly to parse and traverse Terminus Name 
 - recording IPv4/IPv6, avatar, RSA public key etc. for DIDs
 - extending stored data for possible new needs in the future
 
-### Terminus Name
+### Olares ID
 
-- distinguishing between two kinds of DIDs for Terminus Name: Organization or Individual
+- distinguishing between two kinds of DIDs for Olares ID: Organization or Individual
 - derived DID management priviledge for parent Organization
 
 ### Reputation

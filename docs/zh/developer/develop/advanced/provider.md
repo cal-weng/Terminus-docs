@@ -39,7 +39,7 @@ status:
 
 ## 申请 Privder 的访问权限
 
-可在 [TerminusManifest.yaml](../package/manifest.md#sysdata) 中配置。
+可在 [OlaresManifest.yaml](../package/manifest.md#sysdata) 中配置。
 
 ```Yaml
 sysData:

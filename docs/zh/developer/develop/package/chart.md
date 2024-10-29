@@ -1,10 +1,10 @@
-# Terminus Application Chart 包的结构
+# Olares Application Chart 包的结构
 
-Terminus Application Chart (TAC) 基于 Helm Chart 的基础结构，扩展 Terminus 特有信息。一个基础的 TAC 应包含这些内容
+Olares Application Chart (TAC) 基于 Helm Chart 的基础结构，扩展 Olares 特有信息。一个基础的 TAC 应包含这些内容
 
 ```
 |-- Chart.yaml                   # chart的metadata
-|-- TerminusManifest.yaml        # Terminus APP metadata
+|-- OlaresManifest.yaml        # Olares APP metadata
 |-- templates                    # chart安装部署模版文件
 |   |-- deployment.yaml          # APP 部署脚本
 |-- values.yaml                  # chart安装部署参数
@@ -17,7 +17,7 @@ Terminus Application Chart (TAC) 基于 Helm Chart 的基础结构，扩展 Term
 ```
 AppName
 |-- Chart.yaml                # 必选: 包含了chart信息的YAML文件``
-|-- TerminusManifest.yaml     # 必选: App的配置文档
+|-- OlaresManifest.yaml     # 必选: App的配置文档
 |-- values.yaml               # 必选: chart 默认的配置值
 |-- templates                 # 必选: 模板目录， 当和values 结合时，可生成有效的Kubernetes manifest文件
 |   |-- NOTES.txt             # 可选: 包含简要使用说明的纯文本文件
@@ -33,7 +33,7 @@ AppName
 ```
 RecommendName
 |-- Chart.yaml                # 必选: 包含了chart信息的YAML文件``
-|-- TerminusManifest.yaml     # 必选: Recommend的配置文档
+|-- OlaresManifest.yaml     # 必选: Recommend的配置文档
 |-- values.yaml               # 必选: chart 默认的配置值
 |-- templates                 # 必选: 模板目录， 当和values 结合时，可生成有效的Kubernetes manifest文件
 |   |-- NOTES.txt             # 可选: 包含简要使用说明的纯文本文件
@@ -51,7 +51,7 @@ RecommendName
 ```
 LLMName
 |-- Chart.yaml                # 必选: 包含了chart信息的YAML文件``
-|-- TerminusManifest.yaml     # 必选: LLM的配置文档(通用配置)
+|-- OlaresManifest.yaml     # 必选: LLM的配置文档(通用配置)
 |-- values.yaml               # 必选: chart 默认的配置值
 ├── modelConfig.yaml          # 必选: LLM的配置文档(模型配置)
 └── README.md                 # 可选: 可读的README文件

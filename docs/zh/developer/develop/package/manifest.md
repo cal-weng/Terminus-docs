@@ -4,15 +4,15 @@ outline: [2, 3]
 
 # 配置应用
 
-每一个 Terminus App 的 Chart 根目录下都必须有一个 TerminusManifest.yaml 文件，且该文件名必须是`TerminusManifest.yaml`。TerminusManifest.yaml 描述了一个 Terminus App 的所有基本信息，Terminus Market 协议和 Terminus 系统依赖这些关键信息来正确的分发和安装应用。
+每一个 Olares App 的 Chart 根目录下都必须有一个 OlaresManifest.yaml 文件，且该文件名必须是`OlaresManifest.yaml`。OlaresManifest.yaml 描述了一个 Olares App 的所有基本信息，Olares Market 协议和 Olares 系统依赖这些关键信息来正确的分发和安装应用。
 
-一个 TerminusManifest.yaml 文件的示例如下：
+一个 OlaresManifest.yaml 文件的示例如下：
 
-::: details TerminusManifest.yaml 样例
+::: details OlaresManifest.yaml 样例
 
 ```Yaml
-terminusManifest.version: '0.7.0'
-terminusManifest.type: app
+olaresManifest.version: '0.7.0'
+olaresManifest.type: app
 metadata:
   name: helloworld
   title: Hello World
@@ -62,49 +62,49 @@ spec:
 
 options:
   dependencies:
-  - name: terminus
+  - name: olares
     type: system
     version: '>=0.1.0'
 ```
 :::
 
-## TerminusManifest.yaml identifier
+## OlaresManifest.yaml identifier
 
-### terminusManifest.type
+### olaresManifest.type
 
 - Type: `string`
 - Accepted Value: `app`, `recommend`, `model`, `middleware`
 
-Terminus 目前支持四种类型的应用程序，每种应用程序需要不同的字段。本文档以 `app` 为例，解释每个字段的含义。关于其他类型的信息，请参考相应的配置指南。
+Olares 目前支持四种类型的应用程序，每种应用程序需要不同的字段。本文档以 `app` 为例，解释每个字段的含义。关于其他类型的信息，请参考相应的配置指南。
 - [recommend 配置指南](recommend.md)
 - [model 配置指南](model.md)
 
 配置示例
 ```Yaml
-terminusManifest.type: app
+olaresManifest.type: app
 ```
 
-### terminusManifest.version
+### olaresManifest.version
 
 - Type: `string`
 
-terminusManifest.version 由 3 位英文句点分隔的整数组成。随着 Terminus 的发展，TerminusManifest.yaml 的配置方式可能会有所变化。
+olaresManifest.version 由 3 位英文句点分隔的整数组成。随着 Olares 的发展，OlaresManifest.yaml 的配置方式可能会有所变化。
 
-- 第 1 位数字增加意味着引入了不兼容的配置项，未升级对应 TerminusManifest.yaml 的应用将无法分发或安装
-- 第 2 位数字增加意味着分发和安装必须字段存在变化，但 Terminus 系统仍兼容之前所有版本配置的应用分发与安装。我们建议开发者尽快更新升级应用的 TerminusManifest.yaml 文件。
+- 第 1 位数字增加意味着引入了不兼容的配置项，未升级对应 OlaresManifest.yaml 的应用将无法分发或安装
+- 第 2 位数字增加意味着分发和安装必须字段存在变化，但 Olares 系统仍兼容之前所有版本配置的应用分发与安装。我们建议开发者尽快更新升级应用的 OlaresManifest.yaml 文件。
 - 第 3 位数字的改变，不影响应用分发和安装。
 
 :::info 注意
-Terminus 系统当前的 terminusManifest.version 为`0.7.0`。
+Olares 系统当前的 olaresManifest.version 为`0.7.0`。
 :::
 
 开发者可以使用 1-3 位的版本号来标识该应用遵循的配置版本。以下是有效版本的一些示例：
 ```Yaml
-TerminusManifest.yaml.version: 1
-TerminusManifest.yaml.version: 0.1
-TerminusManifest.yaml.version: 1.1.0
-TerminusManifest.yaml.version: '2.2'
-TerminusManifest.yaml.version: "3.0.122"
+OlaresManifest.yaml.version: 1
+OlaresManifest.yaml.version: 0.1
+OlaresManifest.yaml.version: 1.1.0
+OlaresManifest.yaml.version: '2.2'
+OlaresManifest.yaml.version: "3.0.122"
 ```
 
 ## Metadata
@@ -129,7 +129,7 @@ metadata:
 - Type: `string`
 - Accepted Value: `[a-z][a-z0-9]?`
 
-Terminus 系统中的应用命名空间，仅限小写字母和数字。不超过 30 个字符。需要与 FolderName、Chart.yaml-name 保持一致。
+Olares 系统中的应用命名空间，仅限小写字母和数字。不超过 30 个字符。需要与 FolderName、Chart.yaml-name 保持一致。
 
 ### title
 
@@ -206,14 +206,14 @@ entrances:
 
 - Type: `string`
 
-安装后在 Terminus 桌面上显示的标题。长度不超过 30 个字符.
+安装后在 Olares 桌面上显示的标题。长度不超过 30 个字符.
 
 ### icon
 
 - Type: `url`
 - Optional
 
-安装后在 Terminus 桌面上显示的图标。应用图标必须为 PNG 或 WEBP 格式，大小不超过 512 KB，尺寸为 256x256 像素。
+安装后在 Olares 桌面上显示的图标。应用图标必须为 PNG 或 WEBP 格式，大小不超过 512 KB，尺寸为 256x256 像素。
 
 ### authLevel
 
@@ -230,7 +230,7 @@ entrances:
 - Default: `false`
 - Optional
 
-当 invisible 为 true 时，该 entrance 不会显示在 Terminus 桌面上。默认为 false
+当 invisible 为 true 时，该 entrance 不会显示在 Olares 桌面上。默认为 false
 
 ### openMethod
 
@@ -238,7 +238,7 @@ entrances:
 - Default: `default`
 - Optional
 
-Entrance 在 [Desktop](../../../how-to/terminus/desktop.md) 中窗口的打开方式。
+Entrance 在 [Desktop](../../../how-to/olares/desktop.md) 中窗口的打开方式。
 
 `iframe` 代表在 Desktop 的窗口内通过 iframe 新建一个窗口，`window` 代表在浏览器新的 Tab 页打开。`default` 代表跟随系统的默认选择，系统默认的选择是`iframe`
 
@@ -387,7 +387,7 @@ spec:
   website: https://jellyfin.org/
   doc: https://jellyfin.org/docs/
   sourceCode: https://github.com/jellyfin/jellyfin
-  submitter: Terminus
+  submitter: Olares
   language:
   - en
 
@@ -451,7 +451,7 @@ middleware:
       # Please make sure each line is a complete query.
 ```
 
-假设你在 TerminusManifest.yaml 中填写了 middleware，你就不用自己再创建对应的中间件。直接在应用的 yaml 中填写对应的中间件信息。
+假设你在 OlaresManifest.yaml 中填写了 middleware，你就不用自己再创建对应的中间件。直接在应用的 yaml 中填写对应的中间件信息。
 
 ```yaml
 - name: DB_POSTGRESDB_DATABASE
@@ -509,7 +509,7 @@ options:
 - Optional
 - Type: `map`
 
-确定此应用是否为 Terminus 集群中的所有用户安装。
+确定此应用是否为 Olares 集群中的所有用户安装。
 
 Server 配置示例
 ```yaml
@@ -529,7 +529,7 @@ metadata:
   name: gitlabclienta
 options:
   dependencies:
-    - name: terminus
+    - name: olares
       version: ">=0.3.6-0"
       type: system
     - name: gitlab #app name of server
@@ -561,7 +561,7 @@ options:
 ```yaml
 options:
   dependencies:
-    - name: terminus
+    - name: olares
       version: ">=1.0.0-0"
       type: system
     - name: mongodb
@@ -603,7 +603,7 @@ options:
 - Optional
 - Type: `map`
 
-Terminus 应用运行时（TAPR）包含一个内置的文件上传组件，旨在简化应用中的文件上传过程。更多信息请参考 [upload](../advanced/file-upload.md)。
+Olares 应用运行时（TAPR）包含一个内置的文件上传组件，旨在简化应用中的文件上传过程。更多信息请参考 [upload](../advanced/file-upload.md)。
 
 配置示例
 ```yaml
@@ -623,7 +623,7 @@ upload:
 - Type: `boolean`
 - Default: `false`
 
-确定应用是否与移动 Web 浏览器兼容，并能够在 Terminus 桌面的移动版本上显示。如果应用针对移动 Web 浏览器进行了优化，请启用此选项。这将使应用在 Terminus 桌面的移动版本上可见并可访问。
+确定应用是否与移动 Web 浏览器兼容，并能够在 Olares 桌面的移动版本上显示。如果应用针对移动 Web 浏览器进行了优化，请启用此选项。这将使应用在 Olares 桌面的移动版本上可见并可访问。
 
 配置示例
 ```yaml
@@ -635,7 +635,7 @@ mobileSupported: true
 - Optional
 - Type: `map`
 
-Terminus OS 包含一个内置的 OpenID Connect 身份验证组件，用于简化用户的身份验证。启用此选项以在你的应用中使用 OpenID。
+Olares OS 包含一个内置的 OpenID Connect 身份验证组件，用于简化用户的身份验证。启用此选项以在你的应用中使用 OpenID。
 ```yaml
 # OpenID related varibles in yaml
 {{ .Values.oidc.client.id }}

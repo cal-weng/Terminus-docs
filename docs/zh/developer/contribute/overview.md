@@ -1,7 +1,7 @@
-# Contributing To Terminus
+# Contributing To Olares
 
-## Terminus OS
+## Olares OS
 
-## TermiPass
+## LarePass
 
 ## Develop System App

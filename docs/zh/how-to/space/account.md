@@ -7,32 +7,32 @@
 ![alt text](/images/how-to/space/space_login.jpg)
 
 :::info
-Terminus Name 是你在 Terminus 世界中的标识符。 了解[什么是 Terminus Name](../../developer/contribute/snowinning/terminus-name.md)。
+Olares ID 是你在 Olares 世界中的标识符。 了解[什么是 Olares ID](../../developer/contribute/snowinning/olares-id.md)。
 :::
 
-请通过 TermiPass 客户端获取 DID/Terminus Name，并「扫码」登录 Terminus Space。
+请通过 LarePass 客户端获取 DID/Olares ID，并「扫码」登录 Olares Space。
 
 ![alt text](/images/how-to/space/login.jpg)
 
-如上图所示，在 TermiPass 上，你可以在 2 个位置找到扫码登录 Terminus Space 的入口。
+如上图所示，在 LarePass 上，你可以在 2 个位置找到扫码登录 Olares Space 的入口。
 
-1. 当你创建了 DID 之后的页面，以及你绑定了 Terminus Name 之后的落地页，你可以在页面的右上角找到扫码登录 Terminus Space 的入口。
+1. 当你创建了 DID 之后的页面，以及你绑定了 Olares ID 之后的落地页，你可以在页面的右上角找到扫码登录 Olares Space 的入口。
 
-2. 当你成功激活了 Terminus 之后，正常打开 TermiPass，切换到 Setting，你可以在此页面的右上角找到扫码登录 Terminus Space 的入口。
+2. 当你成功激活了 Olares 之后，正常打开 LarePass，切换到 Setting，你可以在此页面的右上角找到扫码登录 Olares Space 的入口。
 
-想要了解更多的关于账号的相关信息，你可以查看[ account](../termipass/account/index.md)
+想要了解更多的关于账号的相关信息，你可以查看[ account](../larepass/account/index.md)
 
 ## Account Type
 
-你可以使用 DID 或者 Terminus Name 来登录 Terminus Space，但不同的账号形态，在 Terminus Space 中能使用的功能和服务也不尽相同。具体如下：
+你可以使用 DID 或者 Olares ID 来登录 Olares Space，但不同的账号形态，在 Olares Space 中能使用的功能和服务也不尽相同。具体如下：
 
-- **DID 形态**，在此状态下登录 Space，由于你还未绑定 Terminus Name，因此无法创建 Terminus。但你可以设置自己的域名。因为 DID 形态还未绑定任何域名。
+- **DID 形态**，在此状态下登录 Space，由于你还未绑定 Olares ID，因此无法创建 Olares。但你可以设置自己的域名。因为 DID 形态还未绑定任何域名。
 
-- **Terminus Name 形态**，在此状态下登录 Space，理论上你可以创建 Terminus。不过，如果你的 Terminus Name 已经绑定了其它 Terminus，则无法再创建一个新的 Terminus。并且不可以设置自己的域名，因为 Terminus Name 已经绑定了其他的域名。
+- **Olares ID 形态**，在此状态下登录 Space，理论上你可以创建 Olares。不过，如果你的 Olares ID 已经绑定了其它 Olares，则无法再创建一个新的 Olares。并且不可以设置自己的域名，因为 Olares ID 已经绑定了其他的域名。
 
 ## Multi-account Management
 
-一个 Terminus Name 只允许绑定一台 Terminus。如果一个用户拥有多个 Terminus Name 和多台 Terminus，那么他就会面临着一个多账号登录的问题。Terminus Space 完美支持多账号的登录与切换。你可以轻松的管理多台 Terminus。
+一个 Olares ID 只允许绑定一台 Olares。如果一个用户拥有多个 Olares ID 和多台 Olares，那么他就会面临着一个多账号登录的问题。Olares Space 完美支持多账号的登录与切换。你可以轻松的管理多台 Olares。
 
 ![alt text](/images/how-to/space/import_account.jpg)
 

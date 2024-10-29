@@ -2,17 +2,17 @@
 outline: [2, 3]
 ---
 
-# TerminusManifest Specification
+# OlaresManifest Specification
 
-Every **Terminus Application Chart** should include a `TerminusManifest.yaml` file in the root directory. `TerminusManifest.yaml` provides all the essential information about a Terminus App. Both the **Terminus Market protocol** and the **Terminus OS** depend on this information to distribute and install applications.
+Every **Olares Application Chart** should include a `OlaresManifest.yaml` file in the root directory. `OlaresManifest.yaml` provides all the essential information about an Olares App. Both the **Olares Market protocol** and the **Olares OS** depend on this information to distribute and install applications.
 
-Here's an example of what a `TerminusManifest.yaml` file might look like:
+Here's an example of what a `OlaresManifest.yaml` file might look like:
 
-::: details TerminusManifest.yaml Example
+::: details OlaresManifest.yaml Example
 
 ```Yaml
-terminusManifest.version: '0.7.0'
-terminusManifest.type: app
+olaresManifest.version: '0.7.0'
+olaresManifest.type: app
 metadata:
   name: helloworld
   title: Hello World
@@ -62,7 +62,7 @@ spec:
 
 options:
   dependencies:
-  - name: terminus
+  - name: olares
     type: system
     version: '>=0.1.0'
 ```
@@ -70,7 +70,7 @@ options:
 :::
 
 :::info NOTE
-Terminus Manifest Version: `0.7.1`
+Olares Manifest Version: `0.7.1`
 
 Changelog:
 - Add new `authLevel` vaule `internal`
@@ -78,37 +78,37 @@ Changelog:
 :::
 
 
-## terminusManifest.type
+## olaresManifest.type
 
 - Type: `string`
 - Accepted Value: `app`, `recommend`, `model`, `middleware`
 
-Terminus currently supports four types of applications, each requiring different fields. This document uses `app` as an example to explain each field. For information on other types, please refer to the corresponding configuration guide.
+Olares currently supports four types of applications, each requiring different fields. This document uses `app` as an example to explain each field. For information on other types, please refer to the corresponding configuration guide.
 - [Recommend Configuration Guide](recommend.md)
 - [Model Configuration Guide](model.md)
 
 :::info Example
 ```Yaml
-terminusManifest.type: app
+olaresManifest.type: app
 ```
 :::
 
-## terminusManifest.version
+## olaresManifest.version
 
 - Type: `string`
 
-As **Terminus** evolves, the configuration specification of `TerminusManifest.yaml` may change. You can identify whether these changes will affect your application by checking the `terminusManifest.version`. The `terminusManifest.version` consists of three integers separated by periods. 
+As **Olares** evolves, the configuration specification of `OlaresManifest.yaml` may change. You can identify whether these changes will affect your application by checking the `olaresManifest.version`. The `olaresManifest.version` consists of three integers separated by periods. 
 
-- An increase in the **first digit** indicates the introduction of incompatible configuration items. Applications that haven't updated their `TerminusManifest.yaml` will be unable to distribute or install.
-- An increase in the **second digit** signifies changes in the mandatory fields for distribution and installation. However, the **Terminus OS** remains compatible with the application distribution and installation of previous configuration versions. We recommend developers to promptly update and upgrade the application's `TerminusManifest.yaml` file.
+- An increase in the **first digit** indicates the introduction of incompatible configuration items. Applications that haven't updated their `OlaresManifest.yaml` will be unable to distribute or install.
+- An increase in the **second digit** signifies changes in the mandatory fields for distribution and installation. However, the **Olares OS** remains compatible with the application distribution and installation of previous configuration versions. We recommend developers to promptly update and upgrade the application's `OlaresManifest.yaml` file.
 - A change in the **third digit** does not affect the application's distribution and installation.
 
 Developers can use 1-3 digit version numbers to indicate the application's configuration version. Here are some examples of valid versions:
 ```Yaml
-TerminusManifest.yaml.version: 1
-TerminusManifest.yaml.version: 1.1.0
-TerminusManifest.yaml.version: '2.2'
-TerminusManifest.yaml.version: "3.0.122"
+OlaresManifest.yaml.version: 1
+OlaresManifest.yaml.version: 1.1.0
+OlaresManifest.yaml.version: '2.2'
+OlaresManifest.yaml.version: "3.0.122"
 ```
 
 ## Metadata
@@ -132,25 +132,25 @@ metadata:
 - Type: `string`
 - Accepted Value: `[a-z][a-z0-9]?`
 
-App’s namespace in **Terminus OS**, lowercase alphanumeric characters only. It can be up to 30 characters, and needs to be consistent with `FolderName` and `name` field in `Chart.yaml`.
+App’s namespace in **Olares OS**, lowercase alphanumeric characters only. It can be up to 30 characters, and needs to be consistent with `FolderName` and `name` field in `Chart.yaml`.
 
 ### title
 
 - Type: `string`
 
-Your app title that appears in the **Terminus Market**. It can be up to 30 characters.
+Your app title that appears in the **Olares Market**. It can be up to 30 characters.
 
 ### description
 
 - Type: `string`
 
-A short description appears below app title in the  **Terminus Market**.
+A short description appears below app title in the  **Olares Market**.
 
 ### icon
 
 - Type: `url`
 
-Your app icon that appears in the **Terminus Market**.
+Your app icon that appears in the **Olares Market**.
 
 The app's icon must be a `PNG` or `WEBP` format file, up to `512 KB`, with a size of `256x256 px`.
 
@@ -166,7 +166,7 @@ The **Chart Version** of the application. It should be incremented each time the
 - Type: `list<string>`
 - Accepted Value: `Blockchain`, `Utilities`, `Social Network`, `Entertainment`, `Productivity`
 
-Used to display your app on different categoiry page in **Terminus Market**.
+Used to display your app on different categoiry page in **Olares Market**.
 
 ## Entrances
 
@@ -211,14 +211,14 @@ entrances:
 
 - Type: `string`
 
-Title that appears in the **Terminus** desktop after installed. It can be up to `30` characters.
+Title that appears in the **Olares** desktop after installed. It can be up to `30` characters.
 
 ### icon
 
 - Type: `url`
 - Optional
 
-Icon that appears in the **Terminus** desktop after installed. The app's icon must be a `PNG` or `WEBP` format file, up to `512 KB`, with a size of `256x256 px`.
+Icon that appears in the **Olares** desktop after installed. The app's icon must be a `PNG` or `WEBP` format file, up to `512 KB`, with a size of `256x256 px`.
 
 ### authLevel
 
@@ -238,7 +238,7 @@ Specify the authentication level of the entrance.
 - Default: `false`
 - Optional
 
-When `invisible` is `true`, the entrance will not be displayed on the **Terminus** desktop.
+When `invisible` is `true`, the entrance will not be displayed on the **Olares** desktop.
 
 ### openMethod
 
@@ -247,7 +247,7 @@ When `invisible` is `true`, the entrance will not be displayed on the **Terminus
 - Default: `default`
 - Optional
 
-Explicity defines how to open this entrance in [Desktop](../../../how-to/terminus/desktop.md)
+Explicity defines how to open this entrance in [Desktop](../../../how-to/olares/desktop.md)
 
 The `iframe` creates a new window within the desktop window through an iframe. The `window` opens a new tab in the browser. The `default` follows the system setting, which is `iframe` by default.
 
@@ -367,7 +367,7 @@ All system API [providers](../advanced/provider.md) are list below:
 | secret.vault | v1 | key | List, Info, Sign
 
 ## spec
-> Additional information about the application, primarily used for display in the **Terminus Market**.
+> Additional information about the application, primarily used for display in the **Olares Market**.
 
 :::info Example
 ```Yaml
@@ -396,7 +396,7 @@ spec:
   website: https://jellyfin.org/
   doc: https://jellyfin.org/docs/
   sourceCode: https://github.com/jellyfin/jellyfin
-  submitter: Terminus
+  submitter: Olares
   locale:
   - en-US
   - zh-CN
@@ -428,24 +428,24 @@ requiredMemory: 256Mi
 
 ### i18n 
 
-To add multi-language support for your app in Terminus Market:
+To add multi-language support for your app in Olares Market:
 
-1. Create an `i18n` folder in the Terminus Application Chart (TAC) root directory.
+1. Create an `i18n` folder in the Olares Application Chart (TAC) root directory.
 2. In the `i18n` folder, create separate subdirectories for each supported locale.
-3. In each locale subdirectory, place a localized version of the `TerminusManifest.yaml` file.
+3. In each locale subdirectory, place a localized version of the `OlaresManifest.yaml` file.
 
-Terminus Market will automatically display the content of the corresponding "TerminusManifest.yaml" file based on users' locale settings.
+Olares Market will automatically display the content of the corresponding "OlaresManifest.yaml" file based on users' locale settings.
 :::info Example
 ```
 .
 ├── Chart.yaml
 ├── README.md
-├── TerminusManifest.yaml
+├── OlaresManifest.yaml
 ├── i18n
 │   ├── en-US
-│   │   └── TerminusManifest.yaml
+│   │   └── OlaresManifest.yaml
 │   └── zh-CN
-│       └── TerminusManifest.yaml
+│       └── OlaresManifest.yaml
 ├── owners
 ├── templates
 │   └── deployment.yaml
@@ -469,7 +469,7 @@ spec:
 - Optional
 - Type: `map`
 
-The **Terminus OS** provides highly available middleware services. Developers do not need to install middleware repeatedly. Just simply add requried middleware here, You can then directly use the corresponding middleware information in the application's deployment YAML file.
+The **Olares OS** provides highly available middleware services. Developers do not need to install middleware repeatedly. Just simply add requried middleware here, You can then directly use the corresponding middleware information in the application's deployment YAML file.
 
 Use the `scripts` field to specify scripts that should be executed after the database is created. Additionally, use the `extension` field to add the corresponding extension in the  database.
 
@@ -505,7 +505,7 @@ middleware:
 Use the middleware information in deployment YAML
 
 ```yaml
-- name: DB_POSTGRESDB_DATABASE # The database name you configured in TerminusManifest, specified in middleware.postgres.databases[i].name
+- name: DB_POSTGRESDB_DATABASE # The database name you configured in OlaresManifest, specified in middleware.postgres.databases[i].name
   value: {{ .Values.postgres.databases.<dbname> }}
 - name: DB_POSTGRESDB_HOST
   value: {{ .Values.postgres.host }}
@@ -522,7 +522,7 @@ host --> {{ .Values.mongodb.host }}
 port --> "{{ .Values.mongodb.port }}"  # The port and password in the yaml file need to be enclosed in double quotes.
 username --> {{ .Values.mongodb.username }}
 password --> "{{ .Values.mongodb.password }}" # The port and password in the yaml file need to be enclosed in double quotes.
-databases --> "{{ .Values.mongodb.databases }}" # The value type of database is a map. You can get the database using {{ .Values.mongodb.databases.<dbname> }}. The <dbname> is the name you configured in TerminusManifest, specified in middleware.mongodb.databases[i].name
+databases --> "{{ .Values.mongodb.databases }}" # The value type of database is a map. You can get the database using {{ .Values.mongodb.databases.<dbname> }}. The <dbname> is the name you configured in OlaresManifest, specified in middleware.mongodb.databases[i].name
 
 
 # For Redis, the corresponding value is as follow
@@ -560,7 +560,7 @@ options:
 - Optional
 - Type: `map`
 
-Whether this app is installed for all users in a **Terminus** cluster.
+Whether this app is installed for all users in a **Olares** cluster.
 
 :::info Example For Server
 ```yaml
@@ -581,7 +581,7 @@ metadata:
   name: gitlabclienta
 options:
   dependencies:
-    - name: terminus
+    - name: olares
       version: ">=0.3.6-0"
       type: system
     - name: gitlab #app name of server
@@ -615,7 +615,7 @@ Specify the dependencies and requirements for your application. It includes othe
 ```yaml
 options:
   dependencies:
-    - name: terminus
+    - name: olares
       version: ">=1.0.0-0"
       type: system
     - name: mongodb
@@ -661,7 +661,7 @@ options:
 - Optional
 - Type: `map`
 
-The Terminus Application Runtime (TAPR) includes a built-in file upload component designed to simplify the file upload process in your application. Refer to [upload](../advanced/file-upload.md) for more information.
+The Olares Application Runtime (TAPR) includes a built-in file upload component designed to simplify the file upload process in your application. Refer to [upload](../advanced/file-upload.md) for more information.
 
 :::info Example
 ```yaml
@@ -682,7 +682,7 @@ upload:
 - Type: `boolean`
 - Default: `false`
 
-Determine whether the application is compatible with mobile web browsers and can be displayed on the mobile version of Terminus Desktop. Enable this option if the app is optimized for mobile web browsers. This will make the app visible and accessible on the mobile version of Terminus Desktop.
+Determine whether the application is compatible with mobile web browsers and can be displayed on the mobile version of Olares Desktop. Enable this option if the app is optimized for mobile web browsers. This will make the app visible and accessible on the mobile version of Olares Desktop.
 
 :::info Example
 ```yaml
@@ -695,7 +695,7 @@ mobileSupported: true
 - Optional
 - Type: `map`
 
-The Terminus OS includes a built-in OpenID Connect authentication component to simplify identity verification of users. Enable this option to use OpenID in your app. 
+The Olares OS includes a built-in OpenID Connect authentication component to simplify identity verification of users. Enable this option to use OpenID in your app. 
 ```yaml
 # OpenID related varibles in yaml
 {{ .Values.oidc.client.id }}

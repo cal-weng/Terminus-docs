@@ -5,7 +5,7 @@ import { zh } from "./zh";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
-  title: "Terminus",
+  title: "Olares",
   description: "Let people own their data again",
   lang: "en",
   locales: {
@@ -25,7 +25,7 @@ export default withMermaid({
       options: {
         appId: "0614S1555J",
         apiKey: "cbf4702e9d6bfb5a0ae85bf0d486a591",
-        indexName: "jointerminus",
+        indexName: "olares",
         locales: {
           zh: {
             placeholder: '搜索文档',
@@ -74,7 +74,7 @@ export default withMermaid({
   },
 
   sitemap: {
-    hostname: "https://docs.jointerminus.com/",
+    hostname: "https://docs.olares.com/",
   },
   lastUpdated: true,
   base: process.env.DOC_BASE || "/",

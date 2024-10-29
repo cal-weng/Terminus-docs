@@ -8,24 +8,24 @@ Snowinning 协议的智能合约包含两部分。
 
 ![alt text](/images/overview/snowinning/smart-contract.jpg)
 
-- [TerminusDID](https://github.com/beclab/terminusdid-contract-system/blob/main/src/core/TerminusDID.sol) 合约扮演了关键角色，它充当了 [DID 注册表](./concepts.md#did-注册表)。查看[合约详情](https://optimistic.etherscan.io/address/0x5da4fa8e567d86e52ef8da860de1be8f54cae97d)。
-- 第三方协议可以基于 [TerminusDID](https://github.com/beclab/terminusdid-contract-system/blob/main/src/core/TerminusDID.sol) 扩展声誉。目前已有以下声誉协议：
+- [OlaresDID](https://github.com/beclab/olaresdid-contract-system/blob/main/src/core/OlaresDID.sol) 合约扮演了关键角色，它充当了 [DID 注册表](./concepts.md#did-注册表)。查看[合约详情](https://optimistic.etherscan.io/address/0x5da4fa8e567d86e52ef8da860de1be8f54cae97d)。
+- 第三方协议可以基于 [OlaresDID](https://github.com/beclab/olaresdid-contract-system/blob/main/src/core/OlaresDID.sol) 扩展声誉。目前已有以下声誉协议：
   - [Otmoic Trader Reputation](https://github.com/otmoic/reputation-contract-evm/blob/main/contracts/Reputation.sol)。查看[合约详情](https://optimistic.etherscan.io/address/0x3179CE5fAB68C0286Da85f3d61BcE7116815e799)。
-  - [Application Reputation](https://github.com/beclab/terminusdid-contract-system/blob/main/src/taggers/TerminusAppMarketReputation.sol)。查看[合约详情](https://optimistic.etherscan.io/address/0x08065353D266121938B93D4B1071Bb52CD0C0EE4)。
+  - [Application Reputation](https://github.com/beclab/olaresdid-contract-system/blob/main/src/taggers/OlaresAppMarketReputation.sol)。查看[合约详情](https://optimistic.etherscan.io/address/0x08065353D266121938B93D4B1071Bb52CD0C0EE4)。
 
-## TerminusDID
+## OlaresDID
 
-TerminusDID 合约管理一个来源于 [Domain](./terminus-name.md#域名类型) 的层级结构。
+OlaresDID 合约管理一个来源于 [Domain](./olares-id.md#域名类型) 的层级结构。
 
 ![alt text](/images/overview/snowinning/smart-contract-tree.jpg)
 
 ### 节点
 
-每个节点拥有若干默认属性。部分域名可转换为 Terminus Name。
+每个节点拥有若干默认属性。部分域名可转换为 Olares ID。
 
 | 属性            | 描述                                                                                                                                                   |
 | -------------- |------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name           | [域名](./terminus-name.md#domainname)，部分域名可以与 Terminus Name 互换                                                                                         |
+| name           | [域名](./olares-id.md#domainname)，部分域名可以与 Olares ID 互换                                                                                         |
 | id             | 每个节点同时是一个 NFT，遵循 **ERC-721** 标准。其 id 作为这个 NFT 的唯一标识符，通过`keccak256(name)`计算得出                                                                         |
 | did,owner      | 节点中的`owner`和`did`是同义的，源自相同的助记词。更多细节请查阅[此处](./concepts.md#去中心化标识符-did)。<br> 存储 owner 有助于符合 **BIP44** 规范，便于在 EVM 合约中进行高效的签名验证。每个节点有一个`owner`，负责修改节点详情。 |
 | note           | 目前有三种类型：个人、组织、实体                                                                                                                                     |
@@ -36,7 +36,7 @@ TerminusDID 合约管理一个来源于 [Domain](./terminus-name.md#域名类型
 ```json
 {
   "id": "0xbf90de759829bfa3d2b10e4c4a7101e3b116f70b9a5431951ff9d83a4c8e3ceb",
-  "name": "olivia.myterminus.com",
+  "name": "olivia.olares.com",
   "did": "did:key:z6MkuhT5kYegHaJxirMaHxuqzJhGZk5r32Ct5nYVRQWpN31q",
   "note": "individual",
   "owner": "0x1404C95b2Cb2E46E03650bc02f83364A92f8DA9D",
@@ -49,28 +49,28 @@ TerminusDID 合约管理一个来源于 [Domain](./terminus-name.md#域名类型
 不同节点的所有权如下：
 
 - 系统<br>
-  如 `root`、`com`、`io` 这类抽象节点的所有者属于 Terminus 团队。
+  如 `root`、`com`、`io` 这类抽象节点的所有者属于 Olares 团队。
 
 - 个人<br>
-  `myterminus.com` 属于[个人域名](./terminus-name.md#个人域名)，所有者为 Terminus 团队。<br>
-  `alice.myterminus.com`、`bob.myterminus.com` 属于个人 Terminus 名称，所有者为用户本人。
+  `olares.com` 属于[个人域名](./olares-id.md#个人域名)，所有者为 Olares 团队。<br>
+  `alice.olares.com`、`bob.olares.com` 属于个人 Olares 名称，所有者为用户本人。
 
 - 组织<br>
-  `org1.com`、`org.io` 属于[组织域名](./terminus-name.md#组织域名)，所有者为该域的管理员。<br>
-  `alice.org1.com`、`bob.org2.io` 属于组织 Terminus 名称，所有者为用户本人。
+  `org1.com`、`org.io` 属于[组织域名](./olares-id.md#组织域名)，所有者为该域的管理员。<br>
+  `alice.org1.com`、`bob.org2.io` 属于组织 Olares 名称，所有者为用户本人。
 
 - 实体<br>
-  `Application Score` 属于[实体域名](./terminus-name.md#实体域名)，所有者为实体的申请者。
+  `Application Score` 属于[实体域名](./olares-id.md#实体域名)，所有者为实体的申请者。
 
 组织管理员和用户可以参考[域管理](contract-manager.md)来管理自己的节点和子节点。
 
 :::info 信息
-项目稳定后，所有权将由 Terminus 团队转移到 DAO 组织的多签名地址。
+项目稳定后，所有权将由 Olares 团队转移到 DAO 组织的多签名地址。
 :::
 
 ### 标签
 
-[标签](https://github.com/beclab/terminusdid-contract-system/blob/main/src/core/TagRegistry.sol)机制允许 [TerminusDID](https://github.com/beclab/terminusdid-contract-system/blob/main/src/core/TerminusDID.sol) 合约扩展存储在节点上的元数据。
+[标签](https://github.com/beclab/olaresdid-contract-system/blob/main/src/core/TagRegistry.sol)机制允许 [OlaresDID](https://github.com/beclab/olaresdid-contract-system/blob/main/src/core/OlaresDID.sol) 合约扩展存储在节点上的元数据。
 
 例如，如果你是管理组织域的企业，并希望为组织下每个员工添加员工 ID 属性，则需要基于标签进行扩展。
 
@@ -123,7 +123,7 @@ Tagger 代表有权限修改标签值的独特实体，可以是钱包地址或�
 
 - Otmoic lp
 
-Otmoic lp 作为一个拥有 TerminusName 的账户进行操作。在签署交易信息时，会验证签名者的地址是否在 AuthAddresses 中记录。
+Otmoic lp 作为一个拥有 OlaresName 的账户进行操作。在签署交易信息时，会验证签名者的地址是否在 AuthAddresses 中记录。
 
 由于涉及到其他钱包，仅验证交易发起人的身份是不够的。因此，我们设计了以下操作步骤：
 
@@ -133,7 +133,7 @@ Otmoic lp 作为一个拥有 TerminusName 的账户进行操作。在签署交�
 {
   "address": "0x10FE2771907B0c4245695daD7e9Ed064d45860f8",
   "algorithm": 0, // 0: ECDSA
-  "domain": "olivia.myterminus.com",
+  "domain": "olivia.olares.com",
   "signAt": "1714287578",
   "action": 0 //0: Add   1: Remove
 }
@@ -151,7 +151,7 @@ Otmoic lp 作为一个拥有 TerminusName 的账户进行操作。在签署交�
 - 评估对象并存储必要信息
 - 认证评估者的身份
 
-针对这些要素，TerminusDID 提供了全面的解决方案。我们可以使用个人和实体类型的 DID 来代表待评估的对象，利用标签（Tags）存储扩展的元数据，并使用 TerminusDID 内建的权限管理功能来验证身份。在接下来的两个案例中，你可以了解更多细节。
+针对这些要素，OlaresDID 提供了全面的解决方案。我们可以使用个人和实体类型的 DID 来代表待评估的对象，利用标签（Tags）存储扩展的元数据，并使用 OlaresDID 内建的权限管理功能来验证身份。在接下来的两个案例中，你可以了解更多细节。
 
 :::
 
@@ -161,7 +161,7 @@ Otmoic 的信誉合约使用 DID 拥有者的 EIP712 签名进行身份验证，
 
 :::info 部署
 
-1. 在 TerminusDID 合约中创建实体 `otmoic.reputation`。
+1. 在 OlaresDID 合约中创建实体 `otmoic.reputation`。
 2. 定义一个名为`complaints`的标签。
 3. 部署 Otmoic 交易者声誉[合约](https://optimistic.etherscan.io/address/0x3179CE5fAB68C0286Da85f3d61BcE7116815e799)。
 4. 将`complaints`的 Tagger 设置为 Otmoic Trader Reputation。
@@ -179,7 +179,7 @@ Otmoic 的信誉合约使用 DID 拥有者的 EIP712 签名进行身份验证，
   flowchart LR
 
 	otmoic{{OtmoicReputation}}
-	did{{TerminusDID}}
+	did{{OlaresDID}}
 	complaints[/tag-complaints/]
 	otmoicdid((otmoic.reputation))
 
@@ -193,21 +193,21 @@ Otmoic 的信誉合约使用 DID 拥有者的 EIP712 签名进行身份验证，
 
 ### Application Reputation
 
-1. 在 `app.myterminus.com` 上定义名为`ratings`的标签，并将 Application Reputation 合约设置为 Tagger。
-2. 当应用有新版本时，在区块链上创建 **`<version>.<appname>.app.myterminus.com`**。
+1. 在 `app.olares.com` 上定义名为`ratings`的标签，并将 Application Reputation 合约设置为 Tagger。
+2. 当应用有新版本时，在区块链上创建 **`<version>.<appname>.app.olares.com`**。
 3. 用户签名评论或评分信息，并提交至 Application Reputation 合约。
-4. Application Reputation 合约将评分信息保存至 `<version>.<appname>.app.myterminus.com` 的 Ratings 中，并以事件形式发布评论信息。
+4. Application Reputation 合约将评分信息保存至 `<version>.<appname>.app.olares.com` 的 Ratings 中，并以事件形式发布评论信息。
 
 :::info
 
 ```mermaid
   flowchart TD
 
-	app((app.myterminus.com))
-	appname((appname.app.myterminus.com))
-	version1((version1.appname.app.myterminus.com))
-	version2((version2.appname.app.myterminus.com))
-	reputation{{TerminusAppMarketReputation}}
+	app((app.olares.com))
+	appname((appname.app.olares.com))
+	version1((version1.appname.app.olares.com))
+	version2((version2.appname.app.olares.com))
+	reputation{{OlaresAppMarketReputation}}
 	ratings[/tag-ratings/]
 	version1ratings[/version1-tag-ratings/]
 	event[[event]]

@@ -18,7 +18,7 @@ outline: [2, 3]
      namespace: user-space-{{ .Values.bfl.username }}
    ```
 
-3. 参照 Terminus 中的 app 对应 deployment.yaml 文件配置，添加 annotation 和 label
+3. 参照 Olares 中的 app 对应 deployment.yaml 文件配置，添加 annotation 和 label
 
    ```Yaml
    metadata:
@@ -30,11 +30,11 @@ outline: [2, 3]
       applications.app.bytetrade.io/owner: {{ .Values.bfl.username }}
       applications.app.bytetrade.io/author: bytetrade.io
     annotations:
-      applications.app.bytetrade.io/icon: https://docs-dev.jointerminus.com/icon.png
+      applications.app.bytetrade.io/icon: https://docs-dev.olares.com/icon.png
       applications.app.bytetrade.io/title: Desktop-dev
       applications.app.bytetrade.io/version: '0.0.1'
 
-      # 此处的 entrances 配置要与 TerminusManifest.yaml 中配置保持一致
+      # 此处的 entrances 配置要与 OlaresManifest.yaml 中配置保持一致
       applications.app.bytetrade.io/entrances: '[{"name":"desktop-frontend-dev", "host":"desktop-svc-dev", "port":80,"title":"Desktop-dev"}]'
    ```
 
@@ -56,7 +56,7 @@ outline: [2, 3]
          targetPort: 8080  # 注意，现在nodejs的dev container端口是8080，要改成这个端口
    ```
 
-5. 修改 TerminusManifest.yaml 中 entrances 的内容
+5. 修改 OlaresManifest.yaml 中 entrances 的内容
 
    ```Yaml
    entrances:
@@ -126,7 +126,7 @@ metadata:
     applications.app.bytetrade.io/owner: {{ .Values.bfl.username }}
     applications.app.bytetrade.io/author: bytetrade.io
   annotations:
-    applications.app.bytetrade.io/icon: https://docs-dev.jointerminus.com/icon.png
+    applications.app.bytetrade.io/icon: https://docs-dev.olares.com/icon.png
     applications.app.bytetrade.io/title: Desktop-dev
     applications.app.bytetrade.io/version: '0.0.1'
     applications.app.bytetrade.io/entrances: '[{"name":"desktop-frontend-dev", "host":"desktop-svc-dev", "port":80,"title":"Desktop-dev"}]'
@@ -141,7 +141,7 @@ spec:
         app: desktop-dev
     spec:
       volumes:
-      - name: terminus-sidecar-config
+      - name: olares-sidecar-config
         configMap:
           name: sidecar-configs
           items:
@@ -163,7 +163,7 @@ spec:
           path: {{ .Values.userspace.appCache }}/desktop-dev
 
       initContainers:
-        - name: terminus-sidecar-init
+        - name: olares-sidecar-init
           image: openservicemesh/init:v1.2.3
           imagePullPolicy: IfNotPresent
           securityContext:
@@ -215,7 +215,7 @@ spec:
             mountPath: /opt/code
           - name: appcache
             mountPath: /root/.config
-        - name: terminus-envoy-sidecar
+        - name: olares-envoy-sidecar
           image: envoyproxy/envoy-distroless:v1.25.2
           imagePullPolicy: IfNotPresent
           securityContext:
@@ -227,7 +227,7 @@ spec:
           - name: proxy-inbound
             containerPort: 15003
           volumeMounts:
-          - name: terminus-sidecar-config
+          - name: olares-sidecar-config
             readOnly: true
             mountPath: /etc/envoy/envoy.yaml
             subPath: envoy.yaml

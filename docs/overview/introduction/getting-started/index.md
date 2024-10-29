@@ -2,13 +2,13 @@
 outline: [2, 3]
 ---
 
-# Getting Started with Terminus
+# Getting Started with Olares
 
-Welcome to Terminus! This guide will help you quickly get Terminus up and running on your preferred platform. We'll provide essential information and point you to resources for more advanced setups.
+Welcome to Olares! This guide will help you quickly get Olares up and running on your preferred platform. We'll provide essential information and point you to resources for more advanced setups.
 
 :::info
-- This guide will set you up as the Admin role to access the full capabilities of Terminus.
-- This guide focuses on self-hosted installation of Terminus. To try out the cloud version of Terminus, refer to the [Terminus Space documentation](../../../how-to/space/host/create-terminus.md).
+- This guide will set you up as the Admin role to access the full capabilities of Olares.
+- This guide focuses on self-hosted installation of Olares. To try out the cloud version of Olares, refer to the [Olares Space documentation](../../../how-to/space/host/create-olares.md).
 :::
 
 ## Hardware and System Requirements 
@@ -26,7 +26,7 @@ Before you begin, ensure your system meets these minimum requirements. For optim
 
 :::info
 - We will continue to update this table. If you have completed an installation on a systm version not listed, or if you encountered any issues, please don't hesitate to contact us.
-- For best performance and compatibility, we recommend installing Terminus on Linux. 
+- For best performance and compatibility, we recommend installing Olares on Linux. 
 :::
 
 ## Quick Start Guides
@@ -41,8 +41,8 @@ Select your platform to get started:
 :::tip
 Before you get started, it is advised you get familiar with the following concepts:
 
-- [Terminus](../../introduction/what-is-terminus.md)
-- [Terminus Name](../../terminus/terminus-name.md)
-- [TermiPass](../../../how-to/termipass/overview.md)
+- [Olares](../../introduction/what-is-olares.md)
+- [Olares ID](../../olares/olares-id.md)
+- [LarePass](../../../how-to/larepass/overview.md)
 :::
 

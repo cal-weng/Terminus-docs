@@ -18,7 +18,7 @@ outline: [2, 3]
 
 而作为用户，我们的隐私权，言论自由权，数字财产权，在受到严重威胁。要想改变当前寡头垄断的互联网世界，我们需要“让人们重新拥有自己的数据”。
 
-这就是 Terminus 的使命。
+这就是 Olares 的使命。
 
 ## 用户的数据存在哪
 
@@ -88,8 +88,8 @@ outline: [2, 3]
 
    但经过几次用户访谈后，我们发现，大家更希望将私钥存在身边，例如手机或浏览器插件里，这样会更有安全感。区块链钱包就是一个例子。
 
-这三个想法在开发过程中被持续打磨和进化，最后形成了 Terminus 的 3 个核心组件：
+这三个想法在开发过程中被持续打磨和进化，最后形成了 Olares 的 3 个核心组件：
 
-- [Terminus OS](../terminus/overview.md)，一个运行在 Edge 上的云原生操作系统
+- [Olares OS](../olares/overview.md)，一个运行在 Edge 上的云原生操作系统
 - [Snowinning Protocol](../../developer/contribute/snowinning/overview.md)，一个去中心化的身份和信誉系统，实现了在无信任第三方下，信息和价值的交换
-- [TermiPass](../../how-to/termipass/overview.md)，一个全平台的客户端软件，来存储用户的私钥，并统一管理用户在不同 Edge 上的身份和数据
+- [LarePass](../../how-to/larepass/overview.md)，一个全平台的客户端软件，来存储用户的私钥，并统一管理用户在不同 Edge 上的身份和数据

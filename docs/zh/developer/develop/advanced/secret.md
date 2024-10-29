@@ -1,8 +1,8 @@
 # 密钥
 
-在 APP 中经常需要保存用户的一些重要信息，比如，密码、某个外部系统的 Access Token，等等。Terminus 基于 Infisical，为 APP 提供了一个统一的安全保存各种密钥的金库。
+在 APP 中经常需要保存用户的一些重要信息，比如，密码、某个外部系统的 Access Token，等等。Olares 基于 Infisical，为 APP 提供了一个统一的安全保存各种密钥的金库。
 
-APP 只需要做简单的申请，即可获得接口访问权限。申请方式是在 TAC 的 [TerminusManifest.yaml](../package/manifest.md#sysdata)中申请一个 sysData 的访问权限，例如
+APP 只需要做简单的申请，即可获得接口访问权限。申请方式是在 TAC 的 [OlaresManifest.yaml](../package/manifest.md#sysdata)中申请一个 sysData 的访问权限，例如
 
 ```yaml
 permission:

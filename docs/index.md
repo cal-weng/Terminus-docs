@@ -3,18 +3,18 @@
 layout: home
 
 hero:
-  name: "Terminus"
+  name: "Olares"
   text: "Let people own their data again"
   actions:
     - theme: brand
-      text: What is Terminus?
-      link: /overview/introduction/what-is-terminus
+      text: What is Olares?
+      link: /overview/introduction/what-is-olares
     - theme: alt
       text: Get Started
       link: /overview/introduction/
     - theme: alt
       text: Github
-      link: https://github.com/beclab/terminus
+      link: https://github.com/beclab/olares
 features:
   - icon: 📝
     title: Self-Hosted

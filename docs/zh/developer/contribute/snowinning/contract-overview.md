@@ -2,7 +2,7 @@
 outline: [2, 4]
 ---
 
-# TerminusDID Contract System
+# OlaresDID Contract System
 
 ## 架构
 
@@ -19,7 +19,7 @@ graph TB
 
     
 
-    TerminusDID{TerminusDID}
+    OlaresDID{OlaresDID}
     Reputations[/Reputations\]
     XXXReputation{...}
     AppMarketReputation{AppMarketReputation}
@@ -33,8 +33,8 @@ graph TB
     net((net))
     io((io))
 
-    TerminusDID--->DID
-    TerminusDID--->Tag
+    OlaresDID--->DID
+    OlaresDID--->Tag
     Tag--->Tagger
     
     Tagger-.-RootTagger
@@ -70,7 +70,7 @@ graph TB
     
 ```
 本系统整体分为两大部分, DID 管理和 Tag管理, 其中 Tag 管理部分除了本身的架构实现外, 还扩展出了官方 Tag 字段管理和 Reputation 系统两块具体的业务实现, 
-DID 和 Tag 的管理/操作方法可以参考[这里](./contract-manager.md), TerminusDID 合约的详细设计可以看[这里](./contract-tdid.md), Reputation 系统的推荐实现和例子可以看[这里](./contract-reputation.md)
+DID 和 Tag 的管理/操作方法可以参考[这里](./contract-manager.md), OlaresDID 合约的详细设计可以看[这里](./contract-tdid.md), Reputation 系统的推荐实现和例子可以看[这里](./contract-reputation.md)
 
 ## 设计细节
 
@@ -99,11 +99,11 @@ DID 和 Tag 的管理/操作方法可以参考[这里](./contract-manager.md), T
 - DID 记录中有诸如 ipv4/ipv6, avatar, RSA 公钥 等信息, 并且可以修改
 - 对于未来可能出现的新需求, 可以一定程度上扩展记录中的信息
 
-### Terminus Name
+### Olares ID
 
-    在 Terminus Name 方面,我们有以下需求
+    在 Olares ID 方面,我们有以下需求
 
-- Terminus Name 需要区分 Organization 和 Individual 两种不同类型的 DID
+- Olares ID 需要区分 Organization 和 Individual 两种不同类型的 DID
 - Organization 有权限对下级派生的所有 DID 进行管理
 
 ### Reputation

@@ -14,7 +14,7 @@ Consider why e-books we purchase can be remotely deleted, and how the rights ass
 
 This scenario reflects the current state of the Internet, where monopolistic enterprises exploit user data to solidify their dominance and secure substantial profits.
 
-The rights to privacy, free speech, and digital property of users are under significant threat. Challenging the prevailing monopolistic dominance requires a pivotal shift towards returning data ownership back to the individuals. This is Terminus's mission.
+The rights to privacy, free speech, and digital property of users are under significant threat. Challenging the prevailing monopolistic dominance requires a pivotal shift towards returning data ownership back to the individuals. This is Olares's mission.
 
 ## Where is the users' data stored?
 
@@ -80,8 +80,8 @@ Instead of centralizing data storage, the BEC model advocates for distributing d
 
   However, feedback from user interviews revealed a preference for personal custody of private keys, whether on mobile devices or via browser extensions, enhancing perceived security. Blockchain wallets exemplify this approach.
 
-These principles have gone through extensive refinement throughout the developmental process, culminating in the three integral components of the Terminus system:
+These principles have gone through extensive refinement throughout the developmental process, culminating in the three integral components of the Olares system:
 
-- [Terminus OS](../terminus/overview.md): A cloud-native operating system designed to operate on Edge devices.
+- [Olares OS](../olares/overview.md): A cloud-native operating system designed to operate on Edge devices.
 - [Snowinning Protocol](../../developer/contribute/snowinning/overview.md): This decentralized identity and credit system provides a framework for secure, trustless exchanges of information and value. It integrates with other components of the ecosystem to ensure that transactions and interactions across platforms remain secure and verifiable without centralized oversight.
-- [TermiPass](../../how-to/termipass/overview.md): A comprehensive client software that operates across multiple platforms. It securely stores users' private keys and manages their identities and data across various Edge devices.
+- [LarePass](../../how-to/larepass/overview.md): A comprehensive client software that operates across multiple platforms. It securely stores users' private keys and manages their identities and data across various Edge devices.

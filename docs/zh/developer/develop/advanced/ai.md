@@ -2,7 +2,7 @@
 
 ## API 前缀
 
-`agent.<username>.myterminus.com/api/controllers/console/api`
+`agent.<username>.olares.com/api/controllers/console/api`
 
 ## 应用
 

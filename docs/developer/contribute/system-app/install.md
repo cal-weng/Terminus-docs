@@ -92,7 +92,7 @@ npm run dev
         add_header X-Frame-Options SAMEORIGIN;
     }
     ```
-    The configuration is exactly the same as when running in Terminus OS, and no further modifications are required.
+    The configuration is exactly the same as when running in Olares OS, and no further modifications are required.
 
 - Reload Nginx after modification.
 
@@ -234,6 +234,6 @@ The service cannot be started on ports 80, 8080, and 3000.
 
 ## Preview
 
-After install the application, you can preview it by clicking on the app icon on the Terminus.
+After install the application, you can preview it by clicking on the app icon on the Olares.
 
 ![preview](/images/developer/develop/contribute/system-app/install/end.jpg)

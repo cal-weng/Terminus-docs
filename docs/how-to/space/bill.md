@@ -34,15 +34,15 @@ There are following aspects to be noted about the fee deduction method:
 
 ## Billing Products
 
-Terminus OS currently offers the following billable products:
+Olares OS currently offers the following billable products:
 - **Host instance fees**<br>
-   To set up a **Terminus**, you need a host, which could be on AWS or GCS. This is a **prepaid product**. You must pay upfront, and then you'll receive a cloud host resource. We'll install **Terminus** on this host, and you can use this machine after login.
+   To set up a **Olares**, you need a host, which could be on AWS or GCS. This is a **prepaid product**. You must pay upfront, and then you'll receive a cloud host resource. We'll install **Olares** on this host, and you can use this machine after login.
 
 - **Cloud storage**<br>
-   **Terminus** gradually stores system data on a cloud-based S3 bucket through JuiceFS. This is a **postpaid product**. On the second billing day, we'll generate a detailed cost based on your storage usage during the billing cycle. You'll see this on your second bill.
+   **Olares** gradually stores system data on a cloud-based S3 bucket through JuiceFS. This is a **postpaid product**. On the second billing day, we'll generate a detailed cost based on your storage usage during the billing cycle. You'll see this on your second bill.
 
 - **Cloud backup**
-   **Terminus** includes a backup feature. If you choose cloud storage, you can back up the host's data to our public storage cloud. Like cloud storage, this is a **postpaid product**.
+   **Olares** includes a backup feature. If you choose cloud storage, you can back up the host's data to our public storage cloud. Like cloud storage, this is a **postpaid product**.
 
 - **Host instance traffic**<br>
    Cloud hosting can incur traffic charges when it generates external traffic. Here, "external" refers to internet usage outside the assigned region, which can happen in various scenarios. Like cloud storage, cloud hosting is a **postpaid product**, where you receive a bill based on your usage.
@@ -63,16 +63,16 @@ Terminus OS currently offers the following billable products:
 ## Generate Bill And Pay
 The following scenarios will generate bills, and payment may be required:
 
-- **Creating a Terminus in the cloud**<br>
-   Depending on the cloud service provider you choose and the different configurations in various regions, it will have different pricing. Once you select and click to create, we will immediately generate an Invoice. After you complete the payment, the Terminus will begin to install.
+- **Creating an Olares in the cloud**<br>
+   Depending on the cloud service provider you choose and the different configurations in various regions, it will have different pricing. Once you select and click to create, we will immediately generate an Invoice. After you complete the payment, the Olares will begin to install.
    
-- **Adding a Worker to a Terminus in the cloud** <br>
+- **Adding a Worker to an Olares in the cloud** <br>
    also incurs monthly charges. After the initial period, these charges will be combined into a one monthly bill.
 
 - **Restoring a snapshot to the cloud** <br>
-   This is equivalent to creating a new Terminus in the cloud, and also incurs monthly charges.
+   This is equivalent to creating a new Olares in the cloud, and also incurs monthly charges.
 
-- **Destroying a Terminus in the cloud**<br>
+- **Destroying an Olares in the cloud**<br>
    We will immediately settle the fees up to the current date. The amount of fee will be adjusted accordingly.
 
 - **Monthly bills, pay as you use**<br>  
@@ -104,7 +104,7 @@ A bill includes the following information:
 Here are some typical scenarios to explain the logic behind bill amounts:
 
 - **Creating a cluster**<br>
-   the system will generate a bill for the prepaid products included in the cluster configuration you selected. After you complete the payment, the Terminus will begin to install.
+   the system will generate a bill for the prepaid products included in the cluster configuration you selected. After you complete the payment, the Olares will begin to install.
 
 - **Adding a worker to a cluster**<br>
    the system calculates the total duration from the current time to the end of the current billing period, then generates a bill amount based on the ratio of the total time to a billing cycle. For instance, if your first billing day is March 15 and you apply to add a worker priced at $29 on March 20, the remaining duration is from March 20 to April 15, which is 26 days (the minimum duration is one minute, less than one minute is rounded to one minute). The bill amount would be approximately $24.32, which you need to pay to start the application and addition of the worker.
@@ -143,7 +143,7 @@ Here are some typical scenarios to explain the logic behind bill amounts:
 ::: tip
 - During the invited-only beta phase, we **do not** charge actual fees.
 - Please use the services responsibly to enhance our user experience and optimize pricing.
-- We will provide a free quota for both **Cloud-based and self-hosted Terminus**.
+- We will provide a free quota for both **Cloud-based and self-hosted Olares**.
 - For Self-hosted users, the main costs may arise from traffic and backup space used.
 :::
 
@@ -157,7 +157,7 @@ Here are some typical scenarios to explain the logic behind bill amounts:
    Yes, charges will occur because both Cloudflare and cloud vendors charge us.
    
    The costs include two parts: 
-   1. The fee for traffic going through Cloudflare, which mainly helps to hide the real IP of Terminus and provides basic security protection against Distributed Denial of Service (DDoS) and other threats. 
+   1. The fee for traffic going through Cloudflare, which mainly helps to hide the real IP of Olares and provides basic security protection against Distributed Denial of Service (DDoS) and other threats. 
    2. The external traffic fees charged by your chosen cloud vendor.
    
    Honestly, we find the costs for these two services to be quite high, and we are working on optimizing these costs. If you have any ideas, feel free to contact us.

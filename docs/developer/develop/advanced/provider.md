@@ -39,7 +39,7 @@ status:
 
 ## Request Permission to Call Provider
 
-You can configure it in the [TerminusManifest.yaml](../package/manifest.md#sysdata) as follows:
+You can configure it in the [OlaresManifest.yaml](../package/manifest.md#sysdata) as follows:
 
 ```Yaml
 sysData:

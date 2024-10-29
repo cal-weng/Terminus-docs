@@ -1,7 +1,7 @@
 # CLI
 
 
-## Terminus Installation Script in Command Line
+## Olares Installation Script in Command Line
 
 ```sh
 # Environment variable
@@ -11,18 +11,18 @@ export LOCAL_GPU_ENABLE=1                       # Install local GPU to the clust
 export LOCAL_GPU_SHARE=1                        # Enable GPU sharing
 
 # Execute installation
-curl -fsSL https://terminus.sh | bash -
+curl -fsSL https://olares.sh | bash -
 ```
 
-## Terminus Uninstallation Script
+## Olares Uninstallation Script
 
-- For Terminus installed on Linux, Raspberry Pie, and Windows (Windows Subsystem for Linux):
+- For Olares installed on Linux, Raspberry Pie, and Windows (Windows Subsystem for Linux):
 
   ```sh
   cd install-wizard && bash uninstall_cmd.sh
   ```
 
-- For Terminus Installed on Mac:
+- For Olares Installed on Mac:
 
   ```sh
   bash uninstall_macos.sh
@@ -30,7 +30,7 @@ curl -fsSL https://terminus.sh | bash -
 
 ## Resolve IP Change Issue
 
-Services within the Kubernetes cluster rely on stable IPs and DNS resolution provided by the cluster's internal DNS. When you change the location of your Terminus, its IP address changes. This can disrupt proper DNS resolution for your cluster and make Terminus inaccessible.
+Services within the Kubernetes cluster rely on stable IPs and DNS resolution provided by the cluster's internal DNS. When you change the location of your Olares, its IP address changes. This can disrupt proper DNS resolution for your cluster and make Olares inaccessible.
 
 To resolve this issue, run the following command in Ubuntu in your new network environment:
 
@@ -39,18 +39,18 @@ cd install-wizard && bash change_ip.sh
 ```
 
 :::info
-This command is not applicable to Terminus on macOS yet.
+This command is not applicable to Olares on macOS yet.
 :::
 
-## Add a Terminus Node Locally
+## Add an Olares Node Locally
 
 **Before Install**
 - Get the `internal IP address` of the **Master** node.
 - Add the current machine's `public key` to the `authorized_keys` of the user who logged into the **Master** node.
 
 ```sh
-VERSION="1.3.0"      # Version of Terminus installed on the master node
-curl -LO https://github.com/beclab/terminus/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
+VERSION="1.3.0"      # Version of Olares installed on the master node
+curl -LO https://github.com/beclab/olares/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
 
 mkdir -p install_wizard
 cd install_wizard && tar zxvf ../install-wizard-${VERSION}.tar.gz
@@ -64,29 +64,29 @@ During the installation process, you will be asked to enter relevant information
 
 **Before Install**
 - Insert the hard drive, then format it and create a filesystem in the operating system. The recommended filesystem is `XFS`.
-- Create a new empty directory that aligns with the previous data directory. For example, if the previous system installation data directory was `/terminus/data/minio/vol1`, the new directory should be `/terminus/data/minio/vol2`.
-- Mount the new hard drive at `/terminus/data/minio/vol2`.
+- Create a new empty directory that aligns with the previous data directory. For example, if the previous system installation data directory was `/olares/data/minio/vol1`, the new directory should be `/olares/data/minio/vol2`.
+- Mount the new hard drive at `/olares/data/minio/vol2`.
 
 ```sh
-VERSION="1.3.0"      # Version of Terminus installed on the master node
-curl -LO https://github.com/beclab/terminus/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
+VERSION="1.3.0"      # Version of Olares installed on the master node
+curl -LO https://github.com/beclab/olares/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
 
 mkdir -p install_wizard
 cd install_wizard && tar zxvf ../install-wizard-${VERSION}.tar.gz
 
-bash scale_minio.sh -a driver -v /terminus/data/minio/vol2
+bash scale_minio.sh -a driver -v /olares/data/minio/vol2
 ```
 
 If you are adding multiple hard drives, you can do it simultaneously. For instance, you mounted hard drives at:
 ```
-/terminus/data/minio/vol2
-/terminus/data/minio/vol3
+/olares/data/minio/vol2
+/olares/data/minio/vol3
 ...
-/terminus/data/minio/voln
+/olares/data/minio/voln
 ```
 you can add them all with
 ```sh
-bash scale_minio.sh -a driver -v /terminus/data/minio/vol{2...n}
+bash scale_minio.sh -a driver -v /olares/data/minio/vol{2...n}
 ```
 
 ## Add a Hard Drive Node
@@ -103,36 +103,36 @@ You can also add hard drives to a new node machine separately from the Master no
 - Add the **Target** node machine's `public key` to the `authorized_keys` of the user who logged into the master node, e.g., ubuntu
 - Format the hard drives, create `XFS` filesystem
 - Create contiguous data storage directories and mount them to multiple hard drives or partitions. e.g.<br>
-  `/terminus/data/minio/vol1`<br>
-  `/terminus/data/minio/vol2`<br>
-  `/terminus/data/minio/vol3`<br>
-  `/terminus/data/minio/vol4`<br>
+  `/olares/data/minio/vol1`<br>
+  `/olares/data/minio/vol2`<br>
+  `/olares/data/minio/vol3`<br>
+  `/olares/data/minio/vol4`<br>
 
 ```sh
-VERSION="1.3.0"      # Version of Terminus installed on the master node
-curl -LO https://github.com/beclab/terminus/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
+VERSION="1.3.0"      # Version of Olares installed on the master node
+curl -LO https://github.com/beclab/olares/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
 
 mkdir -p install_wizard
 cd install_wizard && tar zxvf ../install-wizard-${VERSION}.tar.gz
 
-bash scale_minio.sh -a node -v /terminus/data/minio/vol{1...4} \
+bash scale_minio.sh -a node -v /olares/data/minio/vol{1...4} \
     -u ubuntu \
     -s 192.168.1.100 \
     -n 192.168.1.101
 ```
 
-## Install a Custom Version of Terminus
+## Install a Custom Version of Olares
 
-To debug a program that involves the startup process of Terminus, you may need to build a temporary local version of Terminus and replace the service you're debugging.
+To debug a program that involves the startup process of Olares, you may need to build a temporary local version of Olares and replace the service you're debugging.
 
-In other scenarios, consider using [ControlHub](../../../how-to/terminus/controlhub/) or kubectl to update services.
+In other scenarios, consider using [ControlHub](../../../how-to/olares/controlhub/) or kubectl to update services.
 
 ```sh
 # Clone
-git clone https://github.com/beclab/terminus
+git clone https://github.com/beclab/olares
 
 # Build
-cd terminus
+cd olares
 bash scripts/build.sh
 
 # Modify your application/service yaml
@@ -150,9 +150,9 @@ cd ~/install-wizard
 make uninstall
 ```
 
-## Restore Terminus from a Snapshot
+## Restore Olares from a Snapshot
 
-If you have enabled the backup feature of **Terminus** and have backed up system data to **S3 storage**, you can select a snapshot from a specific point in time to restore Terminus.
+If you have enabled the backup feature of **Olares** and have backed up system data to **S3 storage**, you can select a snapshot from a specific point in time to restore Olares.
 
 
 ```sh
@@ -168,8 +168,8 @@ export AWS_SECRET_ACCESS_KEY=<aws s3 secret key>
 
 export CLUSTER_ID=<cluster id>
 
-VERSION="1.3.0"      # Version of Terminus installed on the master node
-curl -LO https://github.com/beclab/terminus/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
+VERSION="1.3.0"      # Version of Olares installed on the master node
+curl -LO https://github.com/beclab/olares/releases/download/${VERSION}/install-wizard-v${VERSION}.tar.gz
 
 mkdir -p install_wizard
 cd install_wizard && tar zxvf ../install-wizard-${VERSION}.tar.gz
@@ -177,6 +177,6 @@ cd install_wizard && tar zxvf ../install-wizard-${VERSION}.tar.gz
 bash publicRestoreInstaller.sh
 ```
 
-If you backup your data to the **Terminus Space**, you can directly download the restoration script from **Terminus Space**.
+If you backup your data to the **Olares Space**, you can directly download the restoration script from **Olares Space**.
 
 ![restore](images/restore.jpg)

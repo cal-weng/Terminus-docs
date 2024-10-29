@@ -6,15 +6,15 @@ outline: [2, 3]
 
 ## 安装并启动 DevBox
 
-1. 从 Terminus 市场安装 [DevBox](https://market.jointerminus.com/app/devbox)。
-2. 在 **Terminus Desktop** 的启动面板中找到 **DevBox** 图标。
+1. 从 Olares 市场安装 [DevBox](https://market.olares.com/app/devbox)。
+2. 在 **Olares Desktop** 的启动面板中找到 **DevBox** 图标。
 3. 点击图标以启动应用程序。
 
 ![main screen](/images/developer/develop/tutorial/create/home.jpg)
 
 ## Create Your App
 
-  点击 Create a new application 按钮，可以从模版创建一个空白的 Terminus 应用。
+  点击 Create a new application 按钮，可以从模版创建一个空白的 Olares 应用。
   - 在 name 一栏，输入你的应用名称
   - 设置 APP 类型为`app`
   - 修改你的 APP 入口的端口
@@ -25,17 +25,17 @@ outline: [2, 3]
 
 ## Setup App Config
   
-  创建应用后，可以在Files Tab下看到DevBox为你生成的 Terminus Application Chart文件。你可以根据需要添加、删除或重命名各个配置文件。
+  创建应用后，可以在Files Tab下看到DevBox为你生成的 Olares Application Chart文件。你可以根据需要添加、删除或重命名各个配置文件。
 
   ![upload icon](/images/developer/develop/tutorial/create/add-file.jpg)
 
 ### Chart.yaml
 Chart.yaml 文件是 Helm Chart 规范所必须的文件之一。其中包含了应用的名称和Chart Version，你可以[在此](https://helm.sh/docs/topics/charts/)了解更多。我们暂时先不用修改默认创建的Chart.yaml.
 
-### TerminusManifest.yaml
-  你可以在 TerminusManifest.yaml 文件中修改 APP 的各项配置，比如更换应用的标题, icon等metadata，或是添加系统中间件，或者申请系统的文件目录访问权限，以及修改应用所需的资源限制等等
+### OlaresManifest.yaml
+  你可以在 OlaresManifest.yaml 文件中修改 APP 的各项配置，比如更换应用的标题, icon等metadata，或是添加系统中间件，或者申请系统的文件目录访问权限，以及修改应用所需的资源限制等等
 
-  ![config app](/images/developer/develop/tutorial/create/terminus-manifest.jpg)
+  ![config app](/images/developer/develop/tutorial/create/olares-manifest.jpg)
 
 - 添加系统的[数据库集群需求](../../package/manifest.md#middleware)
 
@@ -82,7 +82,7 @@ Chart.yaml 文件是 Helm Chart 规范所必须的文件之一。其中包含了
 
 - 申请系统的[文件系统访问权限](../../package/manifest.md#permission)
 
-  为了能在Terminus系统中读取和保存文件，我们需要在`Permissions`一项中，配置所需的文件目录。`TerminusManifest.yaml`提供了三个位置的文件目录，分别是：
+  为了能在Olares系统中读取和保存文件，我们需要在`Permissions`一项中，配置所需的文件目录。`OlaresManifest.yaml`提供了三个位置的文件目录，分别是：
   - `appData`: 申请 APP 独立数据云存储空间
   - `appCache`: 给 APP 申请节点本地磁盘（一般为 SSD 磁盘）数据缓存空间
   - `userData`: 申请用户的数据目录访问权限。可列举需要访问的目录列表。

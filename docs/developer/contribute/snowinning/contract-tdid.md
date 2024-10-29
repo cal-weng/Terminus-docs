@@ -3,12 +3,12 @@ outline: [2, 4]
 ---
 
 # Contract TermiunsDID
-Refer [here](./contract-manager.md) for the management of the Terminus DID contract.
+Refer [here](./contract-manager.md) for the management of the Olares DID contract.
 
 
 ## Design
 
-This chapter introduces the design of the Terminus DID contract. We have refined the design of the core contract according to the general blueprint of the Terminus DID contract system.
+This chapter introduces the design of the Olares DID contract. We have refined the design of the core contract according to the general blueprint of the Olares DID contract system.
 
 
 ### About DID
@@ -102,7 +102,7 @@ A tagger represents the only person or program that has the authority to modify 
 > [!NOTE]
 > We recommend you to use smart contracts for taggers.
 >
-> - Please refer to some official tagger implementations. You can utilize the Terminus DID contract for complete operator authentication, and also achieve more fine-grained custom access control.
+> - Please refer to some official tagger implementations. You can utilize the Olares DID contract for complete operator authentication, and also achieve more fine-grained custom access control.
 > - For complicated tag structures or data with special formats, using contract taggers can verify data format on-chain and customize the rules. For example, in the official tagger we will verify the bytes data in PKCS8 ASN.1 format on-chain to prevent accidentally setting unparsable values for the `RSAPubKey` tag.
 
 #### Who to Create DIDs
@@ -115,7 +115,7 @@ A DID has management priviledge over itself and all its subdomains. For 3rd-leve
 
 #### Introduction to processes and concepts
 
-The extended information of TNames is managed by the tag system of the Terminus DID contract. Every tag has not only a name but also a tag type. For now, supported types include `int`, `uint`, `bool`, `string`, `address`, `bytes`, `bytesN`, `array`, `arrayN` and `tuple`. Tuples supports additional field names.
+The extended information of TNames is managed by the tag system of the Olares DID contract. Every tag has not only a name but also a tag type. For now, supported types include `int`, `uint`, `bool`, `string`, `address`, `bytes`, `bytesN`, `array`, `arrayN` and `tuple`. Tuples supports additional field names.
 Since tags are bound to TNames, the steps for setting a tag are:
 
 - Define a tag in a TName with the tag name, tag type and field names in tuples. Setting the field names is not trivial so refer to the documentation "DIDv2.3Tag 类型注册流程介绍" for details.
@@ -204,7 +204,7 @@ struct Teacher {
 Student s;
 ```
 
-- The Terminus DID contract provides a set of special tags, known as the official tags. It is defined in the empty TName `""` and its tagger is specified as the `RootTagger`.  All TNames can set official tags and we'll introduce the detailed access control policy later.
+- The Olares DID contract provides a set of special tags, known as the official tags. It is defined in the empty TName `""` and its tagger is specified as the `RootTagger`.  All TNames can set official tags and we'll introduce the detailed access control policy later.
 
 #### Access Control of Tags
 
@@ -271,14 +271,14 @@ Since the NFT is ERC721-compatible, it supports standard ERC-721 operations like
 - the owner of the TName
 - the delegator of the owner
 - addresses approved by the owner
-  The Terminus DID contract adds two addresses that have transfer priviledge:
+  The Olares DID contract adds two addresses that have transfer priviledge:
 - `operator` of the contract
 - the owner of the parent TName
 
 
 ### Roles of the Contract
 
-The Terminus DID contract has an owner for upgrading itself. It also has a superuser, i.e. the `operator`, to facilitate configuration. Every TName has its owner. Here we introduce the priviledge of the owner of the contract and other roles will come later when we introduce the detailed functions.
+The Olares DID contract has an owner for upgrading itself. It also has a superuser, i.e. the `operator`, to facilitate configuration. Every TName has its owner. Here we introduce the priviledge of the owner of the contract and other roles will come later when we introduce the detailed functions.
 The priviledges of the contract owner include:
 
 - setting the operator address
@@ -302,13 +302,13 @@ For now we define the following tags and let `RootTagger` be the taggers for the
 
 ### AppStoreReputation
 
-There is another special tagger `AppStoreReputation` for the tag `ratings` with type `tuple(string,uint8)[]` defined in the TName `app.myterminus.com`. It provides on-chain storage for ratings of apps in Terminus OS. Each app has a corresponding sub-TName `<appVersion>.<appId>.app.myterminus.com` where anyone who has a TName can submit ratings for these apps.
+There is another special tagger `AppStoreReputation` for the tag `ratings` with type `tuple(string,uint8)[]` defined in the TName `app.olares.com`. It provides on-chain storage for ratings of apps in Olares OS. Each app has a corresponding sub-TName `<appVersion>.<appId>.app.olares.com` where anyone who has a TName can submit ratings for these apps.
 
 
 ## Release History
 
 ### V2.0.0
-  Implement core architecture of DID module in Terminus DID
+  Implement core architecture of DID module in Olares DID
 
 ### V2.1.0
   Add tag system without definition
@@ -326,10 +326,10 @@ There is another special tagger `AppStoreReputation` for the tag `ratings` with 
 ## FAQ
 ### Transaction Fee
 
-When you apply for a Terminus Name, we can afford the transaction fee for calling the contract. The rough process is:
+When you apply for an Olares ID, we can afford the transaction fee for calling the contract. The rough process is:
 
 - You provide us the data and signature signed by your private key
 - We send transaction to the smart contract
 - The blockchain records your data after signature verification
 
-If you need to manage data under your domain in the future, you should call the contract via MetaMask or TermiPass in the Terminus Space pay the the transaction fee by yourself.
+If you need to manage data under your domain in the future, you should call the contract via MetaMask or LarePass in the Olares Space pay the the transaction fee by yourself.

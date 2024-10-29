@@ -19,5 +19,5 @@ Snowinning 协议致力于创建一个去中心化的身份和信誉系统，使
 了解更多关于 Snowinning 协议的信息：
 
 1. [核心概念](./concepts.md)
-2. [Terminus Name](./terminus-name.md)
+2. [Olares ID](./olares-id.md)
 3. [智能合约](./smart-contract.md)

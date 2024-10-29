@@ -52,7 +52,7 @@ After cloning the code, if you are working on a **Node** project, you might need
   ```
 ## Run Dev Mode
 
-After completing the **Nginx** configuration, you can start your frontend program in dev mode and preview your APP in Terminus.
+After completing the **Nginx** configuration, you can start your frontend program in dev mode and preview your APP in Olares.
 
 ```sh
 npm run dev

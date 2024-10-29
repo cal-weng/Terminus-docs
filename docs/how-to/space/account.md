@@ -1,43 +1,43 @@
 # Account
 
-This guide walks you through the process of logging in, understanding account types, managing multiple accounts, and logging out of Terminus Space.
+This guide walks you through the process of logging in, understanding account types, managing multiple accounts, and logging out of Olares Space.
 
 ## Log In
 
 ![alt text](/images/how-to/space/space_login.jpg)
 
-**Terminus Space** uses Decentralized ID (DID) for user authentication, ensuring that users maintain control over their identity and data ownership. 
+**Olares Space** uses Decentralized ID (DID) for user authentication, ensuring that users maintain control over their identity and data ownership. 
 
 :::info
-Your **Terminus Name** is your identifier in the world of Terminus. Learn more about [what is Terminus Name](../../developer/contribute/snowinning/terminus-name.md).
+Your **Olares ID** is your identifier in the world of Olares. Learn more about [what is Olares ID](../../developer/contribute/snowinning/olares-id.md).
 :::
 
-To log into Terminus Space, you'll need your **DID** or **Terminus Name**. Obtain your credentials using the TermiPass client and scan the QR code to log in.
+To log into Olares Space, you'll need your **DID** or **Olares ID**. Obtain your credentials using the LarePass client and scan the QR code to log in.
 
 ![alt text](/images/how-to/space/login.jpg)
 
-The screenshots above show three places on **TermiPass** where you can scan the QR code to log into **Terminus Space**:
+The screenshots above show three places on **LarePass** where you can scan the QR code to log into **Olares Space**:
 
 - The result page displayed after creating your **DID**.
-- The landing page after you've bound your **Terminus Name**.
-- The **Settings** page that appears after successfully activating your **Terminus**.
+- The landing page after you've bound your **Olares ID**.
+- The **Settings** page that appears after successfully activating your **Olares**.
 
-For more information about your account, refer to the [account details](../termipass/account/index.md).
+For more information about your account, refer to the [account details](../larepass/account/index.md).
 
 ## Account Type
 
-You can log into **Terminus Space** using either a **DID** or a **Terminus Name**. However, the features and services available on **Terminus Space** will vary based on the `account type`.
+You can log into **Olares Space** using either a **DID** or a **Olares ID**. However, the features and services available on **Olares Space** will vary based on the `account type`.
 
 - **DID**: <br>
-  When you log in with this account type, you cannot create a **Terminus** until you bind a **Terminus Name**. However, you have the option to set your own domain because no domain has been bound yet.
+  When you log in with this account type, you cannot create a **Olares** until you bind a **Olares ID**. However, you have the option to set your own domain because no domain has been bound yet.
 
 
-- **Terminus Name**:<br>
-When you log in with this account type, you should be able to create a **Terminus**, unless your **Terminus Name** is already bound to another **Terminus**. However, you will not be able to set your own domain, as the **Terminus Name** is already associated with a domain.
+- **Olares ID**:<br>
+When you log in with this account type, you should be able to create a **Olares**, unless your **Olares ID** is already bound to another **Olares**. However, you will not be able to set your own domain, as the **Olares ID** is already associated with a domain.
 
 ## Manage Multiple Accounts
 
-Each **Terminus Name** can be bound to just one **Terminus**. With **Multi-account Management** in **Terminus Space**, you can easily switch between accounts. This is handy if you own multiple **Terminus Names** and **Terminus** instances.
+Each **Olares ID** can be bound to just one **Olares**. With **Multi-account Management** in **Olares Space**, you can easily switch between accounts. This is handy if you own multiple **Olares IDs** and **Olares** instances.
 
 ![alt text](/images/how-to/space/import_account.jpg)
 

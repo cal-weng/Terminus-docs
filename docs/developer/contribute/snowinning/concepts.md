@@ -54,7 +54,7 @@ Snownning Protocol adopted [Smart Contract](smart-contract.md) to facilitate thi
 >
 > IDs can be made universally discoverable
 
-Issuers have the capability to upload essential metadata into the Registry, including items such as DID, [Terminus Name](terminus-name.md), RSA public keys, among others.
+Issuers have the capability to upload essential metadata into the Registry, including items such as DID, [Olares ID](olares-id.md), RSA public keys, among others.
 
 Given that the metadata occupies minimal storage space and requires infrequent updates, the capabilities of existing mainstream blockchain technologies are adequately equipped to handle these demands. This efficiency is primarily due to the low overhead involved in storing and accessing small amounts of data on the blockchain, where changes are rare and thus do not overburden the system.
 
@@ -106,7 +106,7 @@ This process has 3 roles:
 
   > Holders are entities that have one or more verifiable credentials in their possession. Holders are also the entities that submit proofs to Verifiers to satisfy the requirements described in a Presentation Definition.
 
-  In the above example, the holder is Alice. Alice manages her Verifiable Credentials (VCs) using TermiPass.
+  In the above example, the holder is Alice. Alice manages her Verifiable Credentials (VCs) using LarePass.
 
 - Verifier
 
@@ -119,7 +119,7 @@ The verification process involves a structured sequence of six steps:
 1. The Issuer registers their information on the DID Registry.
 2. The Holder submits a verification request to the Issuer, indicating the need for credential issuance.
 3. The Issuer issues a VC to the Holder, embedding a claim regarding her educational qualifications.
-4. The Holder securely stores this VC in TermiPass, ensuring its availability for future verification.
+4. The Holder securely stores this VC in LarePass, ensuring its availability for future verification.
 5. The Holder sends a Verifiable Presentation (VP) that encapsulates the VC to a Verifier, initiating the verification process.
 6. The Verifier checks the authenticity of the VC's and VP's signatures via the DID Registry, confirming the validity of the enclosed claim, thereby completing the verification.
 

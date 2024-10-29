@@ -1,6 +1,6 @@
 # Account
 
-If an app in Terminus OS wants to use the system user as the app's user, it can obtain the user information by defining a `SysEventRegistry` in **TAC** to receive system user event callbacks.
+If an app in Olares OS wants to use the system user as the app's user, it can obtain the user information by defining a `SysEventRegistry` in **TAC** to receive system user event callbacks.
 
 - Define `user create` callback
 

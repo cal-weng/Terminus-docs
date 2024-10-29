@@ -19,7 +19,7 @@ outline: [2, 4]
 ###### 调用返回
 ```json
 [
-"james.myterminus.com", //name
+"james.olares.com", //name
 "did:key:z6MkpLwxcTwhj4MRm4eKhvBadK45qHr5QEYHUXNyhCfkXJ9U#z6MkpLwxcTwhj4MRm4eKhvBadK45qHr5QEYHUXNyhCfkXJ9U", //使用助记词生成的did
 "OrganizationalUser", //DID 类型
 true //是否可以创建子级
@@ -77,7 +77,7 @@ true //是否可以创建子级
 
 > [!NOTE]
 > 方法的第一个参数 **owner** 是新 DID 的 owner, 第二个参数 **MetaData** 需要生成一个结构体进行提交, 其中包含
-> - domain: 新 DID 的完整域名, 也是 TerminusName
+> - domain: 新 DID 的完整域名, 也是 OlaresName
 > - did: 新 DID 持有者钱包计算生成的 did
 > - note: 新 DID 的类型及备注字段, 外部系统依赖此值进行分类
 > - allowSubdomain: 新 DID 是否允许创建子域 
@@ -172,7 +172,7 @@ const CONTRACT_ABI_TYPE = "0x9ae3f16bd99294af1784beb1a0a5c84bf2636365"
 const fetch = async () => {
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 	
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 	
 	console.log('did:', domain)
 }
@@ -216,7 +216,7 @@ const CONTRACT_ABI_TYPE = "0x9ae3f16bd99294af1784beb1a0a5c84bf2636365"
 const fetch = async () => {
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 	
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 	
 	if (domain == undefined) {
 		throw new Error("not found");
@@ -244,7 +244,7 @@ const CONTRACT_ABI_TYPE = "0x9ae3f16bd99294af1784beb1a0a5c84bf2636365"
 const fetch = async () => {
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 	
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 	
 	if (domain == undefined) {
 		throw new Error("not found");
@@ -326,7 +326,7 @@ const defineTag = async () => {
 
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 	
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 	
 	await DID.Domain.defineTag(domain, tagName, testTuple, did.getContractDIDByPrivateKey('you-private-key'), did)
 }
@@ -348,7 +348,7 @@ const setTagger = async () => {
 
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 	
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 
 	if (domain == undefined) {
 		throw new Error("not found");
@@ -376,7 +376,7 @@ const CONTRACT_ABI_TYPE = "0x9ae3f16bd99294af1784beb1a0a5c84bf2636365"
 const setTagValue = async () => {
 	const did = DID.createConsole(RPC, CONTRACT_DID, CONTRACT_ROOT_RESOLVER, CONTRACT_ABI_TYPE)
 
-	const domain = await did.fetchDomain('james.myterminus.com')
+	const domain = await did.fetchDomain('james.olares.com')
 
 	if (domain == undefined) {
 		throw new Error("not found");
@@ -420,13 +420,13 @@ setTagValue()
 
 #### SepoliaOptimistic
 
-- TerminusDID: 0x4c8c98e652d6a01494971a8faF5d3b68338f9ED4
+- OlaresDID: 0x4c8c98e652d6a01494971a8faF5d3b68338f9ED4
 - RootTagger: 0xaA5bE49799b6A71Eda74d22D01F7A808aFf41b3f
 - LibABI: 0xdc9e8faDe38eE9E2Eb43761f1553CD2360ecAEac
 
 #### Optimistic
 
-- TerminusDID: 0x5da4fa8e567d86e52ef8da860de1be8f54cae97d
+- OlaresDID: 0x5da4fa8e567d86e52ef8da860de1be8f54cae97d
 - RootTagger: 0xe2eaba0979277a90511f8873ae1e8ca26b54e740
 - LibABI: 0x9ae3f16bd99294af1784beb1a0a5c84bf2636365
 

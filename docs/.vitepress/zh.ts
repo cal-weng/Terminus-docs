@@ -6,8 +6,8 @@ const side = {
       text: "概览",
       items: [
         {
-          text: "什么是 Terminus?",
-          link: "/zh/overview/introduction/what-is-terminus",
+          text: "什么是 Olares?",
+          link: "/zh/overview/introduction/what-is-olares",
         },
         {
           text: "快速开始",
@@ -25,16 +25,16 @@ const side = {
       ],
     },
     {
-      text: "Terminus OS",
+      text: "Olares OS",
       items: [
-        { text: "操作系统简介", link: "/zh/overview/terminus/overview" },
-        { text: "用户", link: "/zh/overview/terminus/account" },
-        { text: "Terminus Name", link: "/zh/overview/terminus/terminus-name" },
-        { text: "应用", link: "/zh/overview/terminus/application" },
-        { text: "网络", link: "/zh/overview/terminus/network" },
-        { text: "数据", link: "/zh/overview/terminus/data" },
-        { text: "密钥", link: "/zh/overview/terminus/secret" },
-        { text: "AI 框架", link: "/zh/overview/terminus/ai" },
+        { text: "操作系统简介", link: "/zh/overview/olares/overview" },
+        { text: "用户", link: "/zh/overview/olares/account" },
+        { text: "Olares Name", link: "/zh/overview/olares/olares-id" },
+        { text: "应用", link: "/zh/overview/olares/application" },
+        { text: "网络", link: "/zh/overview/olares/network" },
+        { text: "数据", link: "/zh/overview/olares/data" },
+        { text: "密钥", link: "/zh/overview/olares/secret" },
+        { text: "AI 框架", link: "/zh/overview/olares/ai" },
       ],
     },
      {
@@ -49,164 +49,164 @@ const side = {
   ],
   "/zh/how-to/": [
     {
-      text: "Terminus OS",
+      text: "Olares OS",
       items: [
-        { text: "概览", link: "/zh/how-to/terminus/" },
+        { text: "概览", link: "/zh/how-to/olares/" },
         {
           text: "安装与部署",
           collapsed: true,
           items: [
             {
               text: "安装",
-              link: "/zh/how-to/terminus/setup/install/",
+              link: "/zh/how-to/olares/setup/install/",
               collapsed: true,
               items: [
-                { text: "Linux", link: "/zh/how-to/terminus/setup/install/linux" },
-                { text: "树莓派", link: "/zh/how-to/terminus/setup/install/raspberry" },
-                { text: "MacOS", link: "/zh/how-to/terminus/setup/install/mac" },
-                { text: "Windows", link: "/zh/how-to/terminus/setup/install/windows" },
+                { text: "Linux", link: "/zh/how-to/olares/setup/install/linux" },
+                { text: "树莓派", link: "/zh/how-to/olares/setup/install/raspberry" },
+                { text: "MacOS", link: "/zh/how-to/olares/setup/install/mac" },
+                { text: "Windows", link: "/zh/how-to/olares/setup/install/windows" },
               ]
             },
-            { text: "激活向导", link: "/zh/how-to/terminus/setup/wizard" },
-            { text: "登录", link: "/zh/how-to/terminus/setup/login" },
+            { text: "激活向导", link: "/zh/how-to/olares/setup/wizard" },
+            { text: "登录", link: "/zh/how-to/olares/setup/login" },
           ],
         },
-        { text: "桌面", link: "/zh/how-to/terminus/desktop" },
+        { text: "桌面", link: "/zh/how-to/olares/desktop" },
         {
           text: "Vault",
-          link: "/zh/how-to/terminus/vault/",
+          link: "/zh/how-to/olares/vault/",
           collapsed: true,
           items: [
-            { text: "Web", link: "/zh/how-to/terminus/vault/web" },
-            { text: "Vault & Item", link: "/zh/how-to/terminus/vault/vault" },
-            { text: "Team", link: "/zh/how-to/terminus/vault/team" },
+            { text: "Web", link: "/zh/how-to/olares/vault/web" },
+            { text: "Vault & Item", link: "/zh/how-to/olares/vault/vault" },
+            { text: "Team", link: "/zh/how-to/olares/vault/team" },
           ],
         },
         {
           text: "文件管理",
-          link: "/zh/how-to/terminus/files/",
+          link: "/zh/how-to/olares/files/",
         },
         {
           text: "应用市场",
-          link: "/zh/how-to/terminus/market/",
+          link: "/zh/how-to/olares/market/",
         },
         {
           text: "Wise",
-          link: "/zh/how-to/terminus/wise/",
+          link: "/zh/how-to/olares/wise/",
         },
         {
           text: "设置",
           collapsed: true,
-          link: "/zh/how-to/terminus/settings/",
+          link: "/zh/how-to/olares/settings/",
           items: [
             {
               text: "主页",
-              link: "/zh/how-to/terminus/settings/home",
+              link: "/zh/how-to/olares/settings/home",
             },
             {
               text: "账户",
-              link: "/zh/how-to/terminus/settings/account",
+              link: "/zh/how-to/olares/settings/account",
             },
             {
               text: "应用",
-              link: "/zh/how-to/terminus/settings/application",
+              link: "/zh/how-to/olares/settings/application",
             },
             {
               text: "集成",
-              link: "/zh/how-to/terminus/settings/integration",
+              link: "/zh/how-to/olares/settings/integration",
             },
             {
               text: "壁纸",
-              link: "/zh/how-to/terminus/settings/wallpaper",
+              link: "/zh/how-to/olares/settings/wallpaper",
             },
             {
               text: "知识库",
-              link: "/zh/how-to/terminus/settings/knowledge",
+              link: "/zh/how-to/olares/settings/knowledge",
             },
             {
               text: "备份",
-              link: "/zh/how-to/terminus/settings/backup",
+              link: "/zh/how-to/olares/settings/backup",
             },
             {
               text: "升级",
-              link: "/zh/how-to/terminus/settings/upgrade",
+              link: "/zh/how-to/olares/settings/upgrade",
             },
           ],
         },
-        { text: "Profile", link: "/zh/how-to/terminus/profile" },
+        { text: "Profile", link: "/zh/how-to/olares/profile" },
         {
           text: "仪表盘",
-          link: "/zh/how-to/terminus/dashboard/",
+          link: "/zh/how-to/olares/dashboard/",
         },
         {
           text: "控制面板",
           collapsed: true,
-          link: "/zh/how-to/terminus/controlhub/",
+          link: "/zh/how-to/olares/controlhub/",
           items: [
             {
               text: "浏览",
-              link: "/zh/how-to/terminus/controlhub/browse",
+              link: "/zh/how-to/olares/controlhub/browse",
             },
             {
               text: "命名空间",
-              link: "/zh/how-to/terminus/controlhub/namespace",
+              link: "/zh/how-to/olares/controlhub/namespace",
             },
             {
               text: "Pods",
-              link: "/zh/how-to/terminus/controlhub/pods",
+              link: "/zh/how-to/olares/controlhub/pods",
             },
             {
               text: "资源",
-              link: "/zh/how-to/terminus/controlhub/resource",
+              link: "/zh/how-to/olares/controlhub/resource",
             },
             {
               text: "中间件",
-              link: "/zh/how-to/terminus/controlhub/middleware",
+              link: "/zh/how-to/olares/controlhub/middleware",
             },
           ],
         },
-        { text: "Dify.ai", link: "/zh/how-to/terminus/dify" },
+        { text: "Dify.ai", link: "/zh/how-to/olares/dify" },
       ],
     },
     {
-      text: "TermiPass",
+      text: "LarePass",
       items: [
-        { text: "概述", link: "/zh/how-to/termipass/overview" },
+        { text: "概述", link: "/zh/how-to/larepass/overview" },
         {
           text: "账户",
-          link: "/zh/how-to/termipass/account/index.md",
+          link: "/zh/how-to/larepass/account/index.md",
         },
         {
-          text: "管理 Terminus",
-          link: "/zh/how-to/termipass/manage-terminus",
+          text: "管理 Olares",
+          link: "/zh/how-to/larepass/manage-olares",
         },
         {
           text: "密码自动填充",
-          link: "/zh/how-to/termipass/password-autofill",
+          link: "/zh/how-to/larepass/password-autofill",
         },
         {
           text: "同步本地文件",
-          link: "/zh/how-to/termipass/local-file-sync",
+          link: "/zh/how-to/larepass/local-file-sync",
         },
       ],
     },
     {
-      text: "Terminus Space",
+      text: "Olares Space",
       items: [
         { text: "快速开始", link: "/zh/how-to/space/" },
         { text: "账户", link: "/zh/how-to/space/account" },
         {
-          text: "运行 Terminus",
+          text: "运行 Olares",
           collapsed: true,
           link: "/zh/how-to/space/host/",
           items: [
             {
-              text: "创建 Terminus",
-              link: "/zh/how-to/space/host/create-terminus",
+              text: "创建 Olares",
+              link: "/zh/how-to/space/host/create-olares",
             },
             {
-              text: "管理 Terminus",
-              link: "/zh/how-to/space/host/management-terminus",
+              text: "管理 Olares",
+              link: "/zh/how-to/space/host/management-olares",
             },
           ],
         },
@@ -241,7 +241,7 @@ const side = {
   ],
   "/zh/developer/": [
     {
-      text: "开发 Terminus 应用",
+      text: "开发 Olares 应用",
       items: [
         {
           text: "概述",
@@ -312,8 +312,8 @@ const side = {
               link: "/zh/developer/develop/advanced/cli",
             },
             {
-              text: "Terminus Info",
-              link: "/zh/developer/develop/advanced/terminus-info",
+              text: "Olares Info",
+              link: "/zh/developer/develop/advanced/olares-info",
             },
             {
               text: "Service Provider",
@@ -380,12 +380,12 @@ const side = {
       text: "参与贡献",
       items: [
         {
-          text: "Terminus OS",
-          link: "/zh/developer/contribute/terminus-os",
+          text: "Olares OS",
+          link: "/zh/developer/contribute/olares-os",
         },
         // {
-        //   text: "TermiPass",
-        //   link: "/zh/developer/contribute/termipass",
+        //   text: "LarePass",
+        //   link: "/zh/developer/contribute/larepass",
         // },
         {
           text: "Snowinning 协议",
@@ -401,8 +401,8 @@ const side = {
               link: "/zh/developer/contribute/snowinning/concepts",
             },
             {
-              text: "Terminus Name",
-              link: "/zh/developer/contribute/snowinning/terminus-name",
+              text: "Olares Name",
+              link: "/zh/developer/contribute/snowinning/olares-id",
             },
             {
               text: "合约",
@@ -410,7 +410,7 @@ const side = {
               link: "/zh/developer/contribute/snowinning/contract-overview",
               items: [
                 {
-                  text: "TerminusDID",
+                  text: "OlaresDID",
                   link: "/zh/developer/contribute/snowinning/contract-tdid",
                 },
                 {
@@ -443,8 +443,8 @@ const side = {
               link: "/zh/developer/contribute/system-app/deployment",
             },
             {
-              text: "TerminusManifest.yaml",
-              link: "/zh/developer/contribute/system-app/terminus-manifest",
+              text: "OlaresManifest.yaml",
+              link: "/zh/developer/contribute/system-app/olares-manifest",
             },
             {
               text: "安装",
@@ -469,8 +469,8 @@ export const zh = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/beclab" }],
 
     nav: [
-      { text: "概述", link: "/zh/overview/introduction/what-is-terminus" },
-      { text: "教程", link: "/zh/how-to/terminus/" },
+      { text: "概述", link: "/zh/overview/introduction/what-is-olares" },
+      { text: "教程", link: "/zh/how-to/olares/" },
       { text: "开发者", link: "/zh/developer/develop/" },
     ],
 

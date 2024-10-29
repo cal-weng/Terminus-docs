@@ -23,7 +23,7 @@ export default {
 
       document
         .querySelector(".wrapper .container a.title")
-        ?.setAttribute("href", "https://www.jointerminus.com/");
+        ?.setAttribute("href", "https://olares.xyz/");
 
       document
         .querySelector(".wrapper .container a.title")
@@ -38,7 +38,7 @@ export default {
 
           document
             .querySelector(".wrapper .container a.title")
-            ?.setAttribute("href", "https://www.jointerminus.com/");
+            ?.setAttribute("href", "https://olares.xyz/");
 
           document
             .querySelector(".wrapper .container a.title")

@@ -4,12 +4,12 @@ outline: [2, 3]
 
 # Websocket
 
-**WebSocket** is one of the most widely used technologies in modern front-end development. To simplify its use in **Terminus** app development, **Terminus Application Runtime (TAPR)** provides a common **WebSocket** component.
+**WebSocket** is one of the most widely used technologies in modern front-end development. To simplify its use in **Olares** app development, **Olares Application Runtime (TAPR)** provides a common **WebSocket** component.
 
 ## Client
 
 The Client is developed using `JavaScript/TypeScript` use the **ws** library.
-The application server provides the WebSocket through a URL formatted as `wss://<appid>.<username>.myterminus.com/ws`.
+The application server provides the WebSocket through a URL formatted as `wss://<appid>.<username>.olares.com/ws`.
 
 ### Send Message
 
@@ -160,7 +160,7 @@ Cookie: .... // New feature in version v1.0.3
 
 ## Deploy WebSocket Service in App
 
-To use this feature, simply add the `websocket configuration` to the [TerminusManifest.yaml](../package/manifest.md#websocket) file in TAC.
+To use this feature, simply add the `websocket configuration` to the [OlaresManifest.yaml](../package/manifest.md#websocket) file in TAC.
 ```yaml
 options:
   websocket:

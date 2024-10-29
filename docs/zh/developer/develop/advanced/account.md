@@ -1,6 +1,6 @@
 # 账户
 
-如果安装在 Terminus 中的 APP，需要同步系统的用户信息，以此作为 APP 中的用户，可以在 TAC 中申明`SysEventRegistry`来获得系统中用户事件的回调。
+如果安装在 Olares 中的 APP，需要同步系统的用户信息，以此作为 APP 中的用户，可以在 TAC 中申明`SysEventRegistry`来获得系统中用户事件的回调。
 
 - 用户创建回调申明
 

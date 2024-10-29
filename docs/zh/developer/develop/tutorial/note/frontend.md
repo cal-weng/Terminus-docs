@@ -55,7 +55,7 @@ APP 安装完成后，可以通过DevBox的预览按钮，预览应用的前端�
   ```
 
 ## Run Dev Mode
-完成 nginx 配置后，你就可以启动你的前端程序的 dev 模式，并在 Terminus 中预览你的 APP
+完成 nginx 配置后，你就可以启动你的前端程序的 dev 模式，并在 Olares 中预览你的 APP
 
   ```sh
   npm run dev
