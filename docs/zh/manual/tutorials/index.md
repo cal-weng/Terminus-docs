@@ -14,3 +14,4 @@
 ## 部署和扩展
 
 - [安装多节点 Olares 集群](install-olares-multi-node.md)
+- [为 PVE 设置显卡直通](set-pve-passthrough.md)

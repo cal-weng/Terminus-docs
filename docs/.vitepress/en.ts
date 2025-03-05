@@ -106,6 +106,10 @@ const side = {
           text: "Use ComfyUI in Krita",
           link: "/manual/tutorials/comfyui-for-krita",
         },
+        {
+          text: "GPU passthrough for PVE",
+          link: "/manual/tutorials/set-gpu-passthrough",
+        },
       ],
     },
     {

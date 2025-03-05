@@ -106,6 +106,10 @@ const side = {
           text: "Krita + ComfyUI 实时绘画",
           link: "/zh/manual/tutorials/comfyui-for-krita",
         },
+        {
+          text: "配置 PVE 显卡直通",
+          link: "/zh/manual/tutorials/set-gpu-passthrough",
+        },
       ],
     },
     {

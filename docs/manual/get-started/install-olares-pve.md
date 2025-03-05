@@ -27,3 +27,7 @@ In PVE CLI, run the following command:
 <!--@include: ./log-in-to-olares.md-->
 
 <!--@include: ./reusables.md{35,39}-->
+
+::: Enbale GPU passthrough for PVE
+To enable GPU acceleration for Olares in a PVE virtual machine, you must first configure GPU passthrough on PVE before installing Olares. For detailed steps, see the [tutorial](../tutorials/set-gpu-passthrough.md).
+:::

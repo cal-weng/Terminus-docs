@@ -27,3 +27,7 @@ Olares 主要运行在基于 Linux 的系统上。目前以验证可运行的系
 <!--@include: ./log-in-to-olares.md-->
 
 <!--@include: ./reusables.md{30,34}-->
+
+::: 为 PVE 启用显卡直通
+如果你想为 PVE 中的 Olares 启用 GPU 加速功能，需在安装 Olares 前完成 PVE 的 GPU 直通配置。详情请参考[教程](../tutorials/set-gpu-passthrough.md)。
+:::

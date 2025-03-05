@@ -14,3 +14,4 @@ This section contains detailed, hands-on guides to help you accomplish specific 
 ## Setup and scaling
 
 - [Install a multi-node Olares cluster](install-olares-multi-node.md)
+- [Set up GPU passthrough in PVE](set-gpu-passthrough.md)
