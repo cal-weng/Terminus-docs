@@ -7,10 +7,6 @@ description: 在 Linux 系统上通过一键脚本，快速上手 Olares。
 
 开始安装前，请先[创建 Olares ID](create-olares-id.md)，并确认操作系统与硬件已满足最低要求。
 
-::: tip 其他安装选项
-Olares 还提供在 macOS、Windows（WSL 2）、PVE 和树莓派等平台上的多种其他安装方式，但这些方式仅适用于**开发或测试用途**。请参考[其他安装方式](/developer/install/additional-installations.md)获取具体安装步骤。
-:::
-
 :::info 安装遇到问题？
 如果安装过程中遇到问题，[可以提交 GitHub Issue](https://github.com/beclab/Olares/issues/new)。提交时请提供以下信息：
 - 使用的平台或环境（如 Ubuntu、Docker、WSL 等）。
