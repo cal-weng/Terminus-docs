@@ -3,7 +3,8 @@ description: Learn about Olares, an open-source sovereign cloud OS for local AI.
 ---
 # Olares documentation
 ## What is Olares?
-Olares is an open-source sovereign cloud operating system built for local AI. It turns your hardware into a private, scalable, and AI-ready environment, making it easy to run local AI applications, self-host services, manage files, or collaborate securely with your team.
+
+Olares is an open-source personal cloud operating system designed to empower you to own and manage your digital assets locally. Instead of relying on public cloud services, you can deploy powerful open-source alternatives locally on Olares, such as Ollama for hosting LLMs, SD WebUI for image generation, and Mastodon for building censor free social space. Imagine the power of the cloud, but with you in complete command.
 
 With Olares, self-hosting is no longer a daunting task. It simplifies complex processes like network setup, domain management, and service orchestration, enabling both beginners or experienced users to focus on what truly matters.
 
