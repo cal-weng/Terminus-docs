@@ -9,6 +9,7 @@ const side = {
         { text: "Why Olares", link: "/manual/why-olares" },
         //{ text: "Feature comparison", link: "/manual/feature-overview" },
         { text: "Olares architecture", link: "/manual/system-architecture" },
+        { text: "Compare Olares and NAS", link: "/manual/olares-vs-nas" },
         {
           text: "Help and support",
           collapsed: true,
