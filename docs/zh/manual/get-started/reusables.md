@@ -1,9 +1,11 @@
 ---
 search: false
 ---
+
 ```bash
 curl -fsSL https://cn.olares.sh |  bash -
 ```
+
 :::tip root 用户密码
 安装过程中，可能需要输入 root 用户密码。
 :::
@@ -12,8 +14,10 @@ curl -fsSL https://cn.olares.sh |  bash -
 如果安装过程中出现错误，请先执行以下命令卸载：
 
 ```bash
-bash olares-cli uninstall --all
+bash olares-uninstall.sh
+
 ```
+
 卸载完成后，重新运行安装命令进行安装。
 :::
 

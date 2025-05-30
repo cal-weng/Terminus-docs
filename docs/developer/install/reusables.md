@@ -1,9 +1,11 @@
 ---
 search: false
 ---
+
 ```bash
 curl -fsSL https://olares.sh |  bash -
 ```
+
 :::tip Root user password
 During the installation, you may be prompted to enter your root password.
 :::
@@ -12,8 +14,10 @@ During the installation, you may be prompted to enter your root password.
 If an error occurs during installation, use the following command to uninstall first:
 
 ```bash
-bash olares-cli uninstall --all
+bash olares-uninstall.sh
+
 ```
+
 After uninstalling, retry the installation by running the original installation command.
 :::
 
@@ -39,9 +43,9 @@ You're almost ready to start using Olares! Before diving in, it's crucial to ens
 - [Back up your mnemonic phrase](/manual/get-started/back-up-mnemonics.md)
 
 :::info Having trouble with installation?  
-If you encounter issues during the installation process, feel free to [submit a GitHub Issue](https://github.com/beclab/Olares/issues/new). Please include the following information when submitting: 
+If you encounter issues during the installation process, feel free to [submit a GitHub Issue](https://github.com/beclab/Olares/issues/new). Please include the following information when submitting:
 
-- The platform or environment you're using (e.g., Ubuntu, Docker, WSL, etc.).  
-- The installation method (script installation or Docker image).  
+- The platform or environment you're using (e.g., Ubuntu, Docker, WSL, etc.).
+- The installation method (script installation or Docker image).
 - Detailed error information (including logs, error messages, or screenshots).  
-:::
+  :::

@@ -1,9 +1,11 @@
 ---
 search: false
 ---
+
 ```bash
 curl -fsSL https://cn.olares.sh |  bash -
 ```
+
 :::tip root 用户密码
 安装过程中，可能需要输入 root 用户密码。
 :::
@@ -12,8 +14,9 @@ curl -fsSL https://cn.olares.sh |  bash -
 如果安装过程中出现错误，请先执行以下命令卸载：
 
 ```bash
-bash olares-cli uninstall --all
+bash olares-uninstall.sh
 ```
+
 卸载完成后，重新运行安装命令进行安装。
 :::
 
@@ -35,7 +38,8 @@ bash olares-cli uninstall --all
 
 :::info 安装遇到问题？
 如果安装过程中遇到问题，[可以提交 GitHub Issue](https://github.com/beclab/Olares/issues/new)。提交时请提供以下信息：
+
 - 使用的平台或环境（如 Ubuntu、Docker、WSL 等）。
 - 安装方式（脚本安装或 Docker 镜像）。
 - 详细的错误信息（包括日志、错误提示或截图）。
-:::
+  :::
