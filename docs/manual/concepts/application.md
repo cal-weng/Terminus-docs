@@ -122,7 +122,7 @@ The mechanism consists of three procedures：
 
 - User
 
-  [Manage apps in Market](../tasks/install-uninstall-update.md)<br>
+  [Manage apps in Market](../olares/market.md)<br>
 
 - Developer
 
