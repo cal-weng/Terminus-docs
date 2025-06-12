@@ -39,7 +39,7 @@ Upon completion of the installation, the initial system information, including t
 
 You're almost ready to start using Olares! Before diving in, it's crucial to ensure your Olares ID is securely backed up. Without this step, you won't be able to recover Olares ID if needed.
 
-- [Back up your mnemonic phrase](back-up-mnemonics.md)
+- [Back up your mnemonic phrase](/larepass/back-up-mnemonics.md)
 
 :::info Having trouble with installation?  
 If you encounter issues during the installation process, feel free to [submit a GitHub Issue](https://github.com/beclab/Olares/issues/new). Please include the following information when submitting:

@@ -24,7 +24,7 @@ By the end of this tutorial, you will learn how to:
 Before you begin, make sure that:
 	
 - Your Olares device is activated and actively running.
-- Your Olares ID is [secured with mnemonic phrases](../get-started/back-up-mnemonics.md).
+- Your Olares ID is [secured with mnemonic phrases](/larepass/back-up-mnemonics.md).
 - The LarePass app is installed on your phone.
 
 ## Install the LarePass browser extension

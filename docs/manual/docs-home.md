@@ -33,18 +33,32 @@ Olares offers a wide array of features designed to enhance security, ease of use
 - **Seamless anywhere access**: Access your devices from anywhere using dedicated clients for mobile, desktop, and browsers.
 - **Development tools**: Build and port applications easily with comprehensive development tools.
 
+## Key use cases
+
+- 🖥️ **Homelab server**: Turn your personal devices into a versatile homelab for experimenting with containerized applications, running local AI models, managing self-hosted services, or testing cloud technologies—all within your own private infrastructure.
+  
+- 🤖 **Local AI**: Host and run cutting-edge open-source AI models—including large language models, image generation, and speech recognition—directly on your devices. Build custom AI assistants that integrate with your data and applications while keeping everything private and secure.
+- 
+- 💻 **Personal data repository**: Securely store, sync, and manage your photos, documents, and important files in a unified, private storage system accessible from anywhere.
+
+- 🛠️ **Self-hosted workspace**: Create a free, collaborative workspace for your team or family with open-source alternatives to commercial productivity tools.
+
+- 🎥 **Private media server**: Turn your personal media collection into your own streaming service, hosted entirely on your devices.
+- 🏡 **Smart home**: Use Olares as the central control point for managing IoT devices and home automation.
+- 🤝 **Decentralized social media**: Host decentralized social media platforms like Mastodon, Ghost, or WordPress to build your personal brand without the risks of bans or platform fees.
+
 ## Pick your path
 
 Before you roll up your sleeves and get your hands dirty with Olares, feel free to take a quick tour. Here are some alternative paths to get a feel for what Olares can do.
 
 <div class="cta-container">
-  <a href="./use-cases/" class="cta-link">
+  <a href="/use-cases/" class="cta-link">
     <p class="cta-title">Explore use cases</p>
     <p class="cta-description">Discover real-world applications and see how Olares solves common challenges.</p>
   </a>
-  <a href="./tasks/" class="cta-link">
-    <p class="cta-title">Read how-tos</p>
-    <p class="cta-description">Comprehensive documentation covering every aspect of Olares in detail.</p>
+  <a href="./olares/" class="cta-link">
+    <p class="cta-title">Learn how-tos</p>
+    <p class="cta-description">Comprehensive system app guides covering daily tasks of using Olares.</p>
   </a>
   <a href="./concepts/" class="cta-link">
     <p class="cta-title">Understand Olares</p>

@@ -58,8 +58,8 @@ When use Vault in Olares for the first time, you will be prompted to set a local
 ![Vault password](/images/manual/tasks/vault-local-password.png)
 
 :::info
-If you don't know where to find the mnemonic phrase, see [back up mnemonic phrase](../../get-started/back-up-mnemonics).
-:::
+If you don't know where to find the mnemonic phrase, see [back up mnemonic phrase](/larepass/back-up-mnemonics).
+
 
 ## Manage vault items
 :::tip

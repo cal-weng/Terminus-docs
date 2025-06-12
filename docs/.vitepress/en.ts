@@ -6,7 +6,7 @@ const side = {
       text: "What is Olares",
       link: "/manual/docs-home",
       items: [
-        { text: "Why Olares", link: "/manual/why-olares" },
+       // A{ text: "Why Olares", link: "/manual/why-olares" },
         //{ text: "Feature comparison", link: "/manual/feature-overview" },
         { text: "Olares architecture", link: "/manual/system-architecture" },
         { text: "Compare Olares and NAS", link: "/manual/olares-vs-nas" },
@@ -43,7 +43,7 @@ const side = {
         },
         {
           text: "Back up mnemonics",
-          link: "/manual/get-started/back-up-mnemonics",
+          link: "/larepass/back-up-mnemonics"
         },
         {
           text: "What's next",
@@ -52,7 +52,7 @@ const side = {
       ],
     },
     {
-      text: "Olares",
+      text: "Olares applications",
       collapsed: true,
       link: "/manual/olares/",
       items: [
@@ -325,6 +325,48 @@ const side = {
     },
     { text: "Glossary", link: "/manual/glossary" },
   ],
+  "/larepass/": [
+    {
+      text: "LarePass documentation",
+      link: "/larepass/",
+      items: [
+        {
+        text: "Manage accounts",
+        items: [
+          {text: "Create accounts", link:"/larepass/create-account"},
+          {text: "Back up mnemonics", link: "/larepass/back-up-mnemonics"},
+          {text: "Manage integrations", link:"/larepass/integrations"},
+          ],
+        },
+        {
+          text: "Manage files",
+          items: [
+            {text: "Common file operations", link:"/larepass/manage-files"},
+            {text: "Sync and share", link:"/larepass/sync-share"}
+          ]
+        },
+        {
+          text: "Manage device",
+          items: [
+            {text: "Activate Olares", link:"/larepass/activate-olares"},
+            {text: "Manage Olares", link:"/larepass/manage-olares"},
+            {text: "Enable VPN", link:"/larepass/private-network"},
+          ],
+        },
+        {
+          text: "Manage passwords",
+          items: [
+            {text: "Autofill", link: "/manual/olares/vault/autofill"},
+            {text: "Generate 2FA codes", link: "/manual/olares/vault/two-factor-verification"},
+          ],
+        },
+        {
+          text: "Manage knowledge",
+          link: "/larepass/manage-knowledge",
+        },
+      ],
+    },
+  ],
   "/use-cases/": [
   {
     text: "Tutorials & use cases",
@@ -382,15 +424,15 @@ const side = {
  ],
   "/developer/": [
     {
-      text: "Olares installation",
+      text: "Installation deep-dive",
       link: "/developer/install/",
       items: [
         {
-          text: "Installation overview",
+          text: "Installation architecture",
           link: "/developer/install/installation-overview",
         },
         {
-          text: "Installation breakdown",
+          text: "Installation process",
           link: "/developer/install/installation-process",
         },
         {
@@ -702,11 +744,11 @@ const side = {
               link: "/developer/contribute/system-app/overview",
             },
             {
-              text: "`deployment.yaml`",
+              text: "deployment.yaml",
               link: "/developer/contribute/system-app/deployment",
             },
             {
-              text: "`OlaresManifest.yaml`",
+              text: "OlaresManifest.yaml",
               link: "/developer/contribute/system-app/olares-manifest",
             },
             {
@@ -811,7 +853,8 @@ export const en = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/beclab/olares" }],
 
     nav: [
-      { text: "Manual", link: "/manual/docs-home" },
+      { text: "Olares", link: "/manual/docs-home" },
+      { text: "LarePass", link: "/larepass/" },
       { text: "Use Cases", link: "/use-cases/" },
       { text: "Developer Guide", link: "/developer/install/" },
     ],

@@ -3,64 +3,36 @@ outline: [2, 3]
 description: Connect Olares Space and third-party services to enhance functionality. Learn how to integrate, authorize, and manage connected services for seamless data synchronization.
 ---
 
-# Add and manage integrations
+# Manage integrations in Settings
 
-Olares allows you to integrate Olares Space and other third-party services to enhance functionality and personalize your experience. The integration helps you synchronize data, manage devices, and customize your profile.
+The Integration section in **Settings** provides a centralized view of all third-party services connected to your Olares system. It also allows you to manually configure cloud object storage using API credentials.
 
-:::info
-We're working on adding support for third-party account integrations. This feature will allow you to connect various external services to your Olares account.
+OAuth-based integrations and Olares Space must be connected via the LarePass app. See the [LarePass' Integration guide](/larepass/integrations.md) for details.
 
-To stay updated on this and other new features:
 
-* [Follow our official blog](https://blog.olares.com/)
-* [Join our discord channel](https://discord.com/invite/BzfqrgQPDK)
-:::
+## View existing integrations
 
-## Connect to Olares Space
-Olares Space is a cloud hosting service for Olares that shares the same account system with LarePass and Olares.
+1. Open **Settings** from the Dock or Launchpad.
+2. Go to Integration from the left-hand menu. You’ll see a list of currently authorized services. 
+3. Click an integration card to show its connection status and available actions.
 
-### Step 1. Log in to Olares Space
-1. Open https://space.olares.com/login in your browser.
-2. Open LarePass on your mobile device.
-3. On the Settings page, tap the "Scan" icon in the top-right corner.
-4. Scan the QR code on the Olares Space login page.
-5. Confirm the risk prompt and proceed with the login.
+## Add cloud object storage via API keys
 
-### Step 2. Authorize Olares Space
+Olares supports manual configuration of AWS S3 and Tencent Cloud COS using API credentials:
 
-1. In the LarePass app, go to **Settings** > **Integration**.
-2. Tap <i class="material-symbols-outlined">add</i> in the top-right corner and select **Space** to add your Olares Space account. 
+1. Navigate to **Settings** > **Integration** and click the **+ Add Account** button in the top-right corner.
+2. Select **AWS S3** or **Tencent COS**, then click **Confirm**.
+3. In the mount dialog box, fill in the required details: 
+   - Access Key
+   - Secret Key
+   - Region
+   - Bucket name
+4. Click **Next**. You will see a success message if the credentials are valid.
 
-Once you've authorized Olares Space, you can also verify the integration status in Olares.
+Your connected cloud storage will now appear under the **Cloud storage** section in Files.
 
-### Step 3. Associate Olares ID
-Associating your Olares ID allows you to import a blockchain wallet, which is necessary for using NFT images as unique avatars in your profile.
+Alternatively, you can configure this direction directly within [LarePass](/larepass/integrations.md#add-a-cloud-storage-using-api-keys). 
 
-1. Open the Settings app from the Dock or Launchpad.
-2. Select **Integration** from the left sidebar.
-3. Click on the Olares Space card on the right to view details.
-4. Click **Bind**. This will trigger a confirmation prompt in LarePass app.
-5. Open the LarePass app. You should see a confirmation prompt. If not:
 
-   a. Go to **Settings** > **Integration**.
 
-   b. Tap the Olares Space card.
 
-   c. In the confirmation prompt, tap **Confirm** to authorize.
-6. Return to Olares, and click **Confirm** to complete the association to your Olares ID.
-
-## Remove integration
-::: warning
-Disconnecting Olares Space may affect your ability to manage devices, and access cloud backups through the Olares Space interface.
-You can always reconnect later if needed.
-:::
-
-To disconnect Olares Space from your Olares:
-
-1. Open LarePass app, and go to **Settings** > **Integration**.
-2. Tap on the Olares Space card.
-3. Tap <i class="material-symbols-outlined">more_horiz</i> in the top-right corner, and tap **Delete**.
-
-## Learn more
-- [Connect your blockchain wallet](../nft-image.md)
-- [Explore how you can leverage Olares Space](../../space/)

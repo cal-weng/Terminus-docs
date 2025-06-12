@@ -39,11 +39,7 @@ After setting up, you can choose to enable biometric unlock for more secure and 
 
    ![Back up mnemonic phrase](/images/manual/get-started/backup-mnemonic-phrase.png)
 
-## Congratulations!🎉
-And now you're ready to discover Olares further:
-- [What's next](./next-steps.md)
-
-## FAQ
+## FAQs
 ### What happens if I lose my mnemonic phrase?
 Losing your mnemonic phrase will result in serious consequences:
 

@@ -20,7 +20,7 @@ Files supports resumable uploads. If an upload is interrupted, it will automatic
 
 ### Upload via LarePass desktop
 :::info Import your Olares ID
-To start using LarePass desktop, you must import your Olares ID by pasting your mnemonics. Make sure you have [backed up your mnemonics](../../get-started/back-up-mnemonics.md).
+To start using LarePass desktop, you must import your Olares ID by pasting your mnemonics. Make sure you have [backed up your mnemonics](/larepass/back-up-mnemonics.md).
 :::
 LarePass desktop offers the same upload experience as the Files app, with automatic syncing to your Olares ID.
 

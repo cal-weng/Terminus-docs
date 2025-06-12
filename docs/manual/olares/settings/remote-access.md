@@ -1,31 +1,30 @@
 ---
 outline: [2,3]
-description: Learn how to enable LarePass VPN on the desktop client to securely access Olares and its local network devices remotely.
+description: Learn how to configure VPN on Olares using Settings, covering VPN enforcement, SSH access, and subnet routing.
 ---
-# Enable remote access to LAN Devices via LarePass VPN
+# Configure VPN access to Olares
 
-LarePass VPN allows you to access your Olares device and its local network devices from a different network segment or a remote location. By enabling SSH access and subnet routing, you can remotely manage devices like PCs, printers, or NAS systems in your Olares LAN.
+The LarePass VPN enables secure remote access to your Olares device from a different network segment or remote location. The **Settings** app in Olares allows you to further configure VPN access to meet your specific needs, such as enforcing VPN connections, enabling SSH access via VPN, or routing traffic through specific ports.
+
+This guide shows you how to configure VPN-related settings in **Settings**.
 
 :::info
 Only Olares admin can enable remote access to LAN Devices via LarePass VPN.
 :::
 
-## Enable LarePass VPN
+## Enforce access using VPN
 
-:::tip
-Download the LarePass desktop client from [the official page](https://olares.com/larepass).
-:::
+To ensure that all traffic to your private Olares applications is encrypted and routed securely, you can enforce VPN access. This ensures that connections to your Olares environment always go through the LarePass VPN, regardless of the network or device used.
 
-1. Open the LarePass desktop client, click on the avatar area in the top left corner of the main interface.
-2. Turn on the switch for **VPN connection** in the pop-up panel.
+To enable enforced VPN mode:
 
-   ![Enable LarePass VPN](/images/manual/tasks/enable-larepass-vpn-desktop.png#bordered){width=50%}
+1. Enable VPN connections on at least two devices using LarePass (typically a computer and a mobile phone) with LarePass installed. For detailed instructions, see [Enable VPN on LarePass](/larepass/private-network.md).
+2. Open Settings app from the Dock or Launchpad.
+3. Click on your profile picture in the top-left corner, and scroll down to **Security** settings.
+4. Turn on the switch for **Enforce VPN access to private entrance**.
 
-Devices with activated VPN will use the VPN connection to access Olares, whether through the LarePass client or a browser.
+When successful, you'll see a confirmation message at the bottom of the screen.
 
-:::info
-iOS or macOS versions of LarePass will require adding a VPN configuration file to the system when turning on the VPN. Follow the prompts to complete the setup.
-:::
 
 ## Allow SSH connections via VPN
 This enables SSH access to your Olares device through the LarePass VPN, even when you are in a different network or working remotely.

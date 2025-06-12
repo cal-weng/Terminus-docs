@@ -37,7 +37,7 @@ When your team works remotely, accessing Olares usually requires going through p
 * All team members can access applications on different devices using simple local addresses.
 * Instead of going through public networks, connections stay within internal network, making it faster and reducing your public network usage costs.
 
-For details, see [Access Olares applications on other devices via VPN](private-network.md).
+For details, see [Access Olares applications on other devices via VPN](/larepass/private-network.md).
 
 
 
