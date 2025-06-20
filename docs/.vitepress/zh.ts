@@ -43,7 +43,7 @@ const side = {
         },
         {
           text: "备份助记词",
-          link: "/zh/larepass/back-up-mnemonics",
+          link: "/zh/manual/larepass/back-up-mnemonics",
         },
         {
           text: "探索",
@@ -267,15 +267,19 @@ const side = {
       items: [
         {
           text: "设置自定义域名",
-          link: "/zh/manual/tutorials/set-custom-domain",
+          link: "/zh/manual/best-practices/set-custom-domain",
         },
         {
           text: "使用 Wise 管理知识",
-          link: "/zh/manual/tutorials/organize-content",
+          link: "/zh/manual/best-practices/organize-content",
         },
         {
           text: "安装多节点",
-          link: "/zh/manual/tutorials/install-olares-multi-node",
+          link: "/zh/manual/best-practices/install-olares-multi-node",
+        },
+        {
+          text: "设置 SMTP",
+          link: "/zh/manual/best-practices/set-up-SMTP-service",
         },
       ],
     },

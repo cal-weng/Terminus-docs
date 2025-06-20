@@ -38,7 +38,7 @@ Olares offers a wide array of features designed to enhance security, ease of use
 - 🖥️ **Homelab server**: Turn your personal devices into a versatile homelab for experimenting with containerized applications, running local AI models, managing self-hosted services, or testing cloud technologies—all within your own private infrastructure.
   
 - 🤖 **Local AI**: Host and run cutting-edge open-source AI models—including large language models, image generation, and speech recognition—directly on your devices. Build custom AI assistants that integrate with your data and applications while keeping everything private and secure.
-- 
+
 - 💻 **Personal data repository**: Securely store, sync, and manage your photos, documents, and important files in a unified, private storage system accessible from anywhere.
 
 - 🛠️ **Self-hosted workspace**: Create a free, collaborative workspace for your team or family with open-source alternatives to commercial productivity tools.
