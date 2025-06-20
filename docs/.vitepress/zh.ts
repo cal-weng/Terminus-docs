@@ -182,10 +182,6 @@ const side = {
               "link": "/zh/manual/olares/controlhub/navigate-control-hub"
             },
             {
-              "text": "查看容器状态",
-              "link": "/zh/manual/olares/controlhub/view-container"
-            },
-            {
               "text": "编辑 Pods",
               "link": "/zh/manual/olares/controlhub/edit-resource"
             }
