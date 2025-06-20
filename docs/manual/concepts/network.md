@@ -27,7 +27,7 @@ Each Olares application can have one or more entrances that serve as access poin
 
 ## Local access
 
-When accessing applications on Olares within a LAN or after starting a [private network](/larepass/private-network.md), you can add the `.local` field to the application URL for faster access speeds. For example, `https://vault.local.alice123.olares.com`.
+When accessing applications on Olares within a LAN or after starting a [private network](/manual/larepass/private-network.md), you can add the `.local` field to the application URL for faster access speeds. For example, `https://vault.local.alice123.olares.com`.
 
 ## Endpoints
 
@@ -90,4 +90,4 @@ Inside the application, Olares has multiple layers of security.
 ## Learn more
 
 - [Set up custom domain name for application](../olares/settings/custom-app-domain.md#custom-domain-name)
-- [Access Olares via VPN](/larepass/private-network.md)
+- [Access Olares via VPN](/manual/larepass/private-network.md)

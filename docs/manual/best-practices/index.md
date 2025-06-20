@@ -1,5 +1,5 @@
 ---
-description: Step-by-step tutorials on how to personalize, scale, and integrate Olares into your workflows with hands-on guides.
+description: In-depth guides and proven best practices to help you get the most out of Olares.
 ---
 # Beyond the Basics: Olares best practices and advanced guides
 

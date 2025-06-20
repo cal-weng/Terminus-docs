@@ -1,7 +1,7 @@
 ---
 description: Learn how to use Wise powerful filtering system to organize your library. Create tag-based views, add custom filtered views, and utilize advanced query parameters to manage your content effectively.
 ---
-# Add filtered view
+# Organize your knowledge with filters
 
 As your Wise library grows, staying organized can become challenging. With filtered views, you can easily sort and access content by applying filters based on parameters like tags, saved dates, authors, and more.
 

@@ -6,7 +6,7 @@ description: Monitor your Olares system and application performance with compreh
 # Monitor system and application status
 The Dashboard app in Olares works similarly to Windows Explorer, providing a centralized view of your system's status without requiring technical expertise. From the main dashboard, you can view resource usage patterns and detailed metrics.
 :::info
-When applications in your Olares are exposed to the public internet, they generate FRP traffic costs from external access. To monitor these costs and traffic, see [VIew system status](../space/manage-olares#view-system-status).
+When applications in your Olares are exposed to the public internet, they generate FRP traffic costs from external access. To monitor these costs and traffic, see [VIew system status](../../space/manage-olares#view-system-status).
 :::
 
 ## Access monitoring dashboards

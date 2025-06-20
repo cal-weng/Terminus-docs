@@ -34,7 +34,7 @@ bash olares-uninstall.sh
 
 你已经准备好开始使用 Olares！在此之前，请务必确保 Olares ID 已安全备份。如果不备份，你将无法在需要时恢复 Olares ID。
 
-- [备份助记词](/zh/manual/get-started/back-up-mnemonics.md)
+- [备份助记词](/zh/manual/larepass/back-up-mnemonics.md)
 
 :::info 安装遇到问题？
 如果安装过程中遇到问题，[可以提交 GitHub Issue](https://github.com/beclab/Olares/issues/new)。提交时请提供以下信息：

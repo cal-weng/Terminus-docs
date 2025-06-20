@@ -1,5 +1,5 @@
 ---
-description: Configure and manage your Olares hosts file to customize domain name resolution, map IP addresses, and control access to services with step by step guidance.
+description: Learn how to export Olares system logs in Settings for troubleshooting.
 ---
 # Export system log
 

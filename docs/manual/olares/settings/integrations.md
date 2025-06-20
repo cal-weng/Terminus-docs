@@ -7,14 +7,15 @@ description: Connect Olares Space and third-party services to enhance functional
 
 The Integration section in **Settings** provides a centralized view of all third-party services connected to your Olares system. It also allows you to manually configure cloud object storage using API credentials.
 
-OAuth-based integrations and Olares Space must be connected via the LarePass app. See the [LarePass' Integration guide](/larepass/integrations.md) for details.
+OAuth-based integrations and Olares Space must be connected via the LarePass app. See the [Integration guide of LarePass](../../larepass/integrations.md) for details.
 
 
-## View existing integrations
+## View and manage existing integrations
 
 1. Open **Settings** from the Dock or Launchpad.
-2. Go to Integration from the left-hand menu. You’ll see a list of currently authorized services. 
+2. Go to **Integration** from the left-hand menu. You’ll see a list of currently authorized services. 
 3. Click an integration card to show its connection status and available actions.
+4. In the **Account settings** page, click **Delete** to remove the integration.
 
 ## Add cloud object storage via API keys
 
@@ -31,7 +32,11 @@ Olares supports manual configuration of AWS S3 and Tencent Cloud COS using API c
 
 Your connected cloud storage will now appear under the **Cloud storage** section in Files.
 
-Alternatively, you can configure this direction directly within [LarePass](/larepass/integrations.md#add-a-cloud-storage-using-api-keys). 
+Alternatively, you can configure this direction directly within [LarePass](../../larepass/integrations.md#add-a-cloud-storage-using-api-keys).
+
+
+
+
 
 
 

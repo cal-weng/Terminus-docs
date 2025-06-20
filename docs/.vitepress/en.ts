@@ -43,11 +43,56 @@ const side = {
         },
         {
           text: "Back up mnemonics",
-          link: "/larepass/back-up-mnemonics"
+          link: "/manual/larepass/back-up-mnemonics"
         },
         {
           text: "What's next",
           link: "/manual/get-started/next-steps",
+        },
+      ],
+    },
+    {
+      text: "LarePass",
+      link: "/manual/larepass/",
+      collapsed: true,
+      items: [
+        {
+          text: "Manage accounts",
+          collapsed: true,
+          items: [
+            {text: "Create accounts", link:"/manual/larepass/create-account"},
+            {text: "Back up mnemonics", link: "/manual/larepass/back-up-mnemonics"},
+            {text: "Manage integrations", link:"/manual/larepass/integrations"},
+          ],
+        },
+        {text: "Manage VPN", link:"/manual/larepass/private-network"},
+        {
+          text: "Manage device",
+          collapsed: true,
+          items: [
+            {text: "Activate Olares", link:"/manual/larepass/activate-olares"},
+            {text: "Manage Olares", link:"/manual/larepass/manage-olares"},
+          ],
+        },
+        {
+          text: "Manage files",
+          collapsed: true,
+          items: [
+            {text: "Common file operations", link:"/manual/larepass/manage-files"},
+            {text: "Sync and share", link:"/manual/larepass/sync-share"}
+          ]
+        },
+        {
+          text: "Manage passwords",
+          collapsed: true,
+          items: [
+            {text: "Autofill", link: "/manual/larepass/autofill"},
+            {text: "Generate 2FA codes", link: "/manual/larepass/two-factor-verification"},
+          ],
+        },
+        {
+          text: "Manage knowledge",
+          link: "/manual/larepass/manage-knowledge",
         },
       ],
     },
@@ -68,14 +113,16 @@ const side = {
               link: "/manual/olares/files/add-edit-download",
             },
             {
-              text: "Sync and share a library",
-              link: "/manual/olares/files/sync-share",
+              text: "Sync and share",
+              link: "/manual/larepass/sync-share",
             },
             {
               text: "Mount SMB",
               link: "/manual/olares/files/mount-SMB",
             },
-            {text: "Mount cloud storage"},
+            {text: "Mount cloud storage",
+              link: "/manual/olares/files/mount-cloud-storage",
+            },
           ],
         },
         {
@@ -93,11 +140,11 @@ const side = {
             },
             {
               text: "Autofill",
-              link: "/manual/olares/vault/autofill",
+              link: "/manual/larepass/autofill",
             },
             {
               text: "Generate 2FA codes",
-              link: "/manual/olares/vault/two-factor-verification",
+              link: "/manual/larepass/two-factor-verification",
             },
           ],
         },
@@ -215,50 +262,6 @@ const side = {
           {text: "Dashboard", link: "/manual/olares/resources-usage"},
           {text: "Profile", link: "/manual/olares/profile"},
         ],
-    },   
-    {
-      text: "Olares Space",
-      link: "/manual/space/",
-      collapsed: true,
-      items: [
-        {
-          text: "Manage accounts",
-          link: "/manual/space/manage-accounts",
-        },
-        {
-          text: "Host Olares",
-          collapsed: true,
-          items: [
-            {
-              text: "Create Olares",
-              link: "/manual/space/create-olares",
-            },
-            {
-              text: "Manage Olares",
-              link: "/manual/space/manage-olares",
-            },
-          ],
-        },
-        {
-          text: "Host domains",
-          collapsed: true,
-          items: [
-            {
-              text: "Set up a custom domain",
-              link: "/manual/space/host-domain",
-            },
-            {
-              text: "Manage a domain",
-              link: "/manual/space/manage-domain",
-            },
-          ],
-        },
-        {
-          text: "Back up and restore",
-          link: "/manual/space/backup-restore",
-        },
-        { text: "Billing", link: "/manual/space/billing" },
-      ],
     },
       {
         text: "Best practices",
@@ -325,45 +328,48 @@ const side = {
     },
     { text: "Glossary", link: "/manual/glossary" },
   ],
-  "/larepass/": [
+  "/space/": [
     {
-      text: "LarePass documentation",
-      link: "/larepass/",
+      text: "Olares Space",
+      link: "/space/",
       items: [
         {
-        text: "Manage accounts",
-        items: [
-          {text: "Create accounts", link:"/larepass/create-account"},
-          {text: "Back up mnemonics", link: "/larepass/back-up-mnemonics"},
-          {text: "Manage integrations", link:"/larepass/integrations"},
+          text: "Manage accounts",
+          link: "/space/manage-accounts",
+        },
+        {
+          text: "Host Olares",
+          collapsed: true,
+          items: [
+            {
+              text: "Create Olares",
+              link: "/space/create-olares",
+            },
+            {
+              text: "Manage Olares",
+              link: "/space/manage-olares",
+            },
           ],
         },
         {
-          text: "Manage files",
+          text: "Host domains",
+          collapsed: true,
           items: [
-            {text: "Common file operations", link:"/larepass/manage-files"},
-            {text: "Sync and share", link:"/larepass/sync-share"}
-          ]
-        },
-        {
-          text: "Manage device",
-          items: [
-            {text: "Activate Olares", link:"/larepass/activate-olares"},
-            {text: "Manage Olares", link:"/larepass/manage-olares"},
-            {text: "Enable VPN", link:"/larepass/private-network"},
+            {
+              text: "Set up a custom domain",
+              link: "/space/host-domain",
+            },
+            {
+              text: "Manage a domain",
+              link: "/space/manage-domain",
+            },
           ],
         },
         {
-          text: "Manage passwords",
-          items: [
-            {text: "Autofill", link: "/manual/olares/vault/autofill"},
-            {text: "Generate 2FA codes", link: "/manual/olares/vault/two-factor-verification"},
-          ],
+          text: "Back up and restore",
+          link: "/space/backup-restore",
         },
-        {
-          text: "Manage knowledge",
-          link: "/larepass/manage-knowledge",
-        },
+        { text: "Billing", link: "/space/billing" },
       ],
     },
   ],
@@ -424,7 +430,7 @@ const side = {
  ],
   "/developer/": [
     {
-      text: "Installation deep-dive",
+      text: "Installation deep-dives",
       link: "/developer/install/",
       items: [
         {
@@ -762,7 +768,7 @@ const side = {
           ],
         },
       {
-        text: "Olares ID",
+        text: "Develop protocols",
         collapsed: true,
         items: [
           {
@@ -840,7 +846,7 @@ const side = {
             ],
           },
         ],
-       },  
+       },
       ],
     },
   ],
@@ -854,7 +860,7 @@ export const en = defineConfig({
 
     nav: [
       { text: "Olares", link: "/manual/docs-home" },
-      { text: "LarePass", link: "/larepass/" },
+      { text: "Olares Space", link: "/space/" },
       { text: "Use Cases", link: "/use-cases/" },
       { text: "Developer Guide", link: "/developer/install/" },
     ],

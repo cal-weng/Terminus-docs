@@ -18,7 +18,7 @@ To ensure that all traffic to your private Olares applications is encrypted and 
 
 To enable enforced VPN mode:
 
-1. Enable VPN connections on at least two devices using LarePass (typically a computer and a mobile phone) with LarePass installed. For detailed instructions, see [Enable VPN on LarePass](/larepass/private-network.md).
+1. Enable VPN connections on at least two devices using LarePass (typically a computer and a mobile phone) with LarePass installed. For detailed instructions, see [Enable VPN on LarePass](/manual/larepass/private-network.md).
 2. Open Settings app from the Dock or Launchpad.
 3. Click on your profile picture in the top-left corner, and scroll down to **Security** settings.
 4. Turn on the switch for **Enforce VPN access to private entrance**.

@@ -1,6 +1,6 @@
 ---
 outline: [2, 3]
-description: Understand Control Hub UI to manage applications, monitor resources, configure networking, and maintain system settings in Olares.
+description: Understand Control Hub components in detail.
 ---
 
 # Navigate Control Hub
