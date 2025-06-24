@@ -5,10 +5,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "mermaid": "^10.9.0",
+    "mermaid": "10.9.3",
     "terser": "^5.14.2",
-    "vitepress": "^1.0.1",
-    "vitepress-plugin-mermaid": "^2.0.16"
+    "vitepress": "1.6.3",
+    "vitepress-plugin-mermaid": "2.0.17"
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
