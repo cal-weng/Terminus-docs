@@ -32,20 +32,3 @@ description: 通过 Olares 控制面板修改系统资源配置。学习编辑 Y
 :::warning 警告
 Olares 中的许多应用不支持多副本模式。增加这些 Pod 的副本数量可能会导致异常。因此，请务必仔细阅读文档，并谨慎调整副本数量。
 :::
-
-## 查看容器状态
-
-Pods 页面提供了 Olares 环境中所有 Pod 的全面视图，允许你在 Kubernetes 提供的最小粒度上进行管理。
-
-点击列表中的 Pod 可进入其详情页，你可以：
-
-- 查看容器日志。
-- 访问容器环境。
-- 查看容器端口和环境变量。
-- 在只读模式下查看 Pod 的 YAML 配置。
-
-  :::tip 提示
-  无法从该视图直接编辑 YAML 配置。YAML 配置由 Olares 通过应用负载模板和 Webhook 管理。
-  :::
-
-![Pod 详情](/images/how-to/olares/controlhub/pods/02.jpg#bordered)

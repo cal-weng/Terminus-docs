@@ -87,9 +87,9 @@ Considering the complexity and uncertainty of usage scenarios of our contracts, 
 
 We follow EIP-7201 for contract data storage, which makes it easier and safer for contract upgrade and also facilitates granular control of data.
 
-### Validation of Terminus Name
+### Validation of Olares ID
 
-Terminus Name is submitted as a `string` type during registration. Although it is split by `.` for level separation, this cannot guarantee its correctness and readability. We implemented additional validation in contract code to ensure the submitted names are UTF-8-encoded readable strings.
+Olares ID is submitted as a `string` type during registration. Although it is split by `.` for level separation, this cannot guarantee its correctness and readability. We implemented additional validation in contract code to ensure the submitted names are UTF-8-encoded readable strings.
 
 ### Field Names of Structs in Tags
 
@@ -97,7 +97,7 @@ For gas efficiency, if there are structs in a tag type, their field names are pu
 
 ### Inline Assembly
 
-We use slice types based on inline assembly to parse and traverse Terminus Name levels, which can prevent copying substrings and reduce gas.
+We use slice types based on inline assembly to parse and traverse Olares ID levels, which can prevent copying substrings and reduce gas.
 
 ## Appendix - Requirements
 
@@ -107,15 +107,15 @@ We use slice types based on inline assembly to parse and traverse Terminus Name 
 - recording IPv4/IPv6, avatar, RSA public key etc. for DIDs
 - extending stored data for possible new needs in the future
 
-### Terminus Name
+### Olares ID
 
-- distinguishing between two kinds of DIDs for Terminus Name: Organization or Individual
+- distinguishing between two kinds of DIDs for Olares ID: Organization or Individual
 - derived DID management privilege for parent Organization
 
 ### Reputation
 
-- DIDs with another kind called Entity to represent real-world objects (e.g. app versions for App Market Reputation and complaints for Otmoic Reputation)
-- 
-  :::tip Tips
-  We hope to design a decentralized credit system based on DID contracts. At first we imagined a general system adaptable to various scenarios, but with its gradually implementation we found this large and comprehensive system to bring much unnecessary resource consumption and reduce flexibility in different scenarios. So we changed the direction: we present a Reputation system for abstraction and necessary components and provide some recommended implementations. Users can assembly and customize the implementation to satisfy their own scenarios.
-  :::
+DIDs with another kind called Entity to represent real-world objects (e.g. app versions for App Market Reputation and complaints for Otmoic Reputation)
+
+:::tip Tips
+We hope to design a decentralized credit system based on DID contracts. At first we imagined a general system adaptable to various scenarios, but with its gradually implementation we found this large and comprehensive system to bring much unnecessary resource consumption and reduce flexibility in different scenarios. So we changed the direction: we present a Reputation system for abstraction and necessary components and provide some recommended implementations. Users can assembly and customize the implementation to satisfy their own scenarios.
+:::

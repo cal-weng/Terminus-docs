@@ -81,7 +81,7 @@ ComfyUI 启动器提供灵活、丰富的模型安装方式。你可以一键安
 
 ## 管理插件
 
-您可以通过 ComfyUI 内置的 ComfyUI-Manager 管理插件，也可以使用启动器的**插件管理**功能。
+你可以通过 ComfyUI 内置的 ComfyUI-Manager 管理插件，也可以使用启动器的**插件管理**功能。
 
 ![管理插件](/images/zh/manual/use-cases/comfyui-manage-plugin.png#bordered)
 

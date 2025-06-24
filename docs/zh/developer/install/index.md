@@ -1,7 +1,7 @@
 ---
-description: Olares 部署的技术概览，包含系统架构、安装流程、环境配置、CLI 功能和版本管理以及更多的 Olares 安装方式。为开发者提供使用 Olares 的核心技术要点。
+description: Olares 部署的技术详解，包含系统架构、安装流程、环境配置、CLI 功能和版本管理以及更多的 Olares 安装方式。为开发者提供使用 Olares 的核心技术要点。
 ---
-# Olares 安装
+# Olares 安装详解
 
 本章节将为你提供关于 Olares 安装的详细信息和命令参考，帮助你探索、学习并自定义 Olares 的安装。
 

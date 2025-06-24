@@ -141,4 +141,4 @@ In the rare event of a sync conflict, LarePass has you covered. When multiple de
 
 ## Learn more
 - [Manage team](../olares/settings/manage-team.md)
-- [Mange Files](../olares/files/)
+- [Manage files](../olares/files/)

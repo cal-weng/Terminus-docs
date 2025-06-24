@@ -94,5 +94,5 @@ The Otmoic Reputation contract uses EIP-712 signature of DID owners for authenti
 
 ```
 
-The Terminus App Market Reputation contract also uses EIP-712 signature of DID owners for authentication. Rating data of the contract is stored in the `ratings` tag of Entity `<version>.<appname>.app.myterminus.com`, and comment data is published in the form of Ethereum events instead of storing on-chain.
+The Olares App Market Reputation contract also uses EIP-712 signature of DID owners for authentication. Rating data of the contract is stored in the `ratings` tag of Entity `<version>.<appname>.app.myterminus.com`, and comment data is published in the form of Ethereum events instead of storing on-chain.
 :::

@@ -1,8 +1,8 @@
 ---
 description: Learn essential file operations in Olares including adding new files, editing existing content, and downloading files across different devices.
 ---
-# Add, edit, and download
-Operations in Files are essentially the same as in other file managers. This page will introduce some common tasks in Files to get you started.
+# Basic file operations
+Operations in Fileare essentially the same as in other file managers. This page will introduce some common tasks in Files to get you started.
 
 ## Upload files
 

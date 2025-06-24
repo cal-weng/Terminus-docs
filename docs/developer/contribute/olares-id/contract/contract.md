@@ -22,7 +22,7 @@ Snowinning Protocol's smart contract has two parts.
 
 # TerminusDID
 
-The TerminusDID contract manages a hierarchical structure derived from [Domain](https://docs.jointerminus.com/overview/terminus/terminus-name.html#domain)
+The TerminusDID contract manages a hierarchical structure derived from [Domain](/manual/concepts/olares-id.md#domain-types.
 
 ![alt text](/images/developer/contribute/smart-contract-tree.jpg)
 
@@ -30,13 +30,13 @@ The TerminusDID contract manages a hierarchical structure derived from [Domain](
 
 Each node possesses several default attributes.
 
-| Attribute      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| -------------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name           | Specifies the [Domain Name](https://docs.jointerminus.com/overview/terminus/terminus-name.html#domainname). Certain Domain Names can interchange with Terminus Names                                                                                                                                                                                                                                                                            |
-| id             | Each node is also a NFT, adhering to the **ERC-721** standard. Its id serves as the unique identifier for this NFT, computed through `keccak256(name)`                                                                                                                                                                                                                                                                                          |
+| Attribute      | Description                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| name           | Specifies the [Domain Name](/manual/concepts/olares-id.md#domain-types). Certain Domain Names can interchange with Terminus Names                                                                                                                                                                                                                                                                                      |
+| id             | Each node is also a NFT, adhering to the **ERC-721** standard. Its id serves as the unique identifier for this NFT, computed through `keccak256(name)`                                                                                                                                                                                                                                                                 |
 | did,owner      | The `owner` and `did` of the node, derived from the same mnemonic words. Further details on this can be found [here](/manual/concepts/did.md).<br>. Additionally, storing owner is advantageous because it complies with the **BIP44** specification, facilitating gas-efficient signature verification within EVM contracts. Each node is affiliated with an `owner`, who holds the authority to modify node details. |
-| note           | Currently, there are three types: Individual, Organization, and Entity                                                                                                                                                                                                                                                                                                                                                                          |
-| allowSubdomain | Indicates whether it is a leaf node. If False, the node cannot spawn further nodes.                                                                                                                                                                                                                                                                                                                                                             |
+| note           | Currently, there are three types: Individual, Organization, and Entity                                                                                                                                                                                                                                                                                                                                                 |
+| allowSubdomain | Indicates whether it is a leaf node. If False, the node cannot spawn further nodes.                                                                                                                                                                                                                                                                                                                                    |
 
 The following is an illustrative example that specifies the default attributes of a node:
 
@@ -59,15 +59,15 @@ Ownership of different nodes is as follows:
   Abstract nodes such as `root`, `com`, `io` belong to the Terminus team.
 
 - **Individual** <br> 
-  `myterminus.com` belongs to the [Individual Domain](https://docs.jointerminus.com/overview/terminus/terminus-name.html#individual), owned by the Terminus team.  
+  `myterminus.com` belongs to the [Individual Domain](/manual/concepts/olares-id.md#domain-types), owned by the Terminus team.  
   `alice.myterminus.com` and `bob.myterminus.com` belong to individual Terminus Names, and are owned by the respective users.
 
 - **Organization** <br> 
-  `org1.com` and `org.io` belong to the [Organization Domain](https://docs.jointerminus.com/overview/terminus/terminus-name.html#organization), owned by the domain admin.  
+  `org1.com` and `org.io` belong to the [Organization Domain](/manual/concepts/olares-id.md#domain-types), owned by the domain admin.  
   `alice.org1.com` and `bob.org2.io` belong to Organization Terminus Names, and are owned by the respective users.
 
 - **Entity**  <br>
-  The `Application Score` belongs to the [Entity Domain](https://docs.jointerminus.com/overview/terminus/terminus-name.html#entity), and is owned by the applicant of the entity. Organization admins and users can refer to [Domain Management](../contract/manage/contract.md#register-did) to manage their own nodes and sub-nodes.
+  The `Application Score` belongs to the [Entity Domain](/manual/concepts/olares-id.md#domain-types), and is owned by the applicant of the entity. Organization admins and users can refer to [Domain Management](../contract/manage/contract.md#register-did) to manage their own nodes and sub-nodes.
 
 :::info
 After the project stabilizes, ownership will be transferred to the multisig address of the DAO organization by the Terminus team.

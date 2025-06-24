@@ -1,7 +1,7 @@
 ---
 description: Configure and use LarePass autofill features to securely manage passwords across devices, automatically save credentials, and streamline your login experience.
 ---
-# Use autofill with LarePass
+# Autofill passwords with LarePass
 
 Password autofill eliminates the hassle of manually typing credentials while maintaining security. With LarePass, you can securely store passwords in your Vault and automatically fill them across your devices.
 
