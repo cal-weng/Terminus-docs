@@ -56,7 +56,7 @@ Olares 支持三种类型的域名：
 ## Olares ID 和 DID 的关系是什么？
 去中心化标识符（DID）是一种无需依赖中心化机构就能验证的唯一标识符。虽然 DID 解决了去中心化网络中的身份问题，但对普通用户来说较难记忆和使用。
 
-![DID](/images/manual/concepts/DID.png){width=70%}
+![DID](/images/manual/concepts/did.png){width=70%}
 
 Olares ID 使 DID 更友好。因为使用了电子邮箱地址的熟悉格式，既方便记忆，又能充分利用 DID 的安全特性。
 每个 Olares ID 都会绑定一个 DID。用户创建 Olares 账户时，系统会同步创建对应的 DID。要深入了解两者关系，请参考[Olares 账户的状态说明](./account#账户的状态)。

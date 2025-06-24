@@ -3,24 +3,32 @@ description: Definition, structure and purpose of Olares ID system. Covers perso
 ---
 # Olares ID
 
-This document gets you familiar with Olares ID.
+This document introduces Olares ID, the foundation of identity and trust in the Olares ecosystem.
 
 ## What is an Olares ID?
 
-An Olares ID is a unique identifier within the Olares ecosystem, serving as your digital identity and gateway to various services and features. Each Olares account corresponds to an Olares ID.
+An Olares ID is a decentralized identity and credit system that facilitates secure, trustless exchanges of information and value. It serves as your digital identity across the Olares ecosystem, enabling individuals and organizations to manage their identities independently—without reliance on third-party intermediaries.
 
+Each Olares ID is:
+
+- Unique, like an email address (e.g., alice123@olares.com).
+
+- Human-friendly, making it easy to remember and share.
+
+- Bound to a DID, ensuring cryptographic security and verifiability.
+ 
 ## Why do you need an Olares ID?
 
-Your Olares ID corresponds to a **unique domain name**, offering several key benefits:
+Your Olares ID powers seamless access, enhanced security, and a personalized experience within the Olares system. Key benefits include:
 
-* **Ease of access**: The system automatically provisions subdomains and access policies for your applications within Olares. You can use the domain name as your personal web address to seamlessly access Olares applications and services from anywhere.
-* **Enhanced security with free HTTPS certificate**: Olares domain name comes with a free HTTPS certificate, ensuring secure and encrypted communication for all your digital interactions.
+* **Ease of access**: The system automatically provisions subdomains and access policies for your applications within Olares. You can use the domain name as your personal web address for seamlessly access from anywhere.
+* **Free HTTPS certificate**: Olares domain name comes with a free HTTPS certificate, ensuring secure and encrypted communication for all your digital interactions.
 * **Easy to remember and personalized**: Olares ID and the corresponding domain name are easy to remember, share, and personalized for your distinct online identity.
 
-For example, if your Olares ID is `alice123@olares.com`, the system will automatically assign you a subdomain `alice123.olares.com`. Based on this subdomain, your various services will get their corresponding access addresses:
-- `alice123.olares.com`: For accessing your personal homepage.
-- `desktop.alice123.olares.com`: For accessing your personal Olares Desktop.
-- `files.alice123.olares.com`: For accessing the Files app.
+For example, if your Olares ID is `alice123@olares.com`, Olares automatically assigns the following URLs:
+- `alice123.olares.com`: Your personal homepage.
+- `desktop.alice123.olares.com`: Access to your Olares Desktop.
+- `files.alice123.olares.com`: Access to the Files app.
 
 ## Olares ID structure
 The format of an Olares ID is the same as an email address, consisting of two parts:
@@ -54,16 +62,14 @@ Currently, verification is available through Google OAuth.
 :::
 
 ## What's Olares ID's relationship with DID
-A Decentralized Identifier (DID) is a unique, cryptographically verifiable identifier that doesn't rely on any centralized authority. While DIDs solve the issue of identity in a decentralized network, they are typically difficult for humans to remember or use in daily situations.
-
-![DID](/images/manual/concepts/DID.png){width=70%}
+A Decentralized Identifier (DID) is a unique, cryptographically verifiable identifier that doesn't rely on any centralized authority. While DIDs solve the issue of identity in a decentralized network, they are typically difficult for humans to remember or use in daily situations. Learn more in [DID](did.md).
 
 Olares IDs makes DIDs more user-friendly. It provides a familiar, easy-to-remember format similar to email addresses, while still leveraging the power and security of DIDs.
+
 Each Olares ID is bound to a DID. When a user creates an account using Olares, a DID is created at the same time. Learn more about their relationship in [Stage of Olares account](./account#understand-the-stage-of-account).
 
 ## Learn more
 
 * [Create an Olares ID](../get-started/create-olares-id)
-* [Snowinning protocol](https://docs.snowinning.com/protocol/overview.html)
-* [Decentralized identifier (DID)](https://docs.snowinning.com/protocol/did.html)
+* [Decentralized identifier (DID)](did.md)
 * [Gmail issuer service](https://docs.snowinning.com/verifiable-credential/terminus-name.html#gmail-issuer-service)

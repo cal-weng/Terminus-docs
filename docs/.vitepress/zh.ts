@@ -43,7 +43,7 @@ const side = {
         },
         {
           text: "备份助记词",
-          link: "/zh/manual/get-started/back-up-mnemonics",
+          link: "/zh/manual/larepass/back-up-mnemonics",
         },
         {
           text: "探索",
@@ -52,311 +52,235 @@ const side = {
       ],
     },
     {
-      text: "教程",
+      text: "LarePass",
+      link: "/zh/manual/larepass/",
       collapsed: true,
-      link: "/zh/manual/tutorials/",
+      items: [
+        {
+          text: "管理账户",
+          collapsed: true,
+          items: [
+            {text: "创建账户", link:"/zh/manual/larepass/create-account"},
+            {text: "备份助记词", link: "/zh/manual/larepass/back-up-mnemonics"},
+            {text: "管理集成", link:"/zh/manual/larepass/integrations"},
+          ],
+        },
+        {text: "管理专用网络", link:"/zh/manual/larepass/private-network"},
+        {
+          text: "管理设备",
+          collapsed: true,
+          items: [
+            {text: "激活 Olares", link:"/zh/manual/larepass/activate-olares"},
+            {text: "管理 Olares", link:"/zh/manual/larepass/manage-olares"},
+          ],
+        },
+        {
+          text: "管理文件",
+          collapsed: true,
+          items: [
+            {text: "常用文件操作", link:"/zh/manual/larepass/manage-files"},
+            {text: "同步与共享", link:"/zh/manual/larepass/sync-share"}
+          ]
+        },
+        {
+          text: "管理密码",
+          collapsed: true,
+          items: [
+            {text: "自动填充", link: "/zh/manual/larepass/autofill"},
+            {text: "双重验证", link: "/zh/manual/larepass/two-factor-verification"},
+          ],
+        },
+        {
+          text: "管理内容",
+          link: "/zh/manual/larepass/manage-knowledge",
+        },
+      ],
+    },
+    {
+      "text": "Olares 应用",
+      "collapsed": true,
+      "link": "/zh/manual/olares/",
+      "items": [
+        { "text": "桌面", "link": "/zh/manual/olares/desktop" },
+        { "text": "应用市场", "link": "/zh/manual/olares/market" },
+        {
+          "text": "文件管理器",
+          "collapsed": true,
+          "link": "/zh/manual/olares/files/",
+          "items": [
+            {
+              "text": "基本文件操作",
+              "link": "/zh/manual/olares/files/add-edit-download"
+            },
+            {
+              "text": "同步与共享",
+              "link": "/zh/manual/larepass/sync-share"
+            },
+            {
+              "text": "挂载 SMB",
+              "link": "/zh/manual/olares/files/mount-SMB"
+            },
+            {
+              "text": "挂载云存储",
+              "link": "/zh/manual/olares/files/mount-cloud-storage"
+            }
+          ]
+        },
+        {
+          "text": "Vault",
+          "collapsed": true,
+          "link": "/zh/manual/olares/vault/",
+          "items": [
+            {
+              "text": "管理 Vault 项目",
+              "link": "/zh/manual/olares/vault/vault-items"
+            },
+            {
+              "text": "管理共享 Vault",
+              "link": "/zh/manual/olares/vault/share-vault-items"
+            },
+            {
+              "text": "自动填充",
+              "link": "/zh/manual/larepass/autofill"
+            },
+            {
+              "text": "双因素验证",
+              "link": "/zh/manual/larepass/two-factor-verification"
+            }
+          ]
+        },
+        {
+          "text": "Wise",
+          "collapsed": true,
+          "link": "/zh/manual/olares/wise/",
+          "items": [
+            {
+              "text": "基本操作",
+              "link": "/zh/manual/olares/wise/basics"
+            },
+            {
+              "text": "获取推荐引擎",
+              "link": "/zh/manual/olares/wise/recommend"
+            },
+            {
+              "text": "管理订阅",
+              "link": "/zh/manual/olares/wise/subscribe"
+            },
+            {
+              "text": "整理知识",
+              "link": "/zh/manual/olares/wise/filter"
+            }
+          ]
+        },
+        {
+          "text": "控制面板",
+          "collapsed": true,
+          "link": "/zh/manual/olares/controlhub/",
+          "items": [
+            {
+              "text": "熟悉控制面板",
+              "link": "/zh/manual/olares/controlhub/navigate-control-hub"
+            },
+            {
+              "text": "编辑 Pods",
+              "link": "/zh/manual/olares/controlhub/edit-resource"
+            }
+          ]
+        },
+        {
+          "text": "设置",
+          "collapsed": true,
+          "link": "/zh/manual/olares/settings/",
+          "items": [
+            {
+              "text": "管理帐户",
+              "collapsed": true,
+              "items": [
+                {
+                  "text": "角色和权限",
+                  "link": "/zh/manual/olares/settings/roles-permissions"
+                },
+                {
+                  "text": "创建成员帐户",
+                  "link": "/zh/manual/olares/settings/manage-team"
+                }
+              ]
+            },
+            {
+              "text": "管理应用",
+              "collapsed": true,
+              "items": [
+                {
+                  "text": "配置访问策略"
+                },
+                {
+                  "text": "自定义应用域名",
+                  "link": "/zh/manual/olares/settings/custom-app-domain"
+                },
+                {
+                  "text": "切换 GPU 模式 ",
+                  "link": "/zh/manual/olares/settings/gpu-resource"
+                }
+              ]
+            },
+            {
+              "text": "管理集成",
+              "link": "/zh/manual/olares/settings/integrations"
+            },
+            {
+              "text": "自定义外观",
+              "link": "/zh/manual/olares/settings/language-appearance"
+            },
+            {
+              "text": "备份和恢复"
+            },
+            {
+              "text": "配置网络",
+              "collapsed": true,
+              "items": [
+                {
+                  "text": "更改反向代理",
+                  "link": "/zh/manual/olares/settings/change-frp"
+                },
+                {
+                  "text": "设置 hosts 文件",
+                  "link": "/zh/manual/olares/settings/set-up-hosts"
+                },
+                {
+                  "text": "管理 VPN",
+                  "link": "/zh/manual/olares/settings/remote-access"
+                }
+              ]
+            },
+            { "text": "更新系统", "link": "/zh/manual/olares/settings/update" },
+            { "text": "导出系统日志", "link": "/zh/manual/olares/settings/system-log" }
+          ]
+        },
+        { "text": "仪表盘", "link": "/zh/manual/olares/resources-usage" },
+        { "text": "Profile", "link": "/zh/manual/olares/profile" }
+      ]
+    },
+    {
+      text: "Olares 进阶",
+      collapsed: true,
+      link: "/zh/manual/best-practices/",
       items: [
         {
           text: "设置自定义域名",
-          link: "/zh/manual/tutorials/set-custom-domain",
+          link: "/zh/manual/best-practices/set-custom-domain",
         },
         {
           text: "使用 Wise 管理知识",
-          link: "/zh/manual/tutorials/organize-content",
+          link: "/zh/manual/best-practices/organize-content",
         },
         {
           text: "安装多节点",
-          link: "/zh/manual/tutorials/install-olares-multi-node",
+          link: "/zh/manual/best-practices/install-olares-multi-node",
         },
         {
-          text: "远程观看视频",
-          link: "/zh/manual/tutorials/stream-media",
+          text: "设置 SMTP",
+          link: "/zh/manual/best-practices/set-up-SMTP-service",
         },
-        {
-          text: "串流 Steam 游戏",
-          link: "/zh/manual/tutorials/stream-game",
-        },
-        {
-          text: "Krita + ComfyUI 实时绘画",
-          link: "/zh/manual/tutorials/comfyui-for-krita",
-        },
-        {
-          text: "搭建云端 Android",
-          link: "/zh/manual/tutorials/host-cloud-android",
-        },
-        {
-          text: "设置 SMTP 邮件服务",
-          link: "/zh/manual/tutorials/set-up-SMTP-service",
-        },
-      ],
-    },
-    {
-      text: "应用示例",
-      collapsed: true,
-      link: "/zh/manual/use-cases/",
-      items: [
-        {
-          text: "Stable Diffusion",
-          link: "/zh/manual/use-cases/stable-diffusion",
-        },
-        {
-          text: "ComfyUI",
-          link: "/zh/manual/use-cases/comfyui",
-          collapsed: true,
-              items: [
-                {
-                  text: "管理 ComfyUI",
-                  link: "/zh/manual/use-cases/comfyui-launcher",
-                },
-              ],
-        },
-        {
-          text: "Ollama 下载开源模型",
-          link: "/zh/manual/use-cases/ollama",
-        },
-        {
-          text: "Open WebUI",
-          link: "/zh/manual/use-cases/openwebui",
-        },
-        {
-          text: "Perplexica 本地 AI 搜索",
-          link: "/zh/manual/use-cases/perplexica",
-        },
-        {
-          text: "Dify 定制 AI 助手",
-          link: "/zh/manual/use-cases/dify",
-        },
-      ],
-    },
-    {
-      text: "操作指导",
-      collapsed: true,
-      link: "/zh/manual/tasks/",
-      items: [
-        {
-          text: "个性化",
-          collapsed: true,
-          items: [
-            {
-              text: "设计主页",
-              link: "/zh/manual/tasks/profile",
-            },
-            {
-              text: "设置外观和主题",
-              link: "/zh/manual/tasks/language-appearance",
-            },
-            {
-              text: "添加集成",
-              link: "/zh/manual/tasks/integrations",
-            },
-            {
-              text: "使用 NFT 图像",
-              link: "/zh/manual/tasks/nft-image",
-            },
-          ],
-        },
-        {
-          text: "应用管理",
-          collapsed: true,
-          items: [
-            {
-              text: "安装、卸载&升级",
-              link: "/zh/manual/tasks/install-uninstall-update",
-            },
-            {
-              text: "自定义应用网址",
-              link: "/zh/manual/tasks/access-settings",
-            },
-            {
-              text: "管理 GPU",
-              link: "/zh/manual/tasks/gpu-resource",
-            },
-            {
-              text: "设置专用网络",
-              link: "/zh/manual/tasks/private-network",
-            },
-          ],
-        },
-        {
-          text: "文件管理",
-          collapsed: true,
-          link: "/zh/manual/tasks/files",
-          items: [
-            {
-              text: "添加、编辑&下载",
-              link: "/zh/manual/tasks/add-edit-download",
-            },
-            {
-              text: "同步与分享",
-              link: "/zh/manual/tasks/sync-share",
-            },
-            {
-              text: "挂载 SMB 共享文件夹",
-              link: "/zh/manual/tasks/mount-SMB-shares",
-            },
-          ],
-        },
-        {
-          text: "密钥管理",
-          collapsed: true,
-          link: "/zh/manual/tasks/vault",
-          items: [
-            {
-              text: "Vault 基本操作",
-              link: "/zh/manual/tasks/vault-items",
-            },
-            {
-              text: "分享 Vault 项目",
-              link: "/zh/manual/tasks/share-vault-items",
-            },
-            //{
-            //  text: "Generate strong passwords",
-            //  link: "/zh/manual/tasks/strong-passwords",
-            //},
-            {
-              text: "双重验证",
-              link: "/zh/manual/tasks/two-factor-verification",
-            },
-            {
-              text: "自动填充",
-              link: "/zh/manual/tasks/autofill",
-            },
-          ],
-        },
-        {
-          text: "内容智能聚合",
-          collapsed: true,
-          link: "/zh/manual/tasks/wise",
-          items: [
-            {
-              text: "Wise 基本操作",
-              link: "/zh/manual/tasks/wise-basics",
-            },
-            {
-              text: "推荐算法",
-              link: "/zh/manual/tasks/recommend",
-            },
-            {
-              text: "订阅",
-              link: "/zh/manual/tasks/subscribe",
-            },
-            {
-              text: "过滤",
-              link: "/zh/manual/tasks/filter",
-              collapsed: true,
-              items: [
-                {
-                  text: "示例",
-                  link: "/zh/manual/tasks/filter-examples",
-                },
-                {
-                  text: "过滤语法",
-                  link: "/zh/manual/tasks/filter-syntax-guide",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          text: "团队",
-          link: "/zh/manual/tasks/team",
-          collapsed: true,
-          items: [
-            {
-              text: "用户角色",
-              link: "/zh/manual/tasks/roles-permissions",
-            },
-            {
-              text: "管理团队",
-              link: "/zh/manual/tasks/manage-team",
-            },
-            {
-              text: "协作",
-              link: "/zh/manual/tasks/collaborate",
-            },
-          ],
-        },
-        {
-          text: "维护",
-          collapsed: true,
-          items: [
-            {
-              text: "监控系统与应用",
-              link: "/zh/manual/tasks/resources-usage",
-            },
-            {
-              text: "修改 Hosts 配置",
-              link: "/zh/manual/tasks/set-up-hosts",
-            },
-            {
-              text: "升级",
-              link: "/zh/manual/tasks/update",
-            },
-            {
-              text: "控制面板",
-              link: "/zh/manual/tasks/navigate-control-hub",
-              collapsed: true,
-              items: [
-                {
-                  text: "编辑系统资源",
-                  link: "/zh/manual/tasks/edit-resource",
-                },
-                {
-                  text: "查看数据库状态",
-                  link: "/zh/manual/tasks/view-database-status",
-                },
-              ],
-            },
-          {
-           text: "远程访问",
-           link: "zh/manual/tasks/remote-access",
-           }
-          ],
-        },
-      ],
-    },
-    {
-      text: "Olares Space",
-      link: "/zh/manual/space/",
-      collapsed: true,
-      items: [
-        {
-          text: "管理账号",
-          link: "/zh/manual/space/manage-accounts",
-        },
-        {
-          text: "托管 Olares",
-          collapsed: true,
-          items: [
-            {
-              text: "创建 Olares",
-              link: "/zh/manual/space/create-olares",
-            },
-            {
-              text: "管理 Olares",
-              link: "/zh/manual/space/manage-olares",
-            },
-          ],
-        },
-        {
-          text: "托管域名",
-          collapsed: true,
-          items: [
-            {
-              text: "设置自定义域名",
-              link: "/zh/manual/space/host-domain",
-            },
-            {
-              text: "管理域名",
-              link: "/zh/manual/space/manage-domain",
-            },
-          ],
-        },
-        {
-          text: "备份与恢复",
-          link: "/zh/manual/space/backup-restore",
-        },
-        { text: "计费", link: "/zh/manual/space/billing" },
       ],
     },
     {
@@ -375,10 +299,110 @@ const side = {
     },
     { text: "术语", link: "/zh/manual/glossary" },
   ],
-
+  "/zh/space/": [
+    {
+      text: "Olares Space",
+      link: "/zh/space/",
+      collapsed: true,
+      items: [
+        {
+          text: "管理账号",
+          link: "/zh/space/manage-accounts",
+        },
+        {
+          text: "托管 Olares",
+          collapsed: true,
+          items: [
+            {
+              text: "创建 Olares",
+              link: "/zh/space/create-olares",
+            },
+            {
+              text: "管理 Olares",
+              link: "/zh/space/manage-olares",
+            },
+          ],
+        },
+        {
+          text: "托管域名",
+          collapsed: true,
+          items: [
+            {
+              text: "设置自定义域名",
+              link: "/zh/space/host-domain",
+            },
+            {
+              text: "管理域名",
+              link: "/zh/space/manage-domain",
+            },
+          ],
+        },
+        {
+          text: "备份与恢复",
+          link: "/zh/space/backup-restore",
+        },
+        { text: "计费", link: "/zh/space/billing" },
+      ],
+    },
+  ],
+  "/zh/use-cases/": [
+    {
+      text: "Tutorials & use cases",
+      link: "/zh/use-cases/",
+      items: [
+        {
+          text: "Stable Diffusion",
+          link: "/zh/use-cases/stable-diffusion",
+        },
+        {
+          text: "ComfyUI",
+          link: "/zh/use-cases/comfyui",
+          collapsed: true,
+          items: [
+            {
+              text: "Manage ComfyUI",
+              link: "/zh/use-cases/comfyui-launcher",
+            },
+            {
+              text: "Use ComfyUI for Krita",
+              link: "/zh/use-cases/comfyui-for-krita",
+            },
+          ]
+        },
+        {
+          text: "Ollama",
+          link: "/zh/use-cases/ollama",
+        },
+        {
+          text: "Open WebUI",
+          link: "/zh/use-cases/openwebui",
+        },
+        {
+          text: "Perplexica",
+          link: "/zh/use-cases/perplexica",
+        },
+        {
+          text: "Dify",
+          link: "/zh/use-cases/dify",
+        },
+        {
+          text: "Jellyfin",
+          link: "/zh/use-cases/stream-media",
+        },
+        {
+          text: "Steam",
+          link: "/zh/use-cases/stream-game",
+        },
+        {
+          text: "Redroid",
+          link: "/zh/use-cases/host-cloud-android",
+        },
+      ],
+    },
+  ],
   "/zh/developer/": [
   {
-    text: "安装 Olares",
+    text: "Olares 安装详解",
     link: "/zh/developer/install/",
     items: [
       {
@@ -743,7 +767,9 @@ export const zh = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/beclab/olares" }],
 
     nav: [
-      { text: "使用指南", link: "/zh/manual/docs-home" },
+      { text: "Olares", link: "zh/manual/docs-home" },
+      { text: "Olares Space", link: "/zh/space/" },
+      { text: "应用示例", link: "/zh/use-cases/" },
       { text: "开发者文档", link: "/zh/developer/install/" },
     ],
 

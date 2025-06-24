@@ -6,7 +6,7 @@ const side = {
       text: "What is Olares",
       link: "/manual/docs-home",
       items: [
-        { text: "Why Olares", link: "/manual/why-olares" },
+       // A{ text: "Why Olares", link: "/manual/why-olares" },
         //{ text: "Feature comparison", link: "/manual/feature-overview" },
         { text: "Olares architecture", link: "/manual/system-architecture" },
         { text: "Compare Olares and NAS", link: "/manual/olares-vs-nas" },
@@ -43,7 +43,7 @@ const side = {
         },
         {
           text: "Back up mnemonics",
-          link: "/manual/get-started/back-up-mnemonics",
+          link: "/manual/larepass/back-up-mnemonics"
         },
         {
           text: "What's next",
@@ -52,316 +52,273 @@ const side = {
       ],
     },
     {
-      text: "Tutorials",
+      text: "LarePass",
+      link: "/manual/larepass/",
       collapsed: true,
-      link: "/manual/tutorials/",
       items: [
         {
-          text: "Set up custom domain",
-          link: "/manual/tutorials/set-custom-domain",
-        },
-        {
-          text: "Manage knowledge with Wise",
-          link: "/manual/tutorials/organize-content",
-        },
-        {
-          text: "Install a multi-node Olares cluster",
-          link: "/manual/tutorials/install-olares-multi-node",
-        },
-        {
-          text: "Stream videos remotely",
-          link: "/manual/tutorials/stream-media",
-        },
-        {
-          text: "Stream Steam games",
-          link: "/manual/tutorials/stream-game",
-        },
-        {
-          text: "Use ComfyUI in Krita",
-          link: "/manual/tutorials/comfyui-for-krita",
-        },
-        {
-          text: "Host cloud Android",
-          link: "/manual/tutorials/host-cloud-android",
-        },
-      ],
-    },
-    {
-      text: "Use cases",
-      collapsed: true,
-      link: "/manual/use-cases/",
-      items: [
-        {
-          text: "Stable Diffusion",
-          link: "/manual/use-cases/stable-diffusion",
-        },
-        {
-          text: "ComfyUI",
-          link: "/manual/use-cases/comfyui",
+          text: "Manage accounts",
           collapsed: true,
           items: [
-            {
-              text: "Manage ComfyUI",
-              link: "/manual/use-cases/comfyui-launcher",
-            },
-          ]
-        },
-        {
-          text: "Ollama",
-          link: "/manual/use-cases/ollama",
-        },
-        {
-          text: "Open WebUI",
-          link: "/manual/use-cases/openwebui",
-        },
-        {
-          text: "Perplexica",
-          link: "/manual/use-cases/perplexica",
-        },
-        {
-          text: "Dify",
-          link: "/manual/use-cases/dify",
-        },
-      ],
-    },
-    {
-      text: "How-to",
-      collapsed: true,
-      link: "/manual/tasks/",
-      items: [
-        {
-          text: "Personalize Olares",
-          collapsed: true,
-          items: [
-            {
-              text: "Design Olares profile",
-              link: "/manual/tasks/profile",
-            },
-            {
-              text: "Set language and appearance",
-              link: "/manual/tasks/language-appearance",
-            },
-            {
-              text: "Add integrations",
-              link: "/manual/tasks/integrations",
-            },
-            {
-              text: "Use NFT images",
-              link: "/manual/tasks/nft-image",
-            },
+            {text: "Create accounts", link:"/manual/larepass/create-account"},
+            {text: "Back up mnemonics", link: "/manual/larepass/back-up-mnemonics"},
+            {text: "Manage integrations", link:"/manual/larepass/integrations"},
           ],
         },
+        {text: "Manage VPN", link:"/manual/larepass/private-network"},
         {
-          text: "Manage applications",
+          text: "Manage device",
           collapsed: true,
           items: [
-            {
-              text: "Install, uninstall & update",
-              link: "/manual/tasks/install-uninstall-update",
-            },
-            {
-              text: "Customize URLs",
-              link: "/manual/tasks/access-settings",
-            },
-            {
-              text: "Manage GPU usage",
-              link: "/manual/tasks/gpu-resource",
-            },
-            {
-              text: "Access via VPN",
-              link: "/manual/tasks/private-network",
-            },
+            {text: "Activate Olares", link:"/manual/larepass/activate-olares"},
+            {text: "Manage Olares", link:"/manual/larepass/manage-olares"},
           ],
         },
         {
           text: "Manage files",
           collapsed: true,
-          link: "/manual/tasks/files",
           items: [
-            {
-              text: "Add, edit & download",
-              link: "/manual/tasks/add-edit-download",
-            },
-            {
-              text: "Sync and share",
-              link: "/manual/tasks/sync-share",
-            },
-            {
-              text: "Mount SMB shares",
-              link: "/manual/tasks/mount-SMB-shares",
-            },
+            {text: "Common file operations", link:"/manual/larepass/manage-files"},
+            {text: "Sync and share", link:"/manual/larepass/sync-share"}
+          ]
+        },
+        {
+          text: "Manage passwords",
+          collapsed: true,
+          items: [
+            {text: "Autofill", link: "/manual/larepass/autofill"},
+            {text: "Generate 2FA codes", link: "/manual/larepass/two-factor-verification"},
           ],
         },
         {
-          text: "Secure sensitive data",
-          collapsed: true,
-          link: "/manual/tasks/vault",
-          items: [
-            {
-              text: "Vault basics",
-              link: "/manual/tasks/vault-items",
-            },
-            {
-              text: "Share vault items",
-              link: "/manual/tasks/share-vault-items",
-            },
-            //{
-            //  text: "Generate strong passwords",
-            //  link: "/manual/tasks/strong-passwords",
-            //},
-            {
-              text: "Set up 2FA",
-              link: "/manual/tasks/two-factor-verification",
-            },
-            {
-              text: "Use autofill",
-              link: "/manual/tasks/autofill",
-            },
-          ],
-        },
-        {
-          text: "Curate information hub",
-          collapsed: true,
-          link: "/manual/tasks/wise",
-          items: [
-            {
-              text: "Wise basics",
-              link: "/manual/tasks/wise-basics",
-            },
-            {
-              text: "Discover",
-              link: "/manual/tasks/recommend",
-            },
-            {
-              text: "Subscribe",
-              link: "/manual/tasks/subscribe",
-            },
-            {
-              text: "Filter",
-              link: "/manual/tasks/filter",
-              collapsed: true,
-              items: [
-                {
-                  text: "Examples",
-                  link: "/manual/tasks/filter-examples",
-                },
-                {
-                  text: "Filter syntax",
-                  link: "/manual/tasks/filter-syntax-guide",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          text: "Start a team",
-          link: "/manual/tasks/team",
-          collapsed: true,
-          items: [
-            {
-              text: "User roles",
-              link: "/manual/tasks/roles-permissions",
-            },
-            {
-              text: "Manage your team",
-              link: "/manual/tasks/manage-team",
-            },
-            {
-              text: "Collaborate",
-              link: "/manual/tasks/collaborate",
-            },
-          ],
-        },
-        {
-          text: "Maintain",
-          collapsed: true,
-          items: [
-            {
-              text: "Monitor system and apps",
-              link: "/manual/tasks/resources-usage",
-            },
-            {
-              text: "Set up hosts",
-              link: "/manual/tasks/set-up-hosts",
-            },
-            {
-              text: "Update Olares",
-              link: "/manual/tasks/update",
-            },
-            {
-              text: "Navigate Control Hub",
-              link: "/manual/tasks/navigate-control-hub",
-              collapsed: true,
-              items: [
-                {
-                  text: "Edit system resource",
-                  link: "/manual/tasks/edit-resource",
-                },
-                {
-                  text: "View database status",
-                  link: "/manual/tasks/view-database-status",
-                },
-              ],
-            },
-           {
-               text: "Remote access",
-               link: "/manual/tasks/remote-access",
-               }
-          ],
+          text: "Manage knowledge",
+          link: "/manual/larepass/manage-knowledge",
         },
       ],
     },
     {
-      text: "Olares Space",
-      link: "/manual/space/",
+      text: "Olares applications",
       collapsed: true,
+      link: "/manual/olares/",
       items: [
+        { text: "Desktop", link: "/manual/olares/desktop", },
+        { text: "Market", link: "/manual/olares/market", },
         {
-          text: "Manage accounts",
-          link: "/manual/space/manage-accounts",
-        },
-        {
-          text: "Host Olares",
+          text: "Files",
           collapsed: true,
+          link: "/manual/olares/files/",
           items: [
             {
-              text: "Create Olares",
-              link: "/manual/space/create-olares",
+              text: "Basic file operations",
+              link: "/manual/olares/files/add-edit-download",
             },
             {
-              text: "Manage Olares",
-              link: "/manual/space/manage-olares",
+              text: "Sync and share",
+              link: "/manual/larepass/sync-share",
+            },
+            {
+              text: "Mount SMB",
+              link: "/manual/olares/files/mount-SMB",
+            },
+            {text: "Mount cloud storage",
+              link: "/manual/olares/files/mount-cloud-storage",
             },
           ],
         },
         {
-          text: "Host domains",
+          text: "Vault",
           collapsed: true,
+          link: "/manual/olares/vault/",
           items: [
             {
-              text: "Set up a custom domain",
-              link: "/manual/space/host-domain",
+              text: "Manage vault items",
+              link: "/manual/olares/vault/vault-items",
             },
             {
-              text: "Manage a domain",
-              link: "/manual/space/manage-domain",
+              text: "Manage shared vault",
+              link: "/manual/olares/vault/share-vault-items",
+            },
+            {
+              text: "Autofill",
+              link: "/manual/larepass/autofill",
+            },
+            {
+              text: "Generate 2FA codes",
+              link: "/manual/larepass/two-factor-verification",
             },
           ],
         },
         {
-          text: "Back up and restore",
-          link: "/manual/space/backup-restore",
+          text: "Wise",
+          collapsed: true,
+          link: "/manual/olares/wise/",
+          items: [
+            {
+              text: "Basic operations",
+              link: "/manual/olares/wise/basics",
+            },
+            {
+              text: "Get recommendation engine",
+              link: "/manual/olares/wise/recommend",
+            },
+            {
+              text: "Manage your feeds",
+              link: "/manual/olares/wise/subscribe",
+            },
+            {
+              text: "Organize your knowledge",
+              link: "/manual/olares/wise/filter",
+            },
+          ],
         },
-        { text: "Billing", link: "/manual/space/billing" },
-      ],
+        {
+          text: "Control Hub",
+          collapsed: true,
+          link: "/manual/olares/controlhub/",
+          items: [
+            {
+              text: "Navigate Control Hub",
+              link: "/manual/olares/controlhub/navigate-control-hub",
+            },
+            {
+              text: "View container status",
+              link: "/manual/olares/controlhub/view-container",
+            },
+            {
+              text: "Edit Pods",
+              link: "/manual/olares/controlhub/edit-resource",
+            },
+          ],
+        },
+        {
+          text: "Settings",
+          collapsed: true,
+          link: "/manual/olares/settings/",
+          items: [
+            {
+              text: "Manage accounts",
+              collapsed: true,
+              items: [
+                {
+                  text: "Roles and permissions",
+                  link: "/manual/olares/settings/roles-permissions",
+                },
+                {
+                  text: "Create member accounts",
+                  link: "/manual/olares/settings/manage-team",
+                }
+              ],
+            },
+            {
+              text: "Manage applications",
+              collapsed: true,
+              items: [
+                {
+                  text: "Configure access policies",
+                },
+                {
+                  text: "Customize app domains",
+                  link: "/manual/olares/settings/custom-app-domain",
+                },
+                {
+                  text: "Manage GPU usage",
+                  link: "/manual/olares/settings/gpu-resource",
+                },
+              ],
+              },
+            {
+              text: "Manage integrations", 
+              link:"/manual/olares/settings/integrations",
+             },
+             {
+              text: "Customize appearance", 
+              link:"/manual/olares/settings/language-appearance",
+             },
+             {
+              text: "Backup and restore", 
+             },
+             {
+              text: "Configure network", 
+              collapsed: true,
+              items: [
+                {
+                  text: "Change FRP",
+                  link: "/manual/olares/settings/change-frp",
+                },
+                {
+                  text: "Set up hosts file", 
+                  link:"/manual/olares/settings/set-up-hosts",
+                },
+                {
+                  text: "Manage VPN", 
+                  link: "/manual/olares/settings/remote-access",
+                },
+              ],
+             },
+             {text: "Update system", link: "/manual/olares/settings/update"},
+             {text: "Export system log", link: "/manual/olares/settings/system-log"},
+            ]
+          },
+          {text: "Dashboard", link: "/manual/olares/resources-usage"},
+          {text: "Profile", link: "/manual/olares/profile"},
+        ],
     },
+      {
+        text: "Best practices",
+        link: "/manual/best-practices/",
+        collapsed: true,
+        items: [
+          {
+            text: "Set up custom domain",
+            link: "/manual/best-practices/set-custom-domain",
+          },
+          {
+            text: "Manage knowledge with Wise",
+            link: "/manual/best-practices/organize-content",
+          },
+          {
+            text: "Install a multi-node Olares cluster",
+            link: "/manual/best-practices/install-olares-multi-node",
+          },
+        ],
+      },
     {
       text: "Concepts",
       collapsed: true,
       link: "/manual/concepts/",
       items: [
         { text: "Architecture", link: "/manual/concepts/architecture" },
-        { text: "Olares ID", link: "/manual/concepts/olares-id" },
+        { text: 
+          "Olares ID", 
+          link: "/manual/concepts/olares-id",
+          collapsed: true,
+          items: [
+            {
+              text: "Decentralized ID",
+              link: "/manual/concepts/did",
+            },
+            {
+              text: "Blockchain Registry",
+              link: "/manual/concepts/registry",
+            },
+            {
+              text: "Verifiable Credential",
+              link: "/manual/concepts/vc",
+            },
+            {
+              text: "Autonomous Reputation",
+              link: "/manual/concepts/reputation",
+            },
+            {
+              text: "Self-Sovereign Network",
+              link: "/manual/concepts/self-sovereign-network",
+            },
+            {
+              text: "Identity Wallet",
+              link: "/manual/concepts/wallet",
+            },
+          ],
+        },
         { text: "Account", link: "/manual/concepts/account" },
         { text: "Application", link: "/manual/concepts/application" },
         { text: "Network", link: "/manual/concepts/network" },
@@ -371,18 +328,117 @@ const side = {
     },
     { text: "Glossary", link: "/manual/glossary" },
   ],
-
+  "/space/": [
+    {
+      text: "Olares Space",
+      link: "/space/",
+      items: [
+        {
+          text: "Manage accounts",
+          link: "/space/manage-accounts",
+        },
+        {
+          text: "Host Olares",
+          collapsed: true,
+          items: [
+            {
+              text: "Create Olares",
+              link: "/space/create-olares",
+            },
+            {
+              text: "Manage Olares",
+              link: "/space/manage-olares",
+            },
+          ],
+        },
+        {
+          text: "Host domains",
+          collapsed: true,
+          items: [
+            {
+              text: "Set up a custom domain",
+              link: "/space/host-domain",
+            },
+            {
+              text: "Manage a domain",
+              link: "/space/manage-domain",
+            },
+          ],
+        },
+        {
+          text: "Back up and restore",
+          link: "/space/backup-restore",
+        },
+        { text: "Billing", link: "/space/billing" },
+      ],
+    },
+  ],
+  "/use-cases/": [
+  {
+    text: "Tutorials & use cases",
+    link: "/use-cases/",
+    items: [
+      {
+        text: "Stable Diffusion",
+        link: "/use-cases/stable-diffusion",
+      },
+      {
+        text: "ComfyUI",
+        link: "/use-cases/comfyui",
+        collapsed: true,
+        items: [
+          {
+            text: "Manage ComfyUI",
+            link: "/use-cases/comfyui-launcher",
+          },
+          {
+            text: "Use ComfyUI for Krita",
+            link: "/use-cases/comfyui-for-krita",
+          },
+        ]
+      },
+      {
+        text: "Ollama",
+        link: "/use-cases/ollama",
+      },
+      {
+        text: "Open WebUI",
+        link: "/use-cases/openwebui",
+      },
+      {
+        text: "Perplexica",
+        link: "/use-cases/perplexica",
+      },
+      {
+        text: "Dify",
+        link: "/use-cases/dify",
+      },
+      {
+        text: "Jellyfin",
+        link: "/use-cases/stream-media",
+      },
+      {
+        text: "Steam",
+        link: "/use-cases/stream-game",
+      },
+      {
+        text: "Redroid",
+        link: "/use-cases/host-cloud-android",
+      },
+    ],
+  },
+ ],
   "/developer/": [
     {
-      text: "Olares installation",
+      text: "Installation deep-dives",
       link: "/developer/install/",
       items: [
         {
-          text: "Installation overview",
+          text: "Installation architecture",
           link: "/developer/install/installation-overview",
         },
         {
-          text: "Installation breakdown",
+          text: "Installation process",
           link: "/developer/install/installation-process",
         },
         {
@@ -523,12 +579,14 @@ const side = {
               },
             ],
           },
-      ],
-    },
+        ],
+      },
             {
             text: "Olares versioning",
             link: "/developer/install/versioning",
           },
+        ],
+      },
        //  {
          //  text: "Additional installations",
          //  link: "/developer/install/additional-installations",
@@ -568,8 +626,6 @@ const side = {
           //   { text: "Raspberry Pi", link: "/developer/install/raspberry-pi" },
          //  ],
        //  },
-      ],
-    },
     {
       text: "Develop Olares app",
       link: "/developer/develop/",
@@ -656,10 +712,6 @@ const side = {
               text: "Market",
               link: "/developer/develop/advanced/market",
             },
-            // {
-            //   text: "Analytic",
-            //   link: "/developer/develop/advanced/analytic",
-            // },
             {
               text: "Websocket",
               link: "/developer/develop/advanced/websocket",
@@ -668,22 +720,10 @@ const side = {
               text: "File upload",
               link: "/developer/develop/advanced/file-upload",
             },
-            // {
-            //   text: "Rss",
-            //   link: "/developer/develop/advanced/rss",
-            // },
             {
               text: "Secret",
               link: "/developer/develop/advanced/secret",
             },
-            // {
-            //   text: "Notification",
-            //   link: "/developer/develop/advanced/notification",
-            // },
-            // {
-            //   text: "Frontend",
-            //   link: "/developer/develop/advanced/frontend",
-            // },
             {
               text: "Kubesphere",
               link: "/developer/develop/advanced/kubesphere",
@@ -710,11 +750,11 @@ const side = {
               link: "/developer/contribute/system-app/overview",
             },
             {
-              text: "`deployment.yaml`",
+              text: "deployment.yaml",
               link: "/developer/contribute/system-app/deployment",
             },
             {
-              text: "`OlaresManifest.yaml`",
+              text: "OlaresManifest.yaml",
               link: "/developer/contribute/system-app/olares-manifest",
             },
             {
@@ -727,6 +767,86 @@ const side = {
             },
           ],
         },
+      {
+        text: "Develop protocols",
+        collapsed: true,
+        items: [
+          {
+            text: "Contract",
+            link: "/developer/contribute/olares-id/contract/contract",
+            collapsed: true,
+            items: [
+              {
+                text: "Architecture",
+                link: "/developer/contribute/olares-id/contract/architecture",
+              },
+              {
+                text: "DID",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Design",
+                    link: "/developer/contribute/olares-id/contract/did/design",
+                  },
+                  {
+                    text: "Official Taggers",
+                    link: "/developer/contribute/olares-id/contract/did/official-taggers",
+                  },
+                  {
+                    text: "Release History",
+                    link: "/developer/contribute/olares-id/contract/did/release-history",
+                  },
+                  {
+                    text: "FAQ",
+                    link: "/developer/contribute/olares-id/contract/did/faq",
+                  },
+                ],
+              },
+              {
+                text: "Reputation",
+                link: "/developer/contribute/olares-id/contract/contract-reputation",
+              },
+              {
+                text: "Manage",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Contract",
+                    link: "/developer/contribute/olares-id/contract/manage/contract",
+                  },
+                  {
+                    text: "SDK",
+                    link: "/developer/contribute/olares-id/contract/manage/sdk",
+                  },
+                  {
+                    text: "Environment",
+                    link: "/developer/contribute/olares-id/contract/manage/environment",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "Verifiable Credential",
+            link: "/developer/contribute/olares-id/verifiable-credential/overview",
+            collapsed: true,
+            items: [
+              {
+                text: "Issuer",
+                link: "/developer/contribute/olares-id/verifiable-credential/issuer",
+              },
+              {
+                text: "Verifer",
+                link: "/developer/contribute/olares-id/verifiable-credential/verifer",
+              },
+              {
+                text: "Olares",
+                link: "/developer/contribute/olares-id/verifiable-credential/olares",
+              },
+            ],
+          },
+        ],
+       },
       ],
     },
   ],
@@ -739,7 +859,9 @@ export const en = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/beclab/olares" }],
 
     nav: [
-      { text: "Manual", link: "/manual/docs-home" },
+      { text: "Olares", link: "/manual/docs-home" },
+      { text: "Olares Space", link: "/space/" },
+      { text: "Use Cases", link: "/use-cases/" },
       { text: "Developer Guide", link: "/developer/install/" },
     ],
 

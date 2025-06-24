@@ -37,11 +37,11 @@ Olares 提供了丰富的功能，旨在提升安全性、易用性和开发灵�
 在深入了解 Olares 之前，不妨先快速浏览一番。以下是几条路径，帮助快速了解 Olares 的功能。
 
 <div class="cta-container">
-  <a href="./use-cases/" class="cta-link">
+  <a href="../use-cases/" class="cta-link">
     <p class="cta-title">探索使用场景</p>
     <p class="cta-description">发现实际应用场景，看看 Olares 如何解决常见挑战。</p>
   </a>
-  <a href="./tasks/" class="cta-link">
+  <a href="olares/" class="cta-link">
     <p class="cta-title">阅读操作指南</p>
     <p class="cta-description">全面了解 Olares 的各个应用。</p>
   </a>

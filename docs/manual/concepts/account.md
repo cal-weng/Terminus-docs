@@ -64,7 +64,7 @@ When users perform sensitive operations such as login, Olares requires users to 
 ### Users
 
 - [Create Olares ID](../get-started/create-olares-id)
-- [User roles and permissions](../tasks/roles-permissions.md)
+- [User roles and permissions](../olares/settings/roles-permissions.md)
 
 ### Developers
 

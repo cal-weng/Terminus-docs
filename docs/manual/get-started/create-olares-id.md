@@ -13,7 +13,7 @@ An Olares ID consists of a local name and a domain. For example, in `alice123@ol
 - `olares.com`: Domain name
 
 :::tip Olares ID with custom domain
-To create an Olares ID with your custom domain, see [Set up a custom domain for your Olares](../tutorials/set-custom-domain.md).
+To create an Olares ID with your custom domain, see [Set up a custom domain for your Olares](../best-practices/set-custom-domain.md).
 :::
 ## Download and install LarePass app
 
@@ -25,7 +25,7 @@ To get started with Olares, you'll need to download LarePass on your mobile devi
 ## Create an Olares ID
 
 ::: tip
-This section focuses on creating individual Olares IDs. If you want to create an Olares ID for organizational uses, or use a custom domain, refer to [Set up a custom domain](../space/host-domain.md).
+This section focuses on creating individual Olares IDs. If you want to create an Olares ID for organizational uses, or use a custom domain, refer to [Set up a custom domain](../../space/host-domain.md).
 :::
 
 1. In the LarePass app, tap **Create an account**.
@@ -48,4 +48,4 @@ If your team already has Olares, and you're joining as a member:
 - [Activate Olares](./activate-olares)
 
 If you wish to log in to Olares Space, or creating a cloud-based Olares:
-- [Manage accounts in Olares Space](../space/manage-accounts) 
+- [Manage accounts in Olares Space](../../space/manage-accounts) 

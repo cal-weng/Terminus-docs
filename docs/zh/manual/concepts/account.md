@@ -64,7 +64,7 @@ Olares 集成了多种不同安全等级的认证因素，以确保系统中用�
 ### 用户
 
 - [创建 Olares ID](../get-started/create-olares-id)
-- [用户角色](../tasks/roles-permissions.md)
+- [用户角色](../olares/settings/roles-permissions.md)
 
 ### 开发者
 

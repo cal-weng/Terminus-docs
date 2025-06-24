@@ -35,4 +35,4 @@ bash olares-uninstall.sh
 
 你已经准备好开始使用 Olares！在此之前，请务必确保 Olares ID 已安全备份。如果不备份，你将无法在需要时恢复 Olares ID。
 
-- [备份助记词](back-up-mnemonics.md)
+- [备份助记词](../larepass/back-up-mnemonics.md)

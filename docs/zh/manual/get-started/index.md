@@ -5,7 +5,7 @@ description: Olares 的上手指南，选择适合个人或团队的使用路径
 嗨！欢迎来到 Olares 的世界！让我们帮你在你喜欢的平台上轻松上手 Olares。
 
 ::: tip
-想直接体验云端版本？不用自己搭建？来看看 [Olares Space 的介绍](../space/)吧！
+想直接体验云端版本？不用自己搭建？来看看 [Olares Space 的介绍](../../space/)吧！
 :::
 
 <div class="cta">
@@ -19,7 +19,7 @@ description: Olares 的上手指南，选择适合个人或团队的使用路径
 </div>
 
 <div class="cta">
-  <a href="../tasks/">
+  <a href="../olares/">
     <div class="content">
       <h3>已是 Olares 用户？</h3>
       <p>查看完整指南，玩转 Olares 的每一个功能。</p>
@@ -29,10 +29,10 @@ description: Olares 的上手指南，选择适合个人或团队的使用路径
 </div>
 
 <div class="cta">
-  <a href="../tasks/team">
+  <a href="/zh/use-cases/">
     <div class="content">
-      <h3>想要团队协作？</h3>
-      <p>发现 Olares 强大的团队协作功能，提升团队效率。</p>
+      <h3>想用 Olares 开启高效工作？</h3>
+      <p>探索用例和教程，了解 Olares 如何简化你的工作流程并开启新的可能性。</p>
     </div>
     <div class="arrow">→</div>
   </a>
