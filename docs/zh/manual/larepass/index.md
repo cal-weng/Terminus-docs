@@ -5,7 +5,7 @@ description: LarePass 用户文档。了解 LarePass 的核心功能与使用方
 
 # LarePass 使用文档
 
-**LarePass** 是 Olares 的官方跨平台客户端，为用户与其 Olares 系统之间建立安全桥梁。无论在移动端、桌面端还是浏览器中，LarePass 都能实现无缝访问、身份管理、文件同步和安全数据流。
+**LarePass** 是 Olares 的官方跨平台客户端，为用户与 Olares 系统之间建立安全桥梁。无论是移动端、桌面端还是浏览器，你都可以随时随地借助 LarePass 实现无缝访问、身份、密码管理、文件同步、内容管理。
 
 ![LarePass](/images/larepass/larepass.png)
 

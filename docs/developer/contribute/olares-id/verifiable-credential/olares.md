@@ -34,7 +34,7 @@ Alice can now store the issued VC in LarePass.
 
 ### Olares ID verifier service
 
-Here's how the **Verifier Service** works on the Terminus end:
+Here's how the **Verifier Service** works on the Olares end:
 
 1. Alice packages her DID, Olares ID, and Gmail VC into a **Verifiable Presentation (VP)** and submits the VP with its signature to the Verifier Service.
 2. The Verifier Service checks:

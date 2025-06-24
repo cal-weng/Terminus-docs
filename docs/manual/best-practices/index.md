@@ -1,7 +1,7 @@
 ---
 description: In-depth guides and proven best practices to help you get the most out of Olares.
 ---
-# Beyond the Basics: Olares best practices and advanced guides
+# Beyond the basics: Olares best practices and advanced guides
 
 This section offers in-depth guides and proven best practices to help you get the most out of Olares. Whether you're optimizing performance, securing your environment, or customizing advanced features, these resources go beyond initial setup to support real-world scenarios and power-user workflows.
 

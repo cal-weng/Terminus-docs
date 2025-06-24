@@ -72,4 +72,4 @@ Each Olares ID is bound to a DID. When a user creates an account using Olares, a
 
 * [Create an Olares ID](../get-started/create-olares-id)
 * [Decentralized identifier (DID)](did.md)
-* [Gmail issuer service](https://docs.snowinning.com/verifiable-credential/terminus-name.html#gmail-issuer-service)
+* [Gmail issuer service](/developer/contribute/olares-id/verifiable-credential/olares.md#gmail-issuer-service)

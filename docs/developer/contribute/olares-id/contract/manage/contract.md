@@ -40,7 +40,7 @@ The owner of a domain can call `register(owner, MetaData(domain, did, note, allo
 > [!NOTE]
 > The first parameter **owner** is the specified owner of the new DID and the second parameter is a struct of metadata containing.
 >
-> - domain: the complete domain name of the new DID, which is also a Terminus Name
+> - domain: the complete domain name of the new DID, which is also a Olares ID
 > - did: the DID derived from the owner's wallet
 > - note: notes about the new DID, used by off-chain systems for categorization
 > - allowSubdomain: whether to allow the new DID to register subdomains
