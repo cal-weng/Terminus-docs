@@ -1,6 +1,6 @@
 // docs/.vitepress/theme/index.ts
 import DefaultTheme from "vitepress/theme";
-import "./styles/custom.css"; 
+import "./styles/custom.css";
 import "./styles/index.css";
 import { inBrowser, useRoute, useRouter, useData } from "vitepress";
 import Layout from "./components/Layout.vue";
@@ -83,7 +83,7 @@ export default {
 
       document
         .querySelector(".wrapper .container a.title")
-        ?.setAttribute("href", "https://www.olares.xyz/");
+        ?.setAttribute("href", "https://www.olares.com/");
 
       document
         .querySelector(".wrapper .container a.title")
@@ -106,7 +106,7 @@ export default {
 
           document
             .querySelector(".wrapper .container a.title")
-            ?.setAttribute("href", "https://www.olares.xyz/");
+            ?.setAttribute("href", "https://www.olares.com/");
 
           document
             .querySelector(".wrapper .container a.title")

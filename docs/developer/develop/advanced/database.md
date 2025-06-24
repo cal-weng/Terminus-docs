@@ -24,7 +24,7 @@ If you use **Citus**, **Olares** will automatically shard the database tables an
 
 ## NoSQL
 
-The NoSQL cluster is not deployed by default in Olares, but it can be easily installed from the Market. To set up a NoSQL cluster, the administrator needs to install the [**MongoDB**](https://market.olares.xyz/middleware/mongodb) middleware. Once installed, the [Percona Operator for MongoDB](https://github.com/percona/percona-server-mongodb-operator) automatically manages the **MongoDB** cluster. Users can then horizontally scale **MongoDB** cluster replicas, as well as perform backup and restore operations on databases.
+The NoSQL cluster is not deployed by default in Olares, but it can be easily installed from the Market. To set up a NoSQL cluster, the administrator needs to install the [**MongoDB**](https://market.olares.com/middleware/mongodb) middleware. Once installed, the [Percona Operator for MongoDB](https://github.com/percona/percona-server-mongodb-operator) automatically manages the **MongoDB** cluster. Users can then horizontally scale **MongoDB** cluster replicas, as well as perform backup and restore operations on databases.
 
 You can specify detailed configuration for MongoDB in [OlaresManifest.yaml](../package/manifest.md#middleware) as follows:
 
@@ -37,12 +37,12 @@ middleware:
       - name: db1
 options:
   dependencies:
-  - name: olares
-    type: system
-    version: '>=1.6.0-0'
-  - name: mongodb
-    version: ">=6.0.0-0"
-    type: middleware      
+    - name: olares
+      type: system
+      version: ">=1.6.0-0"
+    - name: mongodb
+      version: ">=6.0.0-0"
+      type: middleware
 ```
 
 ## Cache
@@ -59,6 +59,7 @@ middleware:
     password: password
     namespace: db0
 ```
+
 :::info NOTE
 Since Olares uses the Redis Cluster version, developers need to understand the usage restrictions of Redis Cluster in detail when using it.
 :::
