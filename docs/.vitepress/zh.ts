@@ -6,7 +6,7 @@ const side = {
       text: "文档站",
       link: "/zh/manual/docs-home",
       items: [
-        { text: "应用场景", link: "/zh/manual/why-olares" },
+        // { text: "应用场景", link: "/zh/manual/why-olares" },
         //{ text: "功能对比", link: "/zh/manual/feature-overview" },
         { text: "系统架构", link: "/zh/manual/system-architecture" },
         { text: "比较 Olares 和 NAS", link: "/zh/manual/olares-vs-nas" },
@@ -182,10 +182,14 @@ const side = {
               "link": "/zh/manual/olares/controlhub/navigate-control-hub"
             },
             {
-              "text": "编辑 Pods",
+              "text": "编辑系统资源",
               "link": "/zh/manual/olares/controlhub/edit-resource"
-            }
-          ]
+            },
+            {
+              "text": "查看容器状态",
+              "link": "/zh/manual/olares/controlhub/view-container"
+            },
+          ],
         },
         {
           "text": "设置",
@@ -289,7 +293,37 @@ const side = {
       link: "/zh/manual/concepts/",
       items: [
         { text: "架构", link: "/zh/manual/concepts/architecture" },
-        { text: "Olares ID", link: "/zh/manual/concepts/olares-id" },
+        { text: "Olares ID",
+          link: "/zh/manual/concepts/olares-id",
+          collapsed: true,
+          items: [
+            {
+              text: "去中心化标识符",
+              link: "/zh/manual//concepts/did",
+            },
+            {
+              text: "DID Registry",
+              link: "/zh/manual//concepts/registry",
+            },
+            {
+              text: "可验证凭证",
+              link: "/zh/manual//concepts/vc",
+            },
+            {
+              text: "自治声誉",
+              link: "/zh/manual//concepts/reputation",
+            },
+            {
+              text: "主权网络",
+              link: "/zh/manual//concepts/self-sovereign-network",
+            },
+            {
+              text: "身份钱包",
+              link: "/zh/manual/concepts/wallet",
+            },
+          ],
+
+        },
         { text: "账户", link: "/zh/manual/concepts/account" },
         { text: "应用", link: "/zh/manual/concepts/application" },
         { text: "网络", link: "/zh/manual/concepts/network" },
@@ -738,11 +772,11 @@ const side = {
               link: "/zh/developer/contribute/system-app/overview",
             },
             {
-              text: "`deployment.yaml`",
+              text: "应用部署配置",
               link: "/zh/developer/contribute/system-app/deployment",
             },
             {
-              text: "`OlaresManifest.yaml`",
+              text: "Olares 权限配置",
               link: "/zh/developer/contribute/system-app/olares-manifest",
             },
             {
@@ -752,6 +786,86 @@ const side = {
             {
               text: "其他",
               link: "/zh/developer/contribute/system-app/other",
+            },
+          ],
+        },
+        {
+          text: "开发协议",
+          collapsed: true,
+          items: [
+            {
+              text: "合约",
+              link: "/zh/developer/contribute/olares-id/contract/contract",
+              collapsed: true,
+              items: [
+                {
+                  text: "架构",
+                  link: "/zh/developer/contribute/olares-id/contract/architecture",
+                },
+                {
+                  text: "DID",
+                  collapsed: true,
+                  items: [
+                    {
+                      text: "设计",
+                      link: "/zh/developer/contribute/olares-id/contract/did/design",
+                    },
+                    {
+                      text: "官方 Tagger",
+                      link: "/zh/developer/contribute/olares-id/contract/did/official-taggers",
+                    },
+                    {
+                      text: "发布历史",
+                      link: "/zh/developer/contribute/olares-id/contract/did/release-history",
+                    },
+                    {
+                      text: "FAQ",
+                      link: "/zh/developer/contribute/olares-id/contract/did/faq",
+                    },
+                  ],
+                },
+                {
+                  text: "声誉",
+                  link: "/zh/developer/contribute/olares-id/contract/contract-reputation",
+                },
+                {
+                  text: "管理",
+                  collapsed: true,
+                  items: [
+                    {
+                      text: "合约",
+                      link: "/zh/developer/contribute/olares-id/contract/manage/contract",
+                    },
+                    {
+                      text: "SDK",
+                      link: "/zh/developer/contribute/olares-id/contract/manage/sdk",
+                    },
+                    {
+                      text: "环境",
+                      link: "/zh/developer/contribute/olares-id/contract/manage/environment",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              text: "可验证凭证（VC）",
+              link: "/zh/developer/contribute/olares-id/verifiable-credential/overview",
+              collapsed: true,
+              items: [
+                {
+                  text: "发行方",
+                  link: "/zh/developer/contribute/olares-id/verifiable-credential/issuer",
+                },
+                {
+                  text: "验证方",
+                  link: "/zh/developer/contribute/olares-id/verifiable-credential/verifer",
+                },
+                {
+                  text: "Olares 案例",
+                  link: "/zh/developer/contribute/olares-id/verifiable-credential/olares",
+                },
+              ],
             },
           ],
         },

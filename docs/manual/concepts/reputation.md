@@ -33,7 +33,7 @@ The **Olares ID** aims to build a decentralized reputation system based on **DID
 
 - **Reputation distribution:**  
   
-    Reputation insights are distributed via a specialized [Market Protocol](https://docs.olares.com/overview/protocol/market.html), enabling users to access decentralized, reliable reputation data from multiple sources based on their needs. 
+    Reputation insights are distributed via a specialized Market Protocol, enabling users to access decentralized, reliable reputation data from multiple sources based on their needs. 
 
 ## Entity domains for a autonomous reputation system
 

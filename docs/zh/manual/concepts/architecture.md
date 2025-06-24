@@ -15,10 +15,10 @@ Olares 通过区块链-边缘-客户端（BEC）架构提供了新一代去中�
 
 对应 BEC 架构，Olares 包含以下核心组件：
 
-- [**Snowinning 协议**](https://docs.snowinning.com/protocol/overview.html)：一个整合了去中心化身份标识（DID）、可验证凭证（VC）和信誉数据的去中心化身份与信誉系统。通过实现去中心化环境中的透明和可验证交互来增强信任。
+- [**Olares ID**](olares-id.md)：一个整合了去中心化身份标识（DID）、可验证凭证（VC）和信誉数据的去中心化身份与信誉系统。通过实现去中心化环境中的透明和可验证交互来增强信任。
 - [**Olares OS**](https://github.com/beclab/Olares)：专为边缘设备设计的完整自托管操作系统。用户可以托管和管理自己的数据和应用，将个人边缘设备转变为强大的主权云系统。
 - [**LarePass**](https://olares.cn/larepass)：安全统一的界面软件，连接用户和其 Olares 系统。提供身份管理、远程访问、设备管理和数据存储等核心功能，确保与 Olares 的无缝交互。
 
 ## 延伸阅读
 
-- [主权网络](https://docs.snowinning.com/protocol/network.html)
+- [主权网络](self-sovereign-network.md)

@@ -86,7 +86,7 @@ const side = {
           text: "Manage passwords",
           collapsed: true,
           items: [
-            {text: "Autofill", link: "/manual/larepass/autofill"},
+            {text: "Autofill passwords", link: "/manual/larepass/autofill"},
             {text: "Generate 2FA codes", link: "/manual/larepass/two-factor-verification"},
           ],
         },
@@ -181,12 +181,12 @@ const side = {
               link: "/manual/olares/controlhub/navigate-control-hub",
             },
             {
-              text: "View container status",
-              link: "/manual/olares/controlhub/view-container",
+              text: "Edit system resource",
+              link: "/manual/olares/controlhub/edit-resource",
             },
             {
-              text: "Edit Pods",
-              link: "/manual/olares/controlhub/edit-resource",
+              text: "View container status",
+              link: "/manual/olares/controlhub/view-container",
             },
           ],
         },
@@ -750,11 +750,11 @@ const side = {
               link: "/developer/contribute/system-app/overview",
             },
             {
-              text: "deployment.yaml",
+              text: "Configure deployment",
               link: "/developer/contribute/system-app/deployment",
             },
             {
-              text: "OlaresManifest.yaml",
+              text: "Configure permissions",
               link: "/developer/contribute/system-app/olares-manifest",
             },
             {

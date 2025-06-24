@@ -1,14 +1,11 @@
 ---
-description: Learn how to use Olares with step-by-step guides covering personalization, application management, file handling, security setup, and team collaboration features. Updated regularly with the latest Olares functionality.
+description: Learn how to use Olares system applications with step-by-step guides covering personalization, application management, file handling, security setup, and team collaboration features. Updated regularly with the latest Olares functionality.
 ---
 # Olares system applications
 
+Olares system applications are a core component of the Olares ecosystem, pre-installed on your Olares to provide a fundamental yet powerful set of tools. These applications are designed to help you efficiently manage files and applications, organize knowledge, configure system, and accomplish many other daily tasks. Understanding the functions and value of these system applications will enable you to fully leverage Olares' potential, creating a personal cloud environment tailored to your personal needs.
 
-Olares is equipped with a set of pre-installed applications to support common user activities, such as file management, application organization, and  knowledge hub management. You can access the available applications from the launchpad in the Dock.
-
-In addition to the system applications, you can also install community applications and recommendation algorithms through the Olares marketplace.
-
-This document provides an overview and usage instructions for the pre-installed applications on Olares. Refer to the sections below for specific details.
+This document serves as your comprehensive guide to exploring Olares system applications, empowering you to better navigate your Olares system.
 
 ## What can you do with system applications?
 

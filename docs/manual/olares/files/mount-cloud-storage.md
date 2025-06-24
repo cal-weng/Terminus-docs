@@ -9,7 +9,7 @@ You can easily mount a cloud storage through the **Integration** function in Ola
 
 To mount a cloud storage, connect to it in **Integrations** in LarePass or Olares Settings:
 
-* **OAuth-based storage services**: Google Drive and Dropbox. Connect via [**LarePass** app](../../larepass/integrations.md#)
+* **OAuth-based storage services**: Google Drive and Dropbox. Connect via [**LarePass** app](../../larepass/integrations.md#).
 * **API credential-based services**: AWS S3 or Tencent Cloud Object Storage (COS); Connect via LarePass or Olares **Settings**.
 
 Once connected, the cloud storage will be automatically mounted under **Cloud Drive** in **Files**.

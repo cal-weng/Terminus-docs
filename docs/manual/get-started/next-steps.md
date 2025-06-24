@@ -49,11 +49,11 @@ Here are some suggested next steps:
     title="Get started with LarePass"
     description="Use the LarePass client to manage your account, VPN, device, and more."
     :links="[
-      { text: 'Manage accounts', href: '../larepass/create-account.md' },
-      { text: 'Enable VPN',  href: '../larepass/private-network.md' },
-      { text: 'Manage device',   href: '../larepass/manage-device.md' },
-      { text: 'Sync file',   href: '../../larepass/sync-share.md' },
-      { text: 'Collect content',    href: '../larepass/manage-knowledge.md'},
+      { text: 'Manage accounts', href: '../larepass/create-account' },
+      { text: 'Enable VPN',  href: '../larepass/private-network' },
+      { text: 'Manage device',   href: '../larepass/manage-device' },
+      { text: 'Sync file',   href: '../larepass/sync-share' },
+      { text: 'Collect content',    href: '../larepass/manage-knowledge'},
     ]"
     buttonText="Learn more"
     buttonLink="../larepass/"
