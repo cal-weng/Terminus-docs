@@ -38,7 +38,7 @@ description: 使用 LarePass 移动端远程管理 Olares，包括监控状态�
 
 ![Wi-Fi 切换](/images/zh/manual/larepass/switch-wifi.png)
 
-1. 在 Olares 管理页面，点击**Wi-Fi 配置**选项，进入网络切换页面。  
+1. 在 Olares 管理页面，点击**Wi-Fi 配置**选项，进入**选择连接方式**页面。 
 2. 点击列表里的 Wi-Fi 网络以连接。 若 Wi-Fi 有密码，在弹出窗口里输入密码并确认。  
 3. 连接成功后，网络自动切换至 Wi-Fi，过程大概会持续 5 分钟。Olares 状态首先会显示 `IP 地址变更中`，切换完成后恢复 `Olares 运行中`。  
 
