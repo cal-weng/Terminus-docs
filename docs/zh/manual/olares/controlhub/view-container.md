@@ -26,6 +26,8 @@ Pods 页面提供了 Olares 环境中所有 Pod 的全面视图，允许你在 K
 
 为了有效诊断和解决问题，你可能需要检查容器的详细日志：
 
+![Log 操作](/images/manual/olares/controlhub-log.png)
+
 1. 在浏览列中，导航到你的应用，然后依次进入**部署** > **容器**。
 2. 找到状态异常的容器（带有橙色状态下标）。
 3. 点击容器旁边的 <i class="material-symbols-outlined">article</i> 按钮。

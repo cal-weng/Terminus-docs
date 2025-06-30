@@ -8,13 +8,13 @@ description: 了解如何在 Olares 中导出系统日志，以便排查问题�
 
 ## 操作步骤
 
-1. 在 Olares 桌面启动 **Settings**，进入 **System** > **Logs**。  
-2. 点击 **Collect** 生成日志文件。日志将自动保存至默认目录 `/Home/pod_logs`。  
-3. 点击 **Open**，在新窗口打开日志目录。  
+1. 在 Olares 桌面启动**设置**，进入**系统** > **日志**。  
+2. 点击**收集**生成日志文件。日志将自动保存至默认目录 `/Home/pod_logs`。  
+3. 点击**打开**，在新窗口打开日志目录。  
 
    ![生成日志](/images/manual/generate-logs.png#bordered)
 
-4. 右键选择生成的日志文件，点击 **Download** 将其下载到本地。  
+4. 右键选择生成的日志文件，点击**下载**将其下载到本地。  
 
    ![下载日志](/images/manual/download-logs.png#bordered){width=70%}
 

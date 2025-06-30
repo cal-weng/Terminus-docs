@@ -29,7 +29,7 @@ To effectively diagnose and resolve issues, you may need to examine detailed log
 2. Locate the container that's experiencing issues (with an orange dot).
 3. Click the <i class="material-symbols-outlined">article</i> button next to the container.
 4. In the pop-up log window, you have the following options to manage the logs:
-   ![pod detail](/images/manual/olares/controlhub-log.png)
+   ![Log operations](/images/manual/olares/controlhub-log.png)
    - Click the <i class="material-symbols-outlined">download_2</i> button to download the entire log file.
    - Click the <i class="material-symbols-outlined">autorenew</i> button to refresh and see the latest log entries.
    - Click the <i class="material-symbols-outlined">play_pause</i> button to start or pause the log updating in real-time.

@@ -19,7 +19,7 @@ description: 使用 LarePass 专用网络从任何地点安全访问 Olares。�
 
 ### LarePass 移动端
 
-1. 打开 LarePass，依次进入 **设置** > **账户**。  
+1. 打开 LarePass，依次进入**设置** > **账户**。  
 2. 打开**专用网络**开关。
 
 ### LarePass 桌面端
