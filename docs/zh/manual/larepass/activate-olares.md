@@ -11,7 +11,7 @@ Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅�
 
 完成安装向导后，可在 **LarePass** 中使用 Olares ID 激活实例。
 
-![激活](/images/larepass/activate-olares.png#bordered)
+![激活](/images/manual/larepass/activate-olares.png#bordered)
 
 1. 打开 LarePass。  
 2. 点击 **扫码**，扫描安装向导中的二维码。  
@@ -31,7 +31,7 @@ Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅�
 
 登录 Olares 时，需要完成双因素验证。你可以在 LarePass 中直接确认，或手动输入 6 位验证码。
 
-![2FA](/images/larepass/second-confirmation.png#bordered)
+![2FA](/images/manual/larepass/second-confirmation.png#bordered)
 
 ### 在 LarePass 中确认登录
 

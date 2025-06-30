@@ -29,7 +29,7 @@ Olares 管理员会自动成为共享 Vault 的所有者。
 1. 在 Vault 中，导航到**我的团队** > **邀请**页面。
 2. 点击成员账户名称查看邀请码。
 
-   ![Invite members](/images/manual/tasks/invite-members.png#bordered)
+   ![Invite members](/images/manual/olares/invite-members.png#bordered)
 
 3. 将邀请码发送给相应的成员。
    :::tip 提示

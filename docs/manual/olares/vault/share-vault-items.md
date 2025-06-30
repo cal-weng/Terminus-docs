@@ -24,7 +24,7 @@ All administrators and users of an Olares cluster are automatically included in 
 1. In Vault, navigate to the page **My Team** > **Invites**.
 2. Click on the member's account name to view the invitation code.
 
-   ![Invite members](/images/manual/tasks/invite-members.png#bordered)
+   ![Invite members](/images/manual/olares/invite-members.png#bordered)
 3. Send the invitation code to the corresponding member.
    :::tip
    For members, navigate to the page **Invites** > **My team** in Vault to accept invitation.

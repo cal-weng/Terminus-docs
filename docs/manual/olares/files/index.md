@@ -11,6 +11,9 @@ Olares's built-in Files app offers users a secure and efficient solution for fil
 
 ## Understand the interface
 The interface is similar to Windows Explorer or macOS Finder, allowing you to organize and access documents, images, videos, or any other files you own.
+
+![Files](/images/manual/olares/files.png)
+
 It consists of three main components:
 
 * **Drive**: For storing files that don't require frequent synchronization or modifications.
@@ -20,13 +23,23 @@ It consists of three main components:
 
 ---
 <div>
-<h4><a href="./add-edit-download">Add, edit, and download files</a></h4>
+<h4><a href="./add-edit-download">Basic file operations</a></h4>
 Learn the fundamentals of file management in Olares.
 </div>
 
 <div>
 <h4><a href="./sync-share">Sync and share files</a></h4>
 Learn how to keep files updated across devices, and how to share files with other Olares member.
+</div>
+
+<div>
+<h4><a href="./mount-SMB">Mount SMB</a></h4>
+Learn how to mount and access SMB shared folders from NAS devices or network servers in Olares.
+</div>
+
+<div>
+<h4><a href="./mount-cloud-storage">Mount cloud storage</a></h4>
+Learn how to mount and access third party cloud storage services in Olares
 </div>
 
 

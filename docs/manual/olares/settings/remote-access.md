@@ -4,19 +4,13 @@ description: Learn how to configure VPN on Olares using Settings, covering VPN e
 ---
 # Configure VPN access to Olares
 
-The LarePass VPN enables secure remote access to your Olares device from a different network segment or remote location. The **Settings** app in Olares allows you to further configure VPN access to meet your specific needs, such as enforcing VPN connections, enabling SSH access via VPN, or routing traffic through specific ports.
-
-This guide shows you how to configure VPN-related settings in **Settings**.
-
-:::info
-Only Olares admin can enable remote access to LAN Devices via LarePass VPN.
-:::
+The [LarePass VPN](../../larepass/private-network.md) provides secure remote access to your Olares device, even when you're on a different network or at a remote location. Olares' Settings app offers advanced configurations to tailor VPN access to your specific needs. Here, you can enforce VPN connections, enable SSH access over VPN, or route traffic through custom ports.
 
 ## Enforce access using VPN
 
 To ensure that all traffic to your private Olares applications is encrypted and routed securely, you can enforce VPN access. This ensures that connections to your Olares environment always go through the LarePass VPN, regardless of the network or device used.
 
-To enable enforced VPN mode:
+To enable the enforced VPN mode:
 
 1. Enable VPN connections on at least two devices using LarePass (typically a computer and a mobile phone) with LarePass installed. For detailed instructions, see [Enable VPN on LarePass](/manual/larepass/private-network.md).
 2. Open Settings app from the Dock or Launchpad.
@@ -32,7 +26,7 @@ This enables SSH access to your Olares device through the LarePass VPN, even whe
 1. Open the Settings app, and select **System** > **VPN**.
 2. Toggle on **Allow SSH Access via VPN**. Port **22** (SSH) is automatically added to the configuration.
 
-   ![SSH via VPN](/images/manual/tasks/ssh-via-vpn.png#bordered)
+   ![SSH via VPN](/images/manual/olares/ssh-via-vpn.png#bordered)
 ## Allow subnet routing
 This feature allows you to access other devices in the same local network as your Olares through the VPN.
 
@@ -47,6 +41,6 @@ For example, to access a Windows server via Remote Desktop:
 2. Enter `3389` (default port for Remote Desktop Protocol), and click **Confirm**.
 3. Click **Apply** to apply changes.
 
-   ![Add ACL port](/images/manual/tasks/add-acl-port.png#bordered)
+   ![Add ACL port](/images/manual/olares/add-acl-port.png#bordered)
 
 Now you can use Windows Remote Desktop to access the Windows server in the same LAN as Olares.

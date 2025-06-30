@@ -17,7 +17,7 @@ Organize your reading flow with two collections:
 
 While browsing the title or reading, click **<i class="material-symbols-outlined">inbox</i> Inbox** or **<i class="material-symbols-outlined">schedule</i> Read Later** to save content to either collection.
 
-![Inbox or Read later](/images/manual/tasks/inbox-read-later.png#bordered)
+![Inbox or Read later](/images/manual/olares/inbox-read-later.png#bordered)
 
 ### Manually add content
 Wise supports various content types including videos, audio, PDFs, and eBooks:
@@ -41,7 +41,7 @@ This feature:
 * Provides quick access to your media files
 
 To view all your downloaded media files, go to <i class="material-symbols-outlined">settings</i> > **Transmission** > **Download**. This page shows a complete list of your downloads along with their details.
-![Downloaded media files](/images/manual/tasks/downloaded-media-files.png#bordered)
+![Downloaded media files](/images/manual/olares/downloaded-media-files.png#bordered)
 
 You can click <i class="material-symbols-outlined">folder_open</i> to locate the target content in the Files app.
 
@@ -53,7 +53,7 @@ To create a structured content collection with tags:
 1. On the list page, click <i class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">sell</i> on the content card.
 2. In the tag input box, select or create tags relevant to the current content.
 
-![Tags](/images/manual/tasks/tags.png#bordered)
+![Tags](/images/manual/olares/tags.png#bordered)
 
 You can find and manage your tags in the page <i class="material-symbols-outlined">settings</i> > **Tags**.
 
@@ -64,7 +64,7 @@ You can find and manage your tags in the page <i class="material-symbols-outline
 
 You can edit or delete note later.
 
-![Notes](/images/manual/tasks/notes.png#bordered)
+![Notes](/images/manual/olares/notes.png#bordered)
 
 ### Track your reading progress
 Wise uses green dot indicators on article covers to help you track unread content. When you open an article, it's automatically marked as read.

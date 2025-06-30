@@ -24,7 +24,7 @@ Here are some suggested next steps:
       { text: 'Steam',              href: '/use-cases/stream-game'      }
     ]"
     buttonText="Learn more"
-    buttonLink="../use-cases/"
+    buttonLink="/use-cases/"
   />
 
   <!-- Card 2 -->

@@ -6,7 +6,7 @@ outline: [2, 3]
 
 LarePass is the official cross-platform client software for Olares. It acts as a secure bridge between users and their Olares systems, enabling seamless access, identity management, file synchronization, and secure data workflows across all your devices, whether you're on mobile, desktop, or browser.
 
-![LarePass](/images/larepass/larepass.png)
+![LarePass](/images/manual/larepass/larepass.png)
 
 
 ## Key features

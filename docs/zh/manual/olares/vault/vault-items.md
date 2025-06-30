@@ -61,7 +61,7 @@ Vault 项目是存储敏感信息的独立安全容器。每个 Vault 项目包�
 1. 为 Vault 设置本地密码。
 2. 使用助记词短语导入已与 Olares 服务器关联的 Olares ID。
 
-![Vault password](/images/manual/tasks/vault-local-password.png)
+![Vault password](/images/manual/olares/vault-local-password.png)
 
 :::tip 提示
 如果你不知道助记词短语的位置，请参阅[备份助记词短语](../../larepass/back-up-mnemonics)。
@@ -82,11 +82,11 @@ Vault 项目是存储敏感信息的独立安全容器。每个 Vault 项目包�
 1. 打开 **Vault**，在右上角点击 <i class="material-symbols-outlined">add</i>。
 2. 选择一种类型（例如**网站/应用**），点击**创建**。
 
-   ![Add vault item](/images/manual/tasks/add-vault-item.png#bordered)
+   ![Add vault item](/images/manual/olares/add-vault-item.png#bordered)
 
 3. 填写必填字段，例如项目名称、用户名、密码和 URL。
 
-   ![Fill item fields](/images/manual/tasks/fill-item-fields.png#bordered)
+   ![Fill item fields](/images/manual/olares/fill-item-fields.png#bordered)
 
 4. 点击**保存**创建新的 Vault 项目。
 

@@ -17,7 +17,7 @@ Wise 为你提供内容管理提供灵活丰富的选项，帮你轻松收集、
 
 在浏览标题或阅读内容时，点击 **<i class="material-symbols-outlined">inbox</i> 收件箱** 或 **<i class="material-symbols-outlined">schedule</i> 稍后阅读**，将内容保存到相应的集合。
 
-![Inbox or Read later](/images/manual/tasks/inbox-read-later.png)
+![Inbox or Read later](/images/manual/olares/inbox-read-later.png)
 
 ### 通过 LarePass 收藏网页
 
@@ -63,7 +63,7 @@ Wise 会自动为新的音频或视频内容创建下载任务，将媒体文件
 * 提供对媒体文件的快速访问
 
 要查看所有下载的媒体文件，前往 <i class="material-symbols-outlined">settings</i> > **传输** > **下载**。该页面会显示你的下载内容及其详细信息。
-![已下载的媒体文件](/images/manual/tasks/downloaded-media-files.png#bordered)
+![已下载的媒体文件](/images/manual/olares/downloaded-media-files.png#bordered)
 
 点击 <i class="material-symbols-outlined">folder_open</i> 图标可以在**文件管理器**中找到对应的文件。
 
@@ -76,7 +76,7 @@ Wise 会自动为新的音频或视频内容创建下载任务，将媒体文件
 1. 在列表页面中，点击内容卡片上的 <i class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">sell</i>。
 2. 在标签输入框中，选择或创建与当前内容相关的标签。
 
-![标签](/images/manual/tasks/tags.png#bordered)
+![标签](/images/manual/olares/tags.png#bordered)
 
 你可以在<i class="material-symbols-outlined">settings</i> > **标签**页面找到并管理你的标签。
 
@@ -88,7 +88,7 @@ Wise 会自动为新的音频或视频内容创建下载任务，将媒体文件
 
 你可以稍后编辑或删除笔记。
 
-![笔记](/images/manual/tasks/notes.png#bordered)
+![笔记](/images/manual/olares/notes.png#bordered)
 
 ### 跟踪你的阅读进度
 

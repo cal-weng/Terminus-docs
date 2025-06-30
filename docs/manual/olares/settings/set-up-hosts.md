@@ -10,7 +10,7 @@ To add a new domain name and IP address mapping in Olares:
 2. Select **Add hosts** in the top-right corner, and specify the domain name/IP address pair.
    - **Host name**: Enter the domain name you want to map (e.g., `example.com`).
    - **IP**: Enter the corresponding IP address (e.g., `93.184.216.34`).
-     ![Add a host](/images/manual/tasks/add-host.png#bordered)
+     ![Add a host](/images/manual/olares/add-host.png#bordered)
 3. Click **Confirm** to save the changes.
 
 :::info DNS cache delay

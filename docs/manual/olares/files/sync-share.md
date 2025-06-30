@@ -89,7 +89,7 @@ You can share a Library with other members within an Olares server:
 3. Set file permissions for each user: **Read-write** or **Read-only**.
 4. Click **Close**.
 
-   ![Share library](/images/manual/tasks/share-library.png#bordered){width="50%"}
+   ![Share library](/images/manual/olares/share-library.png#bordered){width="50%"}
 
 Invited users will see the shared Library in their Sync content list. To revoke sharing permissions, simply remove the user from the sharing window.
 

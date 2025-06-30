@@ -59,11 +59,13 @@ LarePass 支持通过手机的分享选项快速上传文件或媒体内容。
 通过 LarePass 移动应用上传的文件也会自动与你的 Olares ID 同步。
 ## 下载文件
 下载多个文件时，文件管理器网页版和 LarePass 桌面端的行为有所不同：
-* **文件管理器网页版**：自动将文件打包成 zip 文件下载，需要手动解压
-* **LarePass 桌面端**：支持下载队列管理，可暂停、恢复或取消任务，方便查找已下载文件
-  :::tip 提示
-  如需下载大文件或批量下载文件，建议使用 LarePass 桌面端，可获得更强大的下载管理功能和更好的使用体验。详情请访问[官方页面](https://olares.cn/larepass)了解和下载。
-  :::
+* **文件管理器网页版**：下载任务由你的浏览器管理，可使用浏览器下载功能管理下载队列，可暂停、恢复或取消任务。
+* **LarePass 桌面端**：支持在 LarePass 里管理下载队列，可暂停、恢复或取消任务，方便查找已下载文件。
+
+:::tip 提示
+* 文件夹下载仅在 LarePass 桌面版支持。
+* 如需下载大文件或批量下载文件，建议使用 LarePass 桌面端，可获得更强大的下载管理功能和更好的使用体验。详情请访问[官方页面](https://olares.cn/larepass)了解和下载。
+:::
 
 1. 打开**文件管理器**。
 2. 选中任意文件，右键打开上下文菜单，选择**下载**。
@@ -75,11 +77,11 @@ LarePass 支持通过手机的分享选项快速上传文件或媒体内容。
 * **图片**：JPG、JPEG、PNG、BMP、WEBP、SVG
 * **视频**：MP4、MKV、AVI、MOV、MPEG、MTS、TS、WMV、WEBM、RM、3GP
 * **音频**：MP3、WMA、WAV、OGG、AAC、M4A、APE、FLAC
-* **文本**：PDF、TXT、JS、MD、CSS、XML、YAML、HTML
+* **文本**：PDF、TXT、JS、CSS、XML、YAML、HTML
 
-**文件管理器**还支持编辑以下文本格式：TXT、JS、MD、CSS、XML、YAML、HTML。
+**文件管理器**还支持编辑以下文本格式：TXT、JS、CSS、XML、YAML、HTML。
 
-![预览](/images/manual/tasks/files-preview.png#bordered)
+![预览](/images/manual/olares/files-preview.png#bordered)
 ## 搜索文件
 通过桌面搜索功能，可以轻松找到**文件管理器**中的文件。
 :::tip 提示
@@ -89,7 +91,7 @@ LarePass 支持通过手机的分享选项快速上传文件或媒体内容。
 2. 在搜索框中输入要查找的文件相关关键词。
 3. 使用方向键<i class="material-symbols-outlined">arrow_upward</i><i class="material-symbols-outlined">arrow_downward</i>选择搜索范围：**存储盘**或**同步盘**，按 **Enter** 查看搜索结果。
 
-![搜索](/images/manual/tasks/files-search.png#bordered){width="90%""}
+![搜索](/images/manual/olares/files-search.png#bordered){width="90%""}
 ## 删除文件
 :::warning 警告
 删除的文件无法恢复。
@@ -104,7 +106,7 @@ LarePass 支持通过手机的分享选项快速上传文件或媒体内容。
 
 可在列表视图和网格视图之间切换，以不同方式显示文件和文件夹。
 
-![显示视图](/images/manual/tasks/files-display-view.png)
+![显示视图](/images/manual/olares/files-display-view.png)
 ## 快捷键
 选择多个文件：
 

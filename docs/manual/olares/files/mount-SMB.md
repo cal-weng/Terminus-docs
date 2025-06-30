@@ -18,7 +18,7 @@ SMB (Server Message Block) is a protocol used to share files, printers, and othe
    - To add a server address to **Favourite Servers**, click <i class="material-symbols-outlined">add</i> after entering the share path.
    - To remove a saved server, click the server path under **Favourite Servers**, then click <i class="material-symbols-outlined">remove</i>.
    :::
-   ![Add SMB share path](/images/manual/tasks/add-SMB-share-path.png#bordered)
+   ![Add SMB share path](/images/manual/olares/add-SMB-share-path.png#bordered)
 4. Enter the username and password, then click **Submit**.
 
 Once connected, the SMB share will appear in **External** directory, allowing you to access shared files and folders seamlessly.

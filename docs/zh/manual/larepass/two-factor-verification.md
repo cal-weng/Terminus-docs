@@ -12,7 +12,7 @@ description: 在 Vault 中设置和使用双因素身份验证。生成安全的
 1. 登录你希望启用 2FA 的网站或应用（例如 GitHub 或 OpenAI）。
 2. 转到安全设置页面，启用基于身份验证应用的双因素身份验证。
 
-   ![Enable GitHub 2FA](/images/manual/tasks/2fa-github.png#bordered)
+   ![Enable GitHub 2FA](/images/manual/olares/2fa-github.png#bordered)
 
 3. 保存提供的密钥或二维码以备后续使用。
 

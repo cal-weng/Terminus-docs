@@ -1,11 +1,11 @@
 ---
 outline: [2, 3]
-description: Connect Olares Space and third-party services to enhance functionality. Learn how to integrate, authorize, and manage connected services for seamless data synchronization.
+description: Connect Olares with third-party services to enhance functionality. Learn how to integrate, authorize, and manage connected services for seamless data synchronization.
 ---
 
 # Manage integrations in LarePass
 
-LarePass is your central hub for connecting Olares with both first-party services like Olares Space and third-party services like Google Drive, Dropbox, AWS S3, and Tencent COS. These integrations extend the capabilities of your Olares environment like file sync, secure backup, and more.
+LarePass is your central hub for connecting Olares with third-party services like Google Drive, Dropbox, AWS S3, and Tencent COS. These integrations extend the capabilities of your Olares environment like file sync, secure backup, and more.
 
 :::info
 We're working on adding support for more third-party integrations that will connect you with more external services to your Olares account.

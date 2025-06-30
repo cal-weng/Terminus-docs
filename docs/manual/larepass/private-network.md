@@ -16,7 +16,7 @@ This document walks you through how to set up LarePass VPN to access Olares anyw
 For different LarePass download options, visit [the official page](https://olares.com/larepass).
 :::
 
-![VPN](/images/larepass/vpn.jpg)
+![VPN](/images/manual/larepass/vpn.jpg)
 
 ### On LarePass mobile client
 1. Open LarePass, go to **Settings** > **Account**.
@@ -35,6 +35,8 @@ iOS or macOS versions of LarePass will require adding a VPN configuration file t
 ## Understand connection status
 LarePass displays the connection status between your device and Olares, helping you understand or diagnose your current network connection.
 
+![Connection status](/images/manual/larepass/connection-status.jpg)
+
 | Status       | Description                                      |
 |--------------|--------------------------------------------------|
 | Internet     | Connected to Olares via the public internet      |
@@ -51,10 +53,12 @@ When accessing private entrances from an external environment through VPN, if th
 ## Troubleshoot connection issues
 If you encounter connection problems, LarePass will display diagnostic messages to help you resolve the issue. Here are some common scenarios and how to address them:
 
-| Status message                                               | Possible cause and recommended actions                                                                                                                                                                                                                                                                                                                         |
-|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Network issue detected. Please check local network settings. | **Local network issue** <br> 1. Wait for automatic reconnection. The system will detect network recovery and sync data. <br> 2. Check your local network settings if the issue persists.                                                                                                                                                                       |
-| VPN connection to Olares required.                           | **VPN not enabled** <br> Click the notification banner and follow prompts to enable VPN connection.                                                                                                                                                                                                                                                            |
-| Olares re-login required.                                    | **Session expired or authentication issue** <br> Click the notification banner and follow prompts to log in.                                                                                                                                                                                                                                                   |
-| Olares reconnection required.                                | **Connection interrupted or timed out** <br> Click the notification banner and follow prompts to log in. After re-login, Vault data will sync and merge with the server.                                                                                                                                                                                       |
-| No running Olares detected.                                  | **Temporary network issue or Olares is restarting or shutting down** <br> Wait for automatic recovery. This usually resolves shortly. <br> **Olares instance no longer exists** <br> 1. Click the notification banner and follow prompts to reactivate Olares, enable offline mode or ignore notification. <br> 2. Contact Olares Admin if the issue persists. |
+![Abnormal status](/images/manual/larepass/abnormal-state.jpg)
+
+| Status message                                        | Possible cause and recommended actions                                                                                                                                                                                                                                                                                                                       |
+|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Network issue detected. Check local network settings. | **Local network issue** <br> 1. Wait for automatic reconnection. <br/>The system will detect network recovery <br/>and sync data.<br/> 2. Check your local network settings if <br/>the issue persists.                                                                                                                                                                     |
+| VPN connection to Olares required.                    | **VPN not enabled** <br> Click the notification banner and follow <br/>prompts to enable VPN connection.                                                                                                                                                                                                                                                          |
+| Olares re-login required.                             | **Session expired or authentication issue** <br> Click the notification banner and follow<br/> prompts to log in.                                                                                                                                                                                                                                                 |
+| Olares reconnection required.                         | **Connection interrupted or timed out** <br> Click the notification banner and follow<br/> prompts to log in. After re-login, Vault <br/>data will sync and merge with the server.                                                                                                                                                                                     |
+| No active Olares found.                               | **Temporary network issue or Olares is restarting<br/> or shutting down** <br> Wait for automatic recovery. This <br/>usually resolves shortly. <br> **Olares instance no longer exists** <br> 1. Click the notification banner and follow<br/> prompts to reactivate Olares, enable offline <br/>mode or ignore notification. <br> 2. Contact Olares Admin if the issue persists. |

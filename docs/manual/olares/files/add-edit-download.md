@@ -60,10 +60,11 @@ Files uploaded via the LarePass mobile app will also sync automatically with you
 
 ## Download files
 When downloading multiple files, the behavior differs between the Files in Olares and LarePass desktop application.
-* **Files in Olares (web interface)**: Automatically packages files into a zip file for download, requiring manual extraction.
-* **LarePass desktop**: Downloads are queued, allowing you to pause, resume, or cancel tasks, and easily locate downloaded files.
-:::tip
-For large files or multiple downloads, it's recommended to use the LarePass desktop application for more powerful download management and a better user experience. Visit the [official page](https://olares.com/larepass) for details and download options.
+* **Files in Olares (web interface)**: Download tasks are managed directly in your browser. Manage the download queue, pause, resume, or cancel a download in the download manager of the browser. 
+* **LarePass desktop**: Downloads are queued in LarePass, allowing you to pause, resume, or cancel tasks, and easily locate downloaded files.
+:::tip Notes
+- Folder download is only supported in LarePass desktop. 
+- For large files or multiple downloads, it's recommended to use the LarePass desktop application for more powerful download management and a better user experience. Visit the [official page](https://olares.com/larepass) for details and download options.
 :::
 
 1. Open the Files app from the Dock or Launchpad on Olares.
@@ -76,11 +77,11 @@ Double-click a file to open its preview. The Files app supports previewing the f
 * **Images**: JPG, JPEG, PNG, BMP, WEBP, SVG
 * **Videos**: MP4, MKV, AVI, MOV, MPEG, MTS, TS, WMV, WEBM, RM, 3GP
 * **Audio**: MP3, WMA, WAV, OGG, AAC, M4A, APE, FLAC
-* **Text**: PDF, TXT, JS, MD, CSS, XML, YAML, HTML
+* **Text**: PDF, TXT, JS, CSS, XML, YAML, HTML
 
-The Files app also supports editing the following text formats: TXT, JS, MD, CSS, XML, YAML, HTML.
+The Files app also supports editing the following text formats: TXT, JS, CSS, XML, YAML, HTML.
 
-![Preview](/images/manual/tasks/files-preview.png#bordered)
+![Preview](/images/manual/olares/files-preview.png#bordered)
 ## Search files
 You can easily find files in the Files app using desktop search.
 :::tip
@@ -90,7 +91,7 @@ Full-text search is available for the `/Documents/` directory in **Drive**, allo
 2. In the search field, enter keywords related to the file you're looking for.
 3. Use arrow keys <i class="material-symbols-outlined">arrow_upward</i><i class="material-symbols-outlined">arrow_downward</i> to select the search scope: **Drive** or **Sync**, and press **Enter** to see search results.
 
-![Search](/images/manual/tasks/files-search.png#bordered){width="90%""}
+![Search](/images/manual/olares/files-search.png#bordered){width="90%""}
 ## Delete files
 :::warning
 Deleted files cannot be recovered.
@@ -105,7 +106,7 @@ Deleted files cannot be recovered.
 
 Switch between list view and grid view to display your files and folders differently.
 
-![Display view](/images/manual/tasks/files-display-view.png)
+![Display view](/images/manual/olares/files-display-view.png)
 ## Shortcuts
 To select multiple files:
 
