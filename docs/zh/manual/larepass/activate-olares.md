@@ -7,9 +7,13 @@ description: 了解如何首次激活 Olares、在重新安装后重新激活，
 
 Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅的身份验证体验。本文介绍如何激活 Olares，并在登录时使用 LarePass 完成双因素验证。
 
+:::warning 检查网络连接
+为避免激活失败，请确保你的手机和 Olares 设备连接到同一网络。
+:::
+
 ## 首次激活
 
-完成安装向导后，可在 **LarePass** 中使用 Olares ID 激活实例。
+完成 [Olares 安装向导](../get-started/install-olares.md#安装-olares-1)后，可在 **LarePass** 中使用 Olares ID 激活实例。
 
 ![激活](/images/manual/larepass/activate-olares.png#bordered)
 

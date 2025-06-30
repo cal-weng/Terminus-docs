@@ -8,7 +8,7 @@ The [LarePass VPN](../../larepass/private-network.md) provides secure remote acc
 
 ## Enforce access using VPN
 
-To ensure that all traffic to your private Olares applications is encrypted and routed securely, you can enforce VPN access. This ensures that connections to your Olares environment always go through the LarePass VPN, regardless of the network or device used.
+To ensure that all traffic to your private Olares applications is encrypted and routed securely, you can enforce VPN access. This ensures that connections to your Olares always go through the LarePass VPN, regardless of the network or device used. Enabling this mode will block accesses to Olares via reverse proxy. 
 
 To enable the enforced VPN mode:
 

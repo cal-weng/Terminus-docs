@@ -7,9 +7,13 @@ description: Learn how to activate Olares for the first time, reactivate it afte
 
 Olares uses your **Olares ID** and the **LarePass mobile app** to provide a secure and seamless authentication experience. This document guides you on how to activate Olares and complete two-factor verification during login using LarePass.
 
+:::warning Same network required
+To avoid activation failures, ensure that both your phone and the Olares device are connected to the same network.
+:::
+
 ## Activate Olares for the first time
 
-After completing the installation and initial setup in the wizard, you can activate your Olares instance using your Olares ID through the **LarePass** app.
+After [completing the installation](../get-started/install-olares.md#install-olares) and initial setup in the wizard, you can activate your Olares instance using your Olares ID through the **LarePass** app.
 
 ![2FA](/images/manual/larepass/activate-olares.png#bordered)
 

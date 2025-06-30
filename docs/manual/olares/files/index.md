@@ -12,7 +12,7 @@ Olares's built-in Files app offers users a secure and efficient solution for fil
 ## Understand the interface
 The interface is similar to Windows Explorer or macOS Finder, allowing you to organize and access documents, images, videos, or any other files you own.
 
-![Files](/images/manual/olares/files.png)
+![Files](/images/manual/olares/files.png#bordered)
 
 It consists of three main components:
 
@@ -28,7 +28,7 @@ Learn the fundamentals of file management in Olares.
 </div>
 
 <div>
-<h4><a href="./sync-share">Sync and share files</a></h4>
+<h4><a href="../../larepass/sync-share">Sync and share files</a></h4>
 Learn how to keep files updated across devices, and how to share files with other Olares member.
 </div>
 

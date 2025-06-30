@@ -1,6 +1,6 @@
 # Manage Olares with LarePass
 
-The LarePass app allows you to easily manage your Olares device remotely. You can monitor system status, manage network connections, perform remote controls, and access key device information  from your phone.
+The LarePass app allows you to easily manage your Olares device. You can monitor system status, manage network connections, perform remote controls, and access key device information from your phone.
 
 This guide walks you through the core management features available in LarePass.
 
@@ -40,8 +40,8 @@ If Olares was activated over Ethernet, you can switch to the Wi-Fi on the same n
 ![Wi-Fi switch](/images/manual/larepass/switch-wifi.jpg)
 
 1. Tap the **Wi-Fi configuration** option to enter the network selection page.
-2. Tap the Wi-Fi network option. If the network is secured, enter the password and tap **Confirm**.
-3. Once connected, the network switches to Wi-Fi automatically. The transition takes approximately 5 minutes. The status will change to `IP changing` before it reverts to `Olares Running` when the process is complete.
+2. Tap the Wi-Fi network from the list. If the network is secured, enter the password and tap **Confirm**.
+3. Once connected, the network switches to Wi-Fi automatically. The transition takes approximately 5 minutes. The Olares status will change to `IP changing` before it reverts to `Olares Running`.
 
 You can switch back to the wired network following the same steps.
 
@@ -53,19 +53,19 @@ To ensure an optimal and stable connection, we recommend using a wired network w
 
 If your Olares device moves to a different network:
 
-1. Connect Olares and your phone to the new network and power on Olares.
-2. Open LarePass and go to the **Olares management** page.
-3. LarePass will automatically scan Olares device within the local network. When found, Olares will appear as `IP changing` in LarePass.
+1. Connect the Olares device to your wired network via Ethernet and power it on. Ensure your phone is connected to the Wi-Fi for that same network.
+2. Open LarePass on your phone and go to the **Olares management** page.
+3. LarePass will automatically scan Olares device within the network. When found, Olares will appear as `IP changing` in LarePass.
 4. Once IP update finishes, the status will revert to `Olares running`. This process may take 5–10 minutes.
 
 ### Set Wi-Fi via bluetooth
 
-If you can't connect your Olares to a wired network during activation, or if Olares is on a different wired network than your phone, LarePass won't be able to find it. This can prevent you from completing activation or device management. In such cases, use the **Bluetooth network setup** feature to connect your Olares to your phone's Wi-Fi network.
+If you can't connect your Olares to a wired network during activation, or if Olares is on a different wired network than your phone, LarePass won't be able to find it. This can prevent you from completing activation or device management. In such cases, use the **Bluetooth network configuration** feature to connect your Olares to your phone's Wi-Fi network.
  ![Bluetooth network](/images/manual/larepass/bluetooth-network.png)
 
-1. On the **Olares not found** page, tap the **Bluetooth network setup** option. LarePass will use your phone's Bluetooth to scan for the Olares device that match your current Olares ID on LarePass.
-2. When your device is found, tap **Configure Network**.
-3. From the list of wireless networks available to your Olares, tap the Wi-Fi your phone is connected to. If it's password-protected, enter the password and tap **Confirm**.
+1. On the **Olares not found** page, tap the **Bluetooth network configuration** option. LarePass will use your phone's Bluetooth to scan for the nearby Olares device that match your current Olares ID.
+2. When your device is found, tap **Network configuration**.
+3. From the list of wireless networks available to your Olares, tap the Wi-Fi network your phone is connected to. If it's password-protected, enter the password and tap **Confirm**.
 
     ::: tip Note
     If you select a Wi-Fi network different from your phone's, LarePass will still be unable to recognize your Olares device after it connects.

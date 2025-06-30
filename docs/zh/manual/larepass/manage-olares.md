@@ -39,7 +39,7 @@ description: 使用 LarePass 移动端远程管理 Olares，包括监控状态�
 ![Wi-Fi 切换](/images/manual/larepass/switch-wifi.jpg)
 
 1. 在 Olares 管理页面，点击**Wi-Fi 配置**选项，进入网络切换页面。  
-2. 点击 Wi-Fi 网络选项。 若 Wi-Fi 是加密网络，在弹出窗口里输入密码并确认。  
+2. 点击列表里的 Wi-Fi 网络以连接。 若 Wi-Fi 有密码，在弹出窗口里输入密码并确认。  
 3. 连接成功后，网络自动切换至 Wi-Fi，过程大概会持续 5 分钟。Olares 状态首先会显示 `IP 地址变更中`，切换完成后恢复 `Olares 运行中`。  
 
 切换后，你可以用同样的步骤切换回有线网络。
@@ -52,17 +52,18 @@ description: 使用 LarePass 移动端远程管理 Olares，包括监控状态�
 
 当 Olares 迁移至新网络：
 
-1. 将 Olares 与手机接入同一网络并开机。  
+1. 将 Olares 接入有线网络并开机，并将手机接入同一网络的 Wi-Fi。  
 2. 打开 LarePass，进入 **Olares 管理**。  
 3. LarePass 会自动扫描局域网中的 Olares，找到后状态显示 `IP 地址变更中`。  
 4. IP 更新完成后，状态变为 `Olares 运行中`，约需 5–10 分钟。  
 
 ### 蓝牙配网
+
 如果在激活 Olares 时无法连接有线网络，或者 Olares 连接到的有线网络与你的手机网络不同，LarePass 在局域网里无法发现 Olares，你也无法顺利完成激活或设备管理。在这种情况下，可使用蓝牙配网功能将 Olares 连接到你手机的 Wi-Fi 网络。
 
-![蓝牙配网](/images/manual/larepass/bluetooth-network.png)
+![蓝牙配网](/images/zh/manual/larepass/bluetooth-network.png)
 
-1. 在**未发现 Olares** 提示页面底部，点击**蓝牙配网**选项。LarePass 将使用手机蓝牙扫描与 当前登录 Olares ID 匹配的 Olares 设备。
+1. 在**未发现 Olares**提示页面底部，点击**蓝牙配网**选项。LarePass 将使用手机蓝牙扫描与当前登录账号匹配的 Olares 设备。
 
 2. 找到设备后，点击**配置网络**。
 
