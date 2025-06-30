@@ -24,7 +24,7 @@ description: 使用 LarePass 移动端远程管理 Olares，包括监控状态�
 
 在 Olares 管理页右上角点击 <i class="material-symbols-outlined">power_settings_new</i>，可执行：
 
- ![控制设备](/images/manual/larepass/device-control.png)
+ ![控制设备](/images/zh/manual/larepass/device-control.png)
 - **重启 Olares** – 设备将重启，状态显示 `正在重启`，约 5–8 分钟后恢复为 `Olares 运行中`。  
 - **关闭 Olares** – 设备关机，状态显示 `Olares 已关机`，需手动开机。  
 
@@ -36,7 +36,7 @@ description: 使用 LarePass 移动端远程管理 Olares，包括监控状态�
 
 若 Olares 通过有线网络激活，可用 LarePass 切换至同一网络的 Wi-Fi：
 
-![Wi-Fi 切换](/images/manual/larepass/switch-wifi.jpg)
+![Wi-Fi 切换](/images/zh/manual/larepass/switch-wifi.png)
 
 1. 在 Olares 管理页面，点击**Wi-Fi 配置**选项，进入网络切换页面。  
 2. 点击列表里的 Wi-Fi 网络以连接。 若 Wi-Fi 有密码，在弹出窗口里输入密码并确认。  

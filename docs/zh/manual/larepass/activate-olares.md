@@ -7,7 +7,7 @@ description: 了解如何首次激活 Olares、在重新安装后重新激活，
 
 Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅的身份验证体验。本文介绍如何激活 Olares，并在登录时使用 LarePass 完成双因素验证。
 
-:::warning 检查网络连接
+:::warning 确保同一网络
 为避免激活失败，请确保你的手机和 Olares 设备连接到同一网络。
 :::
 
@@ -27,7 +27,7 @@ Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅�
 
 如果重新安装了 Olares，仍然想用原有 Olares ID 重新激活：
 
-1. 在手机上打开 LarePass，看到红色提示 “No active Olares found”。  
+1. 在手机上打开 LarePass，看到红色提示 “未发现运行中的Olares”。  
 2. 点击 **了解更多** > **重新激活**，进入扫码界面。  
 3. 点击 **扫码**，扫描安装向导中的二维码以激活新实例。  
 
@@ -35,16 +35,17 @@ Olares 通过 **Olares ID** 与 **LarePass 移动应用** 提供安全且流畅�
 
 登录 Olares 时，需要完成双因素验证。你可以在 LarePass 中直接确认，或手动输入 6 位验证码。
 
-![2FA](/images/manual/larepass/second-confirmation.png#bordered)
 
 ### 在 LarePass 中确认登录
+![2FA](/images/manual/larepass/second-confirmation.png#bordered)
 
 1. 在手机上打开登录通知。  
 2. 点击 **确认** 完成登录。  
 
 ### 手动输入验证码
+![OTP](/images/manual/larepass/otp-larepass.jpg#bordered)
 
-1. 在安装向导页面选择 **使用一次性验证码验证**。  
+1. 在安装向导页面选择 **使用 LarePass 生成的一次性密码验证**。  
 2. 在手机上打开 LarePass，进入 **设置**。  
 3. 点击顶部的身份验证器，生成一次性验证码。  
 4. 返回安装向导页面，输入验证码完成登录。  

@@ -58,7 +58,7 @@ If your Olares device moves to a different network:
 3. LarePass will automatically scan Olares device within the network. When found, Olares will appear as `IP changing` in LarePass.
 4. Once IP update finishes, the status will revert to `Olares running`. This process may take 5–10 minutes.
 
-### Set Wi-Fi via bluetooth
+### Set Wi-Fi via Bluetooth
 
 If you can't connect your Olares to a wired network during activation, or if Olares is on a different wired network than your phone, LarePass won't be able to find it. This can prevent you from completing activation or device management. In such cases, use the **Bluetooth network configuration** feature to connect your Olares to your phone's Wi-Fi network.
  ![Bluetooth network](/images/manual/larepass/bluetooth-network.png)

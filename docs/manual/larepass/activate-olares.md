@@ -35,10 +35,8 @@ If you have reinstalled Olares, the original instance becomes unavailable. You c
 
 When you log in to Olares, you will be promoted to complete the two-factor verification. You can either confirm the login directly in LarePass app or manually enter a 6-digit verification code.
 
-![2FA](/images/manual/larepass/second-confirmation.png#bordered)
-
 - **To confirm login on LarePass**:
-
+  ![2FA](/images/manual/larepass/second-confirmation.png#bordered)
   1. Open the login notification on your phone.
   2. In the message, click **Confirm** to complete the login process. 
 
