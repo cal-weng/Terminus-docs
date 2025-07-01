@@ -32,7 +32,7 @@ To confirm if this step is required, refer to the [Release notes](https://github
 To update `olaresd` manually:
 
 1. Open Control Hub, and navigate to **Terminal** > **Olares**.
-   ![Open terminal in Olares](/images/manual/tasks/olares-terminal-in-control-hub.png#bordered)
+   ![Open terminal in Olares](/images/manual/olares/olares-terminal-in-control-hub.png#bordered)
 2. Execute the following command in the terminal:
    ```bash
    curl -SsfL https://dc3p1870nn3cj.cloudfront.net/upgrade_1_11_6.sh | bash -

@@ -4,7 +4,7 @@ The Desktop application serves as the primary interface for user interaction wit
 
 ## Desktop concepts
 
-![Desktp[]](/images/manual/tasks/desktop.png)
+![Desktp[]](/images/manual/olares/desktop.png)
 
 ### Dock & Launchpad
 

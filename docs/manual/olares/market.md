@@ -12,13 +12,13 @@ This guide helps users understand how to install, update, and uninstall applicat
 ## Before you begin
 Before you start, it is recommended to familiarize yourself with a few concepts for Olares applications:
 
-| Terminology                                                                                          | Description                                                                                                                      |
-|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [System application](../concepts/application.md#system-applications)                                 | Built-in applications that come pre-installed with Olares, such as Profile, Files, and Vault.                                    |
-| [Community application](../concepts/application.md#community-applications)                           | Applications that are created and maintained by third-party developers.                                                          |
-| &nbsp;&nbsp;[Shared application](../concepts/application.md#cluster-scoped-applications)     | A special category of community applications on Olares designed to provide unified, shared resources or services to all users within an Olares cluster. Only one instance is allowed per cluster. |
-| &nbsp;&nbsp;&nbsp;&nbsp;[Reference application](../concepts/application.md#reference-applications) | The applications that have been granted access to specific shared applications                                             |
-| [Dependencies](../concepts/application.md#dependencies)                                              | Prerequisite applications that must already be installed before a user can access an application that requires them.             |
+| Terminology                                                                             | Description                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [System application](../concepts/application.md#system-applications)                    | Built-in applications that come pre-installed with Olares,<br/> such as Profile, Files, and Vault.                                                                                                |
+| [Community application](../concepts/application.md#community-applications)              | Applications that are created and maintained by third-party<br/> developers.                                                                                                                      |
+| [Shared application](../concepts/application.md#cluster-scoped-applications) | A special category of community applications on Olares<br/> designed to provide unified, shared resources or services to all <br/>users within an Olares cluster. Only one <br/>instance is allowed per cluster. |
+| [Reference application](../concepts/application.md#reference-applications)              | The applications that have been granted access to specific<br/> shared applications                                                                                                                    |
+| [Dependencies](../concepts/application.md#dependencies)                                 | Prerequisite applications that must already be<br/> installed before a user can access an application <br/>that requires them.                                                                              |
 
 ## Find applications
 The Olares Market offers various ways to discover and browse applications:
@@ -40,7 +40,7 @@ You can also browse applications based on their functionality:
     For information on using the recommendation feature in Wise, refer to [discover themed content](./wise/recommend).
     :::
 
-![Market](/images/manual/tasks/market-discover.png#bordered)
+   ![Market](/images/manual/olares/market-discover.png#bordered)
 ## Install applications
 
 1. Open the Market app from the Dock or Launchpad.
@@ -67,9 +67,9 @@ To ensure a shared service is running and accessible within the cluster, follow 
     
     1. The administrator installs the shared application first. This not only launches the shared service for the cluster, but also installs the client-side interface as the reference application.
     
-    ::: tip ComfyUI Launcher
-    ComfyUI Shared contains a web launcher component to facilitate the management of related services and resources. The administrator needs to configure and start the service from the ComfyUI Launcher.
-    :::
+       ::: tip ComfyUI Launcher
+       ComfyUI Shared contains a web launcher component to facilitate the management of related services and resources. The administrator needs to configure and start the service from the ComfyUI Launcher.
+       :::
 
     2. Other members in the cluster install the same application. For these users, only the access point to the shared application is installed.
 

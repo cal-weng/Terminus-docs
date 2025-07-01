@@ -25,7 +25,7 @@ Monitor four fundamental metrics directly from **Overview**:
 - Disk usage
 - Pod status
 
-![Dashboard overview](/images/manual/tasks/dashboard-overview.png#bordered)
+![Dashboard overview](/images/manual/olares/dashboard-overview.png#bordered)
 ### Access detailed metrics
 
 For deeper analysis, click **More details** to view comprehensive monitoring data for the past 7 days.
@@ -46,11 +46,11 @@ The following metrics help you maintain optimal system performance:
 | Network traffic  | Network usage (Mbps)               | Reflects network speed and quality            |
 | Pod status       | Count of pods by state             | Reflects application health                   |
 
-![Physical resource monitoring](/images/manual/tasks/physical-resource-monitoring.png#bordered)
+![Physical resource monitoring](/images/manual/olares/physical-resource-monitoring.png#bordered)
 ### Check resource quota
 You can view your resource quota allocated by the Olares admin.
 
-![Resource quota](/images/manual/tasks/resource-quota.png#bordered)
+![Resource quota](/images/manual/olares/resource-quota.png#bordered)
 
 :::warning
 When your resource quota runs low, you may experience:
@@ -64,11 +64,11 @@ When your resource quota runs low, you may experience:
 ### Track application performance
 The **Usage ranking** section displays the top 5 applications consuming CPU and memory resources. To access the complete list of application resource usage, click **More**.
 
-![Usage ranking](/images/manual/tasks/usage-ranking.png#bordered)
+![Usage ranking](/images/manual/olares/usage-ranking.png#bordered)
 
 The **Analytics** section shows view traffic for all applications within the last 24 hours. For detailed analytics of individual applications, click **More**.
 
-![Analytics](/images/manual/tasks/overview-analytics.png#bordered)
+![Analytics](/images/manual/olares/overview-analytics.png#bordered)
 ## Applications
 
 The **Applications** dashboard helps you monitor resource usage patterns across your applications through various sorting and filtering options.
@@ -79,12 +79,12 @@ Use the dropdown menu in the upper right corner to sort applications based on th
 - Inbound traffic
 - Outbound traffic
 
-![Applications](/images/manual/tasks/applications.png#bordered)
+![Applications](/images/manual/olares/applications.png#bordered)
 
 Toggle between ascending and descending order to identify which applications are consuming the most or least resources.
 
 For applications supporting multiple entrances (such as Wordpress), you can click icons to switch between different entrance types and view their corresponding resource metrics.
-![Multiple entrances](/images/manual/tasks/multiple-entrances.png){width=40%}
+![Multiple entrances](/images/manual/olares/multiple-entrances.png){width=40%}
 :::tip
 * When your application list grows large, quickly locate specific applications by typing their names in the search box at the top of the page.
 * Regularly checking resource consumption patterns helps you identify applications that might need optimization or attention.
@@ -98,7 +98,7 @@ Olares features powerful built-in analytic, helping you understand application u
 Analytics data is only available for applications that have declared the analytics function in their `OlaresManifest.yaml` file.
 :::
 
-![Analytics](/images/manual/tasks/analytics.png#bordered)
+![Analytics](/images/manual/olares/analytics.png#bordered)
 
 Key metrics include:
 

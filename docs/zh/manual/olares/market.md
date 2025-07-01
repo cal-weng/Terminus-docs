@@ -40,7 +40,7 @@ Olares **应用市场**提供多种方式发现和浏览应用：
 有关在 Wise 中使用推荐功能的信息，请参阅[发现主题内容](wise/recommend.md)。
 :::
 
-![市场](/images/manual/tasks/market-discover.png#bordered)
+![市场](/images/manual/olares/market-discover.png#bordered)
 
 ## 安装应用
 

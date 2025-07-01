@@ -9,7 +9,7 @@ This guide explains how to generate two-factor authentication (2FA) codes in Vau
 1. Log in to the website where you want to enable 2FA (e.g., GitHub or OpenAI).
 2. Navigate to the security settings page and enable two-factor authentication using authenticator app.
 
-   ![Enable GitHub 2FA](/images/manual/tasks/2fa-github.png#bordered)
+   ![Enable GitHub 2FA](/images/manual/olares/2fa-github.png#bordered)
 3. Save the provided secret key or QR code for the next steps.
 :::tip
 If the service provides recovery codes, store them securely. They are crucial to account recovery if you lose access to Vault.

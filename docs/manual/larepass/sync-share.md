@@ -68,7 +68,7 @@ To share a library with other members in the same Olares cluster:
    - Read-write: Users can add, delete, and modify Library contents.
 4. Click **Close**.
 
-   ![Share library](/images/manual/tasks/share-library.png#bordered){width="50%"}
+   ![Share library](/images/manual/olares/share-library.png#bordered){width="50%"}
 
 Invited users will see the shared library in their Sync content list. To revoke sharing permissions, simply remove the user from the sharing window.
 

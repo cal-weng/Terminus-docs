@@ -21,11 +21,11 @@ Wise 中的内容推荐分为两个阶段：
 2. 点击**获取**安装你选择的算法。
 3. 等待算法完成本地推荐工作流。
 
-   ![Recommendation algorithm](/images/manual/tasks/install-recommendation.png#bordered)
+   ![Recommendation algorithm](/images/manual/olares/install-recommendation.png#bordered)
 
 安装完成后，你可以在 Wise 的**为你推荐**页面查看推荐内容。此页面显示所有已安装推荐算法的结果，并按算法分为独立内容流。点击顶部的推荐标题即可切换不同算法。
 
-![For you](/images/manual/tasks/for-you.png#bordered)
+![For you](/images/manual/olares/for-you.png#bordered)
 
 :::tip 提示
 你可以订阅内容源，以便未来阅读该来源的所有内容。
@@ -38,7 +38,7 @@ Wise 中的内容推荐分为两个阶段：
 2. 点击任一特定工作流以查看其操作记录。
 3. 点击记录查看详细信息和日志。
 
-![Recommendation algorithm workflow](/images/manual/tasks/recommendation-algorithm-workflow.png#bordered)
+![Recommendation algorithm workflow](/images/manual/olares/recommendation-algorithm-workflow.png#bordered)
 
 工作流可视化显示推荐过程的每个步骤。你可以检查步骤摘要、容器设置和操作日志，确保完全透明。
 

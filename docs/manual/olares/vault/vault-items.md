@@ -55,7 +55,7 @@ When use Vault in Olares for the first time, you will be prompted to set a local
 1. Set the local password for Vault.
 2. Import the Olares ID that's already linked to your Olares server using mnemonic phrase. 
 
-![Vault password](/images/manual/tasks/vault-local-password.png)
+![Vault password](/images/manual/olares/vault-local-password.png)
 
 :::info
 If you don't know where to find the mnemonic phrase, see [back up mnemonic phrase](/manual/larepass/back-up-mnemonics).
@@ -75,10 +75,10 @@ To add a vault item:
 2. Click <i class="material-symbols-outlined">add</i> in the top right corner.
 3. Select a type, such as **Website / App** for storing account details, and click **Create**.
 
-   ![Add vault item](/images/manual/tasks/add-vault-item.png#bordered)
+   ![Add vault item](/images/manual/olares/add-vault-item.png#bordered)
 4. Fill in the required fields like item name, Username, Password, and URL.
 
-   ![Fill item fields](/images/manual/tasks/fill-item-fields.png#bordered)
+   ![Fill item fields](/images/manual/olares/fill-item-fields.png#bordered)
 5. Click **Save** to create the new vault item.
 </template>
 <template #LarePass-desktop-or-mobile>

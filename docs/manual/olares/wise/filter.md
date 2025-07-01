@@ -24,7 +24,7 @@ Filtered views allow you to organize your content by grouping entries based on t
    - Group content from the tag or feed into an existing view, or
    - Create a new view to group all related content.
 
-   ![Filter entries from feeds](/images/manual/tasks/filter-entries-from-feed.png#bordered)
+   ![Filter entries from feeds](/images/manual/olares/filter-entries-from-feed.png#bordered)
 4. If creating a new view:
     - Enter a name for the view (e.g., `Tech Articles`).
     - Click **Confirm** to save the view.
@@ -39,7 +39,7 @@ The following demonstrates how to create a view for the tag "AI" using query lan
 3. Enter a name for the view (e.g., "AI trends"), and enter `tag:AI` in the **Query** filed.
 4. Click **Confirm** to save this view.
 
-   ![Add filtered view](/images/manual/tasks/add-filtered-view.png#bordered){width=70%}
+   ![Add filtered view](/images/manual/olares/add-filtered-view.png#bordered){width=70%}
 
 ## Pin views to sidebar
 You can pin filtered views to the sidebar using either of these methods:
@@ -47,7 +47,7 @@ You can pin filtered views to the sidebar using either of these methods:
 - Locate the view in the list and click <i class="material-symbols-outlined">keep</i> in the corresponding **Operations** column.
 - Open the filtered view, click <i class="material-symbols-outlined">keyboard_arrow_down</i> in the header, and select **Pin to sidebar**.
 
-  ![Pin to sidebar](/images/manual/tasks/pin-to-sidebar.png#bordered){width=50%}
+  ![Pin to sidebar](/images/manual/olares/pin-to-sidebar.png#bordered){width=50%}
 ## Available filters
 To explore all available filtering options and learn how to use them, refer to the following:
 

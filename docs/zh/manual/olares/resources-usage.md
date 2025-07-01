@@ -29,7 +29,7 @@ Olares 的**仪表盘**应用类似于 Windows 资源管理器，为你提供系
 - 磁盘使用量
 - Pod 状态
 
-![Dashboard overview](/images/manual/tasks/dashboard-overview.png#bordered)
+![Dashboard overview](/images/manual/olares/dashboard-overview.png#bordered)
 
 ### 查看详细指标
 
@@ -51,13 +51,13 @@ Olares 的**仪表盘**应用类似于 Windows 资源管理器，为你提供系
 | 网络流量     | 网络使用情况（Mbps）  | 反映网络速度和质量          |
 | 容器组状态    | 按状态划分的 Pod 数量 | 反映应用的健康状态          |
 
-![Physical resource monitoring](/images/manual/tasks/physical-resource-monitoring.png#bordered)
+![Physical resource monitoring](/images/manual/olares/physical-resource-monitoring.png#bordered)
 
 ### 查看资源配额
 
 你可以查看 Olares 管理员分配的资源配额。
 
-![Resource quota](/images/manual/tasks/resource-quota.png#bordered)
+![Resource quota](/images/manual/olares/resource-quota.png#bordered)
 
 :::warning 警告
 当资源配额不足时，可能会出现以下问题：
@@ -71,11 +71,11 @@ Olares 的**仪表盘**应用类似于 Windows 资源管理器，为你提供系
 
 **使用排名**面板显示 CPU 和内存资源消耗最高的前 5 个应用。要查看完整的应用资源使用列表，点击**更多**。
 
-![Usage ranking](/images/manual/tasks/usage-ranking.png#bordered)
+![Usage ranking](/images/manual/olares/usage-ranking.png#bordered)
 
 **分析**面板显示过去 24 小时内所有应用的访问流量。要查看单个应用的详细分析，点击**更多**。
 
-![Analytics](/images/manual/tasks/overview-analytics.png#bordered)
+![Analytics](/images/manual/olares/overview-analytics.png#bordered)
 
 ## 应用
 
@@ -87,12 +87,12 @@ Olares 的**仪表盘**应用类似于 Windows 资源管理器，为你提供系
 - 入站流量
 - 出站流量
 
-![Applications](/images/manual/tasks/applications.png#bordered)
+![Applications](/images/manual/olares/applications.png#bordered)
 
 在升序和降序之间切换，找出资源消耗最高或最低的应用。
 
 对于支持多入口的应用（如 WordPress），你可以点击图标切换不同入口类型，并查看其对应的资源指标。
-![Multiple entrances](/images/manual/tasks/multiple-entrances.png){width=40%}
+![Multiple entrances](/images/manual/olares/multiple-entrances.png){width=40%}
 
 :::tip 提示
 * 当应用列表较长时，可通过页面顶部的搜索框快速定位特定应用。
@@ -107,7 +107,7 @@ Olares 内置强大的流量分析功能，帮助你了解应用的使用模式�
 分析数据仅适用于在 `OlaresManifest.yaml` 文件中声明了分析功能的应用。
 :::
 
-![Analytics](/images/manual/tasks/analytics.png#bordered)
+![Analytics](/images/manual/olares/analytics.png#bordered)
 
 关键指标包括：
 

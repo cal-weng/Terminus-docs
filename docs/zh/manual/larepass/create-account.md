@@ -3,7 +3,7 @@ outline: [2, 4]
 description: 了解如何在 LarePass 应用中创建、导入和管理 Olares ID。
 ---
 
-# 创建 Olares ID
+# 创建、管理账户
 
 管理 Olares 账户是 LarePass 的核心功能。如果你是新用户，需要先创建一个 Olares ID。本指南将介绍创建流程及常用的账户操作。
 
@@ -22,11 +22,11 @@ Olares ID 仅可在 **LarePass** 移动端创建。
 
 快速创建个人 Olares ID：
 
-1. 在 LarePass 中点击 **创建账户**。  
+1. 在 LarePass 中点击**创建账户**。  
 2. 输入想要的 Olares ID（至少 8 个字符，仅限小写字母和数字）。  
-3. 点击 **继续** 完成创建。  
+3. 点击**继续**完成创建。  
 
-   ![快速创建](/images/larepass/create-olares-id.png)
+   ![快速创建](/images/manual/larepass/create-olares-id.png)
 
 获得 Olares ID 后，等待 [安装 Olares](../get-started/install-olares.md) 完成，然后执行 [激活](../get-started/activate-olares.md)。
 
@@ -39,13 +39,13 @@ Olares 目前通过 Gmail 提供 VC 支持，详情参见 [Gmail Issuer Service]
 <Tabs>
 <template #个人-Olares-ID>
 
-1. 在 LarePass 中点击 **创建账户**。  
+1. 在 LarePass 中点击**创建账户**。  
 2. 在创建页面右上角点击 <i class="material-symbols-outlined">display_settings</i>。  
-3. 在 **高级账户创建** 页面选择 **个人 Olares ID**。  
-   ![高级创建](/images/larepass/advanced_creation.png)  
-4. 选择 Gmail VC 选项，按提示完成 Gmail 身份验证后点击 **继续**。  
-5. 绑定完成后点击 **继续**，即可查看你的 Olares ID 信息。  
-   ![绑定 VC 后的 Olares ID](/images/larepass/individual_olares_id_vc.png)
+3. 在**高级账户创建**页面选择 **个人 Olares ID**。  
+   ![高级创建](/images/manual/larepass/advanced_creation.png)  
+4. 选择 Gmail VC 选项，按提示完成 Gmail 身份验证后点击**继续**。  
+5. 绑定完成后点击**继续**，即可查看你的 Olares ID 信息。  
+   ![绑定 VC 后的 Olares ID](/images/manual/larepass/individual_olares_id_vc.png)
 </template>
 <template #组织-Olares-ID>
 
@@ -55,11 +55,11 @@ Olares 目前通过 Gmail 提供 VC 支持，详情参见 [Gmail Issuer Service]
 
 1. 在 LarePass 中点击 **创建账户**。  
 2. 在创建页面右上角点击 <i class="material-symbols-outlined">display_settings</i>。  
-3. 在 **高级账户创建** 页面选择 **组织 Olares ID** > **加入现有组织**。  
-   ![高级创建（组织）](/images/larepass/advanced_creation_org.png)  
-4. 输入组织的域名并点击 **继续**。  
+3. 在**高级账户创建**页面选择**组织 Olares ID** > **加入现有组织**。  
+   ![高级创建（组织）](/images/manual/larepass/advanced_creation_org.png)  
+4. 输入组织的域名并点击**继续**。  
 5. 通过邮箱绑定 VC，目前仅支持 Gmail 与 Google Workspace 邮箱。  
-   ![组织 ID VC](/images/larepass/organization_olares_id.png)  
+   ![组织 ID VC](/images/manual/larepass/organization_olares_id.png)  
 
 完成后，你将获得组织 Olares ID。
 </template>
@@ -73,5 +73,5 @@ Olares 目前通过 Gmail 提供 VC 支持，详情参见 [Gmail Issuer Service]
 确保已 [备份助记词](back-up-mnemonics.md)，否则无法导入。
 :::
 
-1. 在 LarePass 中点击 **导入账户**。  
+1. 在 LarePass 中点击**导入账户**。  
 2. 输入 12 个助记词导入你的 Olares ID。  

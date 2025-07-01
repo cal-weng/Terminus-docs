@@ -18,7 +18,7 @@ SMB（Server Message Block，服务器消息块）是一种用于在网络上共
     - 输入共享路径后，点击 <i class="material-symbols-outlined">add</i> 可将服务器地址添加到**常用服务器**。
     - 要删除已保存的服务器，点击**常用服务器**下的服务器路径，然后点击 <i class="material-symbols-outlined">remove</i>。
     :::
-    ![添加 SMB 共享路径](/images/manual/tasks/add-SMB-share-path.png#bordered)
+    ![添加 SMB 共享路径](/images/manual/olares/add-SMB-share-path.png#bordered)
 4. 输入**用户名**和**密码**，然后点击**确定**。
 
 连接成功后，SMB 共享将显示在**外部存储**目录中，你就可以方便地访问共享文件和文件夹了。

@@ -12,7 +12,7 @@ description: 在 Vault 中设置和使用双因素身份验证。生成安全的
 1. 登录你希望启用 2FA 的网站或应用（例如 GitHub 或 OpenAI）。
 2. 转到安全设置页面，启用基于身份验证应用的双因素身份验证。
 
-   ![Enable GitHub 2FA](/images/manual/tasks/2fa-github.png#bordered)
+   ![Enable GitHub 2FA](/images/manual/olares/2fa-github.png#bordered)
 
 3. 保存提供的密钥或二维码以备后续使用。
 
@@ -42,7 +42,7 @@ description: 在 Vault 中设置和使用双因素身份验证。生成安全的
 
 1. 在你的设备上打开 LarePass，并进入应用的 **Vault** 页面。
 2. 右上角点击 **<i class="material-symbols-outlined">add</i>添加**。
-3. 选择**验证器** 作为项目类型，并点击**创建**。
+3. 选择**验证器**作为项目类型，并点击**创建**。
 4. 填写必填字段：
     - 项目名称：输入服务的描述性名称，例如 `GitHub`。
     - 一次性密码：点击文本字段中的 <i class="material-symbols-outlined">qr_code</i> 以扫描二维码。

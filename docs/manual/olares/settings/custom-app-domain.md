@@ -38,7 +38,7 @@ For community applications, you can quickly obtain a simple and memorable URL by
 4. Next to **Set custom Route ID**, click <i class="material-symbols-outlined">add</i>.
 5. Enter a route ID that is more memorable and recognizable. For example, `jellyfin`.
 
-   ![Custom route ID](/images/manual/tasks/custom-route-id.png#bordered)
+   ![Custom route ID](/images/manual/olares/custom-route-id.png#bordered)
 6. Click **Confirm**.
 
 Now, you will be able to access Jellyfin from your new URL: `https://jellyfin.local.bob.olares.com`.
@@ -53,11 +53,11 @@ Only applications with the authentication level set to **Internal** or **Public*
 3. Go to **Entrances** > **Set up endpoint**.
 4. Next to **Set custom domain**, click <i class="material-symbols-outlined">add</i>.
 
-   ![Set third-party domain](/images/manual/tasks/set-custom-domain.png#bordered)
+   ![Set third-party domain](/images/manual/olares/set-custom-domain.png#bordered)
 5. Enter your custom domain, for example, `hello.coffee`, and click **Confirm**.
 6. Click **Activation**, and follow the instructions to add a CNAME record on your domain hosting site. Then click **Confirm**.
 
-   ![Activate third-party domain](/images/manual/tasks/activate-custom-domain.png#bordered)
+   ![Activate third-party domain](/images/manual/olares/activate-custom-domain.png#bordered)
    At this stage, the custom domain status will display as "Waiting for CNAME Activation". This means you need to wait for the DNS changes to propagate. The propagation time typically ranges from a few minutes to 48 hours, depending on your domain provider.
 
    Olares will periodically check if the DNS record is correctly configured. Once the CNAME record is verified, the custom domain status will automatically update to "Activated". After activation, you can access Affine using the new URL: `hello.coffee`.
@@ -67,5 +67,5 @@ To allow public access to your custom domain without login, update the access po
 2. Click **Entrance**, then under **Create access policies**, set **Authentication level** to **Public**.
 3. Click **Submit** to apply changes.
    
-   ![Set auth level to public](/images/manual/tasks/set-auth-level-to-public.png){width=50%}
+   ![Set auth level to public](/images/manual/olares/set-auth-level-to-public.png){width=50%}
 :::

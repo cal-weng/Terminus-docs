@@ -7,7 +7,7 @@ description: Create and customize your Olares personal homepage with a unique co
 
 You can create a distinctive personal homepage that showcases your digital identity.
 
-![Profile](/images/manual/tasks/profile.png)
+![Profile](/images/manual/olares/profile.png)
 
 ## Access your homepage
 Your personal homepage's default URL is `{Local name}.olares.com`.

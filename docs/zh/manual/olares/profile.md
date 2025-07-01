@@ -7,7 +7,7 @@ description: 创建独特的 Olares 个人主页，设计个性化封面、添�
 
 你可以创建一个独特的个人主页，展示你的数字身份。
 
-![Profile](/images/manual/tasks/profile.png)
+![Profile](/images/manual/olares/profile.png)
 
 ## 访问你的主页
 
