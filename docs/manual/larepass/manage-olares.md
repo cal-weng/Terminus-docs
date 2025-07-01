@@ -40,7 +40,7 @@ If Olares was activated over Ethernet, you can switch to the Wi-Fi on the same n
 ![Wi-Fi switch](/images/manual/larepass/switch-wifi.jpg)
 
 1. Tap the **Wi-Fi configuration** option to enter the network selection page.
-2. Tap the Wi-Fi network from the list. If the network is secured, enter the password and tap **Confirm**.
+2. Tap the Wi-Fi network from the list. If the network is password-protected, enter the password and tap **Confirm**.
 3. Once connected, the network switches to Wi-Fi automatically. The transition takes approximately 5 minutes. The Olares status will change to `IP changing` before it reverts to `Olares Running`.
 
 You can switch back to the wired network following the same steps.
