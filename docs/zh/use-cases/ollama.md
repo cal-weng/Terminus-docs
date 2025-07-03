@@ -11,7 +11,7 @@ Ollama 是一个轻量级平台，可以让你在本地机器上直接运行 `de
 ## 开始之前
 请确保满足以下条件：
 - 当前登录账号为 Olares 管理员。
-- 确保设备已启用 [LarePass 专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)。
+- 确保设备已安装 LarePass 并 [启用专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)。
 
 ## 安装 Ollama
 

@@ -20,7 +20,7 @@ SearXNG 作为 Perplexica 的后端，是一个注重隐私的元搜索引擎。
   :::tip
   建议使用 `gemma2` 等轻量但功能强大的模型，可在速度和性能间取得良好平衡。
   :::
-- 确保访问设备已启用 [LarePass 专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)。
+- 确保访问设备已安装 LarePass 并 [启用专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)。
 
 ## 配置 Perplexica
 1. 管理员从应用市场安装 SearXNG。
