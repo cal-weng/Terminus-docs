@@ -13,16 +13,12 @@ In this tutorial, you will learn how to:
 - Install and set up Jellyfin for media streaming.
 
 ## Enable Olares VPN connection
-To achieve smooth streaming, [enable VPN connection](../manual/larepass/private-network.md) in LarePass for your streaming device. This ensures all traffic from devices routes through the dedicated network to Olares, providing fast speed and stable performance.
+To achieve smooth streaming across networks, [enable VPN connection](../manual/larepass/private-network.md) in LarePass for your streaming device. Devices with activated VPN will use the VPN connection to access Olares, whether through the LarePass client or a browser.
 :::tip
 For different LarePass download options, visit [the official page](https://olares.com/larepass).
 :::
 
 <!--@include: ./remote.reusables.md{4,22}-->
-
-Once enabled, you can also access your applications using the format: `https://[RouteID].[OlaresDomainName]`.
-
-Devices with activated VPN will use the VPN connection to access Olares, whether through the LarePass client or a browser.
 
 ## Access media files in LarePass
 After enabling VPN, you can browse media files stored on Olares.

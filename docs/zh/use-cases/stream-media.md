@@ -12,17 +12,14 @@ description: 通过 Olares 搭建私人流媒体服务器，配置 VPN 远程访
 - 安装和设置 Jellyfin 以实现串流。
 
 ## 打开 Olares 专用网络
-在 LarePass 中[启用专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)可确保安装设备通过专用网络传输所有流量，从而提供高速、流畅的流媒体播放体验。
+为了在不同网络中实现流畅的流媒体播放，需要在 LarePass 中[启用专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)。
+启用专用网络的设备无论是通过 LarePass 客户端还是浏览器访问 Olares，都会使用专用网络连接。
 
 :::tip
 如需下载不同版本的 LarePass，请访问[官方页面](https://olares.cn/larepass)。
 :::
 
 <!--@include: ./remote.reusables.md{4,24}-->
-
-开启后，你还可以通过以下格式访问应用：`https://[RouteID].[OlaresDomainName]`。
-
-启用专用网络的设备无论是通过 LarePass 客户端还是浏览器访问 Olares，都会使用专用网络连接。
 
 ## 在 LarePass 中访问媒体文件
 启用专用网络后，你可以浏览存储在 Olares 上的媒体文件。
