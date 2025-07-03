@@ -27,8 +27,7 @@ Each Olares application can have one or more entrances that serve as access poin
 
 ## Acccess to private entrances via VPN
 
-Simply enable [LarePass VPN](/manual/larepass/private-network.md) on your device to securely and quickly access your private
-applications via their dedicated URLs (e.g., https://vault.alice123.olares.com).
+Simply enable [LarePass VPN](/manual/larepass/private-network.md) on your device to securely and quickly access your private applications via their dedicated URLs (e.g., https://vault.alice123.olares.com).
 
 ::: tip Note
 If LarePass VPN is not enabled, requests to your private entrances will be routed through your reverse proxy tunnel to Olares, which may cause network latency and incur charges.

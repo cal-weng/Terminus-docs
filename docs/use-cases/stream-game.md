@@ -74,7 +74,7 @@ Steam Headless also integrates Sunshine, the streaming server. To stream games u
 
 1. Open the Moonlight client on your streaming device and click the <i class="material-symbols-outlined">add_to_queue</i> button in the top-right corner.
 
-2. When promoted to enter the IP address of your host PC, enter the local URL of Steam, for example, `139ebc4f0.<your Olares ID>.olares.com`.
+2. When promoted to enter the IP address of your host PC, enter the URL of Steam, for example, `139ebc4f0.<your Olares ID>.olares.com`.
 
    ::: tip Note
    Do not include `https://`.

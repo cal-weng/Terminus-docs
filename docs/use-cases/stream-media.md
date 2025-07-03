@@ -28,7 +28,7 @@ After enabling VPN, you can browse media files stored on Olares.
 2. Click on any file to start playback on your computer or mobile device.
 
 ### Access from browser
-1. Open files from your Olares desktop, or directly using the app address: `https://files.[OlaresDomainName]`.
+1. Open files from your Olares desktop, or directly using the app's URL: `https://files.[OlaresDomainName]`.
 2. Locate your media directory, and click on video files to begin playback.
 
 ## Access media files using Jellyfin

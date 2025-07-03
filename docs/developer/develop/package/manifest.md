@@ -311,10 +311,10 @@ ports:
 ```
 :::
 
-Olares automatically assigns a random port (33333-36789) for your app. These ports can be accessed via the app entrance domain from local network. For example: `84864c1f.local.your_olares_id.olares.com:33805`.
+Olares automatically assigns a random port (33333-36789) for your app. These ports can be accessed via the app entrance domain. For example: `84864c1f.your_olares_id.olares.com:33805`.
 
 :::info NOTE
-The exposed ports can only be accessed on the local network or through a VPN.
+The exposed ports can only be accessed through LarePass VPN.
 :::
 
 ## Permission
