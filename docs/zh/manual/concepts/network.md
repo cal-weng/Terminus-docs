@@ -23,11 +23,16 @@ Olares 为用户提供无障碍且安全灵活的网络解决方案。本文档�
 
 - **内部入口**
   - 和私有入口类似
-  - 设备通过本地网络或者 Olares 专用网络访问应用时无需鉴权
+  - 设备 LarePass 专用网络访问应用时无需鉴权
 
-## 通过 local 访问
+## 通过 LarePass 专用网络访问私有入口
 
-在局域网内或使用[专用网络](../larepass/private-network.md)访问 Olares 上的应用时，可以在应用 URL 中加上 `.local` 字段，以获取更快的访问速度。例如，`https://vault.local.alice123.olares.cn`。
+只需在设备上安装 LarePass，并启用专用网络 (/manual/larepass/private-network.md)，即可通过专属网址（如
+https://vault.alice123.olares.com）安全、快速地访问您的私有应用。
+
+::: tip 注意
+如不启用 LarePass 专用网络，私有入口的请求会通过你的反向代理通道到达 Olares，可能会有网络延迟并产生费用。
+:::
 
 ## 端点
 

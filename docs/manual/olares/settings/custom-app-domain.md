@@ -23,11 +23,7 @@ Olares provides two methods to optimize application access addresses:
 ### Custom route ID
 Route ID is a crucial component in accessing your Olares applications. It forms part of the URL you use to reach your applications through a web browser:
 
-`https://{routeID}.local.{OlaresDomainName}`
-
-::: info
- `local` in a URL signifies a private access point, typically used by apps offering services for individual users, families, or teams. Public-facing apps hosting external services do not include `local` in their URLs. For more details, see [entrance](../../concepts/network.md#entrance).
-:::
+`https://{routeID}.{OlaresDomainName}`
 
 For convenience, Olares uses easy-to-remember route IDs for pre-installed system applications.
 For community applications, you can quickly obtain a simple and memorable URL by changing the route ID. To use Jellyfin as an example:
@@ -41,7 +37,7 @@ For community applications, you can quickly obtain a simple and memorable URL by
    ![Custom route ID](/images/manual/olares/custom-route-id.png#bordered)
 6. Click **Confirm**.
 
-Now, you will be able to access Jellyfin from your new URL: `https://jellyfin.local.bob.olares.com`.
+Now, you will be able to access Jellyfin from your new URL: `https://jellyfin.bob.olares.com`.
 
 ### Custom domain name
 Instead of using the default Olares domain, you can use your own domain name to access your applications, making them more professional and easier to remember. To use Affine as an example:

@@ -43,9 +43,7 @@ Before starting, ensure you have:
 4. Launch ComfyUI from your desktop, and verify the installation by generating a sample image.
 5. Copy the address of ComfyUI for next steps.
 :::tip
-For security, you should always run AI applications within your local network. When properly configured, your ComfyUI URL should contain `.local`.
-
-If `.local` is missing, check your local network environment and make sure no external network proxy service is enabled.
+For security, you should always run AI applications within LarePass VPN enabled.
 :::
 
 ## Set up Krita

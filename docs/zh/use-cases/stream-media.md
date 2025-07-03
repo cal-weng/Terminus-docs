@@ -20,7 +20,7 @@ description: 通过 Olares 搭建私人流媒体服务器，配置 VPN 远程访
 
 <!--@include: ./remote.reusables.md{4,24}-->
 
-开启后，你还可以通过以下格式访问应用：`https://[RouteID].local.[OlaresDomainName]`。
+开启后，你还可以通过以下格式访问应用：`https://[RouteID].[OlaresDomainName]`。
 
 启用专用网络的设备无论是通过 LarePass 客户端还是浏览器访问 Olares，都会使用专用网络连接。
 
@@ -34,7 +34,7 @@ description: 通过 Olares 搭建私人流媒体服务器，配置 VPN 远程访
 ![在 LarePass 客户端中播放视频](/images/zh/manual/use-cases/view-video-from-larepass-desktop.png#bordered)
 
 ### 通过浏览器访问
-1. 以网页模式打开**文件管理器**，或者直接使用本地地址：`https://files.local.[OlaresDomainName]`。
+1. 以网页模式打开**文件管理器**，或者直接使用本地地址：`https://files.[OlaresDomainName]`。
 
    ![打开文件管理器](/images/zh/manual/use-cases/view-video-from-files.png#bordered)
 2. 找到你的媒体目录，点击视频文件即可开始播放。

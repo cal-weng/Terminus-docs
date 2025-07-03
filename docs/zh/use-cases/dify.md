@@ -37,7 +37,7 @@ Dify 是一个 AI 应用开发平台。它是 Olares 集成的关键开源项目
 
 2. 在 Dify 的 模型提供者商配置页面，选择 Ollama 作为模型提供者商，并进行以下配置：
     - **模型名称**：填写模型名称，例如：`gemma2`。
-    - **基础 URL**：填入 Ollama 本地地址: `https://39975b9a1.local.{username}.olares.cn`。将 `{username}` 替换为 Olares 管理员的用户名。例如：`https://39975b9a1.local.marvin123.olares.com`。
+    - **基础 URL**：填入 Ollama 本地地址: `https://39975b9a1.{username}.olares.cn`。将 `{username}` 替换为 Olares 管理员的用户名。例如：`https://39975b9a1.marvin123.olares.com`。
    
     ![配置 Ollama](/images/zh/manual/use-cases/dify-add-gemma2.png#bordered){width=70%}
 

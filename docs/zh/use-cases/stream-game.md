@@ -57,7 +57,7 @@ Steam Headless 集成了 Sunshine 串流服务器。要使用 Moonlight 客户�
 
 ### 准备配对
 
-1. 从浏览器获取 Steam Headless 页面的 URL，并添加端口号 `:47990`，如 `https://139ebc4f0.local.<你的olares ID>.olares.cn:47990`。通过该网址访问 Sunshine 串流服务器的控制页面。
+1. 从浏览器获取 Steam Headless 页面的 URL，并添加端口号 `:47990`，如 `https://139ebc4f0.<你的olares ID>.olares.cn:47990`。通过该网址访问 Sunshine 串流服务器的控制页面。
    
    ![Sunshine 控制台](/images/manual/tutorials/access-sunshine.png#bordered)
    
@@ -71,10 +71,10 @@ Steam Headless 集成了 Sunshine 串流服务器。要使用 Moonlight 客户�
 ### 在 Moonlight 端添加主机
 
 1. 在串流设备上打开 Moonlight 客户端，点击右上角 <i class="material-symbols-outlined">add_to_queue</i> 按钮添加主机。
-2. 输入主机 IP 地址，即 Steam 的本地 URL：`139ebc4f0.local.<你的olares ID>.olares.cn`。
+2. 输入主机 IP 地址，即 Steam 的本地 URL：`139ebc4f0.<你的olares ID>.olares.cn`。
    
    ::: tip 注意
-   仅需填入 URL 部分（无需 `https://`），要包含 `local` 关键词。
+   仅需填入 URL 部分（无需 `https://`）。
    :::
 
 3. 点击**确定**，界面上会出现一个锁定状态的主机图标。

@@ -59,7 +59,7 @@ redroid runs as a headless backend on Olares. To install redroid:
 
     c. Append the exported port of redroid (`46878`) to the base domain.
 
-    As redroid only allows local access, the domain should also include `.local`. Here is an example of our final URL to access the redroid service: `beb583c3.local.olares01.olares.com:46878`.
+    Here is an example of our final URL to access the redroid service: `beb583c3.olares01.olares.com:46878`.
 
 ## Connect to the redroid service
 
@@ -86,20 +86,20 @@ To access the Android instance on Olares, you'll need to connect to the redroid 
 3. Use `adb` to connect to the redroid service via the URL obtained earlier:
 
     ```powershell
-    .\adb.exe connect beb583c3.local.<olares_id>.olares.cn:46878
+    .\adb.exe connect beb583c3.<olares_id>.olares.cn:46878
     ```
 
     The connection is successful if you see the example output:
 
     ```powershell
     # Example output
-    already connected to beb583c3.local.<olares_id>.olares.cn:46878
+    already connected to beb583c3.<olares_id>.olares.cn:46878
     ```
 
 4. Render UI and audio using `scrcpy`:
 
     ```powershell
-    .\scrcpy.exe -s beb583c3.local.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
+    .\scrcpy.exe -s beb583c3.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
     ````
     
     Upon successful execution, the command line outputs the device and rendering info. And the Android screen pops up.
@@ -137,20 +137,20 @@ On macOS, `scrcpy` does not include `adb` by default, so you'll need to install 
 4. Connect to the redroid service URL obtained earlier via `adb`:
 
     ```bash
-    adb connect beb583c3.local.<olares_id>.olares.cn:46878
+    adb connect beb583c3.<olares_id>.olares.cn:46878
     ```
 
     The connection is successful if you see the example output.
 
     ```bash
     # Example output
-    already connected to beb583c3.local.<olares_id>.olares.cn:46878
+    already connected to beb583c3.<olares_id>.olares.cn:46878
     ```
 
 5. Render UI and audio using `scrcpy`:
 
     ```bash
-    scrcpy -s beb583c3.local.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
+    scrcpy -s beb583c3.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
     ```
     Upon success, the command line outputs the device information. The Android screen pops up.
 
@@ -178,7 +178,7 @@ Once connected, you can use `adb` to install third-party APK apps on the Android
     ```powershell 
     # Example output
     List of devices attached
-    beb583c3.local.<olares_id>.olares.com:46878 device 
+    beb583c3.<olares_id>.olares.com:46878 device 
     product:ziyi model:23031PN0DC device:ziyi 
     transport_id:4
     ```
@@ -211,7 +211,7 @@ Once connected, you can use `adb` to install third-party APK apps on the Android
     ```bash 
     # Example output
     List of devices attached
-    beb583c3.local.<olares_id>.olares.com:46878 device 
+    beb583c3.<olares_id>.olares.com:46878 device 
     product:ziyi model:23031PN0DC device:ziyi 
     transport_id:4
     ```

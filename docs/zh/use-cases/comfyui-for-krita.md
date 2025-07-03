@@ -47,12 +47,9 @@ description: 将 ComfyUI 与 Krita 结合使用的教程，学习如何配置 AI
 4. 从桌面启动 ComfyUI，通过生成测试图像验证安装是否成功。
 5. 复制 ComfyUI 地址，以备后续使用。
    :::tip
-   出于安全考虑，应始终在局域网中运行 AI 应用。正确配置后，ComfyUI 的 URL 中应包含“`.local`”字段。
-   如果缺少“`.local`”，请检查本地网络环境，确保当前设备和 Olares 处于同一网段，并且未启用外部网络代理服务。
+   出于安全考虑，应始终在 LarePass 专用网络激活时运行 AI 应用。详见[通过专用网络随时随地访问 Olares 应用](../manual/larepass/private-network.md)。
    :::
-   :::tip
-   如果你需要在外网远程使用 Olares 上的 AI 应用，可以使用 LarePass 的专用网络功能，详见[通过专用网络随时随地访问 Olares 应用](../manual/larepass/private-network.md)。
-   :::
+
 ## 配置 Krita
 
 1. 下载 [Krita](https://krita.org/en/download/)。

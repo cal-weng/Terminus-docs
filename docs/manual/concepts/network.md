@@ -23,11 +23,16 @@ Each Olares application can have one or more entrances that serve as access poin
 
 - **Internal entrance**
   - Functions similarly to private entrance
-  - No authentication required when accessing applications through local network or VPN
+  - No authentication required when accessing applications through LarePass VPN
 
-## Local access
+## Acccess to private entrances via VPN
 
-When accessing applications on Olares within a LAN or after starting a [private network](/manual/larepass/private-network.md), you can add the `.local` field to the application URL for faster access speeds. For example, `https://vault.local.alice123.olares.com`.
+Simply enable [LarePass VPN](/manual/larepass/private-network.md) on your device to securely and quickly access your private
+applications via their dedicated URLs (e.g., https://vault.alice123.olares.com).
+
+::: tip Note
+If LarePass VPN is not enabled, requests to your private entrances will be routed through your reverse proxy tunnel to Olares, which may cause network latency and incur charges.
+:::
 
 ## Endpoints
 

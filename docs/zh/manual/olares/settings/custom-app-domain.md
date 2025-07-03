@@ -21,11 +21,7 @@ Olares 提供两种方法来优化应用的访问地址：
 ### 自定义路由 ID
 路由 ID 是访问 Olares 应用的重要组成部分，和 Olares 域名一起构成了你通过 Web 浏览器访问应用的 URL：
 
-`https://{routeID}.local.{OlaresDomainName}`
-
-::: info Local 访问
-URL 中的 `local` 表示这是一个私有访问入口，通常用于为个人用户、家庭或团队提供服务的应用。面向公众的应用不会包含 `local`。更多详情，请参阅 [入口](../../concepts/network.md#入口)。
-:::
+`https://{routeID}.{OlaresDomainName}`
 
 为方便起见，Olares 为预安装的系统应用使用了易于记忆的路由 ID。对于社区应用，你可以通过更改路由 ID 快速获得一个简单易记的 URL。
 
@@ -40,7 +36,7 @@ URL 中的 `local` 表示这是一个私有访问入口，通常用于为个人�
    ![自定义路由 ID](/images/zh/manual/tasks/custom-route-id.png#bordered)
 6. 点击**确认**。
 
-现在，你可以通过新的 URL 访问 Jellyfin：`https://jellyfin.local.bob.olares.cn`。
+现在，你可以通过新的 URL 访问 Jellyfin：`https://jellyfin.bob.olares.cn`。
 
 ### 自定义域名
 
