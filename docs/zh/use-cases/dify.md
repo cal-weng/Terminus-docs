@@ -9,6 +9,7 @@ Dify 是一个 AI 应用开发平台。它是 Olares 集成的关键开源项目
 要使用本地 AI 模型，请确保你的环境中已配置以下内容：
 - Olares 环境中已安装并运行 [Ollama](ollama.md)。
 - 已安装 [Open WebUI](openwebui.md)，并下载了你偏好的语言模型。
+- 访问设备已安装 LarePass 并已[激活专用网络](../manual/larepass/private-network.md)。
   :::tip 提示
   建议使用 `gemma2` 或 `qwen` 等轻量但功能强大的模型，可在速度和性能间取得良好平衡。
   :::

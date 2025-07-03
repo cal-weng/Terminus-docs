@@ -26,11 +26,7 @@ Make sure the following requirements are met:
     - redroid is resource-intensive. For best performance, we recommend using a machine with at least an 8-core CPU and 16GB of RAM.
     :::
 
-- Your device and Olares are on the same local network.
-
-    :::tip Remote access
-    If your device is on a different network, use [LarePass](https://olares.com/larepass) to enable a private network connection to Olares.
-    :::
+- Enable [LarePass VPN](../manual/larepass/private-network.md) on your device.
 
 ## Install dependent kernel modules
 

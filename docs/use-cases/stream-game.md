@@ -24,10 +24,7 @@ Before you begin, ensure the following:
 
 - Olares is up and running on a machine equipped with an NVIDIA GPU.
 - Your streaming device has Moonlight installed. Visit the [Moonlight website](https://moonlight-stream.org/) to download and install the appropriate version.
-- Your streaming device is connected to the same LAN as your Olares.
-   :::tip Remote streaming
-   For remote streaming, install LarePass on your streaming device. You can download the appropriate version from the [LarePass site](https://olares.com/larepass).
-   :::
+- [Enable LarePass VPN](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your streaming device.
 - You have a valid Steam account to access your games.
 
 ## Install Steam Headless

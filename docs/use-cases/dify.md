@@ -8,6 +8,7 @@ Dify is an AI application development platform. It's one of the key open-source 
 ## Before you begin
 To use local AI models on Dify, ensure you have:
 - [Ollama installed](ollama.md) and running in your Olares environment.
+- LassPass installed and [VPN enabled](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your device.
 - [Open WebUI installed](openwebui.md) with your preferred language models downloaded.
   :::tip
   For optimal performance, consider using lightweight yet powerful models like `gemma2` or `qwen`, which offer a good balance between speed and capability.

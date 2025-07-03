@@ -11,6 +11,10 @@ Open WebUI 为大语言模型（LLM）提供了直观的管理界面，支持 Ol
 * 语音交互（语音转文字和文字转语音）
 * 图像生成功能
 
+:::tip 打开 LarePass 专用网络
+确保访问设备已启用 [LarePass 专用网络](../manual/larepass/private-network.md#在-larepass-中启用专用网络)以确保安全、流畅的访问体验。
+:::
+
 ## 安装 Ollama 和 Open WebUI
 使用 Open WebUI 前需要先安装 Ollama：
 * **管理员**：需要同时安装“Ollama”和“Open WebUI”。

@@ -43,7 +43,7 @@ Before starting, ensure you have:
 4. Launch ComfyUI from your desktop, and verify the installation by generating a sample image.
 5. Copy the address of ComfyUI for next steps.
 :::tip
-For security, you should always run AI applications within LarePass VPN enabled.
+For security, you should always run AI applications with [LarePass VPN enabled](../manual/larepass/private-network.md).
 :::
 
 ## Set up Krita
@@ -75,6 +75,7 @@ Establish a secure connection between Krita and ComfyUI:
    If connection fails:
    - Verify network connectivity between your computer and Olares.
    - Confirm ComfyUI's authentication level is set to "Internal".
+   - Confirm LarePass VPN is enabled.
    - Check for and disable any interfering proxy services.
    - Ensure ComfyUI is running correctly on your Olares.
    :::
