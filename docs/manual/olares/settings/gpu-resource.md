@@ -1,45 +1,62 @@
 ---
 outline: [2, 3]
-description: Optimize GPU usage in Olares with flexible memory management options. Choose between shared and standalone modes for different resource requirements.
+description: Manage and optimize GPU resources in Olares with centralized controls, supporting time-slicing, exclusive access, and VRAM-slicing across single or multi-node setups.
 ---
-
 # Manage GPU usage
 :::info
-Only Olares admin can change GPU usage mode. This ensures optimal resource management across the system and prevents conflicts between users' resource needs.
+Only Olares admin can configure GPU usage mode. This ensures optimal resource management across the system and prevents conflicts between users' resource needs.
 :::
 
-Olares offers flexible GPU memory management to support resource-intensive tasks like image generation and large language models. Users can choose between two modes to best suit their needs: **shared mode** and **standalone mode**.
+Olares allows you to harness the full power of your GPUs to accelerate demanding tasks such as large language models, image and video generation, and gaming. Whether your GPUs are on a single node or spread across multiple nodes, you can manage them conveniently from one centralized interface.
 
-## GPU usage modes
-:::tip
-Use shared mode when running multiple lightweight tasks or when you want to ensure fair resource distribution among users. Switch to standalone mode for complex AI models or high-resolution image generation tasks that require dedicated resources.
-:::
+This guide helps you understand and configure GPU allocation modes to maximize hardware performance.
 
-### Shared mode (default)
+## Understand GPU allocation modes
 
-In shared mode, Olares intelligently allocates GPU memory across multiple applications:
+Olares supports three GPU allocation modes. Choosing the right mode helps optimize performance based on your needs.
 
-* Applications share up to the maximum GPU memory available on your hardware.
-* Tasks are executed in order of request, ensuring fair resource distribution.
-* Ideal for users running multiple lightweight GPU tasks simultaneously.
+### Time-slicing (default)
 
-### Standalone mode
+In time-slicing mode, GPU resources are shared among multiple applications sequentially.
 
-For users requiring dedicated GPU resources, standalone mode can be enabled:
+* Tasks run in the order they were requested, ensuring fair distribution.
+* Suitable for multiple lightweight applications not requiring constant GPU access.
 
-* Applications can request up to the maximum GPU memory available on your hardware exclusively.
-* Enhances performance for single, resource-intensive tasks. 
-* Large memory requests may limit resources available for subsequent applications.
+### Exclusive access mode
 
-:::info
-For shared applications, such as SD Web UI (Stable Diffusion) and ComfyUI, GPU memory is managed by the shared application itself, not individual user instances.
-This means that the GPU mode settings described here do not directly affect reference applications.
-:::
+In exclusive access mode, the entire GPU processing power and memory is dedicated exclusively to one application.
 
-## Change GPU mode for application
-1. Open the Settings app from the Dock or Launchpad.
-2. Select **System** from the left sidebar, and click **GPU** on the right.
-3. In the dropdown **VRAM mode**, select the required GPU usage mode.
+* Best for intensive, performance-critical applications like AI-generated imagery or high-performance gaming servers.
+* Large memory demands may limit availability for other tasks.
 
+### VRAM-slicing mode
+
+In VRAM-slicing mode, GPU memory (VRAM) is partitioned, providing a fixed allocation of memory to specific applications.
+
+* Ideal for running multiple GPU-intensive applications simultaneously, each with guaranteed VRAM allocation.
+
+## View GPU Status
+
+To view your GPU status:
+
+1. Navigate to **Settings > GPU**. The GPU list shows each GPU’s model, associated node, total VRAM, and current allocation mode.
+2. Click on a specific GPU to visit its details.
+
+## Configure GPU allocation mode
+
+To configure a specific GPU:
+
+1. Click any GPU from the GPU list to access its details page.
+2. Under the **GPU allocation mode** dropdown, select your desired mode:
+
+    * **Time-slicing:** Click **Confirm**.
+    * **Exclusive access mode:**
+      1. From **Select the exclusive application** dropbox, choose your target application.
+      2. Click **Confirm**.
+    * **VRAM-slicing mode:**
+        1. From the **Allocate VRAM to applications** section, click the **Add application** button. 
+        2. Select your target application from the dropdown.
+        3. Specify the VRAM allocation in GB, then click **Confirm**.
+   
 ## Learn more
 - [Monitor GPU usage in Olares](../resources-usage.md)
