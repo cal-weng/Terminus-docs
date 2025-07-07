@@ -46,16 +46,3 @@ RecommendName
 |-- LICENSE                   # Optional: plain text file containing the chart license
 |-- README.md                 # Optional: readable README file
 ```
-
-- A typical application chart for `Large Language Model`:
-
-```
-ModelName
-|-- Chart.yaml                # Required: YAML file containing chart metadata
-|-- OlaresManifest.yaml     # Required: containing LLM configuration
-|-- values.yaml               # Required: default configuration values of the chart
-├── modelConfig.yaml          # Required: containing model configuration
-|-- templates                 # Required: template directory, it is usually empty for Model.
-|-- LICENSE                   # Optional: plain text file containing the chart license
-└── README.md                 # Optional: readable README file
-```

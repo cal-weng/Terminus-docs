@@ -679,10 +679,6 @@ const side = {
               link: "/zh/developer/develop/package/manifest",
             },
             {
-              text: "模型",
-              link: "/zh/developer/develop/package/model",
-            },
-            {
               text: "推荐算法",
               link: "/zh/developer/develop/package/recommend",
             },
