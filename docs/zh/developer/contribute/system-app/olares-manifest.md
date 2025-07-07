@@ -87,8 +87,6 @@ permission:
     ops:
     - Query
 options:
-  analytics:
-    enabled: false
   resetCookie:
     enabled: false
   dependencies:

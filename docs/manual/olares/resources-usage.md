@@ -1,6 +1,6 @@
 ---
 outline: [2, 3]
-description: Monitor your Olares system and application performance with comprehensive dashboards tracking CPU, memory, disk usage, and application analytics for optimal resource management.
+description: Monitor your Olares system and application performance with comprehensive dashboards tracking CPU, memory and disk usage for optimal resource management.
 ---
 
 # Monitor system and application status
@@ -13,7 +13,6 @@ When applications in your Olares are exposed to the public internet, they genera
 View your system's status through these specialized dashboards:
 - **Overview**: Shows current resource usage and system health.
 - **Applications**: Displays running applications and their status.
-- **Analytics**: Presents detailed performance metrics with up to one year of historical data.
 
 ## Overview
 
@@ -66,9 +65,6 @@ The **Usage ranking** section displays the top 5 applications consuming CPU and 
 
 ![Usage ranking](/images/manual/olares/usage-ranking.png#bordered)
 
-The **Analytics** section shows view traffic for all applications within the last 24 hours. For detailed analytics of individual applications, click **More**.
-
-![Analytics](/images/manual/olares/overview-analytics.png#bordered)
 ## Applications
 
 The **Applications** dashboard helps you monitor resource usage patterns across your applications through various sorting and filtering options.
@@ -89,23 +85,3 @@ For applications supporting multiple entrances (such as Wordpress), you can clic
 * When your application list grows large, quickly locate specific applications by typing their names in the search box at the top of the page.
 * Regularly checking resource consumption patterns helps you identify applications that might need optimization or attention.
 :::
-
-## Analytics
-
-Olares features powerful built-in analytic, helping you understand application usage patterns, optimize user experience, and make data-driven decisions. The **Analytics** dashboard displays key metrics for each application spanning up to one year, including page views, unique visitors, and average visit time.
-
-:::info
-Analytics data is only available for applications that have declared the analytics function in their `OlaresManifest.yaml` file.
-:::
-
-![Analytics](/images/manual/olares/analytics.png#bordered)
-
-Key metrics include:
-
-| Metric             | What it shows                                                                 |
-|--------------------|-------------------------------------------------------------------------------|
-| Views              | Total webpage accesses, counted individually even for the same user           |
-| Visitors           | Unique individuals accessing your site (multiple visits count as one visitor) |
-| Average visit time | Time spent per user session                                                   |
-| Referrer           | Previous webpage before reaching your Olares application                      |
-| Visitor info       | Device, browser, OS, and location data                                        |

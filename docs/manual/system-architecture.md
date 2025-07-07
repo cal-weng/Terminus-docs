@@ -165,7 +165,6 @@ Olares empowers AI capabilities with:
 
 System services include:
 - Notification: Delivers system-wide notifications.
-- Analytics: Provides web analytics similar to Google Analytics.
 - Backup*: Supports backups for directories, applications, and clusters. *(In development)*
 - Upgrade*: Supports automated system upgrades. *(In development)*
 

@@ -667,20 +667,6 @@ options:
 ```
 :::
 
-### analytics
-- 类型：`map`
-- 可选
-
-为应用启用网站分析功能。
-
-:::info 示例
-```yaml
-options:
-  analytics:
-    enabled: true
-```
-:::
-
 ### dependencies
 - 类型：`list<map>`
 

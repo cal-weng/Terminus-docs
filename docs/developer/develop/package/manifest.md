@@ -667,19 +667,6 @@ options:
 ```
 :::
 
-### analytics
-- Type: `map`
-- Optional
-
-Enable website analytics for the app.
-
-:::info Example
-```yaml
-options:
-  analytics:
-    enabled: true
-```
-:::
 
 ### dependencies
 - Type: `list<map>`

@@ -29,10 +29,3 @@ Olares offers multiple ways to share your personal homepage:
 * **Share via social platforms**: Directly share your homepage on popular social media platforms like X, Meta, and LinkedIn.
 * **Share via QR code**: Generate a QR code for your homepage, which you can download and share.
 * **Share as a digital business card**: Create a stylish digital business card featuring your homepage URL, perfect for networking.
-
-## Track your homepage analytics
-Monitor your homepage's performance with built-in analytics. This feature helps you understand your audience and optimize your content for better engagement.
-
-1. Open the Dashboard from the Dock or Launchpad in Olares.
-2. Navigate to the **Analytics** page and click on the **Profile** app card.
-3. View detailed visit statistics, including total views, unique visitors, average time spent, peak visit times, and visitor device types.
