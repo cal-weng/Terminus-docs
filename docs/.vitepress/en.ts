@@ -195,7 +195,8 @@ const side = {
           collapsed: true,
           link: "/manual/olares/settings/",
           items: [
-            {
+              {text: "My Olares", link: "/manual/olares/settings/my-olares"},
+              {
               text: "Manage accounts",
               collapsed: true,
               items: [

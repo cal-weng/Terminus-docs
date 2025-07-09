@@ -196,6 +196,7 @@ const side = {
           "collapsed": true,
           "link": "/zh/manual/olares/settings/",
           "items": [
+            {text: "My Olares", link: "/zh/manual/olares/settings/my-olares"},
             {
               "text": "管理帐户",
               "collapsed": true,
