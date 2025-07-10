@@ -214,7 +214,8 @@ const side = {
               collapsed: true,
               items: [
                 {
-                  text: "Configure access policies",
+                  text: "Manage app entrance",
+                  link: "/manual/olares/settings/manage-entrance",
                 },
                 {
                   text: "Customize app domains",

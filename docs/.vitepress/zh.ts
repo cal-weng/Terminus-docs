@@ -215,7 +215,8 @@ const side = {
               "collapsed": true,
               "items": [
                 {
-                  "text": "配置访问策略"
+                  "text": "管理应用入口",
+                  "link": "/zh/manual/olares/settings/manage-entrance",
                 },
                 {
                   "text": "自定义应用域名",
