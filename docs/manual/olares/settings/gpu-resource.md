@@ -21,21 +21,24 @@ Olares supports three GPU allocation modes. Choosing the right mode helps optimi
 
 ### Time slicing 
 
-In time-slicing mode, GPU resources are shared among multiple applications sequentially.
+In this mode, the GPU's processing power is shared among multiple applications.  
 
-* Tasks run in the order they were requested, ensuring fair distribution.
-* Suitable for multiple lightweight applications not requiring constant GPU access.
+* Acts as a default resource pool. Any application not explicitly assigned to a specific GPU will automatically use a time-slicing GPU if available.
+
+* Suitable for General-purpose use and running multiple lightweight applications.
 
 ### App exclusive
 
-In exclusive access mode, the entire GPU processing power and memory is dedicated exclusively to one application.
+In this mode, the entire GPU processing power and memory is dedicated to a single application. 
 
 * Best for intensive, performance-critical applications like AI-generated imagery or high-performance gaming servers.
 * Large memory demands may limit availability for other tasks.
 
 ### Memory slicing
-In memory-slicing mode, GPU memory (VRAM) is partitioned, providing a fixed allocation of memory to specific applications.
-Ideal for running multiple GPU-intensive applications simultaneously, each with guaranteed VRAM allocation.
+In this mode, GPU memory (VRAM) is partitioned into fixed, dedicated amounts for specific applications.
+
+* Ideal for running multiple GPU-intensive applications simultaneously, each with guaranteed VRAM allocation.
+* Prevents memory conflicts between applications running on the same GPU.
 
 ## View GPU status
 
@@ -45,30 +48,36 @@ To view your GPU status:
 2. Click on a specific GPU to visit its details.
 
 ::: tip Note
-If there is only one GPU in the cluster, you will go into the GPU detail page directly. 
+If your Olares only contains one GPU, navigating to the GPU section will take you directly to the GPU details page. If you have multiple GPUs, you will see a list first.
 :::
 
 ## Configure GPU mode
 
-In the **GPU detail** page, select your desired mode from the **GPU mode** dropdown. Depending on your selected mode, different follow-up options will apply.
+On the **GPU details** page, select your desired mode from the **GPU mode** dropdown. Depending on your selected mode, different follow-up options apply.
 
-* **Time slicing**：Default mode. GPU-supported apps will automatically show in the list. 
-  1. Click the **Add an application** button to manually add an application if it's not in the list.
-  2. Select your target application and click **Confirm**.
-    ![Time slicing](/images/manual/olares/gpu-time-slicing.png#bordered)
+* **Time slicing**：   
+  1. Select this mode from the GPU mode dropdown.
+  2. In the **Application pinning** section, click **+Add an application** button to manually pin an application to this specific GPU in a multi-GPU setup.
+
+:::tip Note
+No manual pinning is required if you only have one GPU in your cluster.
+:::
   
 * **App exclusive**
-  1. From **App exclusive** dropbox, choose your target application.
-  2. Click **Confirm**.
-     ![App exclusive](/images/manual/olares/gpu-app-exclusive.png#bordered)
+  1. Select this mode from the GPU mode dropdown.
+  2. In the **Select exclusive app** dropbox, choose your target application.
+  3. Click **Confirm**.
+    ![App exclusive](/images/manual/olares/gpu-app-exclusive.png#bordered)
 
 * **Memory slicing**
-  1. From the **Memory slicing** section, click the **Add an application** button. 
-  2. Select your target application from the dropdown.
-     3. Specify the VRAM allocation in GB, then click **Confirm**.
-        ![VRAM slicing](/images/manual/olares/gpu-memory-slicing.png#bordered)
-   ::: tip Note
-   You can't assign a VRAM that's larger than the total VRAM of the GPU.
+    1. Select this mode from the dropdown.
+    2. In the **Allocate VRAM** section, click **Add application**. 
+    3. Select your target application and assign it a specific amount of VRAM (in GB).
+    4. Repeat for other applications and click **Confirm**.
+       ![VRAM slicing](/images/manual/olares/gpu-memory-slicing.png#bordered)
+     
+  ::: tip Note
+  You can't assign a VRAM that's larger than the total VRAM.
    :::
 
 ## Learn more
