@@ -11,14 +11,14 @@ outline: [2, 3]
   - 在 `options` 中增加 `conflict` 字段, 用于声明不兼容的应用
   - 移除 `options` 中 `analytics` 配置项
   - 修改 `tailscale` 字段的配置格式
-  - 增加 `allowedOutboundPorts` 配置，允许通过指定端口进行非http协议的对外访问
+  - 增加 `allowedOutboundPorts` 配置，允许通过指定端口进行非 HTTP 协议的对外访问
   - 修改 `ports` 部分的配置
   
 :::
 :::details Changelog
   `0.8.3`
-  - 在 `dependencies` 配置项里增加 `mandatory` 字段以表示该依赖的应用是安装必须的
-  - 增加 `tailscaleAcls` 配置项，允许应用让 Tailscale 开放指定端口
+  - 在 `dependencies` 配置项里增加 `mandatory` 字段以表示该依赖应用必须安装。
+  - 增加 `tailscaleAcls` 配置项，允许 Tailscale 为应用开放指定端口
 
   `0.8.2`
   - 添加 `runAsUser` 选项，用于限制应用程序在非root权限的用户下运行
@@ -306,15 +306,15 @@ entrances:
 :::info 示例
 ```Yaml
 ports:
-- name: rdp-tcp             # 提供服务的 entrance 名称
-  host: windows-svc         # 提供服务的 Ingress 名称
+- name: rdp-tcp             # 提供服务的入口名称
+  host: windows-svc         # 提供服务的 Ingress 主机名称
   port: 3389                # 提供服务的端口号
   exposePort: 46879         # 暴露的接口，在集群内一次只能分配给一个应用程序。
-  addToTailscaleAcl: true   # 自动添加到Tailscle的ACL中
+  addToTailscaleAcl: true   # 自动添加到 Tailscle 的 ACL 列表中
 ```
 :::
 
-Olares 会为你的应用暴露指定的端口，这些端口可通过应用域名在本地网络下访问。例如：`84864c1f.your_olares_id.olares.com:46879`。Olares会为该端口自动生成一组相同port的tcp/udp端口. 
+Olares 会为你的应用暴露指定的端口，这些端口可通过应用域名在本地网络下访问，如`84864c1f.your_olares_id.olares.com:46879`。对于每个公开的端口，Olares 会自动配置相同端口号的 TCP 和 UDP。
 
 当设置 `addToTailscaleAcl` 字段为 `true`时，该端口会自动增加tailscale acl中，无需再去tailscale部分配置
 
@@ -794,7 +794,7 @@ apiTimeout: 0
 - 类型： `map`
 - 可选
 
-要求开通以下端口进行非http协议的对外访问，例如smtp服务等
+要求开通以下端口进行非 HTTP 协议的对外访问，例如 SMTP 服务等。
 
 :::info 示例
 ```yaml

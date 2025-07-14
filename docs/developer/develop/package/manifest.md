@@ -314,9 +314,9 @@ ports:
 ```
 :::
 
-Olares will expose the specified ports for your application, which can be accessed in the local network through the application domain name. For example: `84864c1f.your_olares_id.olares.com:46879`. Olares will automatically generate a set of TCP/UDP ports with the same port number for this port. 
+Olares will expose the ports you specify for an application, which are accessible via the application domain name in the local network, for example: `84864c1f.your_olares_id.olares.com:46879`. For each port you expose, Olares configures both TCP and UDP with the same port number. 
 
-When the `addToTailscaleAcl` field is set to `true`, the port will be automatically added to the Tailscale's ACL, and there is no need to configure in the tailscale section
+When the `addToTailscaleAcl` field is set to `true`, the port will be automatically added to the Tailscale's ACL, and there is no need to configure in the tailscale section.
 
 :::info NOTE
 The exposed ports can only be accessed on the local network or through a VPN.
