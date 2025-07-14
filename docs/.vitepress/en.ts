@@ -234,9 +234,13 @@ const side = {
               text: "Customize appearance", 
               link:"/manual/olares/settings/language-appearance",
              },
-             {
-              text: "Backup and restore", 
-             },
+            {
+              text: "Backup and Restore",
+              items: [
+                {text: "Backup", link: "/manual/olares/settings/backup"},
+                {text: "Restore", link: "/manual/olares/settings/restore"},
+              ],
+            },
              {
               text: "Configure network", 
               collapsed: true,
