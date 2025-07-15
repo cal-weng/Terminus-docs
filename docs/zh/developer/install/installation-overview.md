@@ -41,7 +41,7 @@ Olares 的安装从原生层开始，确保底层 Linux 环境支持分布式存
 - **JuiceFS**：为多节点集群提供分布式文件系统。文件数据可以存储在本地安装的 MinIO 实例中，也可以存储在 Amazon S3 这一类远程存储桶中。该配置支持不同存储节点共享统一的存储视图。
 
 :::tip 启用 JuiceFS
-JuiceFS 和 MinIO 默认不会安装。如需启用，需在安装前设置必要的[环境变量](environment-variables.md#juicefs)或用 [olares-cli 命令](./cli-1.12/prepare#选项)配合 JuiceFS 相应参数安装。
+JuiceFS 和 MinIO 默认不会安装。如需启用，需在安装前设置必要的[环境变量](environment-variables.md#juicefs)或用 [olares-cli 命令](cli/prepare#选项)配合 JuiceFS 相应参数安装。
 :::
 
 ### 容器运行时：containerd

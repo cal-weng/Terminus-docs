@@ -30,7 +30,7 @@ Olares 采用 [JuiceFS](https://juicefs.com) 作为底层的多物理节点共�
 
 针对 JuiceFS 的后端对象存储方案，我们提供了 S3 和 MinIO 两种选择。
 
-默认情况下，Olares 在本地安装时使用本地文件系统（FS）。不过，如果在运行 [`olares-cli prepare`](../../developer/install/cli-1.12/prepare.md) 命令时指定了 `--with-juicefs=true` 选项，系统就会安装并使用 JuiceFS，同时会搭建一个 MinIO 实例作为后端存储。
+默认情况下，Olares 在本地安装时使用本地文件系统（FS）。不过，如果在运行 [`olares-cli prepare`](../../developer/install/cli/prepare.md) 命令时指定了 `--with-juicefs=true` 选项，系统就会安装并使用 JuiceFS，同时会搭建一个 MinIO 实例作为后端存储。
 
 ### 本地磁盘
 
