@@ -237,7 +237,11 @@ const side = {
               "link": "/zh/manual/olares/settings/language-appearance"
             },
             {
-              "text": "备份和恢复"
+              text: "备份与恢复",
+              items: [
+                {text: "备份", link: "/zh/manual/olares/settings/backup"},
+                {text: "恢复", link: "/zh/manual/olares/settings/restore"},
+              ],
             },
             {
               "text": "配置网络",
