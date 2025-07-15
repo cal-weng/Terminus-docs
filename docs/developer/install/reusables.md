@@ -14,7 +14,7 @@ During the installation, you may be prompted to enter your root password.
 If an error occurs during installation, use the following command to uninstall first:
 
 ```bash
-bash olares-uninstall.sh
+olares-cli uninstall --all
 
 ```
 

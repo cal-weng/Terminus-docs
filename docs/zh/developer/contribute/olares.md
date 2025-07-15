@@ -88,5 +88,5 @@ make install VERSION=0.0.0-DEBUG
 ## 如何卸载
 
 ```bash
-bash olares-uninstall.sh
+olares-cli uninstall --all
 ```

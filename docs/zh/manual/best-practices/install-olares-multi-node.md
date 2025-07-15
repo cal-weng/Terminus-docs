@@ -36,7 +36,7 @@ description: Olares 多节点集群部署教程，包括主节点配置、工作
 ## 第一步：设置主节点
 
 ::: tip 卸载已有的 Olares 集群
-如果你已经使用默认的安装命令在当前节点上安装了 Olares 集群，运行 `bash olares-uninstall.sh` 命令将其卸载。
+如果你已经使用默认的安装命令在当前节点上安装了 Olares 集群，运行 `olares-cli uninstall --all` 命令将其卸载。
 :::
 
 在主节点上运行以下命令以启用 JuiceFS 支持：
