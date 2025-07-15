@@ -264,7 +264,7 @@ const side = {
                 {text: "恢复", link: "/zh/manual/olares/settings/restore"},
               ],
             },
-            {text: "导出系统日志", link: "/zh/manual/olares/settings/system-log"},
+            {text: "开发者资源", link: "/zh/manual/olares/settings/developer"},
             ]
           },
         { "text": "仪表盘", "link": "/zh/manual/olares/resources-usage" },

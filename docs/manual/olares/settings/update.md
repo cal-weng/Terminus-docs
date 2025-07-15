@@ -18,7 +18,7 @@ For details on Olares versioning practices and the current limitations regarding
 Review the release notes before updating to learn about new features and important changes.
 :::
 
-1. Open Settings, and click **System** > **Version**. 
+1. Open Settings, and click **System** > **My Olares** > Current version. 
 2. Click **Upgrade now** when there is an available new version.
 
 You'll see a confirmation message when update completed.

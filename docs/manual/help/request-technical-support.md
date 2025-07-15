@@ -17,5 +17,5 @@ If you have an Olares device running, you can use a convenient one-click solutio
     - Any error messages or unexpected behaviors.
     - Details about your environment (e.g., operating system, Olares version).
 
-It's recommended to attach the Olares system log. For detailed instructions, see [Export system log](../olares/settings/system-log.md).
+It's recommended to attach the Olares system log. For detailed instructions, see [Export system log](../olares/settings/developer.md#export-system-logs).
 

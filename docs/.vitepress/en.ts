@@ -263,7 +263,7 @@ const side = {
                 {text: "Restore", link: "/manual/olares/settings/restore"},
               ],
             },
-            {text: "Export system log", link: "/manual/olares/settings/system-log"},
+            {text: "Developer resources", link: "/manual/olares/settings/developer"},
             ]
           },
           {text: "Dashboard", link: "/manual/olares/resources-usage"},
