@@ -7,11 +7,19 @@ outline: [2, 3]
 每一个 Olares 应用的 Chart 根目录下都必须有一个名为 `OlaresManifest.yaml` 的文件。`OlaresManifest.yaml` 描述了一个 Olares 应用的所有基本信息。Olares 应用市场协议和 Olares 系统依赖这些关键信息来正确分发和安装应用。
 
 :::info 提示
-最新的 Olares 系统使用的 Manifest 版本为: `0.8.3`
-  - 在 `dependencies` 配置项里增加 `mandatory` 字段以表示该依赖的应用是安装必须的
-  - 增加 `tailscaleAcls` 配置项，允许应用让 Tailscale 开放指定端口
+最新的 Olares 系统使用的 Manifest 版本为: `0.9.0`
+  - 在 `options` 中增加 `conflict` 字段, 用于声明不兼容的应用
+  - 移除 `options` 中 `analytics` 配置项
+  - 修改 `tailscale` 字段的配置格式
+  - 增加 `allowedOutboundPorts` 配置，允许通过指定端口进行非 HTTP 协议的对外访问
+  - 修改 `ports` 部分的配置
+  
 :::
 :::details Changelog
+  `0.8.3`
+  - 在 `dependencies` 配置项里增加 `mandatory` 字段以表示该依赖应用必须安装。
+  - 增加 `tailscaleAcls` 配置项，允许 Tailscale 为应用开放指定端口
+
   `0.8.2`
   - 添加 `runAsUser` 选项，用于限制应用程序在非root权限的用户下运行
 
@@ -88,11 +96,10 @@ options:
 ## olaresManifest.type
 
 - 类型：`string`
-- 有效值： `app`、`recommend`、`model`、`middleware`
+- 有效值： `app`、`recommend`、`middleware`
 
-Olares 市场目前支持三种类型的应用，各自对应不同场景。本文档以 “app” 为例来解释各个字段。其他类型请参考相应的配置指南。
+Olares 市场目前支持 3 种类型的应用，各自对应不同场景。本文档以 “app” 为例来解释各个字段。其他类型请参考相应的配置指南。
 - [推荐算法配置指南](recommend.md)
-- [模型配置指南](model.md)
 
 :::info 示例
 ```Yaml
@@ -299,23 +306,23 @@ entrances:
 :::info 示例
 ```Yaml
 ports:
-- name: aaa          # 提供服务的 entrance 名称
-  host: udp          # 提供服务的 Ingress 名称
-  port: 8899         # 提供服务的端口号
-  protocol: udp      # 协议类型，目前支持 udp 和 tcp
-  exposePort: 30140  # 暴露的端口号。如果未指定，系统将随机分配一个端口。
-- name: bbb
-  host: udp
-  port: 8090
-  protocol: tcp
+- name: rdp-tcp             # 提供服务的入口名称
+  host: windows-svc         # 提供服务的 Ingress 主机名称
+  port: 3389                # 提供服务的端口号
+  exposePort: 46879         # 暴露的接口，在集群内一次只能分配给一个应用程序。
+  addToTailscaleAcl: true   # 自动添加到 Tailscle 的 ACL 列表中
 ```
 :::
 
-Olares 会自动为你的应用分配一个 33333-36789 之间的随机端口。这些端口可通过应用域名在本地网络下访问。例如：`84864c1f.local.your_olares_id.olares.com:33805`。
+Olares 会为你的应用暴露指定的端口，这些端口可通过应用域名在本地网络下访问，如`84864c1f.your_olares_id.olares.com:46879`。对于每个公开的端口，Olares 会自动配置相同端口号的 TCP 和 UDP。
+
+当设置 `addToTailscaleAcl` 字段为 `true`时，该端口会自动增加tailscale acl中，无需再去tailscale部分配置
+
 
 :::info 提示
 暴露的端口只能通过本地网络或 Olares 专用网络访问。
 :::
+
 
 ## Permission
 
@@ -399,7 +406,7 @@ permission:
 | secret.infisical | v1 | secret | CreateSecret, RetrieveSecret
 | secret.vault | v1 | key | List, Info, Sign
 
-## TailscaleAcls
+## Tailscale
 - 类型：`map`
 - 可选
 
@@ -407,13 +414,14 @@ permission:
 
 :::info 示例
 ```Yaml
-tailscaleAcls:
-- proto: tcp
-  dst:
-  - "*:4557"
-- proto: "" # 可选, 如果未指定，则允许使用所有支持的协议
-  dst:
-  -  "*:4557"
+tailscale:
+  acls:
+  - proto: tcp
+    dst:
+    - "*:46879"
+  - proto: "" # 可选, 如果未指定，则允许使用所有支持的协议
+    dst:
+    -  "*:4557"  
 ```
 :::
 
@@ -667,20 +675,6 @@ options:
 ```
 :::
 
-### analytics
-- 类型：`map`
-- 可选
-
-为应用启用网站分析功能。
-
-:::info 示例
-```yaml
-options:
-  analytics:
-    enabled: true
-```
-:::
-
 ### dependencies
 - 类型：`list<map>`
 
@@ -795,3 +789,17 @@ oidc:
 apiTimeout: 0
 ```
 :::
+
+### allowedOutboundPorts
+- 类型： `map`
+- 可选
+
+要求开通以下端口进行非 HTTP 协议的对外访问，例如 SMTP 服务等。
+
+:::info 示例
+```yaml
+allowedOutboundPorts:
+  - 465
+  - 587
+```
+:::    

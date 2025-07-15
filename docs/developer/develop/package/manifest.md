@@ -7,11 +7,19 @@ outline: [2, 3]
 Every **Olares Application Chart** should include a `OlaresManifest.yaml` file in the root directory. `OlaresManifest.yaml` provides all the essential information about an Olares App. Both the **Olares Market protocol** and the Olares depend on this information to distribute and install applications.
 
 :::info NOTE
-Latest Olares Manifest version: `0.8.3`
-  - Add a `mandatory` field in the `dependencies` section for dependent applications required for the installation
-  - Add `tailscaleAcls` section to permit applications to open specified ports via Tailscale
+Latest Olares Manifest version: `0.9.0`
+- Added a `conflict` field in `options` to declare incompatible applications
+- Removed `analytics` field in `options`
+- Modified the format of the `tailscale` section
+- Added a `allowedOutboundPorts` field to allow non-http protocol external access through the specified port
+- Modified the format of the `ports` section
+
 :::
 :::details Changelog
+  `0.8.3`
+  - Add a `mandatory` field in the `dependencies` section for dependent applications required for the installation
+  - Add `tailscaleAcls` section to permit applications to open specified ports via Tailscale
+
   `0.8.2`
   - Add a `runAsUser` option to force the app to run under non root user
 
@@ -88,11 +96,10 @@ options:
 ## olaresManifest.type
 
 - Type: `string`
-- Accepted Value: `app`, `recommend`, `model`, `middleware`
+- Accepted Value: `app`, `recommend`, `middleware`
 
-Olares currently supports four types of applications, each requiring different fields. This document uses `app` as an example to explain each field. For information on other types, please refer to the corresponding configuration guide.
+Olares currently supports 3 types of applications, each requiring different fields. This document uses `app` as an example to explain each field. For information on other types, please refer to the corresponding configuration guide.
 - [Recommend Configuration Guide](recommend.md)
-- [Model Configuration Guide](model.md)
 
 :::info Example
 ```Yaml
@@ -299,19 +306,17 @@ Specify exposed ports
 :::info Example
 ```Yaml
 ports:
-- name: aaa          # Name of the entrance that provides service
-  host: udp          # Ingress name of the entrance that provides service
-  port: 8899         # Port of the entrance that provides service
-  protocol: udp      # Protocol type. udp and tcp are supported for now
-  exposePort: 30140  # The port to expose. A random port will be assigned if not specified 
-- name: bbb
-  host: udp
-  port: 8090
-  protocol: tcp
+- name: rdp-tcp             # Name of the entrance that provides service
+  host: windows-svc         # Ingress name of the entrance that provides service
+  port: 3389                # Port of the entrance that provides service
+  exposePort: 46879         # The port to be exposed can only be assigned to one application at a time within the cluster.
+  addToTailscaleAcl: true   # Automatically added to Tailscle's ACL
 ```
 :::
 
-Olares automatically assigns a random port (33333-36789) for your app. These ports can be accessed via the app entrance domain from local network. For example: `84864c1f.local.your_olares_id.olares.com:33805`.
+Olares will expose the ports you specify for an application, which are accessible via the application domain name in the local network, for example: `84864c1f.your_olares_id.olares.com:46879`. For each port you expose, Olares configures both TCP and UDP with the same port number. 
+
+When the `addToTailscaleAcl` field is set to `true`, the port will be automatically added to the Tailscale's ACL, and there is no need to configure in the tailscale section.
 
 :::info NOTE
 The exposed ports can only be accessed on the local network or through a VPN.
@@ -399,7 +404,7 @@ All system API [providers](../advanced/provider.md) are list below:
 | secret.infisical | v1 | secret | CreateSecret, RetrieveSecret
 | secret.vault | v1 | key | List, Info, Sign
 
-## TailscaleAcls
+## Tailscale
 - Type: `map`
 - Optional
 
@@ -407,13 +412,14 @@ Allow applications to add Access Control Lists (ACL) in Tailscale to open specif
 
 :::info Example
 ```Yaml
-tailscaleAcls:
-- proto: tcp
-  dst:
-  - "*:4557"
-- proto: "" # Optional. If not specified, all supported protocols will be allowed.
-  dst:
-  -  "*:4557"
+tailscale:
+  acls:
+  - proto: tcp
+    dst:
+    - "*:46879"
+  - proto: "" # Optional. If not specified, all supported protocols will be allowed.
+    dst:
+    -  "*:4557"    
 ```
 :::
 
@@ -667,19 +673,6 @@ options:
 ```
 :::
 
-### analytics
-- Type: `map`
-- Optional
-
-Enable website analytics for the app.
-
-:::info Example
-```yaml
-options:
-  analytics:
-    enabled: true
-```
-:::
 
 ### dependencies
 - Type: `list<map>`
@@ -795,3 +788,19 @@ Specifies the timeout limit for API providers in seconds. The default value is `
 apiTimeout: 0
 ```
 :::
+
+
+
+### allowedOutboundPorts
+- Type: `map`
+- Optional
+
+​​The specified ports will be opened to allow external access via non-HTTP protocols, such as SMTP.
+
+:::info Example
+```yaml
+allowedOutboundPorts:
+  - 465
+  - 587
+```
+:::   

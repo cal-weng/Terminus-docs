@@ -674,10 +674,6 @@ const side = {
               link: "/developer/develop/package/manifest",
             },
             {
-              text: "Model",
-              link: "/developer/develop/package/model",
-            },
-            {
               text: "Recommendation",
               link: "/developer/develop/package/recommend",
             },

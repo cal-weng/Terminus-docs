@@ -44,16 +44,3 @@ RecommendName
 |-- README.md                 # 可选: 可读的 README 文件
 
 ```
-
-- LLM Chart 包示例：
-
-```
-LLMName
-|-- Chart.yaml                # 必选: 包含了 chart 信息的YAML文件
-|-- OlaresManifest.yaml     # 必选: LLM 的配置文档(通用配置)
-|-- values.yaml               # 必选: chart 默认的配置值
-├── modelConfig.yaml          # 必选: LLM 的配置文档(模型配置)
-└── README.md                 # 可选: 可读的 README 文件
-
-
-```
