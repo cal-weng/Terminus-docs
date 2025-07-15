@@ -25,9 +25,7 @@ description: 在 Olares 上部署云端 Android 模拟器 redorid，并在 Mac �
    - redroid 运行时会消耗较高系统资源。为获得更佳性能，建议使用至少 8 核 CPU 和 16GB 内存的主机运行 Olares。
    :::
 
-- 连接设备和 Olares 处于同一局域网。
-   ::: tip 远程连接
-   如连接设备和 Olares 在不同网络，需要在设备上安装 LarePass 客户端以启用专用网络。可在 [LarePass 官网](https://olares.cn/larepass)下载正确的版本。
+- 在连接设备上安装 LarePass 客户端并启用[专用网络](../manual/larepass/private-network.md)。可在 [LarePass 官网](https://olares.cn/larepass)下载正确的版本。
  
  ## 安装内核依赖模块
 
@@ -55,7 +53,7 @@ redroid 在 Olares 上以无界面的服务后端运行。要安装 redroid：
 
    c. 将 redroid 对外服务端口 `46878` 附在基础域名后。
    
-   因为 redroid 服务仅支持本地模式访问，需要在 URL 里加入 `local` 关键字。这样，我们就得到了 redroid 的对外服务网址，如 `beb583c3.local.olares01.olares.cn:46878`。
+   这样，我们就得到了 redroid 的对外服务网址，如 `beb583c3.olares01.olares.cn:46878`。
 
 ## 连接 redroid 服务
 
@@ -82,20 +80,20 @@ Windows 版本的 `scrcpy` 集成了 `adb` 工具，不用另行安装。
 
    ```powershell
    # 请将 <olares_id> 替换为你自己的 Olares ID
-   .\adb.exe connect beb583c3.local.<olares_id>.olares.cn:46878
+   .\adb.exe connect beb583c3.<olares_id>.olares.cn:46878
    ```
    
    连接成功会看到示例中的消息提示：
    
    ```powershell
    # 示例输出
-   already connected to beb583c3.local.<olares_id>.olares.cn:46878
+   already connected to beb583c3.<olares_id>.olares.cn:46878
    ```
 
 4. 用 `scrcpy` 渲染界面和音频：
 
    ```powershell
-   .\scrcpy.exe -s beb583c3.local.harvey063.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
+   .\scrcpy.exe -s beb583c3.harvey063.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
    ```
 
    执行成功后，命令行会输出连接设备信息，同时在桌面弹出安卓屏幕。
@@ -135,7 +133,7 @@ macOS 版本 `scrcpy` 没有集成 `adb`，需要你单独安装。推荐使用 
 
    ```bash
    # 请将 <olares_id> 替换为你自己的 Olares ID
-   adb connect beb583c3.local.<olares_id>.olares.cn:46878
+   adb connect beb583c3.<olares_id>.olares.cn:46878
    ```
 
    看到示例输出即代表服务连接成功：
@@ -143,13 +141,13 @@ macOS 版本 `scrcpy` 没有集成 `adb`，需要你单独安装。推荐使用 
    ```bash
    ```bash
    # 示例输出
-   already connected to beb583c3.local.<olares_id>.olares.cn:46878
+   already connected to beb583c3.<olares_id>.olares.cn:46878
    ```
 
 4. 用 `scrcpy` 渲染界面和音频：
    
    ```bash
-   scrcpy -s beb583c3.local.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
+   scrcpy -s beb583c3.<olares_id>.olares.cn:46878 --audio-codec=aac --audio-encoder=OMX.google.aac.encoder
    ```
    执行成功后，命令行会输出连接设备信息，同时在桌面弹出安卓屏幕。
 
@@ -176,7 +174,7 @@ macOS 版本 `scrcpy` 没有集成 `adb`，需要你单独安装。推荐使用 
    ```powershell
    # 示例输出
    List of devices attached
-   beb583c3.local.olares02.olares.cn:46878 device product:ziyi model:23031PN0DC device:ziyi transport_id:4
+   beb583c3.olares02.olares.cn:46878 device product:ziyi model:23031PN0DC device:ziyi transport_id:4
    ```
 
 2. 在指定设备上安装 apk 应用，需通过 `-t` 参数指定 `transport_id`：
@@ -204,7 +202,7 @@ macOS 版本 `scrcpy` 没有集成 `adb`，需要你单独安装。推荐使用 
    ```bash
    # 示例输出
    List of devices attached
-   beb583c3.local.olares02.olares.cn:46878 device product:ziyi model:23031PN0DC device:ziyi transport_id:4
+   beb583c3.olares02.olares.cn:46878 device product:ziyi model:23031PN0DC device:ziyi transport_id:4
    ```
    
 

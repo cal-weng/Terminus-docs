@@ -24,10 +24,7 @@ Before you begin, ensure the following:
 
 - Olares is up and running on a machine equipped with an NVIDIA GPU.
 - Your streaming device has Moonlight installed. Visit the [Moonlight website](https://moonlight-stream.org/) to download and install the appropriate version.
-- Your streaming device is connected to the same LAN as your Olares.
-   :::tip Remote streaming
-   For remote streaming, install LarePass on your streaming device. You can download the appropriate version from the [LarePass site](https://olares.com/larepass).
-   :::
+- [Enable LarePass VPN](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your streaming device.
 - You have a valid Steam account to access your games.
 
 ## Install Steam Headless
@@ -60,7 +57,7 @@ Steam Headless also integrates Sunshine, the streaming server. To stream games u
 
 ### Prepare for paring
 
-1. From your Steam client in the browser, get the URL and append `:47990`, for example, `https://139ebc4f0.local.<your Olares ID>.olares.com:47990`. Open this URL to access the Sunshine console page.
+1. From your Steam client in the browser, get the URL and append `:47990`, for example, `https://139ebc4f0.<your Olares ID>.olares.com:47990`. Open this URL to access the Sunshine console page.
 
    ![Sunshine console page](/images/manual/tutorials/access-sunshine.png#bordered)
 
@@ -77,10 +74,10 @@ Steam Headless also integrates Sunshine, the streaming server. To stream games u
 
 1. Open the Moonlight client on your streaming device and click the <i class="material-symbols-outlined">add_to_queue</i> button in the top-right corner.
 
-2. When promoted to enter the IP address of your host PC, enter the local URL of Steam, for example, `139ebc4f0.local.<your Olares ID>.olares.com`.
+2. When promoted to enter the IP address of your host PC, enter the URL of Steam, for example, `139ebc4f0.<your Olares ID>.olares.com`.
 
    ::: tip Note
-   Do not include `https://` and make sure to include the `.local` part in the hostname.
+   Do not include `https://`.
    ::: 
 
 3. Click **OK**, and a host icon appears in locked status.

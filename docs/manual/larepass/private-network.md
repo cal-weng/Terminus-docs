@@ -1,14 +1,31 @@
 ---
 outline: [2, 3]
-description: Access Olares applications securely from anywhere using LarePass VPN. Learn VPN setup, troubleshooting, and how to enforce VPN-only access for maximum security.
+description: Access Olares applications securely from anywhere using LarePass VPN. Learn about VPN setup and troubleshooting in LarePass.
 ---
 
 # Access Olares anywhere via LarePass VPN
 
-By enabling Virtual Private Network (VPN) in LarePass, all traffic from the device to Olares is routed through a secure private network, providing the same experience as local access.
+Enabling the LarePass VPN creates a secure, private connection to your Olares. It's the simplest and most reliable way to access your private applications and services from anywhere, guaranteeing both security and speed.
 
-This document walks you through how to set up LarePass VPN to access Olares anywhere.
+This document walks you through how to enable LarePass VPN.
 
+## How access works in Olares
+
+In Olares, you access applications & services via their dedicated URLs (e.g., `app.local.yourname.olares.com`). Depending on the intended accessibility, there are two types of entrances:
+
+- **Public entrance**: Accessible to anyone with no authentication. For example, a blog page that you host on WordPress. Traffic is routed through Cloudflare Tunnel or FRP before reaching Olares.
+- **Private entrance**: Intended only for you, such as Desktop, Vault, the management console of WordPress. There are two scenarios when accessing private entrances:
+
+  - LarePass VPN enabled: Traffic is routed through VPN (TailScale) wherever you are.
+  - LarePass VPN not enabled: Traffic routing is the same way as public entrances.   
+
+::: warning Always enable VPN for private access
+For the best experience with private entrances, we strongly recommend enabling the LarePass VPN. It ensures your connection is always encrypted, direct, and fast. 
+:::
+
+::: tip Note
+Starting with Olares 1.12, you no longer need a separate `.local` address (e.g., `app.local.yourname.olares.cn`) for local access to private applications. The single address (e.g., `app.yourname.olares.cn`) now automatically provides a fast, direct connection when the LarePass VPN is active.
+:::
 
 ## Enable VPN on LarePass
 

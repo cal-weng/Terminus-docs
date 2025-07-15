@@ -8,6 +8,7 @@ Dify is an AI application development platform. It's one of the key open-source 
 ## Before you begin
 To use local AI models on Dify, ensure you have:
 - [Ollama installed](ollama.md) and running in your Olares environment.
+- LassPass installed and [VPN enabled](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your device.
 - [Open WebUI installed](openwebui.md) with your preferred language models downloaded.
   :::tip
   For optimal performance, consider using lightweight yet powerful models like `gemma2` or `qwen`, which offer a good balance between speed and capability.
@@ -38,7 +39,7 @@ Starting from Olares 1.11.6, if "Dify For Cluster" or "Dify" was previously inst
 2. In Dify, navigate to **Settings** > **Model Provider**.
 3. Select Ollama as the model provider, with the following configurations:
     - **Model Name**: Enter the model name. For example: `gemma2`.
-    - **Base URL**: Enter Ollama's local address: `https://39975b9a1.local.{username}.olares.com`. Replace `{username}` with the Olares Admin's local name. For example, `https://39975b9a1.local.marvin123.olares.com`.
+    - **Base URL**: Enter Ollama's local address: `https://39975b9a1.{username}.olares.com`. Replace `{username}` with the Olares Admin's local name. For example, `https://39975b9a1.marvin123.olares.com`.
 
      ![Add gemma2](/images/manual/use-cases/dify-add-gemma2.png#bordered){width=70%}
 

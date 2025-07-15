@@ -16,6 +16,7 @@ This integration enables Perplexica to function as a complete search solution wh
 ## Before you begin
 Before getting started, ensure you have:
 - Ollama installed and running in your Olares environment
+- [Enable LarePass VPN](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your device.
 - Open WebUI installed with your preferred language models downloaded
   :::tip
   For optimal performance, consider using lightweight yet powerful models like `gemma2`, which offer a good balance between speed and capability.

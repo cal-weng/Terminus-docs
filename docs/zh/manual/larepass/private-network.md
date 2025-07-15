@@ -2,17 +2,34 @@
 outline: [2, 3]
 description: 使用 LarePass 专用网络从任何地点安全访问 Olares。了解专用网络的启用方法以及常见故障排查。
 ---
+# 通过专用网络随时随地访问 Olares
 
-# 通过 LarePass 专用网络随时随地访问 Olares
+启用 LarePass 专用网络会创建一个安全的专用通道，让你随时随地安全、快速访问你运行在 Olares 上的应用和服务。
 
-启用专用网络后，设备与 Olares 之间的所有流量都会经过一条安全的专用通道传输，带来与本地访问相同的体验。
+本文将介绍如何在不同设备上启用 LarePass 专用网络。
 
-本文介绍如何在 LarePass 中设置专用网络，以便随时随地连接到 Olares。
+
+## 了解 Olares 上的应用访问
+
+在 Olares 中，您可以通过专属网址（`app.yourname.olares.com`）访问应用和服务。根据应用的访问属性，入口可分为两种类型：
+
+* 公共入口 (Public entrance): 无需身份验证即可供任何人访问。例如，你托管在 WordPress 上的博客页面。流量在到达 Olares 之前会通过 Cloudflare Tunnel 或 FRP 进行路由转发。
+* 私有入口 (Private entrance): 仅供你个人使用，例如访问您的桌面、Vault 或 WordPress 管理后台等服务。访问私有入口时存在两种情况：
+    * 启用 LarePass 专用网络时: 无论你身在何处，流量都将通过基于 Tailscale 的专用网络到达 Olares。
+    * 未启用 LarePass 专用网络时: 流量的路由方式与公共入口相同。
+
+::: warning 始终启用 LarePass 专用网络
+为获得最佳体验，我们强烈建议你在访问 Olares 时启用 LarePass 专用网络。这能确保你对应用的连接始终保持安全、高效。
+:::
+
+::: tip 注意
+从 Olares 1.12 版本开始，你不再需要为本地访问使用单独的 `.local` 地址 (如 `app.local.yourname.olares.cn`)。只要 LarePass 专用网络处于激活状态，你的唯一应用地址 (`app.yourname.olares.cn`）会自动为你提供快速、安全的连接。
+:::
 
 ## 在 LarePass 中启用专用网络
 
 ::: tip
-查看各平台安装包，请访问 [官方下载页面](https://olares.com/larepass)。
+查看各平台安装包，请访问[官方下载页面](https://olares.com/larepass)。
 :::
 
 ![VPN](/images/manual/larepass/vpn.jpg)

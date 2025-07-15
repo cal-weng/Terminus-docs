@@ -44,7 +44,7 @@ description: Olares 新手上路指南，包括系统初始配置、基础功能
     description="使用 LarePass 客户端管理你的帐户、VPN、设备等。"
     :links="[
       { text: '管理帐户', href: '../larepass/create-account' },
-      { text: '启用 VPN',  href: '../larepass/private-network' },
+      { text: '启用专用网络',  href: '../larepass/private-network' },
       { text: '管理设备',   href: '../larepass/manage-device' },
       { text: '同步文件',   href: '../larepass/sync-share' },
       { text: '收集内容',    href: '../larepass/manage-knowledge'},

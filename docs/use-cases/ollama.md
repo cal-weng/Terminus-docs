@@ -11,6 +11,7 @@ This guide will show you how to set up and use Ollama CLI on Olares.
 ## Before you begin
 Before you start, ensure that:
 - You have Olares admin privileges.
+- Install LarePass and [enable LarePass VPN](../manual/larepass/private-network.md#enable-vpn-on-larepass) on your device.
 
 ## Install Ollama
 

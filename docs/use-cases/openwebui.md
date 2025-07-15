@@ -11,6 +11,10 @@ Open WebUI provides an intuitive interface for managing Large Language Models (L
 * Voice interactions (speech-to-text and text-to-speech)
 * Image generation capabilities
 
+:::tip Enable LarePass VPN
+Make sure your device has LassPass installed and [VPN enabled](../manual/larepass/private-network.md#enable-vpn-on-larepass) to ensure a fast and stable access. 
+:::
+
 ## Installation
 Ollama is required prior to launching Open WebUI:
 * **For admin**: Install both "Ollama" and "Open WebUI".
