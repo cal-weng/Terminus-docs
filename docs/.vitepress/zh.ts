@@ -196,20 +196,27 @@ const side = {
           "collapsed": true,
           "link": "/zh/manual/olares/settings/",
           "items": [
-            {text: "My Olares", link: "/zh/manual/olares/settings/my-olares"},
             {
-              "text": "管理帐户",
+              "text": "我的 Olares",
+              "collapsed": true,
+              "items": [
+                {text: "账户与设备", link: "/zh/manual/olares/settings/my-olares"},
+                {text: "更新系统", link: "/zh/manual/olares/settings/update"},
+              ],
+            },
+            {
+              "text": "管理账户",
               "collapsed": true,
               "items": [
                 {
-                  "text": "角色和权限",
-                  "link": "/zh/manual/olares/settings/roles-permissions"
+                  "text": "角色与权限",
+                  "link": "/zh/manual/olares/settings/roles-permissions",
                 },
                 {
-                  "text": "创建成员帐户",
-                  "link": "/zh/manual/olares/settings/manage-team"
+                  "text": "创建成员账户",
+                  "link": "/zh/manual/olares/settings/manage-team",
                 }
-              ]
+              ],
             },
             {
               "text": "管理应用",
@@ -221,51 +228,45 @@ const side = {
                 },
                 {
                   "text": "自定义应用域名",
-                  "link": "/zh/manual/olares/settings/custom-app-domain"
+                  "link": "/zh/manual/olares/settings/custom-app-domain",
                 },
-                {
-                  "text": "切换 GPU 模式 ",
-                  "link": "/zh/manual/olares/settings/gpu-resource"
-                }
-              ]
-            },
-            {
-              "text": "管理集成",
-              "link": "/zh/manual/olares/settings/integrations"
-            },
-            {
-              "text": "自定义外观",
-              "link": "/zh/manual/olares/settings/language-appearance"
-            },
-            {
-              text: "备份与恢复",
-              items: [
-                {text: "备份", link: "/zh/manual/olares/settings/backup"},
-                {text: "恢复", link: "/zh/manual/olares/settings/restore"},
               ],
-            },
+              },
             {
-              "text": "配置网络",
+              "text": "管理集成", 
+              "link":"/zh/manual/olares/settings/integrations",
+             },
+             {
+              "text": "自定义外观", 
+              "link":"/zh/manual/olares/settings/language-appearance",
+             },
+            {text: "管理 VPN", link: "/zh/manual/olares/settings/remote-access",},
+            {
+              "text": "配置网络", 
               "collapsed": true,
               "items": [
                 {
                   "text": "更改反向代理",
-                  "link": "/zh/manual/olares/settings/change-frp"
+                  "link": "/zh/manual/olares/settings/change-frp",
                 },
                 {
-                  "text": "设置 hosts 文件",
-                  "link": "/zh/manual/olares/settings/set-up-hosts"
+                  "text": "设置 hosts 文件", 
+                  "link":"/zh/manual/olares/settings/set-up-hosts",
                 },
-                {
-                  "text": "管理 VPN",
-                  "link": "/zh/manual/olares/settings/remote-access"
-                }
-              ]
+              ],
+             },
+            {text: "管理 GPU", link: "/zh/manual/olares/settings/gpu-resource",},
+            {
+              "text": "备份与恢复",
+              "collapsed": true,
+              "items": [
+                {text: "备份", link: "/zh/manual/olares/settings/backup"},
+                {text: "恢复", link: "/zh/manual/olares/settings/restore"},
+              ],
             },
-            { "text": "更新系统", "link": "/zh/manual/olares/settings/update" },
-            { "text": "导出系统日志", "link": "/zh/manual/olares/settings/system-log" }
-          ]
-        },
+            {text: "导出系统日志", link: "/zh/manual/olares/settings/system-log"},
+            ]
+          },
         { "text": "仪表盘", "link": "/zh/manual/olares/resources-usage" },
         { "text": "Profile", "link": "/zh/manual/olares/profile" }
       ]

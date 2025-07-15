@@ -195,8 +195,15 @@ const side = {
           collapsed: true,
           link: "/manual/olares/settings/",
           items: [
-              {text: "My Olares", link: "/manual/olares/settings/my-olares"},
-              {
+            {
+              text: "My Olares",
+              collapsed: true,
+              items: [
+                {text: "Account and device", link: "/manual/olares/settings/my-olares"},
+                {text: "Update system", link: "/manual/olares/settings/update"},
+              ],
+            },
+            {
               text: "Manage accounts",
               collapsed: true,
               items: [
@@ -222,10 +229,6 @@ const side = {
                   text: "Customize app domains",
                   link: "/manual/olares/settings/custom-app-domain",
                 },
-                {
-                  text: "Manage GPU usage",
-                  link: "/manual/olares/settings/gpu-resource",
-                },
               ],
               },
             {
@@ -236,33 +239,31 @@ const side = {
               text: "Customize appearance", 
               link:"/manual/olares/settings/language-appearance",
              },
+            {text: "Manage VPN", link: "/manual/olares/settings/remote-access",},
             {
-              text: "Backup and Restore",
-              items: [
-                {text: "Backup", link: "/manual/olares/settings/backup"},
-                {text: "Restore", link: "/manual/olares/settings/restore"},
-              ],
-            },
-             {
               text: "Configure network", 
               collapsed: true,
               items: [
                 {
-                  text: "Change FRP",
+                  text: "Change revere proxy",
                   link: "/manual/olares/settings/change-frp",
                 },
                 {
                   text: "Set up hosts file", 
                   link:"/manual/olares/settings/set-up-hosts",
                 },
-                {
-                  text: "Manage VPN", 
-                  link: "/manual/olares/settings/remote-access",
-                },
               ],
              },
-             {text: "Update system", link: "/manual/olares/settings/update"},
-             {text: "Export system log", link: "/manual/olares/settings/system-log"},
+            {text: "Manage GPU", link: "/manual/olares/settings/gpu-resource",},
+            {
+              text: "Backup and restore",
+              collapsed: true,
+              items: [
+                {text: "Backup", link: "/manual/olares/settings/backup"},
+                {text: "Restore", link: "/manual/olares/settings/restore"},
+              ],
+            },
+            {text: "Export system log", link: "/manual/olares/settings/system-log"},
             ]
           },
           {text: "Dashboard", link: "/manual/olares/resources-usage"},
