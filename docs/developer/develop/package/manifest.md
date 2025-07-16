@@ -92,7 +92,6 @@ options:
 
 Olares currently supports four types of applications, each requiring different fields. This document uses `app` as an example to explain each field. For information on other types, please refer to the corresponding configuration guide.
 - [Recommend Configuration Guide](recommend.md)
-- [Model Configuration Guide](model.md)
 
 :::info Example
 ```Yaml

@@ -65,7 +65,7 @@ Olares uses [containerd](../developer/install/installation-overview.md#container
 
 The management of Olares is implemented through the following:
 
-- [olares-cli](../developer/install/cli-1.11/olares-cli.md): A command-line tool for managing Olares clusters, applications, and hardware nodes.
+- [olares-cli](../developer/install/cli/olares-cli.md): A command-line tool for managing Olares clusters, applications, and hardware nodes.
 - [olaresd](../developer/install/installation-overview.md#container-runtime-containerd): A daemon process that monitors hardware and network changes, while also managing cluster upgrades, restarts, and other maintenance operations.
 
 These tools streamline installation, maintenance, and scaling for Olares.

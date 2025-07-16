@@ -325,6 +325,6 @@ local (default)   openebs.io/local   Delete   WaitForFirstConsumer   false   31s
 
 ## 了解更多
 
-- [`olares-cli` 命令行参考](../install/cli-1.11/olares-cli.md)
+- [`olares-cli` 命令行参考](../install/cli/olares-cli.md)
 - [Olares 安装概述](installation-overview.md)
 - [Olares 环境变量](environment-variables.md)
